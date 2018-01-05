@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 定义这个东西，让他屏幕大小适应手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <meta name="nightmode" content="enable/disable">
+    <meta name="imagemode" content="force">
+    <!-- 禁用掉uc浏览器判断到页面上文字居多时，会自动放大字体优化移动用户体验。 -->
+    <meta name="wap-font-scale" content="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="../Public/reset.css">
+    <link rel="stylesheet" href="../Public/iconfont.css">
+    <link rel="stylesheet" href="coupon-description.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="coupon-description-header">
+        <i class="iconfont icon-back" onclick="backPre()"></i>
+        <span class="description-header-content">优惠券使用说明</span>
+    </div>
+    <!-- 中间 -->
+    <div class="coupon-description-main">
+        <div class="description-list">
+            <p class="question">1.什么是抵用券？</p>
+            <p class="question-jieshi">抵用券（原名代金券）是美团网发行和认可的购物券，可以在美团消费付款时抵扣相应面值的金额</p>
+        </div>
+        <div class="description-list">
+            <p class="question">2.如何获取抵用券？</p>
+            <p class="question-jieshi">美团手机客户端和网站会不定期推出秒杀活动，手机用户可以经常打开美团手机客户端，关注弹出的活动通知，机会不容错过！</p>
+        </div>
+        <div class="description-list">
+            <p class="question">3.如何使用抵用券？</p>
+            <p class="question-jieshi">在网站和手机端付款时，都可以选择使用抵用券，输入抵用券密码验证通过后，抵扣相应的金额</p>
+        </div>
+        <div class="description-list">
+            <p class="question">4.抵用券找零兑现吗？</p>
+            <p class="question-jieshi">抵用券不找零，不兑现。付款时抵用券会被优先使用，不足支付时才会使用美团余额</p>
+        </div>
+    </div>
+    <script src="../Public/adaptation.js"></script>
+    <script src="../Public/zepto.min.js"></script>
+    <script src="../Public/common.js"></script>
+</body>
+</html>

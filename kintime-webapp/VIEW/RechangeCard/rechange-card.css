@@ -1,0 +1,66 @@
+body{
+    background:#F0EFEF;
+}
+.rechange-box{
+    width:90%;
+    height:6rem;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    margin-top:5%;
+    align-items:center;
+}
+.rechange-account{
+    width:78%;
+    height:0.8rem;
+    margin-top:5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.card-num{
+    width:76%;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size:0.3rem;
+}
+.scan-rechange{
+    width:24%;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size:0.3rem;
+    color:#00BED7;
+}
+.rechange-inp{
+    width:78%;
+    height:1rem;
+    border:none;
+    box-sizing:border-box;
+    padding-left:0.4rem;
+    border-bottom:1px solid #B8B3B7;
+}
+.rechange-inp::-webkit-input-placeholder { /* WebKit browsers */
+    color:#B8B3B7;
+    font-size:0.3rem;
+    text-align:center;
+}
+.card-pwd{
+    width:78%;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size:0.3rem;
+    margin-top:0.2rem;
+}
+.queding{
+    width:78%;
+    height:0.9rem;
+    line-height:0.9rem;
+    text-align:center;
+    color:white;
+    font-size:0.3rem;
+    font-weight:900;
+    border:none;
+    background:#00BED7;
+    margin-top:0.4rem;
+    border-radius:5px;
+}

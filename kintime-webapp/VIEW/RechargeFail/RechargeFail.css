@@ -1,0 +1,49 @@
+body{
+	background: #fff;
+}
+.recharge-info{
+	width: 100%;
+	margin-top: 25%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+}
+.recharge-info .info-img{
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #B8B3B7;
+	border-radius: 50%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.info-img .iconfont{
+	font-size: 1rem;
+}
+.recharge-info .info-text{
+	font-size: .6rem;
+	line-height: 1rem;
+}
+.recharge-tip{
+	width: 100%;
+	margin-top: .8rem;
+	font-size: .3rem;
+	text-align: center;
+	color: #F24842;
+}
+.btn{
+	width: 90%;
+	height: .8rem;
+	margin: .2rem 5% 0;
+	border: none;
+	outline: none;
+	background: #6abdd5;
+	font-size: .3rem;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	border-radius: 8px;
+}

@@ -1,0 +1,38 @@
+body{
+	background: #F3F4F5;
+}
+header{
+	width: 100%;
+	padding: 1rem 0;
+	text-align: center;
+	background: #00BED7;
+	font-size: .55rem;
+	color: #fff;
+}
+header .img,.card-item .img{
+	display: block;
+	width: 100%;
+}
+header .img .iconfont{
+	font-size: 1rem;
+}
+.card-item .img .iconfont{
+	font-size: .8rem;
+}
+header .title,.card-item .title{
+	display: block;
+	width: 100%;
+}
+.btn{
+	width: 90%;
+	height: 1rem;
+	margin: .4rem 5% 0;
+	border: none;
+	outline: none;
+	background: #00BED7;
+	font-size: .3rem;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	border-radius: 8px;
+}

@@ -1,0 +1,420 @@
+[ 2017-12-23T10:49:04+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007173s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.003529s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002211s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002197s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001397s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001533s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2017-12-23T10:50:32+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002562s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002219s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002172s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001369s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001426s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2017-12-23T10:50:35+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002678s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002179s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002129s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001473s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001434s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-12-23T10:50:40+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.003019s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002097s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002548s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001225s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001625s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-12-23T11:00:28+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002841s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002074s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001147s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001279s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001353s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-12-23T11:00:28+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002037s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001731s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001312s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001616s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2017-12-23T11:01:14+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.003044s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002033s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002033s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001151s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001463s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-12-23T11:01:19+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002769s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002351s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002220s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001257s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001442s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-12-23T11:30:32+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002506s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001957s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001382s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001628s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-12-23T11:33:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002263s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001881s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001941s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001255s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001395s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2017-12-23T11:45:06+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002299s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001951s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001243s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001517s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-12-23T11:46:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002355s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001943s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001847s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001263s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001742s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2017-12-23T11:46:09+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002525s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002143s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002062s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001338s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001353s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-12-23T11:46:43+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002534s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001906s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001833s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001254s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001545s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-12-23T11:47:17+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002721s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001937s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001196s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001683s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-12-23T11:47:55+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002627s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001804s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001877s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001420s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001222s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-12-23T11:48:00+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.001983s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002815s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001517s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001437s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2017-12-23T11:48:55+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002179s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002314s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002479s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001285s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001631s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-12-23T12:25:44+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.003774s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002425s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001432s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001388s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-12-23T12:25:46+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002209s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001920s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002129s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001404s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001512s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-12-23T13:39:31+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002675s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001906s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001750s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001462s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001474s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-12-23T13:39:34+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002325s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001650s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001325s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001593s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-12-23T13:46:25+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002227s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001720s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001358s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001569s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-12-23T14:25:16+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002604s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001805s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001447s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001383s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-12-23T14:25:16+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002417s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001697s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001372s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001624s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-12-23T14:25:17+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001782s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001716s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001310s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001519s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-12-23T14:26:38+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002738s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001753s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001294s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001237s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2017-12-23T14:27:55+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002354s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002019s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001750s ]
+SQL: select * from shop where address LIKE '%杭%' and state=1  [ RunTime:0.001191s ]
+SQL: select * from m_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001602s ]
+SQL: select * from g_shop where address LIKE '%杭%' and state=1  [ RunTime:0.001712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+

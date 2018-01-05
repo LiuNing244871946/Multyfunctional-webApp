@@ -1,0 +1,90 @@
+/*底部*/
+.menu-footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: .95rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #3F3F40;
+	z-index: 990;
+	color: #fff;
+	font-size: .35rem;
+	font-weight: 700;
+}
+.menu-footer .total-money{
+	margin-left: .35rem;
+}
+.menu-footer .order-btn{
+	width: 2.15rem;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: #2EB6CC;
+	color: #fff;
+	font-size: .35rem;
+	font-weight: 700;
+}
+/*内容*/
+.main-con{
+	width: 100%;
+	top: .95rem;
+	position: relative;
+	font-size: .3rem;
+	background: #fff;
+}
+.shop-name{
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: #F3F3F4;
+	font-weight: 700;
+	text-align: center;
+}
+#order-table{
+	width: 100%;
+	padding: 0 .35rem;
+}
+#order-table tr{
+	width: 100%;
+	border-bottom: 1px solid #B8B3B6;
+	display: flex;
+	display: -webkit-flex;
+}
+#order-table .dish-name{
+	width: 50%;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: left;
+}
+#order-table .dish-num{
+	width: 25%;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+}
+#order-table .dish-price{
+	width: 25%;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: right;
+}
+.tips-con{
+	width: 100%;
+	height: .8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 .35rem;
+}
+.use-tip{
+	color: #B8B3B6;
+	text-decoration: underline;
+	border-bottom: 1px solid #B8B3B6;
+}
+.price-tip{
+	color: #2EB6CC;
+}

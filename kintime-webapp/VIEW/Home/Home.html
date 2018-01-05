@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="Home.css" />
+		<link rel="stylesheet" href="Me.css" />
+		<link rel="stylesheet" href="../Public/food-shop.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="../Public/echo.min.js"></script>
+		<script type="text/javascript" src="Home.js"></script>
+		<script type="text/javascript" src="Me.js" ></script>
+		<script type="text/javascript" src="../Public/data.js"></script>
+	</head>
+
+	<body>
+		<div class="swiper-container" id="page-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<header class="html-title2">
+						<a class="city-con">
+							<span class="city-text">位置</span>
+							<i class="iconfont icon-jiantouxia"></i>
+						</a>
+						<a class="input-con" href="../SearchFor/SearchFor.html">
+							<i class="iconfont icon-sousuo"></i>
+							<span class="search-text">4564565456564</span>
+						</a>
+					</header>
+					<div class="home-con">
+						<!--轮播-->
+						<div class="swiper-container" id="home-swiper">
+							<div class="swiper-wrapper">
+								<a class="swiper-slide"></a>
+								<a class="swiper-slide"></a>
+								<a class="swiper-slide"></a>
+							</div>
+							<div class="swiper-pagination" id="home-pagination"></div>
+						</div>
+						<!--分类-->
+						<div id="home-sort">
+							<div class="sort-con">
+								<a class="sort-item" href="../FoodHome/FoodHome.html">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+							</div>
+							<div class="sort-con">
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+								<a class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+									<span class="sort-text">美食</span>
+								</a>
+							</div>
+						</div>
+						<!--霸王餐-->
+						<div class="king-meal"></div>
+						<!--特惠美食-->
+						<div id="special-food">
+							<h1 class="title">特惠美食</h1>
+							<div id="special-swiper" class="swiper-container">
+								<div class="swiper-wrapper"></div>
+								<div class="swiper-pagination" id="special-pagination"></div>
+							</div>
+						</div>
+						<!--猜你喜欢-->
+						<div class="fav-con">
+							<div class="fav-title">
+								<span class="title-ctn">猜你喜欢</span>
+							</div>
+							<div class="fav-com-con">
+								<div class="fav-com-item">
+									<a href="" class="fav-com-link">
+										<img data-echo="../../../static/Img/头像.jpg" class="fav-com-img" />
+										<div class="fav-com-info">
+											<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+											<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+											<div class="fav-com-other info-item">
+												<div class="fav-com-price">
+													人均
+													<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+													</span>
+												</div>
+												<div class="fav-com-dis">
+													距离<span class="dis-num">26km</span>
+												</div>
+											</div>
+										</div>
+										<div class="fav-com-eva">
+											<div class="fav-com-evaleft">
+												<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+												</span>
+											</div>
+											<div class="fav-com-evaright">
+												已售<span class="sale-num">564828</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					2
+				</div>
+				<div class="swiper-slide">
+					3
+				</div>
+				<div class="swiper-slide">
+					<!--用户信息-->
+					<div class="user-info">
+						<div class="info-con">
+							<div class="img-con">
+								<img src="../../STATIC/img/default.jpg" />
+							</div>
+							<div class="tips-con">
+								<span class="user-name tip-item">登录</span>
+								<span class="phone tip-item"><i class="iconfont icon-shouji"></i><span class="number-con">请先登录~</span></span>
+							</div>
+							<i class="iconfont icon-jiantouyou"></i>
+						</div>
+					</div>
+					<!--钱包-->
+					<div class="wallet">
+						<div class="wallet-item" id="wallet">
+							<span class="wallet-img">
+					<i class="iconfont icon-qia"></i>
+				</span>
+							<span class="wallet-name">钱包</span>
+						</div>
+						<div class="wallet-item" id="kin">
+							<span class="wallet-img">
+					<i class="iconfont icon-zhuanzhangchongzhi"></i>
+				</span>
+							<span class="wallet-name">KIN宝</span>
+						</div>
+					</div>
+					<!--菜单-->
+					<div class="menu-con">
+						<ul>
+							<li id="eva">
+								<i class="iconfont icon-pingjia"></i>评价
+							</li>
+							<li id="bills">
+								<i class="iconfont icon-zhangdan"></i>账单
+							</li>
+							<li id="address">
+								<i class="iconfont icon-dizhiguanli"></i>地址
+							</li>
+							<li id="coupon">
+								<i class="iconfont icon-youhuiquan"></i>优惠券
+							</li>
+							<li id="custo">
+								<i class="iconfont icon-kefu"></i>客服中心
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="page-pagination">
+			<div id="home-btn" class="page-btn selected">
+				<span class="img-con">
+					<i class="iconfont icon-icon-f1"></i>
+				</span>
+				<span class="btn-text">主页</span>
+			</div>
+			<div id="nearby-btn" class="page-btn">
+				<span class="img-con">
+					<i class="iconfont icon-fujin"></i>
+				</span>
+				<span class="btn-text">附近</span>
+			</div>
+			<div id="order-btn" class="page-btn">
+				<span class="img-con">
+					<i class="iconfont icon-nav-order"></i>
+				</span>
+				<span class="btn-text">订单</span>
+			</div>
+			<div id="me-btn" class="page-btn">
+				<span class="img-con">
+					<i class="iconfont icon-wendashoujibanICON-"></i>
+				</span>
+				<span class="btn-text">我的</span>
+			</div>
+		</footer>
+	</body>
+
+</html>

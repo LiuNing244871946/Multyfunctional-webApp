@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>点餐订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="FoodMenuOrder.css"/>
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="FoodMenuOrder.js"></script>
+	</head>
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="title-text">点餐</span>
+		</header>
+		<div class="main-con">
+			<div class="shop-name">商店名称</div>
+			<table id="order-table">
+				<thead>
+					<tr>
+						<th class="dish-name">名称</th>
+						<th class="dish-num">数量</th>
+						<th class="dish-price">价格</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="dish-name">牛肉拉面套餐</td>
+						<td class="dish-num">x1</td>
+						<td class="dish-price">
+							<i class="money">K</i><span class="money-num">2000</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="dish-name">牛肉拉面套餐</td>
+						<td class="dish-num">x1</td>
+						<td class="dish-price">
+							<i class="money">K</i><span class="money-num">2000</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tips-con">
+				<span class="use-tip">使用须知</span>
+				<span class="price-tip">
+					<span class="tip-text">总计</span>
+					<span class="money-con">
+						<i class="money">K</i><span class="money-num">4000</span>
+					</span>
+				</span>
+			</div>
+		</div>
+		<footer class="menu-footer">
+			<span class="total-money">
+				<span class="text-con">总计:</span><span class="money-con"><i class="money">K</i><span class="money-num">9999999</span></span>
+			</span>
+			<button class="order-btn">下单</button>
+		</footer>
+	</body>
+</html>

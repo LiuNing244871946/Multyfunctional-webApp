@@ -1,0 +1,320 @@
+.order-details-header{
+    width:100%;
+    height:0.96rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.icon-back{
+    font-size:0.36rem;
+    color:#333;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+}
+.order-header-content{
+    font-size:0.36rem;
+    color:#333;
+}
+.order-main-content{
+    width:100%;
+    height:100%;
+    flex:1;
+    overflow: auto;
+}
+.order-main-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.order-main-top{
+    width:6.8rem;
+    height:2.52rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius:0.06rem;
+    margin-top:0.18rem;
+}
+.order-main-top1{
+    width:6.4rem;
+    height:1.7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.shop-img{
+    width:1.4rem;
+    height:1.4rem;
+    background-image:url(../../STATIC/img/shop-img.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main-top-right{
+    width:4.8rem;
+    height:1.2rem;
+    box-sizing:border-box;
+    padding-left:0.2rem;
+}
+.main-top-right1{
+    width:4.54rem;
+    height:0.3rem;
+    font-size:0.26rem;
+    color:#333;
+}
+.main-top-right2{
+    width:4.54rem;
+    height:0.52rem;
+    display:flex;
+    justify-content:space-between;
+}
+.shop-address{
+    display:block;
+    width:3.2rem;
+    height:0.52rem;
+    font-size:0.26rem;
+    display:flex;
+    align-items:center;
+}
+.call-phone{
+    display:block;
+    width:0.5rem;
+    height:0.5rem;
+    background-image:url(../../STATIC/img/phone.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main-top-right3{
+    width:4.54rem;
+    height:0.38rem;
+    font-size:0.36rem;
+    color:#6abdd5;
+}
+.order-main-bottom{
+    width:6.4rem;
+    height:0.81rem;
+    border-top:0.01rem solid #f3f4f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* 换内容 */
+.order-main-bom{
+    width:6.4rem;
+    height:0.81rem;
+    border-top:0.01rem solid #f3f4f5;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.code-num{
+    width:3.3rem;
+    height:0.4rem;
+    font-size:0.32rem;
+    color:#333;
+}
+.will-cost{
+    width:1rem;
+    height:0.3rem;
+    font-size:0.26rem;
+    color: #666;
+}
+.apply-money{
+    width:1.4rem;
+    height:0.54rem;
+    border-radius:0.06rem;
+    border:none;
+    outline:none;
+    font-size:0.26rem;
+    background:#6abdd5;
+    color:white;
+}
+/* 已退款 */
+.order-main-back{
+    width:6.4rem;
+    height:0.81rem;
+    border-top:0.01rem solid #f3f4f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 0.36rem;
+    color: #333;
+}
+/* 退款中  查看进度 */
+.order-main-progress{
+    width:6.4rem;
+    height:0.81rem;
+    border-top:0.01rem solid #f3f4f5;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.blank{
+    width:3.3rem;
+    height:0.4rem;
+}
+.tuikuan{
+    width:1rem;
+    height:0.3rem;
+    font-size:0.26rem;
+    color: #666;
+}
+.check-progress{
+    width:1.4rem;
+    height:0.54rem;
+    border-radius:0.06rem;
+    border:none;
+    outline:none;
+    font-size:0.26rem;
+    background:#6abdd5;
+    color:white;
+}
+.choose-btn{
+    width:1.4rem;
+    height:0.54rem;
+    border-radius:0.06rem;
+    border:none;
+    outline:none;
+    font-size:0.26rem;
+}
+.cancel-btn{
+    background:white;
+    border:1px solid #333;
+    color:#333;
+    margin-right:0.25rem;
+}
+.pay-btn{
+    background:#6abdd5;
+    color:white;
+}
+/* 中间 */
+.order-main-mid{
+    width:6.8rem;
+    height:6.11rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    margin:0.22rem 0;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius:0.06rem;
+}
+.mid-header{
+    width:6.6rem;
+    height:0.76rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom:0.01rem solid #f3f4f5;
+}
+.mid-header-left{
+    display:block;
+    width:1.8rem;
+    height:0.3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.26rem;
+    color:#333;
+}
+.mid-header-right{
+    display:block;
+    width:1rem;
+    height:0.3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.26rem;
+    color:#333;
+}
+.mid-section{
+    width:6.6rem;
+    height:4.57rem;
+}
+.mid-section-list1{
+    display: flex;
+    height:0.76rem;
+    justify-content:space-between;
+}
+.mid-section-left{
+    width:2.5rem;
+    height:0.76rem;
+    padding-left: 0.12rem;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size:0.26rem;
+    color:#333;
+}
+.mid-section-middle{
+    width:1rem;
+    height:0.76rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.26rem;
+    color:#999;
+}
+.mid-section-bottom{
+    width:1rem;
+    height:0.76rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.26rem;
+    color: #333;
+}
+.mid-footer{
+    width:6.6rem;
+    height:0.76rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top:0.01rem solid #f3f4f5;
+}
+.mid-footer-left{
+    display:block;
+    width:1rem;
+    height:0.3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.26rem;
+    color:#333;
+}
+.mid-footer-right{
+    display:block;
+    width:1rem;
+    height:0.3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:0.26rem;
+    color:#6abdd5;
+}
+/* 底部 */
+.order-main-footer{
+    width:6.8rem;
+    height:2.35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius:0.06rem;
+}
+.footer-items{
+    width:6.4rem;
+    height:0.3rem;
+    font-size:0.26rem;
+    color: #555;
+}

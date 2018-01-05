@@ -1,0 +1,59 @@
+.paytip-con{
+	width: 100%;
+	padding: .2rem;
+}
+.tiptext-con{
+	width: 100%;
+	margin-top: 2.3rem;
+	margin-bottom: 1rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.tiptext-con .img{
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #B8B3B6;
+	color: #fff;
+	border-radius: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+.tiptext-con .img .iconfont{
+	font-size: .8rem;
+	font-weight: 700;
+}
+.tiptext-con .text{
+	font-size: .6rem;
+	font-weight: 700;
+	line-height: 1.6rem;
+}
+.btn-con{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.btn-con .error-tip{
+	font-size: .35rem;
+	line-height: .45rem;
+	color: #F14842;
+	margin-bottom: .2rem;
+}
+.btn-con .determine-btn{
+	width: 100%;
+	height: .95rem;
+	background: #00BDD6;
+	border: none;
+	outline: none;
+	font-size: .4rem;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 5px;
+}

@@ -1,0 +1,201 @@
+/* 头部 */
+.comment-header{
+    width:100%;
+    height:0.96rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.icon-back{
+    font-size:0.36rem;
+    color:#333;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+}
+.comment-content{
+    font-size:0.36rem;
+    color:#333;
+}
+/* 评价中间部分 */
+.comment-main{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.comment-main-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment-main-content{
+    width:6.8rem;
+    height:7.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius:0.06rem;
+    margin-top:0.26rem;
+}
+.main-content-top{
+    width:100%;
+    height:2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-content-top1{
+    width:6.6rem;
+    height:1.33rem;
+    box-sizing: border-box;
+    padding-left:0.12rem;
+    display: flex;
+    align-items: center;
+    border-bottom:0.01rem solid #f1f1f1;
+}
+.top1-img{
+    display: block;
+    width:0.8rem;
+    height:0.8rem;
+    margin-right:0.24rem;
+    background-image: url(../../STATIC/img/congee.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top1-name{
+    font-size: 0.32rem;
+    color: #333;
+}
+.main-content-top2{
+    width:6.6rem;
+    height:0.96rem;
+    box-sizing: border-box;
+    padding-left:0.12rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #333;
+}
+.main-content-middle{
+    width:6.8rem;
+    height:2.35rem;
+    box-sizing: border-box;
+    padding:0.2rem 0 0 0.23rem;
+    background: #f8f8f8;
+    resize: none;
+    font-size:0.26rem;
+    color: #999;
+}
+.main-content-bottom{
+    width:6.8rem;
+    height:2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.main-content-bottom1{
+    width:100%;
+    height:0.96rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    width:0.6rem;
+    height:0.6rem;
+    margin:0 0.08rem;
+    background-image: url(../../STATIC/img/star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.star-active{
+    background-image: url(../../STATIC/img/star-active.png);
+}
+.main-content-bottom2{
+    width:100%;
+    height:1.54rem;
+    display: flex;
+    align-items: center;
+}
+.upload-img{
+    width:60%;
+    height:1.54rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left:0.24rem;
+}
+.img-title{
+    width:1.2rem;
+    height:1rem;
+    background-image: url(../../STATIC/img/take-photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:0.01rem solid #777;
+    font-size: 0.18rem;
+    color: #999;
+    border-radius: 0.06rem;
+}
+.tips-title{
+    margin-left:0.36rem;
+    font-size: 0.26rem;
+    color: #999;
+}
+.small-img{
+    width:1.2rem;
+    height:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #777;
+    font-size: 0.18rem;
+    color: #999;
+    border-radius: 0.06rem;
+    margin-left:0.28rem;
+}
+/* 骑手部分 */
+.comment-add-qishou{
+    width:6.8rem;
+    height:2.65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius:0.06rem;
+    margin-top:0.26rem;
+}
+.qishou-box{
+    width:2.6rem;
+    height:0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.qishou{
+    font-size: 0.32rem;
+    color: #333;
+}
+.arrive-time{
+    font-size: 0.26rem;
+    color: #333;
+}
+/* 评价底部 */
+.comment-footer{
+    width:100%;
+    height:0.96rem;
+    background: #6abdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    color: white;
+}

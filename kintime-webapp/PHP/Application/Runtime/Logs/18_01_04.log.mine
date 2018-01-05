@@ -1,0 +1,532 @@
+[ 2018-01-04T17:50:49+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 707 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002529s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.002083s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000938s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2018-01-04T17:51:02+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 707 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002086s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001873s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000923s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-01-04T17:51:15+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 707 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002102s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001261s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000982s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-01-04T17:53:11+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 707 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001935s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001995s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001240s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2018-01-04T18:00:50+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 707 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002173s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001599s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001012s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2018-01-04T18:04:11+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002271s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001961s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001017s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2018-01-04T18:05:13+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002072s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001844s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000983s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2018-01-04T18:05:16+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001772s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001890s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001009s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-01-04T18:05:16+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001899s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001413s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-01-04T18:05:16+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001334s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001008s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2018-01-04T18:05:17+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002561s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.002366s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001066s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2018-01-04T18:05:53+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002411s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.002043s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001012s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-01-04T18:06:18+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002013s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001979s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001101s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-01-04T18:07:06+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002355s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001571s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001013s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2018-01-04T18:09:33+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002184s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.002187s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001102s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002472s ]
+
+[ 2018-01-04T18:10:01+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001222s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001012s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-01-04T18:10:03+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002285s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001998s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001012s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-01-04T18:10:03+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002591s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001781s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000993s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2018-01-04T18:10:11+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 730 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001977s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001661s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001012s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-01-04T18:11:27+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002737s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001709s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 734 行.
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000916s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-01-04T18:12:41+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001580s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 734 行.
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000805s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2018-01-04T18:13:19+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002418s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001622s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 734 行.
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000873s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-01-04T18:15:21+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [8] Undefined property: stdClass::$type C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 729 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002052s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001594s ]
+NOTIC: [4096] Object of class stdClass could not be converted to string C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 734 行.
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000985s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2018-01-04T18:18:00+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] Undefined property: stdClass::$id C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 728 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001852s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001579s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.001031s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2018-01-04T18:20:02+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002290s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001890s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-01-04T18:21:01+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002422s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001812s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-01-04T18:26:15+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002820s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001621s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2018-01-04T18:27:04+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002130s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001679s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2018-01-04T18:28:01+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002479s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001796s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-01-04T18:28:35+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.015701s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.014940s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.003072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-01-04T18:29:18+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001993s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.002434s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2018-01-04T18:31:39+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001928s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001565s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-01-04T18:31:54+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002782s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001688s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-01-04T18:39:51+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.002442s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001437s ]
+SQL: SELECT * FROM `ddan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2018-01-04T19:04:08+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 703 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 704 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 705 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001706s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000984s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-01-04T19:04:38+08:00 ] ::1 /kintime-webapp/PHP/home/foods/tui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 703 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 704 行.
+NOTIC: [8] Trying to get property of non-object C:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php 第 705 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ddan` [ RunTime:0.001980s ]
+SQL: SHOW COLUMNS FROM `s_ddan` [ RunTime:0.001562s ]
+SQL: SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1   [ RunTime:0.000962s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `ddan` WHERE ( id= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+

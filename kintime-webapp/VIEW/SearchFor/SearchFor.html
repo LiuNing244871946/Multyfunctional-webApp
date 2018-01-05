@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="SearchFor.css" />
+		<link rel="stylesheet" href="../Public/food-shop.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="SearchFor.js"></script>
+		<script type="text/javascript" src="../Public/echo.min.js" ></script>
+	</head>
+
+	<body>
+		<header class="html-title4">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="input-con">
+				<i class="iconfont icon-sousuo"></i>
+				<input class="city-text" type="text" placeholder="搜索"/>
+			</span>
+			<button id="search-btn">搜索</button>
+		</header>
+		<div id="main">
+			<div id="search-history">
+				<div id="history-title">
+					<span class="text-con">搜索历史</span>
+					<i class="iconfont icon-laji"></i>
+				</div>
+				<div id="history-con"></div>
+			</div>
+			<div id="search-result">
+				<div class="fav-com-con">
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img data-echo="../../../static/Img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

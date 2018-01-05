@@ -1,0 +1,68 @@
+
+/*底部*/
+footer{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .3rem;
+	z-index: 990;
+	background: #6abdd5;
+	position: fixed;
+	bottom: 0;
+}
+footer .add-address{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: #6abdd5;
+	text-align: center;
+	font-size: .3rem;
+	color: #fff;
+}
+/*地址输入*/
+.address-input{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	background: #fff;
+	position: fixed;
+	top: .95rem;
+	overflow: hidden;
+	border-bottom: 1px solid #B8B3B7;
+	padding: 0 .2rem;
+}
+.address-input .city-input{
+	height: 100%;
+	float: left;
+	text-align: center;
+	display: block;
+	margin-right:.1rem;
+}
+.address-input .input-con{
+	height: 100%;
+	text-align: left;
+	display: block;
+	overflow: hidden;
+}
+.input-con .input{
+	width: 100%;
+	height: .6rem;
+	border: none;
+	outline: none;
+	background: #E8E6E7;
+	border-radius: .3rem;
+	padding-left: .2rem;
+	color: #B8B3B7;
+}
+/*内容*/
+.main{
+	position: fixed;
+	top: 1.8rem;
+	bottom: 1rem;
+	width: 100%;
+}
+.main #map-con{
+	width: 100%;
+	height: 100%;
+}

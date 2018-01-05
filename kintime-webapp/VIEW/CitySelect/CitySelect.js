@@ -1,0 +1,12 @@
+$(function(){
+	$('.city-text').focus(function(){
+		if($(this).val()=="城市"){
+			$(this).val("");
+		};
+	});
+	$('.city-text').blur(function(){
+		if($(this).val()==""){
+			$(this).val("城市");
+		};
+	});
+})

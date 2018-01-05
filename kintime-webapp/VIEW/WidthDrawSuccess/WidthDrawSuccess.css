@@ -1,0 +1,45 @@
+body{
+	background: #F3F4F5;
+}
+header{
+	width: 100%;
+	padding: 1rem 0;
+	background: #6abdd5;
+	font-size: .4rem;
+	color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+header .iconfont{
+	font-size: 1.5rem;
+	color: #fff;
+	margin-bottom: .5rem;
+}
+.card-item .img .iconfont{
+	font-size: .8rem;
+}
+
+/*提示*/
+.tips-con{
+	width: 100%;
+	text-align: center;
+	padding: .8rem 0;
+	color: #999;
+}
+/*按钮*/
+.determine-btn{
+	width: 90%;
+	height: 1rem;
+	margin: 0 5%;
+	border: none;
+	outline: none;
+	background: #00BED7;
+	font-size: .3rem;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	border-radius: 8px;
+}

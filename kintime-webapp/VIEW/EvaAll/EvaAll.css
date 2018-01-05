@@ -1,0 +1,34 @@
+#eva-sort{
+	width: 100%;
+	height: 1rem;
+	position: fixed;
+	display: flex;
+	display: -webkit-flex;
+	top: 0;
+	background: #fff;
+	z-index: 10;
+}
+.sort-item{
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: .04rem solid #F3F4F5;
+	font-size: .3rem;
+}
+.sort-item.selected{
+	color: #6abdd5;
+	border-color: #6abdd5;
+}
+#evasort-swiper{
+	width: 100%;
+	height: 100%;
+	margin-top: 1rem;
+}
+.swiper-slide{
+	height: 1rem;
+}
+.swiper-slide-active{
+	height: auto;
+}

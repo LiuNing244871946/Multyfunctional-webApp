@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 定义这个东西，让他屏幕大小适应手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <meta name="nightmode" content="enable/disable">
+    <meta name="imagemode" content="force">
+    <!-- 禁用掉uc浏览器判断到页面上文字居多时，会自动放大字体优化移动用户体验。 -->
+    <meta name="wap-font-scale" content="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../Public/reset.css">
+    <link rel="stylesheet" href="../Public/iconfont.css">
+    <link rel="stylesheet" href="../OrderDetailsObligation/order-details-obligation.css">
+</head>
+<body>
+    <!-- 订单详情头部 -->
+    <div class="order-details-header">
+        <i class="iconfont icon-back" onclick="backPre()"></i>
+        <span class="order-header-content">订单详情</span>
+    </div>
+    <!-- 中间部分 -->
+    <div class="order-details-main">
+        <div class="order-details-content">
+            <span class="will-pay">订单已完成</span>
+            <span class="thanks-word">感谢你对我们的支持与信任，期待您的再次光临</span>
+            <span class="close-tips">11:08 已支付 <hr class="h-line">11:10 已接单 <hr class="h-line">12:01 已送达</span>
+            <p class="btn-box">
+                <button class="cancel-btn">评价</button>
+                <button class="pay-btn">再来一单</button>
+                <button class="server-btn">申请售后</button>
+            </p>
+            <!-- 订单 -->
+            <div class="order-main-top">
+                <p class="main-top-header">
+                    <span class="shop-name">四季粥铺</span>
+                    <i class="iconfont icon-next"></i>
+                </p>
+                <div class="order-list-details">
+                    <p class="img-box"></p>
+                    <div class="list-details-right">
+                        <p class="thing-box">
+                            <span class="thing-name">虾仁玉米粥</span>
+                            <span class="thing-price">₭10</span>
+                        </p>
+                        <p class="thing-num">x1</p>
+                    </div>
+                </div>
+                <div class="order-list-details">
+                    <p class="img-box"></p>
+                    <div class="list-details-right">
+                        <p class="thing-box">
+                            <span class="thing-name">虾仁玉米粥</span>
+                            <span class="thing-price">₭10</span>
+                        </p>
+                        <p class="thing-num">x1</p>
+                    </div>
+                </div>
+                <div class="money-list">
+                    <p class="money-list-top">
+                        <span class="list-top-left">餐盒费</span>
+                        <span class="list-top-right">₭2</span>
+                    </p>
+                    <p class="money-list-top">
+                        <span class="list-top-left">配送费</span>
+                        <span class="list-top-right">₭2</span>
+                    </p>
+                </div>
+                <div class="money-list money-list2">
+                    <p class="money-list-top">
+                        <span class="list-top-left">在线支付满减优惠</span>
+                        <span class="list-top-right">-₭10</span>
+                    </p>
+                    <p class="money-list-top">
+                        <span class="list-top-left">红包</span>
+                        <span class="list-top-right">-₭2</span>
+                    </p>
+                    <p class="money-list-top">
+                        <span class="list-top-left">门店新客优惠</span>
+                        <span class="list-top-right">-₭2</span>
+                    </p>
+                </div>
+                <p class="really-pay-box">
+                    <span class="really-pay-left">实付</span>
+                    <span class="really-pay-right">₭10</span>
+                </p>
+                <!-- 联系栏 -->
+                <div class="connect-box">
+                    <p class="connect-shop">
+                        <span class="shop-icon"></span>
+                        <span class="shop-title">联系商家</span>
+                    </p>
+                    <p class="connect-kefu">
+                        <span class="kefu-icon"></span>
+                        <span class="kefu-title">联系客服</span>
+                    </p>
+                </div>
+            </div>
+            <div class="order-main-mid">
+                <p class="main-mid-items">预计送达时间：11月25日 19:50</p>
+                <p class="main-mid-items items-dif">
+                    <span class="connect-people">配送地址：张先生  15264465521</span>
+                    <span class="connect-address">江干区三堡东方大厦</span>
+                </p>
+                <p class="main-mid-items">配送方式：商家配送</p>
+            </div>
+            <!-- 底部部分 -->
+            <div class="order-main-footer">
+                <p class="footer-items">订单号：15353465558515468</p>
+                <p class="footer-items">下单时间：2017-11-24 11:08</p>
+                <p class="footer-items">支付方式：在线支付</p>
+            </div>
+        </div>
+    </div>    
+    <script src="../Public/adaptation.js"></script>
+    <script src="../Public/zepto.min.js"></script>
+    <script src="../Public/common.js"></script>
+</body>
+</html>

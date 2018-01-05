@@ -1,0 +1,281 @@
+body{
+	background: #F3F4F5;
+}
+.main-con{
+	top: 0;
+	padding: .4rem;
+}
+.main{
+	width: 100%;
+	padding: .2rem;
+	background: #fff;
+	color: #000;
+}
+.main .bank-con{
+	width: 100%;
+	font-size: .3rem;
+	overflow: hidden;
+	margin-bottom: .8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.bank-con .title{
+	display: block;
+	width: 25%;
+}
+.bank-con .bank-info{
+	width: 75%;
+}
+.bank-info .bank-select{
+	width: 100%;
+	font-size: .3rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.bank-info .tips{
+	width: 100%;
+	line-height: .5rem;
+	display: block;
+	color: #B8B3B7;
+}
+/*提现金额*/
+.main .amount-con{
+	width: 100%;
+	margin-bottom: .8rem;
+	font-size: .3rem;
+}
+.amount-con .title{
+	width: 100%;
+	display: block;
+	margin-bottom: .2rem;
+}
+.amount-con .input-con{
+	width: 100%;
+	font-size: .5rem;
+	border-bottom: 1px solid #B8B3B7;
+	margin-bottom: .1rem;
+	display: flex;
+	display: -webkit-flex;
+}
+.input-con .currency{
+	display: block;
+	margin-right: .1rem;
+}
+.input-con .input{
+	display: block;
+	overflow: hidden;
+}
+.input #money{
+	border: none;
+	outline: none;
+	font-size: .5rem;
+	width: 100%;
+}
+.amount-con .balance-con{
+	width: 100%;
+	font-size: .2rem;
+	line-height: .4rem;
+	color: #B8B3B7;
+}
+.balance-con .all-btn{
+	border: none;
+	outline: none;
+	color: #00BED7;
+	background: none;
+	margin-left: .1rem;
+}
+.amount-con .tips-con{
+	width: 100%;
+	font-size: .2rem;
+	line-height: .4rem;
+	color: #B8B3B7;
+	display: none;
+}
+.amount-con .tips-con .tip2{
+	color: #F24842;
+}
+.amount-con .exchange-rate{
+	width: 100%;
+	color: #B8B3B7;
+	line-height: .5rem;
+}
+/*账户*/
+.main .account{
+	width: 100%;
+	margin-bottom: .8rem;
+	font-size: .3rem;
+}
+.account .input-con{
+	width: 100%;
+	height: .8rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.input-con .title{
+	margin-right: .1rem;
+	width: 1rem;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.input-con .account-input{
+	height: 100%;
+	flex-grow: 1;
+	border-bottom: 1px solid #B8B3B7;
+}
+.account-input .account-info{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+/*按钮*/
+.widthdraw-btn{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	background: #00BED7;
+	margin-top: .2rem;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-size: .4rem;
+	letter-spacing: .2rem;
+}
+
+#discount-con{
+	top: 0;
+}
+#select-con{
+	width: 100%;
+	height: 5.8rem;
+	bottom: 0;
+	background: #fff;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	position: fixed;
+	display: none;
+}
+#select-con ul{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 1rem;
+	overflow-y:scroll;
+}
+#select-con ul::-webkit-scrollbar{
+	display: none;
+}
+#select-con .bank-item-title{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	border-bottom: 1px solid #B8B3B7;
+	padding: 0 .2rem;
+	font-weight: 700;
+}
+.bank-item-title .iconfont{
+	font-size: .2rem;
+}
+
+#select-con .bank-newitem,#select-con .bank-olditem{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	border-bottom: 1px solid #B8B3B7;
+	padding: 0 .2rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.bank-olditem .card-info{
+	height: 100%;
+	line-height: .4rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.bank-olditem .card-info .card-num{
+	font-size: .25rem;
+	color: #B8B3B7;
+}
+.bank-newitem .select-box,.bank-olditem .select-box{
+	width: .4rem;
+	height: .4rem;
+	line-height: .4rem;
+	border: 1px solid #B8B3B7;
+	border-radius: 50%;
+	margin: auto 0;
+	font-size: .2rem;
+	text-align: center;
+	color: #fff;
+	background: #fff;
+}
+.select-box .iconfont{
+	display: none;
+}
+.selected .select-box{
+	border: none;
+	background: #00BED7;
+}
+.selected .select-box .iconfont{
+	display: block;
+}
+#discount-con .determine-btn{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+	border: none;
+	outline: none;
+	background: #00BED7;
+	font-size: .3rem;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	
+}
+
+/*提示*/
+#tips-con{
+	width: 90%;
+	top: 2rem;
+	margin: 0 5%;
+	padding: .2rem .4rem;
+	background: #fff;
+	border-radius: 8px;
+	position: fixed;
+	display: none;
+}
+#tips-con .tip-title{
+	width: 100%;
+	line-height: .5rem;
+	font-size: .3rem;
+	text-align: center;
+	border-bottom: 1px solid #B8B3B7;
+	margin-bottom: 1rem;
+}
+#tips-con .tip-btn{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	font-size: .4rem;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	background: #00BED7;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin-bottom: .2rem;
+}
+

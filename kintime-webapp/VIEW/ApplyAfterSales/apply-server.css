@@ -1,0 +1,131 @@
+/* 头部部分样式 */
+.apply-server-header{
+    width:100%;
+    height:0.96rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: white;
+    border-bottom:1px solid #f1f1f1;
+    position: relative;
+}
+.icon-back{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+    font-size:0.36rem;
+    color:#333;
+}
+.success-title{
+    font-size:0.36rem;
+    color:#333;
+}
+/* 中间 */
+.apply-main{
+    width:100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.apply-main-top{
+    width:100%;
+    height:4.85rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.apply-btn-choose{
+    width:6.8rem;
+    height:0.96rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.money-btn{
+    width:1.4rem;
+    height:0.54rem;
+    border-radius: 0.06rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #999;
+    color: #333;
+    font-size: 0.26rem;
+    background: white;
+}
+.money-thing-btn{
+    width:1.4rem;
+    height:0.54rem;
+    border-radius: 0.06rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    margin:0 0.32rem;
+    border:1px solid #999;
+    background: white;
+    color: #333;
+}
+.thing-btn{
+    width:1.4rem;
+    height:0.54rem;
+    border-radius: 0.06rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #999;
+    color: #333;
+    font-size: 0.26rem;
+    background: white;
+}
+.active{
+    background: #6abdd5;
+    color: white;
+    border: none;
+}
+.inp-word{
+    width:6.8rem;
+    height:2.9rem;
+    box-sizing: border-box;
+    padding:0.36rem 0 0 0.24rem;
+    font-size: 0.26rem;
+    color: #999;
+    border-top:1px solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
+    resize: none;
+}
+.commit-title{
+    width:100%;
+    height:0.96rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem;
+    color: #6abdd5;
+}
+.commit-tips{
+    width:100%;
+    height:1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top:0.3rem;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.commit-ing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #999;
+}
+.re-commit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #999;
+}

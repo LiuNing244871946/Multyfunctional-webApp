@@ -1,0 +1,111 @@
+.comment-success-header{
+    width:100%;
+    height:0.96rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: white;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.save-success-header{
+    width:100%;
+    height:0.96rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: #363d46;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.icon-back{
+    font-size:0.36rem;
+    color:#333;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+}
+/* 保存成功返回键 */
+.takeout-back{
+    color:white;
+}
+.success-title{
+    font-size:0.36rem;
+    color:#333;
+}
+.save-success-title{
+    font-size:0.36rem;
+    color: white;
+}
+/* 中间部分 */
+.success-main{
+    width:100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progress-box{
+    width:2.5rem;
+    height:2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:2.4rem;
+}
+.img-box{
+    width:1.6rem;
+    height:1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../STATIC/img/success.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.progress-word{
+    width:100%;
+    height:0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem;
+    color: #6abdd5;
+    margin-top:0.34rem;
+}
+.btn-box{
+    width:100%;
+    height:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-btn{
+    width:1.4rem;
+    height:0.54rem;
+    background: #6abdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: white;
+    border-radius: 0.06rem;
+}
+/* 保存成功页面 */
+.back-btn1{
+    width: 1.92rem;
+    height:0.54rem;
+    background: #6abdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: white;
+    border-radius: 0.06rem;
+}
+.back-home{
+    margin-right: 0.32rem;
+}

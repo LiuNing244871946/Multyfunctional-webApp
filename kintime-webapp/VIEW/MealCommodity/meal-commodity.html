@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 定义这个东西，让他屏幕大小适应手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <meta name="nightmode" content="enable/disable">
+    <meta name="imagemode" content="force">
+    <!-- 禁用掉uc浏览器判断到页面上文字居多时，会自动放大字体优化移动用户体验。 -->
+    <meta name="wap-font-scale" content="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品菜品</title>
+    <link rel="stylesheet" href="../Public/reset.css">
+    <link rel="stylesheet" href="../Public/iconfont.css">
+    <link rel="stylesheet" href="../CommodityInfo/commodity-info.css">
+</head>
+<body>
+    <!-- 评价头部 -->
+    <div class="commodity-info-header">
+        <i class="iconfont icon-back" onclick="backPre()"></i>
+        <div class="tap-btn-box">
+            <div class="tap-btn-left">老文</div>
+            <div class="tap-btn-right">中文</div>
+        </div>
+    </div>
+    <!-- 中间部分 -->
+    <div class="commodity-main">
+        <div class="commodity-main-content">
+            <ul class="commodity-list-box">
+                <li class="commodity-img-box li-list">
+                    <label for="套餐图片" class="title-box">套餐图片</label>
+                    <input type="text" class="commodity-img-inp">
+                </li>
+                <li class="commodity-name-box li-list">
+                    <label for="美食名称" class="title-box">美食名称</label>
+                    <input type="text" placeholder="点击输入商品名称" class="commodity-name-inp">
+                </li>
+                <li class="commodity-description-box li-list">
+                    <label for="输入商品描述" class="title-box">输入商品描述</label>
+                    <input type="text" placeholder="点击输入商品描述" class="commodity-description-inp">
+                </li>
+                <li class="commodity-price-box li-list">
+                    <label for="价格" class="title-box">价格</label>
+                    <input type="text" placeholder="点击输入商品价格" class="commodity-price-inp">
+                </li>
+                <li class="selection-sort-box li-list">
+                    <label for="库存" class="title-box">库存</label>
+                    <div class="commodity-description-inp">点击选择分类</div>
+                </li>
+                <li class="standard-box li-list">
+                    <label for="规格" class="title-box">菜品</label>
+                    <div class="add-img-box add-img-btn"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="choose-commodity-footer">
+        <button class="cancel-btn">取消</button>
+        <button class="sure-btn">确定</button>
+    </div>
+    <script src="../Public/adaptation.js"></script>
+    <script src="../Public/zepto.min.js"></script>
+    <script src="../Public/common.js"></script>
+</body>
+</html>

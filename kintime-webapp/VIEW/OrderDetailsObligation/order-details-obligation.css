@@ -1,0 +1,333 @@
+/* 头部样式 */
+.order-details-header{
+    width:100%;
+    height:0.96rem;
+    display:flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.icon-back{
+    font-size:0.36rem;
+    color:#333;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+}
+.order-header-content{
+    font-size:0.36rem;
+    color:#333;
+}
+/* 中间样式 */
+.order-details-main{
+    width: 100%;
+    height:100%;
+    flex: 1;
+    overflow: auto; 
+}
+.order-details-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.will-pay{
+    margin:0.5rem 0 0.3rem;
+    font-size: 0.4rem;
+    color: #333;
+}
+/* 换内容 */
+.back-money{
+    margin:0.52rem 0 0.22rem;
+    font-size: 0.4rem;
+    color: #333;
+}
+.thanks-word{
+    font-size: 0.2rem;
+    color: #999;
+}
+.thanks-again{
+    margin-bottom:0.42rem;
+}
+.close-tips{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.26rem;
+    color: #6abdd5;
+    margin:0.22rem 0;
+}
+.h-line{
+    width:0.6rem;
+    height:0.02rem;
+    background: #6abdd5;
+    border: none;
+    margin:0 0.2rem;
+}
+.btn-box{
+    width:100%;
+    height:1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cancel-btn{
+    width:1.4rem;
+    height:0.54rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 0.06rem;
+    margin-right: 0.32rem;
+}
+.pay-btn{
+    width:1.4rem;
+    height:0.54rem;
+    background: #6abdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: white;
+    border-radius: 0.06rem;
+}
+/* 申请售后按钮 */
+.server-btn{
+    width:1.4rem;
+    height:0.54rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 0.06rem;
+    margin-left: 0.32rem;
+}
+/* 详情顶部 */
+.order-main-top{
+    width:6.8rem;
+    height:9.68rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius: 0.06rem;
+}
+.main-top-header{
+    width:100%;
+    height:0.96rem;
+    box-sizing: border-box;
+    padding: 0 0.26rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-name{
+    font-size: 0.26rem;
+    color: #333;
+}
+.icon-next{
+    font-size: 0.26rem;
+    color: #6abdd5;
+}
+.order-list-details{
+    width:100%;
+    height:1.6rem;
+    background: #f8f8f8;
+    margin-bottom:0.02rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0.26rem;
+}
+.img-box{
+    width:1.16rem;
+    height:1.16rem;
+    background-image:url(../../STATIC/img/congee.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.list-details-right{
+    width:81%;
+    height:1rem;
+    display: flex;
+    flex-direction: column;
+}
+.thing-box{
+    width:100%;
+    height:0.7rem;
+    box-sizing: border-box;
+    padding-left:0.36rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thing-name{
+    font-size: 0.26rem;
+    color: #333;
+}
+.thing-price{
+    font-size: 0.26rem;
+    color: #6abdd5;
+}
+.thing-num{
+    width:100%;
+    height:0.7rem;
+    font-size: 0.26rem;
+    color: #999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.money-list{
+    width:6.6rem;
+    height:1.36rem;
+    box-sizing: border-box;
+    padding: 0 0.16rem;
+    border-bottom:1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+.money-list2{
+    height:1.86rem;
+}
+.money-list-top{
+    width:100%;
+    height:0.58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.26rem;
+    color: #333;
+}
+.really-pay-box{
+    width:100%;
+    height:1.16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #f1f1f1;
+    box-sizing: border-box;
+    padding: 0 0.26rem;
+}
+.really-pay-left{
+    font-size: 0.32rem;
+    color: #333;
+}
+.really-pay-right{
+    font-size: 0.36rem;
+    color: #6abdd5;
+}
+/* 联系栏 */
+.connect-box{
+    width:100%;
+    height:1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.connect-shop{
+    width:50%;
+    height:0.6rem;
+    box-sizing: border-box;
+    border-right: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop-icon{
+    width:0.46rem;
+    height:0.46rem;
+    background-image:url(../../STATIC/img/phone.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.shop-title{
+    font-size: 0.3rem;
+    color: #555;
+    margin-left:0.14rem;
+}
+.connect-kefu{
+    width:50%;
+    height:0.6rem;
+    box-sizing: border-box;
+    border-left: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kefu-icon{
+    width:0.46rem;
+    height:0.46rem;
+    background-image:url(../../STATIC/img/kefu.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.kefu-title{
+    font-size: 0.3rem;
+    color: #555;
+    margin-left:0.14rem;
+}
+/* 详情中部 */
+.order-main-mid{
+    width:6.8rem;
+    height:2.76rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius: 0.06rem;
+    margin:0.22rem 0;
+}
+.main-mid-items{
+    width:6.4rem;
+    height:0.7rem;
+    display: flex;
+    align-items: center;
+    font-size:0.26rem;
+    color: #555;
+}
+.items-dif{
+    width:6.4rem;
+    height:0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size:0.26rem;
+    color: #555;
+}
+.connect-address{
+    margin-left:1.26rem;
+}
+/* 底部 */
+.order-main-footer{
+    width:6.8rem;
+    height:2.35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    border-radius:0.06rem;
+}
+.footer-items{
+    width:6.4rem;
+    height:0.3rem;
+    font-size:0.26rem;
+    color: #555;
+}

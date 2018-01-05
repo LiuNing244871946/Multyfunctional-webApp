@@ -1,0 +1,64 @@
+.html-title3 .over{
+	padding: 0 .2rem;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #00BDD6;
+	font-size: .3rem;
+}
+.avatar-con{
+	width: 100%;
+	top: .95rem;
+	bottom: 0;
+	position: absolute;
+	background: #000;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.img-con{
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+}
+#cover-box{
+	position: absolute;
+	z-index: 110;
+	border: 1px dashed #00BDD6;
+	overflow: hidden;
+}
+#cover-img{
+	position: absolute;
+}
+#discount-cover{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: .5;
+}
+#save-img{
+	z-index: 100;
+}
+#tip{
+	background: #fff;
+	position: absolute;
+	padding: .1rem .2rem;
+	z-index: 990;
+	border-radius: .06rem;
+	opacity: 0;
+}
+@keyframes tip{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+@-webkit-keyframes tip{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}

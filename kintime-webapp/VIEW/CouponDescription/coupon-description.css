@@ -1,0 +1,59 @@
+/* 头部样式 */
+.coupon-description-header{
+    width:100%;
+    height:0.96rem;
+    background: white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0px 0.01rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+.icon-back{
+    font-size:0.36rem;
+    color:#333;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+}
+.description-header-content{
+    font-size:0.36rem;
+    color:#333;
+}
+.coupon-description-main{
+    flex: 1;
+    width:100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding-top:0.22rem;
+}
+.description-list{
+    width:6.8rem;
+    height:1.54rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top:0.2rem;
+    background: white;
+    border-radius: 0.06rem;
+    box-shadow: 0px 0.03rem 0.1rem 0px
+    rgba(0, 0, 0, 0.1);
+    margin-bottom:0.22rem;
+}
+.question{
+    width:6rem;
+    height:0.3rem;
+    font-size: 0.26rem;
+    color: #333;
+    margin-bottom:0.1rem;
+}
+.question-jieshi{
+    width:6.0rem;
+    height:0.5rem;
+    font-size: 0.2rem;
+    color: #999;
+}

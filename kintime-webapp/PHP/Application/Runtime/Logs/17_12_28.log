@@ -1,0 +1,685 @@
+[ 2017-12-28T09:24:29+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002684s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002774s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2017-12-28T09:24:31+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.003319s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.000985s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2017-12-28T09:24:34+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002404s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001213s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003170s ]
+
+[ 2017-12-28T09:28:44+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/dengl
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002953s ]
+SQL: SELECT * FROM `users` WHERE ( name = '8618835112733' or phone = '8618835112733'  ) LIMIT 1   [ RunTime:0.001397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-12-28T09:28:45+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.002283s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2017-12-28T09:28:45+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.004099s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002754s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.002657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002140s ]
+
+[ 2017-12-28T09:28:45+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001603s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.002806s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.002063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003464s ]
+
+[ 2017-12-28T09:28:45+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/me
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002712s ]
+SQL: SELECT * FROM `users` WHERE ( name=31219482 ) LIMIT 1   [ RunTime:0.001561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003202s ]
+
+[ 2017-12-28T09:30:26+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.003123s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-12-28T09:30:26+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.002440s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2017-12-28T09:30:26+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002706s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002604s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002015s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.002247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-12-28T09:30:39+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002980s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002045s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-12-28T09:30:39+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.001863s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-12-28T09:30:39+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001913s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-12-28T09:32:07+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002589s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001585s ]
+SQL: SELECT * FROM `users` WHERE ( name=31219482 ) LIMIT 1   [ RunTime:0.001228s ]
+SQL: UPDATE `users` SET `headpic`='./../../static/Img/hd_1514424727727.jpg' WHERE ( name=31219482 ) [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002133s ]
+
+[ 2017-12-28T09:32:09+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001889s ]
+SQL: SELECT * FROM `users` WHERE ( name=31219482 ) LIMIT 1   [ RunTime:0.001182s ]
+SQL: UPDATE `users` SET `headpic`='./../../static/Img/hd_1514424729529.jpg' WHERE ( name=31219482 ) [ RunTime:0.001452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2017-12-28T09:35:24+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002642s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001150s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2017-12-28T09:35:24+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001547s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-12-28T09:35:24+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.001587s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-12-28T09:35:42+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001040s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-12-28T09:35:42+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001570s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.000855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-12-28T09:35:42+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.001667s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2017-12-28T09:38:35+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001493s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-12-28T09:38:35+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.000855s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2017-12-28T09:38:35+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.001539s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-12-28T09:38:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.002212s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-12-28T09:38:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001907s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-12-28T09:38:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.002214s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-12-28T09:40:05+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.002408s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-12-28T09:40:05+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.002459s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002280s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001897s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2017-12-28T09:40:05+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.002042s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-12-28T09:56:51+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.001491s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2017-12-28T09:56:52+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001608s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2017-12-28T09:56:52+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001710s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2017-12-28T10:09:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.001912s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.001153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-12-28T10:09:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.001556s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2017-12-28T10:09:41+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.000927s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-12-28T10:10:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/tehui
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `tehui` [ RunTime:0.002149s ]
+SQL: SELECT * FROM `tehui` WHERE ( state=1 )  [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-12-28T10:10:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/typejz
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `m_shop` [ RunTime:0.003040s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001880s ]
+SQL: SHOW COLUMNS FROM `g_shop` [ RunTime:0.001791s ]
+SQL: (select id,stypeid,headpic,name,sming,price,ping,xl from shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,ping,gogo,xl from m_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6) union (select id,stypeid,headpic,name,sming,price,ping,xl from g_shop where address LIKE '%Âåó‰∫¨%' and state=1 limit 0,6 ) [ RunTime:0.001868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-12-28T10:10:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/bwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `bwc` [ RunTime:0.002087s ]
+SQL: SELECT * FROM `bwc` LIMIT 1   [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-12-28T10:10:18+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001967s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001151s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2017-12-28T10:10:57+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002496s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002428s ]
+SQL: SELECT * FROM `users` WHERE ( name=31219482 ) LIMIT 1   [ RunTime:0.001089s ]
+SQL: UPDATE `users` SET `headpic`='./../../static/Img/hd_1514427057852.jpg' WHERE ( name=31219482 ) [ RunTime:0.001579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2017-12-28T10:11:18+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002445s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001237s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2017-12-28T12:27:34+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.004981s ]
+SQL: SELECT * FROM `users` WHERE ( name=31219482 ) LIMIT 1   [ RunTime:0.001879s ]
+SQL: UPDATE `users` SET `headpic`='./../../static/Img/hd_1514435254302.jpg' WHERE ( name=31219482 ) [ RunTime:0.002121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-12-28T13:04:27+08:00 ] 192.168.1.103 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002617s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001422s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-12-28T13:04:28+08:00 ] 192.168.1.103 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.002045s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001163s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-12-28T13:52:41+08:00 ] 192.168.1.101 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002168s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.003126s ]
+SQL: SELECT * FROM `users` WHERE ( name=31219482 ) LIMIT 1   [ RunTime:0.001365s ]
+SQL: UPDATE `users` SET `headpic`='./../../static/Img/hd_1514440361764.jpg' WHERE ( name=31219482 ) [ RunTime:0.001335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2017-12-28T16:28:57+08:00 ] 192.168.1.108 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.003319s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001084s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2017-12-28T16:29:01+08:00 ] 192.168.1.108 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001681s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.000474s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-12-28T16:29:02+08:00 ] 192.168.1.108 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001639s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.000997s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2017-12-28T16:29:06+08:00 ] 192.168.1.108 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001032s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-12-28T16:29:11+08:00 ] 192.168.1.108 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001604s ]
+NOTIC: [8] Undefined index: id D:\wamp64\www\kintime-webapp\PHP\Application\Home\Controller\FoodsController.class.php Á¨¨ 796 Ë°å.
+SQL: SELECT * FROM `users` WHERE ( name= ) LIMIT 1   [ RunTime:0.001020s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQLËØ≠Âè• ] : SELECT * FROM `users` WHERE ( name= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-12-28T19:06:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect(): ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ”∑ÔøΩÔøΩÔøΩ“ªÔøΩÔøΩ ±ÔøΩÔøΩÔøΩ√ªÔøΩÔøΩÔøΩ»∑ÔøΩ∏¥ªÔøΩ”µÔøΩÔøΩÔøΩÔøΩ√ªÔøΩ–∑ÔøΩ”¶ÔøΩÔøΩÔøΩÔøΩÔøΩ”≥ÔøΩÔøΩÔøΩ ßÔøΩ‹°ÔøΩ
+ D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+
+
+[ 2017-12-28T19:06:23+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect(): ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ”∑ÔøΩÔøΩÔøΩ“ªÔøΩÔøΩ ±ÔøΩÔøΩÔøΩ√ªÔøΩÔøΩÔøΩ»∑ÔøΩ∏¥ªÔøΩ”µÔøΩÔøΩÔøΩÔøΩ√ªÔøΩ–∑ÔøΩ”¶ÔøΩÔøΩÔøΩÔøΩÔøΩ”≥ÔøΩÔøΩÔøΩ ßÔøΩ‹°ÔøΩ
+ D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+
+
+[ 2017-12-28T19:06:44+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect(): ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ”∑ÔøΩÔøΩÔøΩ“ªÔøΩÔøΩ ±ÔøΩÔøΩÔøΩ√ªÔøΩÔøΩÔøΩ»∑ÔøΩ∏¥ªÔøΩ”µÔøΩÔøΩÔøΩÔøΩ√ªÔøΩ–∑ÔøΩ”¶ÔøΩÔøΩÔøΩÔøΩÔøΩ”≥ÔøΩÔøΩÔøΩ ßÔøΩ‹°ÔøΩ
+ D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+
+
+[ 2017-12-28T19:08:58+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect(): ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ”∑ÔøΩÔøΩÔøΩ“ªÔøΩÔøΩ ±ÔøΩÔøΩÔøΩ√ªÔøΩÔøΩÔøΩ»∑ÔøΩ∏¥ªÔøΩ”µÔøΩÔøΩÔøΩÔøΩ√ªÔøΩ–∑ÔøΩ”¶ÔøΩÔøΩÔøΩÔøΩÔøΩ”≥ÔøΩÔøΩÔøΩ ßÔøΩ‹°ÔøΩ
+ D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+
+
+[ 2017-12-28T19:09:19+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/foods/upic
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect(): ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ”∑ÔøΩÔøΩÔøΩ“ªÔøΩÔøΩ ±ÔøΩÔøΩÔøΩ√ªÔøΩÔøΩÔøΩ»∑ÔøΩ∏¥ªÔøΩ”µÔøΩÔøΩÔøΩÔøΩ√ªÔøΩ–∑ÔøΩ”¶ÔøΩÔøΩÔøΩÔøΩÔøΩ”≥ÔøΩÔøΩÔøΩ ßÔøΩ‹°ÔøΩ
+ D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+
+

@@ -1,0 +1,26 @@
+$(function(){
+	$('input').focus(function(){
+		if($(this).val()=="姓名"||$(this).val()=="手机号码/电话号码"||$(this).val()=="请输入详细位置"){
+			$(this).val("");
+		};
+	});
+	$('#name').blur(function(){
+		if($(this).val()==""){
+			$(this).val("姓名");
+		};
+	});
+	$('#phone').blur(function(){
+		if($(this).val()==""){
+			$(this).val("手机号码/电话号码");
+		};
+	});
+	$('#address').blur(function(){
+		if($(this).val()==""){
+			$(this).val("请输入详细位置");
+		};
+	});
+	$('.sex-con').on('tap',function(){
+		$('.sex-con').removeClass('select');
+		$(this).addClass('select');
+	});
+})

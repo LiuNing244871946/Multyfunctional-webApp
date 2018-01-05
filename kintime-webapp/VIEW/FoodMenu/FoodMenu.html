@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>电子菜单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="FoodMenu.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="FoodMenu.js"></script>
+	</head>
+
+	<body>
+		<!--头部搜索-->
+		<header class="top-navbar">
+			<div class="return-con">
+				<i class="iconfont icon-fanhui"></i>
+			</div>
+			<div class="search-box">
+				<a href="" class="nav-a">
+					<i class="iconfont icon-sousuo"></i>
+					<span class="search-tip">搜索店内商品</span>
+				</a>
+			</div>
+		</header>
+		<div class="main-con">
+			<div class="shop-info">
+				<div class="discount">
+
+				</div>
+
+				<div class="info-con">
+					<div class="img-con">
+						<img src="../../STATIC/img/头像.jpg" id="shop-avatar" />
+					</div>
+					<div class="text-con">
+						<span class="name-con">商家名称</span>
+						<span class="annou-con">商家公告内容</span>
+					</div>
+				</div>
+			</div>
+			<div class="shop-menu">
+				<div class="left-menu">
+					<ul>
+						<li class="left-menu-item active">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+						<li class="left-menu-item">热销</li>
+					</ul>
+				</div>
+				<div class="right-menu">
+					<div class="right-menu-item">
+						<div class="item-title">
+							<span class="text-con1">
+								<span class="text-con2">热销</span>
+							</span>
+						</div>
+						<ul>
+							<li class="dish-item dish-item-s">
+								<div class="dishimg-con">
+									<img src="../../STATIC/img/网站-06.jpg" class="dish-img" />
+								</div>
+								<div class="dish-info">
+									<span class="dish-title">菜品名称</span>
+									<span class="dish-tag">
+										<span class="tag-item suggest-item">店家力荐</span>
+									<span class="tag-item new-item">新品</span>
+									</span>
+									<span class="dish-remark">土豆，酸角，茄子</span>
+									<span class="dishsalenum-con">月售<span class="num">999</span></span>
+									<div class="price-btn-con">
+										<span class="price-con">
+											<i class="money">K</i><span class="money-num">5000</span><i class="money-text">起</i>
+										</span>
+										<span class="numbtn-con">
+											<span class="text-con">选规格</span>
+										<span class="num-con">0</span>
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="dish-item">
+								<div class="dishimg-con">
+									<img src="img/网站-06.jpg" class="dish-img" />
+								</div>
+								<div class="dish-info">
+									<span class="dish-title">菜品名称</span>
+									<span class="dish-tag">
+										<span class="tag-item suggest-item">店家力荐</span>
+									<span class="tag-item new-item">新品</span>
+									</span>
+									<span class="dish-remark">土豆，酸角，茄子</span>
+									<span class="dishsalenum-con">月售<span class="num">999</span></span>
+									<div class="price-btn-con">
+										<span class="price-con">
+											<i class="money">K</i><span class="money-num">5000</span>
+										</span>
+										<span class="numbtn-con">
+											<span class="less-btn">-</span>
+										<span class="num-con">0</span>
+										<span class="add-btn">+</span>
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="right-menu-item">
+						<div class="item-title">
+							<span class="text-con1">
+								<span class="text-con2">热销</span>
+							</span>
+						</div>
+						<ul>
+							<li class="dish-item">
+								<div class="dishimg-con">
+									<img src="img/网站-06.jpg" class="dish-img" />
+								</div>
+								<div class="dish-info">
+									<span class="dish-title">菜品名称</span>
+									<span class="dish-tag">
+										<span class="tag-item suggest-item">店家力荐</span>
+									<span class="tag-item new-item">新品</span>
+									</span>
+									<span class="dish-remark">土豆，酸角，茄子</span>
+									<span class="dishsalenum-con">月售<span class="num">999</span></span>
+									<div class="price-btn-con">
+										<span class="price-con">
+											<i class="money">K</i><span class="money-num">5000</span>
+										</span>
+										<span class="numbtn-con">
+											<span class="less-btn">-</span>
+										<span class="num-con">0</span>
+										<span class="add-btn">+</span>
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="dish-item">
+								<div class="dishimg-con">
+									<img src="img/网站-06.jpg" class="dish-img" />
+								</div>
+								<div class="dish-info">
+									<span class="dish-title">菜品名称</span>
+									<span class="dish-tag">
+										<span class="tag-item suggest-item">店家力荐</span>
+									<span class="tag-item new-item">新品</span>
+									</span>
+									<span class="dish-remark">土豆，酸角，茄子</span>
+									<span class="dishsalenum-con">月售<span class="num">999</span></span>
+									<div class="price-btn-con">
+										<span class="price-con">
+											<i class="money">K</i><span class="money-num">5000</span>
+										</span>
+										<span class="numbtn-con">
+											<span class="less-btn">-</span>
+										<span class="num-con">0</span>
+										<span class="add-btn">+</span>
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="right-menu-item">
+						<div class="item-title">
+							<span class="text-con1">
+								<span class="text-con2">热销</span>
+							</span>
+						</div>
+						<ul>
+							<li class="dish-item">
+								<div class="dishimg-con">
+									<img src="img/网站-06.jpg" class="dish-img" />
+								</div>
+								<div class="dish-info">
+									<span class="dish-title">菜品名称</span>
+									<span class="dish-tag">
+										<span class="tag-item suggest-item">店家力荐</span>
+									<span class="tag-item new-item">新品</span>
+									</span>
+									<span class="dish-remark">土豆，酸角，茄子</span>
+									<span class="dishsalenum-con">月售<span class="num">999</span></span>
+									<div class="price-btn-con">
+										<span class="price-con">
+											<i class="money">K</i><span class="money-num">5000</span>
+										</span>
+										<span class="numbtn-con">
+											<span class="less-btn">-</span>
+										<span class="num-con">0</span>
+										<span class="add-btn">+</span>
+										</span>
+									</div>
+								</div>
+							</li>
+							<li class="dish-item">
+								<div class="dishimg-con">
+									<img src="img/网站-06.jpg" class="dish-img" />
+								</div>
+								<div class="dish-info">
+									<span class="dish-title">菜品名称</span>
+									<span class="dish-tag">
+										<span class="tag-item suggest-item">店家力荐</span>
+									<span class="tag-item new-item">新品</span>
+									</span>
+									<span class="dish-remark">土豆，酸角，茄子</span>
+									<span class="dishsalenum-con">月售<span class="num">999</span></span>
+									<div class="price-btn-con">
+										<span class="price-con">
+											<i class="money">K</i><span class="money-num">5000</span>
+										</span>
+										<span class="numbtn-con">
+											<span class="less-btn">-</span>
+										<span class="num-con">0</span>
+										<span class="add-btn">+</span>
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="menu-footer">
+			<span class="menu-order">
+				<span class="order-img">
+					<img src="../../STATIC/img/home9.png"/>
+					<span class="order-num">0</span>
+			</span>
+			<span class="order-money">
+					<i class="money">K</i><span class="money-num">999999</span>
+			</span>
+			</span>
+			<button class="order-btn">去下单</button>
+		</footer>
+		<div id="discount-con">
+			<div class="discount-item" id="norm-con">
+				<div class="norm-title">菜品名称</div>
+				<div class="norm-list">
+					<div class="norm-item">
+						<div class="normitem-title">温度</div>
+						<div class="item-option">
+							<span class="option-item selected">超级烫</span>
+							<span class="option-item">多冰</span>
+							<span class="option-item">少冰</span>
+						</div>
+					</div>
+					<div class="norm-item">
+						<div class="normitem-title">温度</div>
+						<div class="item-option">
+							<span class="option-item selected">超级烫</span>
+							<span class="option-item">多冰</span>
+							<span class="option-item">少冰</span>
+						</div>
+					</div>
+					<div class="norm-item">
+						<div class="normitem-title">温度</div>
+						<div class="item-option">
+							<span class="option-item selected">超级烫</span>
+							<span class="option-item">多冰</span>
+							<span class="option-item">少冰</span>
+						</div>
+					</div>
+				</div>
+				<div class="normprice-con">
+					<span class="norm-price">
+						<i class="money">K</i>
+						<span class="money-text">5000</span>
+					</span>
+					<button class="joincart" onclick="addcart()">加入购物车</button>
+				</div>
+			</div>
+			<div class="discount-item" id="order-list	">
+				<div class="orderlist-title">
+					<span class="left-title">已点</span>
+					<span id="clear-btn">
+						<i class="iconfont icon-shurukuangqingkong"></i>
+						<span class="btn-text">清空所有</span>
+					</span>
+				</div>
+				<ul>
+					<li class="orderlist-item">
+						<span class="dish-name">菜品名称</span>
+						<span class="price-num">
+							<span class="dish-price">
+								<i class="money">K</i><span class="money-num">5000</span>
+						</span>
+						<span class="dish-num">
+								<span class="less-num">-</span>
+						<span class="num-con">1</span>
+						<span class="add-num">+</span>
+						</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

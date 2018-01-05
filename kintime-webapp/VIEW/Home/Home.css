@@ -1,0 +1,262 @@
+footer{
+	width: 100%;
+	height: .96rem;
+	background: #fff;
+	box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.06);
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	font-size: .22rem;
+	color: #666666;
+	display: flex;
+	display: -webkit-flex;
+}
+#home-btn,#nearby-btn,#me-btn,#order-btn{
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer .img-con{
+	width: .5rem;
+	height: .5rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .iconfont{
+	color: #333;
+	font-size: .5rem;
+}
+#order-btn.selected,#home-btn.selected,#me-btn.selected,#nearby-btn.selected{
+	color: #6ABDD5;
+}
+#order-btn.selected .iconfont,#home-btn.selected .iconfont,#me-btn.selected .iconfont,#nearby-btn.selected .iconfont{
+	color: #6ABDD5;
+}
+/*内容*/
+#page-swiper{
+	width: 100%;
+}
+.swiper-slide{
+	height: 6rem;
+}
+.swiper-slide-active{
+	height: auto;
+}
+/*主页*/
+.home-con{
+	width: 100%;
+	margin-top: .95rem;
+}
+/*轮播*/
+#home-swiper{
+	width: 100%;
+	height: 2.4rem;
+}
+#home-swiper .swiper-slide{
+	background-image: url(../../STATIC/img/网站-04.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.swiper-pagination-bullet-active{
+	background: #6abdd5;
+}
+/*分类*/
+#home-sort{
+	width: 100%;
+	height: 4.4rem;
+	background: #fff;
+	padding: .47rem 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sort-con{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.sort-item{
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.sort-img{
+	width: 1.17rem;
+	height: 1.17rem;
+	background: #FDC6C5;
+	border-radius: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.sort-img img{
+	width: 100%;
+	height: 100%;
+}
+.sort-text{
+	font-size: .26rem;
+}
+/*霸王餐*/
+.king-meal{
+	width: 100%;
+	height: 3.18rem;
+}
+.king-meal-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.king-meal-img {
+	width: 100%;
+	height: 100%;
+}
+
+.king-meal-titlecon {
+	width: 100%;
+	height: .64rem;
+	padding-right: .26rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(rgba(0, 190, 215, .6), rgba(0, 190, 215, .1));
+	background: -webkit-linear-gradient(rgba(0, 190, 215, .6), rgba(0, 190, 215, .1));
+	background: -o-linear-gradient(rgba(0, 190, 215, .6), rgba(0, 190, 215, .1));
+	background: -moz-linear-gradient(rgba(0, 190, 215, .6), rgba(0, 190, 215, .1));
+	display: flex;
+	display: -webkit-flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.king-meal-titlename,
+.king-meal-titletime {
+	height: .27rem;
+	line-height: 1;
+	text-align: right;
+	color: white;
+	font-size: .27rem;
+}
+
+.countdown-d,
+.countdown-h,
+.countdown-m,
+.countdown-s {
+	display: inline-block;
+}
+
+.king-meal-titlebac {
+	position: absolute;
+	top: -.02rem;
+	left: 0;
+	padding-left: 3%;
+	color: #fff;
+	border-top: .64rem solid #00BED7;
+	border-left: 1.45rem solid #00BED7;
+	border-right: .56rem solid transparent;
+}
+
+.king-meal-title {
+	display: inline-block;
+	height: .66rem;
+	line-height: .66rem;
+	position: absolute;
+	top: -.02rem;
+	left: 0;
+	padding-left: 3%;
+	color: #fff;
+	font-size: .36rem;
+}
+
+
+/*特惠美食*/
+#special-food{
+	width: 100%;
+	height: 5rem;
+	background: #fff;
+	padding: .42rem .27rem;
+}
+#special-food .title{
+	height: .68rem;
+	width: 100%;
+	line-height: .68rem;
+	color: #6abdd5;
+	font-size: .36rem;
+	margin: 0;
+}
+#special-swiper{
+	width: 100%;
+	height: 3.5rem;
+}
+#special-swiper .swiper-wrapper{
+	height: 3.2rem;
+}
+#special-swiper .swiper-pagination{
+	bottom: 0;
+}
+#special-swiper .swiper-slide{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #6abdd5;
+}
+#special-swiper .swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+#special-swiper .time{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 2rem;
+	margin-left: 3.45rem;
+	font-size: .2rem;
+}
+/*猜你喜欢*/
+
+.fav-con {
+	background-color: #E7E6E7;
+	padding-bottom: 1rem;
+}
+
+.fav-title {
+	height: .58rem;
+	line-height: .58rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.title-ctn {
+	position: relative;
+	font-size: .15rem;
+	color: #B8B3B7;
+	display: block;
+}
+
+.title-ctn:before,
+.title-ctn:after {
+	content: '';
+	position: absolute;
+	width: 3.12rem;
+	height: 1px;
+	background-color: #B8B3B7;
+	top: .29rem;
+}
+
+.title-ctn:before {
+	left: 0;
+}
+
+.title-ctn:after {
+	right: 0;
+}

@@ -1,0 +1,60 @@
+body{
+	background: #F3F4F5;
+}
+header{
+	width: 100%;
+	padding: 1rem 0;
+	text-align: center;
+	background: #00BED7;
+	font-size: .55rem;
+	color: #fff;
+}
+header .img,.card-item .img{
+	display: block;
+	width: 100%;
+}
+header .img .iconfont{
+	font-size: 1rem;
+}
+.card-item .img .iconfont{
+	font-size: .8rem;
+}
+header .title,.card-item .title{
+	display: block;
+	width: 100%;
+}
+/*银行卡分类*/
+.card-con{
+	width: 100%;
+	padding: .8rem .4rem;
+	color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card-con .card-item{
+	width: 49.5%;
+	text-align: center;
+	padding: .2rem 0;
+	margin-bottom: .1rem;
+}
+.lao{
+	background: #2E3D63;
+}
+.cn{
+	background: #F24841;
+}
+.ali{
+	background: #0099DA;
+}
+.face{
+	background: #406298;
+}
+/*提示*/
+.tips-con{
+	width: 100%;
+	text-align: center;
+	padding: .8rem 0;
+	color: #999;
+}

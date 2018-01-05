@@ -1,0 +1,31 @@
+
+/*主体*/
+.main-con{
+	padding: 30% 0;
+}
+.tip-con{
+	width: 100%;
+	padding:  0 .2rem;
+}
+.tip{
+	text-align: center;
+	height: .5rem;
+	line-height: .5rem;
+	width: 100%;
+}
+.btn-con{
+	padding: 0 .2rem;
+	width: 100%;
+}
+.btn-con button{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	background: #00BED7;
+	border: none;
+	border-radius: 5px;
+	margin-top: .5rem;
+	color: #fff;
+	font-size: .3rem;
+	letter-spacing: .2rem;
+}

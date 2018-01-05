@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外卖主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="TakeawayHome.css"/>
+		<link rel="stylesheet" href="../Public/food-shop.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="TakeawayHome.js"></script>
+		<script type="text/javascript" src="../Public/echo.min.js" ></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
+		<script type="text/javascript" src="../Public/data.js" ></script>
+		<script type="text/javascript" src="../Public/Filter.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="html-title2">
+			<a class="city-con" href="address-select.html">
+				<span class="city-text">位置</span>
+				<i class="iconfont icon-jiantouxia"></i>
+			</a>
+			<a class="input-con">
+				<i class="iconfont icon-sousuo"></i>
+				<span class="search-text">4564565456564</span>
+			</a>
+		</header>
+
+		<div class="main-con">
+			
+			<!--分类-->
+			<div id="home-sort">
+				<div class="sort-con">
+					<span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span><span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span>
+					<span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span>
+					<span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span>
+				</div>
+				<div class="sort-con">
+					<span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span><span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span>
+					<span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span>
+					<span class="sort-item">
+									<span class="sort-img">
+										<img src="../../STATIC/img/home9.png" />
+									</span>
+					<span class="sort-text">美食</span>
+					</span>
+				</div>
+			</div>
+
+			<!--优惠专区-->
+			<div class="offer-con">
+				<div class="con-title">
+					<span class="title-con">优惠专区</span>
+				</div>
+				<div class="offer-main">
+					<a href="" class="offer-link">
+						<img src="asf" title="满减" class="offer1"/>
+					</a>
+					<a href="" class="offer-link2">
+						<img src="" title="特价" class="offer2"/>
+					</a>
+					<a href="" class="offer-link3">
+						<img src="" title="免费配送" class="offer2"/>
+					</a>
+				</div>
+			</div>
+
+
+			<!--猜你喜欢-->
+			<div class="fav-con">
+				<div class="con-title">
+					<span class="title-con">优惠专区</span>
+				</div>
+				<div class="fav-title">
+					<div class="fav-title-item">
+						<div class="item-text">
+							<span>全部</span>
+							<i class="iconfont icon-jiaobiao"></i>
+						</div>
+					</div>
+					<div class="fav-title-item">
+						<div class="item-text">
+							<span>全城</span>
+							<i class="iconfont icon-jiaobiao"></i>
+						</div>
+					</div>
+					<div class="fav-title-item">
+						<div class="item-text">
+							<span>智能排序</span>
+							<i class="iconfont icon-jiaobiao"></i>
+						</div>
+					</div>
+					<div class="fav-title-item">
+						<div class="item-text">
+							<span>筛选</span>
+							<i class="iconfont icon-jiaobiao"></i>
+						</div>
+					</div>
+				</div>
+				<div class="fav-discon">
+					<div class="fav-discon-see">
+						<div class="category-wrapper">
+							<a href="javascript:;" class="active">
+								<span>全部</span>
+								<span class="quantity">24475</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>甜点饮品</span>
+								<span class="quantity">1533</span>
+							</a>
+						</div>
+						<div class="biz-wrapper">
+							<a href="javascript:;" class="active">
+								<span>全部</span>
+								<span class="quantity">24475</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>五华区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>盘龙区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>西山区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>官渡区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>东川区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>安宁区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>静宁县</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>富民县</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>宜良县</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>嵩明县</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>石林彝族自治区</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>禄劝彝族苗族自治县</span>
+								<span class="quantity">1533</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>近郊</span>
+								<span class="quantity">1533</span>
+							</a>
+						</div>
+						<div class="sort-wrapper">
+							<a href="javascript:;" class="active">
+								<span>智能排序</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>离我最近</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>好评优先</span>
+							</a>
+							<a href="javascript:;" class="">
+								<span>人气最高</span>
+							</a>
+						</div>
+						<div class="csp-wrapper">
+							<ul class="csp-content">
+								<li>
+									<span>只看免预约</span>
+									<div class="switch-cont input-checkbox">
+										<i class="switch icon icon-checkbox"></i>
+										<label></label>
+									</div>
+								</li>
+								<li>
+									<span>节假日可用</span>
+									<div class="switch-cont input-checkbox">
+										<i class="switch icon icon-checkbox"></i>
+										<label></label>
+									</div>
+								</li>
+								<li style="display: block;">
+									<div class="meal-number">用餐时段</div>
+									<div class="meal-number-option">
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option selected">不限</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">早餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">午餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">下午茶</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">晚餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">夜宵</a>
+										</div>
+									</div>
+								</li>
+								<li style="display: block;">
+									<div class="meal-number">餐厅服务</div>
+									<div class="meal-number-option">
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option selected">不限</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">买单</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">在线点菜</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">外卖送餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">预约</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">在线排队</a>
+										</div>
+									</div>
+								</li>
+								<li style="display: block;">
+									<div class="meal-number">用餐人数</div>
+									<div class="meal-number-option">
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option selected">不限</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">单人餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">双人餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">3~4人餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">5~10人餐</a>
+										</div>
+										<div class="option-wrapper">
+											<a href="javascript:;" class="option">10人以上</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="operate">
+								<a href="javascript:;" class="reset-button">重置</a>
+								<a href="javascript:;" class="save-button">完成</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fav-com-con"></div>
+			</div>
+		</div>
+	</body>
+</html>

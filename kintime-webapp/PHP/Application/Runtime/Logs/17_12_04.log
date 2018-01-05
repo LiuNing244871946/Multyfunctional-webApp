@@ -1,0 +1,178 @@
+[ 2017-12-04T08:59:02+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:03+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:05+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:06+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:08+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:10+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025108s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:19+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:20+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:21+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:22+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:23+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:24+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:25+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T08:59:26+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T09:00:45+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect(): ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¾ï¿½ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½
+ D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-12-04T09:01:06+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+SQL: SHOW COLUMNS FROM `gluser` [ RunTime:0.014637s ]
+SQL: SELECT * FROM `gluser` WHERE ( name= 'admin' and pass = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.003771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-12-04T10:42:20+08:00 ] ::1 /kintime/index.php/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+SQL: SHOW COLUMNS FROM `gluser` [ RunTime:0.001660s ]
+SQL: SELECT * FROM `gluser` WHERE ( name= 'admin' and pass = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.001228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-12-04T11:43:01+08:00 ] ::1 /kintime/index.php/home/tcan
+ERR: æ— æ³•åŠ è½½æŽ§åˆ¶å™¨:Tcan
+
+[ 2017-12-04T11:43:10+08:00 ] ::1 /kintime/home/tcan
+ERR: æ— æ³•åŠ è½½æŽ§åˆ¶å™¨:Tcan
+

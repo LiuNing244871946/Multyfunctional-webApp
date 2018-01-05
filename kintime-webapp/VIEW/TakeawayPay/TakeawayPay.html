@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外卖支付</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="TakeawayPay.css"/>
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="TakeawayPay.js"></script>
+	</head>
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="title-text">提交订单</span>
+		</header>
+		<div class="userinfo-con">
+			<div class="address-con">
+				<i class="iconfont icon-dizhiguanli"></i>
+				<div class="address-info-con">
+					<span class="bare-con">请点击前往填写地址~</span>
+					<div class="full-con">
+						<div class="address-text-con">江干区三堡产业大厦A座1601室江干区三堡产业大厦A座1601室</div>
+						<div class="address-text-con">
+							<span class="name-con">张先生</span>
+							<span class="phone-con">18957556486</span>
+						</div>
+					</div>
+				</div>
+				<i class="iconfont icon-jiantouyou"></i>
+			</div>
+			<div class="time-con">
+				<i class="iconfont icon-time"></i>
+				<div class="time-text">
+					立即送出<span class="time-text-con">(约12:00送达)</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="order-info">
+			<div class="info-con">
+				<div class="shop-name">商家名称</div>
+				<table class="shop-table">
+					<thead>
+						<tr>
+							<th class="name">名称</th>
+							<th class="num">数量</th>
+							<th class="price">价格</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="name">菜品</td>
+							<td class="num">x2</td>
+							<td class="price">
+								<i class="money">￥</i><span class="money-num">5000</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="name">菜品</td>
+							<td class="num">x2</td>
+							<td class="price">
+								<i class="money">￥</i><span class="money-num">5000</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="name">菜品</td>
+							<td class="num">x2</td>
+							<td class="price">
+								<i class="money">￥</i><span class="money-num">5000</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="name">餐盒</td>
+							<td class="num">x2</td>
+							<td class="price">
+								<i class="money">￥</i><span class="money-num">5000</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="del-money">
+					<span class="title">配送费</span>
+					<span class="money-con">
+						<i class="money">￥</i><span class="money-num">1500</span>
+					</span>
+				</div>
+				<div class="full-reduc">
+					<span class="title">满减</span>
+					<span class="money-con">
+						-<i class="money">￥</i><span class="money-num">1500</span>
+					</span>
+				</div>
+				<div class="red-enve">
+					<span class="title">红包</span>
+					<i class="iconfont icon-jiantouyou"></i>
+					<span class="red-tip">2个红包可用</span>
+					<span class="money-con">
+						-<i class="money">￥</i><span class="money-num">500</span>
+					</span>
+				</div>
+				<div class="total-con">
+					<span class="tip">优惠说明</span>
+					<span class="total-price">
+						总计<i class="money">￥</i><span class="money-num">2000</span>
+					</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="discon">
+			<div class="time-select">
+				<div class="title">配送时间</div>
+				<div class="sub-title">
+					该店铺可配送时为<span class="start-time">8:00</span>~<span class="stop-time">22:00</span>
+				</div>
+				<div class="warn-time">
+					所选时间无法配送，请注意店铺配送时间
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="pay-money-con">
+				<span class="must-pay-con">
+					<i class="money">￥</i><span class="money-num">99999</span>
+				</span>
+				<span class="discount-con">
+					已优惠<i class="money">￥</i><span class="money-num">90000</span>
+				</span>
+			</div>
+			<div class="pay-btn-con">
+				提交订单
+			</div>
+		</footer>
+	</body>
+</html>

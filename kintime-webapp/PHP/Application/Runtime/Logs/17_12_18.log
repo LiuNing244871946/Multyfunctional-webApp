@@ -1,0 +1,9 @@
+[ 2017-12-18T14:19:38+08:00 ] ::1 /kintime-webapp/kintime/home/foods/tjian
+ERR: 非法操作:tjian
+
+[ 2017-12-18T15:14:16+08:00 ] ::1 /kintime-webapp/kintime/home/foods/tjian
+ERR: 非法操作:tjian
+
+[ 2017-12-18T17:30:27+08:00 ] ::1 /kintime-webapp/kintime/home/foods/tjiao
+ERR: 非法数据对象！:[cai=>3]
+

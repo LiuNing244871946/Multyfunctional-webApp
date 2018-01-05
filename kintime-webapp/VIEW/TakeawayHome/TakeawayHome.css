@@ -1,0 +1,324 @@
+/*分类*/
+#home-sort{
+	width: 100%;
+	height: 4.4rem;
+	background: #fff;
+	padding: .47rem 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sort-con{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.sort-item{
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.sort-img{
+	width: 1.17rem;
+	height: 1.17rem;
+	background: #FDC6C5;
+	border-radius: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.sort-img img{
+	width: 100%;
+	height: 100%;
+}
+.sort-text{
+	font-size: .26rem;
+}
+/*优惠专区*/
+.offer-con{
+	background-color: #fff;
+	padding: .25rem;
+	border-top: 0.1rem solid #E7E6E7;
+}
+.con-title{
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: .25rem;
+}
+.con-title .title-con{
+	position: relative;
+	font-size: .3rem;
+	display: block;
+}
+.title-con:before,.title-con:after{
+	content:'';
+	position: absolute;
+	width: 20%;
+	height: 1px;
+	background-color: #000000;
+	top: 50%;
+}
+.title-con:before{
+	left: 18%;
+}
+.title-con:after{
+	right: 18%;
+}
+.offer-main{
+	overflow: hidden;
+}
+.offer-link{
+	display: block;
+	background-color: #E7E6E7;
+	width: 100%;
+	height: 2rem;
+}
+.offer-link2{
+	display: block;
+	background-color: #E7E6E7;
+	width: 48%;
+	height: 2rem;
+	margin-top: .2rem;
+	float: left;
+}
+.offer-link3{
+	display: block;
+	background-color: #E7E6E7;
+	width: 48%;
+	height: 2rem;
+	margin-top: .2rem;
+	float: right;
+}
+
+/*猜你喜欢*/
+
+.fav-con {
+	background-color: #fff;
+	padding: .25rem 0;
+	border-top: 0.1rem solid #E7E6E7;
+}
+
+.fav-title {
+	height: .8rem;
+	text-align: center;
+	border-top: 0.1rem solid #E7E6E7;
+	padding: 0 .2rem;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+}
+.fav-title.fixed{
+	position: fixed;
+	top: 1rem;
+	z-index: 30;
+	width: 100%;
+	border-bottom: 1px solid #B8B3B7;
+}
+.fav-title-item{
+	flex-grow: 1;
+	height: 100%;
+	font-size: .3rem;
+}
+.fav-title-item.active{
+	color: #00BED7;
+}
+.fav-title-item .item-text{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fav-title-item .item-text span{
+	flex-grow: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+.fav-title-item .item-text .icon-jiaobiao{
+	font-size: .2rem;
+	float: right;
+}
+.fav-con .fav-discon{
+	position: fixed;
+	top: 1.8rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,.7);
+	z-index: 20;
+	display: none;
+	font-size: .3rem;
+}
+.fav-con .fav-discon .fav-discon-see{
+	width: 100%;
+	background: #fff;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	max-height: 9rem;
+	
+}
+.category-wrapper.active,.biz-wrapper.active,.sort-wrapper.active,.csp-wrapper.active{
+	display: block;
+}
+.category-wrapper,.biz-wrapper,.sort-wrapper,.csp-wrapper{
+	display: none;
+}
+.category-wrapper a,.biz-wrapper a,.sort-wrapper a{
+	display: block;
+	border-bottom: 1px solid #ddd8cd;
+	height: .87rem;
+	line-height: .87rem;
+	position: relative;
+	background-color: transparent;
+}
+.category-wrapper a span,.biz-wrapper a span,.sort-wrapper a span{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: left;
+	margin: 0 .8rem;
+}
+.category-wrapper a .quantity,.biz-wrapper a .quantity{
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	margin-right: .3rem;
+}
+.category-wrapper a.active,.biz-wrapper a.active,.sort-wrapper a.active{
+	color: #00BED7;
+	background: #f2f2f2;
+}
+.category-wrapper a.active:before,.biz-wrapper a.active:before,.sort-wrapper a.active:before{
+	position: absolute;
+	left: .3rem;
+	top: .3rem;
+	content: '';
+	height: .15rem;
+	width: .2rem;
+	border: 2px solid #00BED7;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+.csp-wrapper .csp-content{
+	height: 7rem;
+	overflow: auto;
+	margin: 0;
+}
+.csp-wrapper .csp-content li{
+	position: relative;
+	padding: 0;
+	border-bottom: 1px solid #DDD8CE;
+	line-height: .84rem;
+	text-align: left;
+}
+.csp-wrapper .csp-content li span{
+	margin-left: .3rem;
+}
+.csp-wrapper .csp-content li .input-checkbox{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: .12rem .2rem;
+	line-height: 1;
+}
+.switch-cont label{
+	position: relative;
+	display: block;
+	border-radius: .24rem;
+	width: 1rem;
+	height: .52rem;
+	cursor: pointer;
+}
+.switch-cont label::before{
+	content: '';
+	line-height: .52rem;
+	background: #ddd;
+	display: block;
+	border-radius: 1rem;
+	height: .52rem;
+	transition: all .3s ease;
+}
+.switch-cont label::after{
+	content: '';
+	position: absolute;
+	top: .04rem;
+	left:.04rem;
+	width: .44rem;
+	height: .44rem;
+	background: #fff;
+	border-radius: 50%;
+	transition: all .3s ease;
+}
+.switch-cont .switch.icon-checkbox-select~label:before{
+	background: #00BED7;
+	content: '';
+	color: #fff;
+}
+.switch-cont .switch.icon-checkbox-select~label:after{
+	margin-left: .44rem;
+}
+.csp-wrapper .csp-content li .meal-number{
+	margin-left: .3rem;
+}
+.csp-wrapper .csp-content li .meal-number-option{
+	padding: 0 .3rem;
+	margin: .04rem 0 .3rem;
+	clear: both;
+}
+.csp-wrapper .csp-content li .meal-number-option .option-wrapper{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+}
+.meal-number-option .option-wrapper .option{
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid #bfbfbf;
+	line-height: .64rem;
+	color: #666;
+	text-align: center;
+	width: 94%;
+}
+.meal-number-option .option-wrapper .option.selected{
+	border: 1px solid #00BED7;
+	color: #00BED7;
+	background: #eafcfa;
+}
+.csp-wrapper .operate{
+	background: rgba(216,216,216,.3);
+	overflow: hidden;
+	height: .94rem;
+	line-height: normal;
+}
+.csp-wrapper .operate .reset-button{
+	text-align: center;
+	overflow: hidden;
+	margin: .18rem 0 0 .24rem;
+	padding: .1rem .36rem;
+	background: #fff;
+	border: 1px solid #bfbfbf;
+	border-radius: .08rem;
+	float: left;
+}
+.csp-wrapper .operate .save-button{
+	text-align: center;
+	overflow: hidden;
+	margin: .18rem .24rem 0 0;
+	padding: .1rem .36rem;
+	background: #00BED7;
+	border: 1px solid #00BED7;
+	border-radius: .08rem;
+	float: right;
+	color: #fff;
+}

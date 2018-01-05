@@ -1,0 +1,107 @@
+body{
+	background: #fff;
+}
+/*底部*/
+footer{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .3rem;
+	z-index: 990;
+	background: #6abdd5;
+	position: fixed;
+	bottom: 0;
+}
+footer .add-address{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: #6abdd5;
+	text-align: center;
+	font-size: .4rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: .2rem;
+}
+/*内容*/
+.main{
+	top: 1rem;
+	width: 100%;
+	position: relative;
+}
+.main .user-info-con{
+	width: 100%;
+	padding: .1rem .2rem;
+	border-bottom: 1px solid #B8B3B7;
+	display: flex;
+	display: -webkit-flex;
+}
+.main .title{
+	width: 25%;
+	height: .8rem;
+	font-weight: 700;
+	line-height: .8rem;
+}
+.user-info-con .name{
+	flex-direction: column;
+}
+.user-info-con .name,.address-con .address{
+	width: 75%;
+	line-height: .8rem;
+	display: flex;
+	display: -webkit-flex;
+}
+.name .name-con{
+	width: 100%;
+	height: .8rem;
+	border-bottom: 1px solid #B8B3B7;
+}
+#name,#phone{
+	border: none;
+	outline: none;
+	color: #B8B3B7;
+	width: 100%;
+	height: .4rem;
+}
+.name .sex{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	color: #B8B3B7;
+}
+.sex .sex-con{
+	padding: .1rem .2rem;
+	border: 1px solid #B8B3B7;
+	border-radius: 4px;
+}
+.sex .sex-con.select{
+	background: #6abdd5;
+	color: #fff;
+	border: none;
+}
+
+.main .phone,.main .address-con{
+	width: 100%;
+	border-bottom: 1px solid #B8B3B7;
+	padding: 0 .2rem;
+	display: flex;
+	display: -webkit-flex;
+}
+.phone .phone-con{
+	width: 75%;
+	height: .8rem;
+	line-height: .8rem;
+	float: right;
+}
+
+.address .address-text{
+	width: 90%;
+	height: .8rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.address .iconfont{
+	color: #B8B3B7;
+}

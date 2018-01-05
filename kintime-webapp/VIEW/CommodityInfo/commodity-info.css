@@ -1,0 +1,301 @@
+/* 头部样式 */
+.commodity-info-header{
+    width:100%;
+    height:0.96rem;
+    background: #363d46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.icon-back{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.32rem;
+    font-size:0.36rem;
+    color: white;
+}
+.tap-btn-box{
+    width: 2.74rem;
+    height: 0.52rem;
+    background: #2c3239;
+    border-radius: 0.26rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tap-btn-left{
+    width: 1.36rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.24rem;
+    background: #2c3239;
+    font-size: 0.26rem;
+    color: #f3f4f5;
+}
+.tap-btn-right{
+    width: 1.36rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.24rem;
+    background: #6abdd5;
+    font-size: 0.26rem;
+    color: #f3f4f5;
+}
+.delete-option{
+    position: absolute;
+    right: 0.3rem;
+    top: 0.33rem;
+    font-size: 0.26rem;
+    color: white;
+}
+/* 遮罩层部分 */
+#mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #000;
+    opacity: 0.4;
+    display:none;
+}
+.sure-box{
+    width: 98.6%;
+    height: 2.04rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin:0 auto;
+    bottom: 1.54rem;
+    background: #fff;
+    border-radius: 0.26rem;
+    z-index: 1000;
+    display: none;
+}
+.sure-message{
+    width: 100%;
+    height: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a0a0a0;
+    font-size: 0.26rem;
+    border-bottom: 0.04rem solid #f3f4f5;
+}
+.sure-option{
+    width: 100%;
+    height: 1.12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fb3d31;
+    font-size: 0.36rem;
+}
+.cancel-box{
+    width: 98.6%;
+    height: 1.14rem;
+    background: white;
+    border-radius: 0.26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    color: #027dff;
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0.2rem;
+    z-index: 1000;
+}
+/* 选择分类 */
+.sort-list-box{
+    width: 6.8rem;
+    min-height: 4.02rem;
+    background: white;
+    position: absolute;
+    margin:50% auto;
+    display: none;
+    z-index: 1000;
+    border-radius: 0.26rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.sort-list{
+    width: 100%;
+    height: 0.99rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0.42rem;
+    font-size: 0.3rem;
+    color: #999;
+    border-bottom:2px solid #f3f4f5;
+}
+.sort-list-box li:nth-last-child(1){
+    border: none;
+}
+/* 中间部分 */
+.commodity-main{
+    width:100%;
+    height: 100%;
+    flex: 1;
+    overflow: auto;
+}
+.commodity-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 5.96rem;
+    background: #fff;
+    margin-top:0.2rem;
+}
+.commodity-list-box{
+    width: 100%;
+    min-height: 7.44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.li-list{
+    width: 6.8rem;
+    height: 0.9rem;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 0.12rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+.commodity-img-box{
+    height: 1.32rem;
+    border: none;
+}
+.commodity-description-inp{
+    font-size: 0.3rem;
+    color: #333;
+}
+.standard-box{
+    min-height: 0.9rem;
+    border: none;
+    position: relative;
+}
+/* 标签 */
+.food-tag{
+    width: 1.24rem;
+    height: 0.54rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a3d4e6;
+    color: white;
+    border-radius: 0.06rem;
+    border: 1px solid #6abdd5;
+    font-size: 0.3rem;
+}
+.food{
+    position: absolute;
+    right: 0.12rem;
+    top: 0.2rem;
+}
+.food-things{
+    width: 1.84rem;
+    position: absolute;
+    right: 0.12rem;
+    top: 0.97rem;
+}
+/* 牛排标签 */
+.steak-tag{
+    width: 2.14rem;
+}
+.add-img-box{
+    width: 0.51rem;
+    height: 0.51rem;
+    background-image: url(../../STATIC/img/add-title.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0.12rem;
+    top: 1.8rem;
+}
+.add-img-btn{
+    top: 0.25rem;
+}
+/* input中placeholder字体大小和颜色 */
+input::-webkit-input-placeholder{
+    color: #999;
+    font-size: 0.3rem;
+}
+.commodity-name-inp{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: right;
+}
+.commodity-description-inp{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: right;
+}
+.commodity-price-inp{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: right;
+}
+.title-box{
+    font-size: 0.3rem;
+    color: #333;
+}
+.commodity-img-inp{
+    width: 1.01rem;
+    height: 1.01rem;
+    background-image: url(../../STATIC/img/commodity-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 底部 */
+.commodity-info-footer{
+    width: 100%;
+    height: 0.98rem;
+    background: #6abdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.36rem;
+}
+.choose-commodity-footer{
+    width: 100%;
+    height: 0.98rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cancel-btn{
+    width: 50%;
+    height: 0.98rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    color: #333;
+}
+.sure-btn{
+    width: 50%;
+    height: 0.98rem;
+    background: #6abdd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    color: white;
+}

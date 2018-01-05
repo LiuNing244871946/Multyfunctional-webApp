@@ -1,0 +1,66 @@
+.main-con{
+	position: relative;
+	width: 100%;
+	top: .95rem;
+}
+.city-history{
+	width: 100%;
+	padding: 0 .4rem .2rem .2rem;
+	background: #E7E7E8;
+	color: #8A8285;
+	border-bottom: 1px solid #B8B3B6;
+	font-size: .4rem;
+}
+.city-history .history-item{
+	width: 100%;
+	line-height: .8rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+.history-item .item-title{
+	width: 100%;
+}
+.history-item ul{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+.history-item .city-item{
+	width: 30%;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #B8B3B6;
+	border-radius: 5px;
+	height: .6rem;
+	line-height: .6rem;
+	color: #000;
+	margin-bottom: .1rem;
+}
+.current-city.city-item{
+	color: #00BDD6;
+	background: #89D4E7;
+	border: 1px solid #5AC7E1;
+}
+.current-city .iconfont{
+	color: #fff;
+}
+.city-select,#city-list,#city-list dl{
+	width: 100%;
+	line-height: .9rem;
+	font-size: .4rem;
+}
+#city-list a{
+	width: 100%;
+	display: block;
+	background: #F8F8F8;
+	padding: 0 .4rem 0 .2rem;
+}
+#city-list dd{
+	width: 100%;
+	display: block;
+	padding: 0 .4rem 0 .2rem;
+	border-bottom: 1px solid #F8F8F8;
+}

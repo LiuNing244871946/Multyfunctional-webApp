@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 定义这个东西，让他屏幕大小适应手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <meta name="nightmode" content="enable/disable">
+    <meta name="imagemode" content="force">
+    <!-- 禁用掉uc浏览器判断到页面上文字居多时，会自动放大字体优化移动用户体验。 -->
+    <meta name="wap-font-scale" content="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../Public/reset.css">
+    <link rel="stylesheet" href="../Public/iconfont.css">
+    <link rel="stylesheet" href="../OrderDetails/order-details.css">
+</head>
+<body>
+    <!-- 订单详情头部 -->
+    <div class="order-details-header">
+        <i class="iconfont icon-back" onclick="backPre()"></i>
+        <span class="order-header-content">订单详情</span>
+    </div>
+    <!-- 订单详情主要内容 -->
+    <div class="order-main-content">
+        <div class="order-main-box">
+            <div class="order-main-top">
+                <div class="order-main-top1">
+                    <div class="shop-img"></div>
+                    <div class="main-top-right">
+                        <p class="main-top-right1">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</p>
+                        <p class="main-top-right2">
+                            <span class="shop-address">上城区解放路246号</span>
+                            <span class="call-phone"></span>
+                        </p>
+                        <p class="main-top-right3">₭10</p>
+                    </div>
+                </div>
+                <div class="order-main-bom">
+                    <span class="code-num">券码：46213251322</span>
+                    <span class="will-cost">已消费</span>
+                    <button class="apply-money">再来一单</button>
+                </div>
+            </div>
+            <!-- 中间部分 -->
+            <div class="order-main-mid">
+                <div class="mid-header">
+                    <span class="mid-header-left">乐享2~3人餐</span>
+                    <span class="mid-header-right">套餐</span>
+                </div>
+                <ul class="mid-section">
+                    <li class="mid-section-list1">
+                        <span class="mid-section-left">特色烤泡菜五花肉</span>
+                        <span class="mid-section-middle">x 1</span>
+                        <span class="mid-section-bottom">₭29</span>
+                    </li>
+                    <li class="mid-section-list1">
+                        <span class="mid-section-left">烤青花鱼</span>
+                        <span class="mid-section-middle">x 1</span>
+                        <span class="mid-section-bottom">₭28</span>
+                    </li>
+                    <li class="mid-section-list1">
+                        <span class="mid-section-left">精品澳洲肥牛</span>
+                        <span class="mid-section-middle">x 1</span>
+                        <span class="mid-section-bottom">₭38</span>
+                    </li>
+                    <li class="mid-section-list1">
+                        <span class="mid-section-left">芝士鸡腿肉</span>
+                        <span class="mid-section-middle">x 1</span>
+                        <span class="mid-section-bottom">₭29</span>
+                    </li>
+                    <li class="mid-section-list1">
+                        <span class="mid-section-left">培根金针菇卷</span>
+                        <span class="mid-section-middle">x 1</span>
+                        <span class="mid-section-bottom">₭25</span>
+                    </li>
+                    <li class="mid-section-list1">
+                        <span class="mid-section-left">杏鲍菇</span>
+                        <span class="mid-section-middle">x 1</span>
+                        <span class="mid-section-bottom">₭12</span>
+                    </li>
+                </ul>
+                <div class="mid-footer">
+                    <span class="mid-footer-left">套餐价</span>
+                    <span class="mid-footer-right">₭10</span>
+                </div>
+            </div>
+            <!-- 底部部分 -->
+            <div class="order-main-footer">
+                <p class="footer-items">订单号：15353465558515468</p>
+                <p class="footer-items">下单时间：2017-11-24 11:08</p>
+                <p class="footer-items">支付方式：在线支付</p>
+            </div>
+        </div>
+    </div>
+    <script src="../Public/adaptation.js"></script>
+    <script src="../Public/zepto.min.js"></script>
+    <script src="../Public/common.js"></script>
+</body>
+</html>

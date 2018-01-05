@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>添加银行卡</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="AddCard.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="AddCard.js"></script>
+	</head>
+
+	<body>
+		<div class="main-con">
+			<div class="card-info">
+				<div class="bank-con">
+					<span class="bank-title">银行：</span>
+					<div class="bank-name">
+						<span class="bank-select">
+						<span class="bank-name">万象工商银行(ICBC)</span>
+						<i class="iconfont icon-jiantouxia"></i>
+						</span>
+						<span class="tips">提现手续费<span class="number">0.1%</span></span>
+					</div>
+				</div>
+				<div class="account">
+					<div class="input-con">
+						<span class="title">户名</span>
+						<span class="account-input">
+						<input type="text" id="account-name" class="account-info"/>
+					</span>
+					</div>
+					<div class="input-con">
+						<span class="title left">卡号</span>
+						<span class="account-input">
+						<input type="number" id="card-number" class="account-info"/>
+					</span>
+					</div>
+					<div class="input-con">
+						<span class="title left">开户行</span>
+						<span class="account-input">
+						<input type="text" id="bank" class="account-info"/>
+					</span>
+					</div>
+					<div class="input-con">
+						<span class="title left">账号</span>
+						<span class="account-input">
+						<input type="number" id="account-number" class="account-info"/>
+					</span>
+					</div>
+				</div>
+			</div>
+			<button class="addcard-btn">添加</button>
+			<div class="tips-con">
+				请您仔细核对账户信息
+			</div>
+		</div>
+		<div id="discount-con">
+			<div class="discount-item" id="select-con">
+				<ul>
+					<li class="bank-item-title">
+						<span class="bank-title">选择银行提现到新账户<i class="iconfont icon-jiaobiao"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+					<li class="bank-newitem bank-item">
+						<span class="bank-name">万象工商银行（ICBC）</span>
+						<span class="select-box"><i class="iconfont icon-ok"></i></span>
+					</li>
+				</ul>
+				<button class="determine-btn">确定</button>
+			</div>
+		</div>
+	</body>
+
+</html>

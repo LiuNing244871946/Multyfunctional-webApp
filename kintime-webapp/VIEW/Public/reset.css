@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	display:flex;
+    flex-direction:column;
+    align-items:center;
+	box-sizing:border-box;
+	background: #f3f4f5;
+}
+body,html{
+	width: 100%;
+	height:100%;
+	/*IOS特有属性*/
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form, 
+fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0; 
+	padding:0; 
+	/*font-family: "Helvetica";*/
+	font-family:"微软雅黑";
+} 
+Table { 
+	border-collapse:collapse; /*让表格边框细线*/
+	border-spacing:0; /*清除边框间距*/
+} 
+fieldset,img { 
+	border:0 none; /*有些浏览器默认这些标签有边框，所以要清除默认边框*/
+	display:block;
+} 
+address,caption,cite,code,dfn,em,i,u,b,strong,th,var { 
+	font-style:normal; 
+	font-weight:normal; 
+	/*清除标签默认文本样式和加粗*/
+}
+input,textarea{
+	outline:0 none;    /*去掉文本框的默认轮廓线*/
+	-webkit-appearance:none;
+	border: none;
+	background: none;
+}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
+ol,ul { 
+	list-style:none; /*清除列表默认样式*/
+} 
+caption,th { 
+	text-align:left; /*清除标签默认文本居中对齐*/
+} 
+h1,h2,h3,h4,h5,h6 { 
+	font-weight:normal; /*清除标题标签的默认样式*/
+} 
+i{
+	border: none;
+	display: block;
+}
+button{
+	border: none;
+    outline: none;
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration:none;
+}

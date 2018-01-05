@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="AddressMap.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="AddressMap.js"></script>
+	</head>
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span>选择地址</span>
+		</header>
+		
+		<div class="address-input">
+			<span class="city-input">
+				<span class="city">万象</span><i class="iconfont icon-jiantouxia"></i>
+			</span>
+			<span class="input-con">
+				<input class="input" value="请输入具体位置"/>
+			</span>
+		</div>
+		<div class="main">
+			<div id="map-con"></div>
+		</div>
+		
+		<footer>
+			<button class="add-address">
+				确定
+			</button>
+		</footer>
+	</body>
+	<script>
+		function initMap(){
+			var map = new google.maps.Map(document.getElementById('map-con'),{
+				zoom:18,
+				center:{lat:-25.363,lng:131.044}
+			});
+			var infoWindow = new google.maps.InfoWindow({'map':map});
+			var geocoder = new google.maps.Geocoder;
+			var result = '';
+			if(navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(function(position){
+					var pos = {
+						lat:position.coords.latitude,
+						lng:position.coords.longitude
+					};
+					geocoder.geocode({'location':pos},function(results,status){
+						if(status === 'OK'){
+							if(results.length>0){
+								for(var i = 0;i<results.length;i++){
+									if(results[i].address_components.length>0){
+										for(var j=0;j<results[i].address_components.length;j++){
+											if(results[i].address_components[j].types.length>0){
+												for(var m=0;m<results[i].address_components[j].types.length;m++){
+													if(results[i].address_components[j].types[m]=='administrative_area_level_1'){
+														result = result + '第'+i+'种结果为：'+results[i].address_components[j].long_name;
+													}
+												}
+											}
+										}
+									}
+									
+									
+								};
+								infoWindow.setContent(result);
+								infoWindow.setPosition(pos);
+								map.setCenter(pos);
+							}else{
+								window.alert('无结果');
+							}
+						}else{
+							window.alert('地址转换失败由于：'+status);
+						}
+					});
+				},function(){
+					handleLocationError(true,infoWindow,map.getCenter());
+				});
+			}else{
+				handleLocationError(false,infoWindow,map.getCenter());
+			}
+		}
+		function handleLocationError(browserHasGeolocation,infoWindow,pos){
+			infoWindow.setPosition(pos);
+			infoWindow.setContent(browserHasGeolocation?
+									'Error:地理位置获取失败':
+									'Error:浏览器不支持'
+			);
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj1gNUTDZJLvPeePsU5ltjfX-hJU1N_8c&callback=initMap"></script>
+</html>

@@ -1,0 +1,33 @@
+body{
+	background: #fff;
+}
+.recharge-info{
+	width: 100%;
+	margin-top: 25%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+}
+.recharge-info .iconfont{
+	font-size: 1.5rem;
+	color: #0099DA;
+}
+.recharge-info .info-text{
+	font-size: .6rem;
+	line-height: 1rem;
+}
+
+.btn{
+	width: 90%;
+	height: .8rem;
+	margin: .2rem 5% 0;
+	border: none;
+	outline: none;
+	background: #0099DA;
+	font-size: .3rem;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	border-radius: 8px;
+}

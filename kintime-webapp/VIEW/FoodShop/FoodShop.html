@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<title>店铺</title>
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="FoodShop.css" />
+		<link rel="stylesheet" href="../Public/eva.css" />
+		<link rel="stylesheet" href="../Public/food-shop.css" />
+		<link rel="stylesheet" href="../Public/img-show.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js" ></script>
+		<script type="text/javascript" src="FoodShop.js"></script>
+		<script type="text/javascript" src="../Public/echo.min.js"></script>
+	</head>
+
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="title-text">美食</span>
+		</header>
+		<div class="main-con">
+			<!--店铺信息-->
+			<div id="shop-info">
+				<div id="shop-img">
+					<!--<img data-echo="../../STATIC/img/网站-04.jpg" id="shop-info-img" />-->
+					<!--更多图片-->
+					<div id="more-img">
+						<i class="iconfont icon-zhaopian"></i>
+						<span id="moreimgnum-con">
+						<span id="more-imgnum">7</span><span class="text-con">张</span>
+						</span>
+					</div>
+				</div>
+				<!--店铺名称-->
+				<div class="shop-info-item" id="shop-info-name">
+					<h1 id="shop-name"></h1>
+					<div id="shop-rate">
+						<span class="rate-b">
+						<span class="rate-s" style="width: 80%;"></span>
+						</span>
+						<span id="average">
+						<span class="text-con">人均:</span>
+						<i class="money">￥</i><span class="money-num"></span>
+						</span>
+					</div>
+				</div>
+				<!--店铺地址-->
+				<div class="shop-info-item" id="shop-address">
+					<a href="" id="address-link">
+						<i class="iconfont icon-dizhiguanli"></i>
+						<span id="address-text"></span>
+					</a>
+				</div>
+				<div id="car-phone">
+					<div id="car-con">
+						<a href="address-map.html">打车前往</a>
+					</div>
+					<div id="phone-con">
+						<a href="">
+							<i class="iconfont icon-bohao"></i>
+						</a>
+					</div>
+				</div>
+				<!--店铺外卖-->
+				<div id="shop-takeaway">
+					<span id="takeaway-text">
+					<i class="iconfont icon-waimai"></i>
+					<span class="text-con">外卖</span>
+					</span>
+					<span id="takeaway-status">
+					<span class="text-con">休息中</span>
+					<i class="iconfont icon-jiantouyou"></i>
+					</span>
+				</div>
+				<!--店内点餐-->
+				<div id="shop-order">
+					<a href="">
+						<i class="iconfont icon-zhangdan"></i>
+						<span class="text-con">店内点餐</span>
+					</a>
+				</div>
+				<!--食堂套餐-->
+				<div class="shop-info-item" id="shop-pack">
+					<div class="item-title">
+						<i class="iconfont icon-tangshi-"></i>
+						<span class="text-con">堂食套餐</span>
+					</div>
+					<ul id="pack-list" class="hide"></ul>
+				</div>
+				<!--用户评价-->
+				<div id="shop-eva">
+					<div id="moreeva-link">
+						<span id="eva-titletext">
+						<i class="iconfont icon-taolun"></i>
+						用户评价(<span id="eva-num"></span>)
+						</span>
+						<i class="iconfont icon-jiantouyou"></i>
+					</div>
+					<div id="eva-title">
+						<ul id="eva-sort">
+							<li class="eva-sortitem selected">全部</li>
+							<li class="eva-sortitem">最新</li>
+							<li class="eva-sortitem">晒图评价</li>
+						</ul>
+						<span id="eva-score">
+							<span id="eva-overall">
+								<span id="overall-num"></span>
+								<span id="overall-con">
+									<span>综合评分</span>
+									<span class="rate-b">
+										<span class="rate-s" style="width: 100%;"></span>
+									</span>
+								</span>
+							</span>
+							<span id="scorecom">
+								<span id="scorepeer">高于<span id="peernum"></span>的同行</span>
+								<span id="fav-rate">好评率<span id="fav-ratenum"></span></span>
+							</span>
+						</span>
+					</div>
+				</div>
+				<ul id="eva-list"></ul>
+				<div id="eva-more"></div>
+			</div>
+			<!--附近推荐-->
+			<div id="nearby">
+				<div id="nearby-title">
+					<i class="iconfont icon-tuijian"></i>
+					<span class="text-con">附近推荐</span>
+				</div>
+				<div class="fav-com-con">
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--更多商家-->
+			<div id="moreshop">
+				<div id="moreshop-title">
+					<i class="iconfont icon-shangjia"></i>
+					<span class="text-con">更多商家</span>
+				</div>
+				<div class="fav-com-con">
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="fav-com-item">
+						<a href="" class="fav-com-link">
+							<img src="../../STATIC/img/头像.jpg" class="fav-com-img" />
+							<div class="fav-com-info">
+								<div class="fav-com-name info-item">胖哥两肉蟹煲</div>
+								<div class="fav-com-tip info-item">自助午餐/免费WIFI</div>
+								<div class="fav-com-other info-item">
+									<div class="fav-com-price">
+										人均
+										<span class="limite-price">
+												<i class="money">￥</i><span class="pricenum">11.8</span>
+										</span>
+									</div>
+									<div class="fav-com-dis">
+										距离<span class="dis-num">26km</span>
+									</div>
+								</div>
+							</div>
+							<div class="fav-com-eva">
+								<div class="fav-com-evaleft">
+									<span class="rate-b">
+										<span class="rate-s" style="width: 80%;"></span>
+									</span>
+								</div>
+								<div class="fav-com-evaright">
+									已售<span class="sale-num">564828</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="discount-con">
+			<div id="img-show" class="discount-item">
+				<div class="swiper-container" id="img-swiper">
+					<div class="swiper-wrapper"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 定义这个东西，让他屏幕大小适应手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <meta name="nightmode" content="enable/disable">
+    <meta name="imagemode" content="force">
+    <!-- 禁用掉uc浏览器判断到页面上文字居多时，会自动放大字体优化移动用户体验。 -->
+    <meta name="wap-font-scale" content="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外卖商品</title>
+    <link rel="stylesheet" href="../Public/reset.css">
+    <link rel="stylesheet" href="../Public/iconfont.css">
+    <link rel="stylesheet" href="../Public/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="takeout-commodity.css">
+</head>
+<body>
+    <!-- 提交理由头部 -->
+    <div class="commodity-info-header">
+        <i class="iconfont icon-back" onclick="backPre()"></i>
+        <div class="tap-btn-box">
+            <div class="tap-btn-left">外卖商品</div>
+            <div class="tap-btn-right">美食商品</div>
+        </div>
+    </div>
+    <!-- 中间部分 -->
+    <div class="commodity-tab-box">
+        <div class="commodity-tab-content">
+            <!-- 左侧菜单栏swiper1 -->
+            <div class="swiper-container swiper1">
+                <ul class="swiper-wrapper left-tab-bar">
+                    <li class="swiper-slide selected">便当</li>
+                    <li class="swiper-slide">新鲜果蔬</li>
+                    <li class="swiper-slide">酒水饮料</li>
+                    <li class="swiper-slide">商品分类名称</li>
+                    <li class="swiper-slide">商品分类名称</li>
+                    <li class="add-classify">
+                        <img src="../../STATIC/img/add-title.png" alt="" class="img-add-btn">
+                        <span class="add-classify-word">添加分类</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右侧内容swiper2 -->
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-no-swiping">
+                        <ul class="meal-list-content">
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼...</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="under-shelve">下架</button>
+                                </div>
+                            </li>
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="up-shelve">上架</button>
+                                </div>
+                            </li >
+                        </ul>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <ul class="meal-list-content">
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼...</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="under-shelve">下架</button>
+                                </div>
+                            </li>
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="up-shelve">上架</button>
+                                </div>
+                            </li >
+                        </ul>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <ul class="meal-list-content">
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼...</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="under-shelve">下架</button>
+                                </div>
+                            </li>
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="up-shelve">上架</button>
+                                </div>
+                            </li >
+                        </ul>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <ul class="meal-list-content">
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼...</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="under-shelve">下架</button>
+                                </div>
+                            </li>
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="up-shelve">上架</button>
+                                </div>
+                            </li >
+                        </ul>
+                    </div>
+                    <div class="swiper-slide swiper-no-swiping">
+                        <ul class="meal-list-content">
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼...</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="under-shelve">下架</button>
+                                </div>
+                            </li>
+                            <li class="list-content-num">
+                                <div class="list-content-top">
+                                    <div class="left-img-box">
+                                        <img class="left-img" src="../../STATIC/img/meal-img.png" alt="">
+                                    </div>
+                                    <div class="top-right-box">
+                                        <p class="right-box-t">美式黑椒牛肉饼</p>
+                                        <p class="right-box-m">
+                                            <span class="month-sale">月售:300000</span>
+                                        </p>
+                                        <p class="right-box-b">₭666</p>
+                                    </div>
+                                </div>
+                                <div class="list-content-bottom">
+                                    <button class="edit-btn">编辑</button>
+                                    <button class="up-shelve">上架</button>
+                                </div>
+                            </li >
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer-add">添加商品</div>
+    <script src="../Public/adaptation.js"></script>
+    <script src="../Public/zepto.min.js"></script>
+    <script src="../Public/swiper-3.4.2.jquery.min.js"></script>
+    <script src="../Public/common.js"></script>
+    <script>
+        $(function(){
+            function setCurrentSlide(ele, index) {
+                $(".swiper1 .swiper-slide").removeClass("selected");
+                ele.addClass("selected");
+            }
+            var swiper1 = new Swiper('.swiper1', {
+                slidesPerView: 5,//设置slides数量
+                loop: false,//是否可循环
+                onTab: function(swiper) {
+                    var n = swiper1.clickedIndex;
+                }
+            });
+            swiper1.slides.each(function(index, val) {
+                var ele = $(this);
+                ele.on("click", function() {
+                    setCurrentSlide(ele, index);
+                    swiper2.slideTo(index, 500, false); //mySwiper.initialSlide=index;
+                });
+            });
+
+            var swiper2 = new Swiper('.swiper2', {
+                loop: false,
+                direction : 'vertical',
+                onSlideChangeEnd: function(swiper) {  //回调函数，swiper从一个slide过渡到另一个slide结束时执行。
+                    var n = swiper.activeIndex;
+                    setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
+                    swiper1.slideTo(n, 500, false);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

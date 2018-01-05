@@ -1,0 +1,249 @@
+
+/*用户信息*/
+.userinfo-con{
+	position: fixed;
+	width: 100%;
+	z-index: 990;
+	background: #F3F3F4;
+	top: .95rem;
+}
+
+.userinfo-con .address-con{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	padding: 0 .2rem;
+	border-bottom: 1px solid #B8B3B7;
+	overflow: hidden;
+	position: relative;
+}
+.address-con .iconfont{
+	font-size: .5rem;
+}
+.address-con .icon-dizhiguanli{
+	float: left;
+	color: #00BED7;
+}
+.address-con .icon-jiantouyou{
+	float: right;
+	color: #B8B3B7;
+	font-size: .4rem;
+}
+.address-con .address-info-con{
+	width: 80%;
+	height: 100%;
+	float: left;
+	margin-left: .1rem;
+	color: #B8B3B7;
+}
+.address-info-con .bare-con{
+	display: none;
+}
+.address-info-con .full-con{
+	width: 100%;
+	height: 100%;
+	line-height: .5rem;
+	color: #000;
+}
+.full-con .address-text-con{
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.userinfo-con .time-con{
+	height: .8rem;
+	width: 100%;
+	line-height: .8rem;
+	padding:0 .2rem ;
+}
+.time-con .iconfont{
+	color: #00BED7;
+	font-size: .5rem;
+	float: left;
+}
+.time-con .time-text{
+	width: 80%;
+	height: 100%;
+	padding-left: .1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.time-con .time-text .time-text-con{
+	color: #00BED7;
+}
+/*底部*/
+footer{
+	position: fixed;
+	height: 1rem;
+	width: 100%;
+	line-height: 1rem;
+	padding-left:.2rem;
+	z-index: 990;
+	font-weight: 700;
+	background: rgba(0,0,0,.9);
+	bottom: 0;
+	color: #fff;
+}
+footer .pay-money-con{
+	width: 70%;
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pay-money-con .must-pay-con{
+	font-size: .4rem;
+	padding-right: .1rem;
+	border-right: 1px solid #fff;
+}
+.pay-money-con .discount-money{
+	padding-left: .1rem;
+	font-weight: 100;
+}
+footer .pay-btn-con{
+	width: 30%;
+	font-size: .3rem;
+	float: right;
+	background: #00BED7;
+	text-align: center;
+}
+
+
+/*订单信息*/
+.order-info{
+	width: 100%;
+	padding: 0 .2rem;
+	position: relative;
+	top: 2.8rem;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+.order-info .info-con{
+	width: 100%;
+	background: #fff;
+	box-sizing: border-box;
+}
+.info-con .shop-name{
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+	border-bottom: 1px solid #B8B3B7;
+	font-weight: 600;
+}
+.info-con .shop-table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.info-con .shop-table tr{
+	height: .8rem;
+	width: 100%;
+	line-height: .8rem;
+	border-bottom: 1px solid #B8B3B7;
+}
+.shop-table .name{
+	width: 60%;
+	text-align: left;
+}
+.shop-table .num{
+	width: 20%;
+	text-align: center;
+}
+.shop-table .price{
+	width: 20%;
+	text-align: right;
+}
+.del-money,.full-reduc,.red-enve{
+	height: .8rem;
+	width: 100%;
+	line-height: .8rem;
+	border-bottom: 1px solid #B8B3B7;
+	
+}
+.del-money .money-con,.full-reduc .money-con,.red-enve .money-con{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.red-enve .title,.red-enve .money-con{
+	color: #F24842;
+}
+.red-enve .money-con{
+	display: none;
+}
+.red-enve .iconfont{
+	float: right;
+	color: #B8B3B7;
+	font-size: .28rem;
+}
+.red-enve .red-tip{
+	float: right;
+	color: #B8B3B7;
+	display: block;
+	width: 50%;
+	text-align: right;
+}
+.info-con .total-con{
+	height: .8rem;
+	width: 100%;
+	line-height: .8rem;
+}
+.total-con .tip{
+	color: #B8B3B7;
+	text-decoration: underline;
+	border-bottom: 1px solid #B8B3B7;
+}
+.total-con .total-price{
+	width: 50%;
+	float: right;
+	text-align: right;
+	color: #00BED7;
+}
+
+
+/*蒙板*/
+.discon{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.7);
+	z-index: 999;
+	display: none;
+}
+.discon .time-select{
+	width: 80%;
+	height: 50%;
+	margin: 25% 10% 0;
+	background: #fff;
+	border-radius: .2rem;
+	padding: .2rem;
+	position: relative;
+}
+.time-select .title{
+	width: 100%;
+	text-align: center;
+	font-size: .3rem;
+	font-weight: 700;
+	
+}
+.time-select .sub-title{
+	width: 100%;
+	text-align: center;
+	font-size: .2rem;
+	color: #B8B3B7;
+	line-height: .4rem;
+}
+.time-select .warn-time{
+	width: 100%;
+	text-align: center;
+	font-size: .2rem;
+	color: #F24842;
+	line-height: .4rem;
+}

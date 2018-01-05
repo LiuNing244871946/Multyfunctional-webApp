@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户设置</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="UserSetting.css"/>
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="UserSetting.js"></script>
+	</head>
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="title-text">设置</span>
+		</header>
+		<div class="main-con">
+			<ul class="setting-con">
+				<li class="setting-item" id="user-account">
+					<span class="item-title">kintime帐号</span>
+					<span class="item-datail">
+						<span class="text-con"></span>
+					</span>
+				</li>
+				<li class="setting-item" id="user-img">
+					<span class="item-title">头像</span>
+					<span class="item-datail"><i class="iconfont icon-jiantouyou"></i></span>
+				</li>
+				<li class="setting-item" id="user-sex">
+					<span class="item-title">性别</span>
+					<span class="item-datail">
+					<span class="text-con"></span>
+					<i class="iconfont icon-jiantouyou"></i>
+					</span>
+				</li>
+				<li class="setting-item" id="user-name">
+					<span class="item-title">昵称</span>
+					<span class="item-datail">
+					<span class="text-con"></span>
+					<i class="iconfont icon-jiantouyou"></i>
+					</span>
+				</li>
+				<li class="setting-item" id="user-phone">
+					<span class="item-title">手机号</span>
+					<span class="item-datail">
+					<span class="text-con"></span>
+					<i class="iconfont icon-jiantouyou"></i>
+					</span>
+				</li>
+				<li class="setting-item" id="user-password">
+					<span class="item-title">修改登陆密码</span>
+					<span class="item-datail">
+					<i class="iconfont icon-jiantouyou"></i>
+				</span>
+				</li>
+			</ul>
+			<button id="exit-btn">退出账户</button>
+		</div>
+
+		<div id="discount-con">
+			<div class="discount-item" id="user-namecon">
+				<input type="text" id="user-newname" />
+				<div class="tip">好名字可以让朋友更容易记住你</div>
+				<div class="btn-con">
+					<button id="cancel-btn">取消</button>
+					<button id="save-btn">保存</button>
+				</div>
+			</div>
+			<div class="discount-item" id="user-sexcon">
+				<div class="title">性别</div>
+				<ul class="sex-li">
+					<li class="sex-item">
+						<span class="item-title">男</span>
+						<label for="man">
+							<input type="radio" name="sex" class="sex-radio" value="1" id="man"/>
+							<i></i>
+						</label>
+					</li>
+					<li class="sex-item">
+						<span class="item-title">女</span>
+						<label for="woman">
+							<input type="radio" name="sex" class="sex-radio" value="0" id="woman"/>
+							<i></i>
+						</label>
+				</ul>
+				<div class="btn-con">
+					<button id="sex-cancel-btn">取消</button>
+					<button id="sex-save-btn">保存</button>
+				</div>
+			</div>
+			<div class="discount-item" id="user-avatar">
+				<label for="camera">
+					<input type="file" accept="image/*" capture="camera" id="camera"/>
+					<div class="text-con">
+						<i class="iconfont icon-xiangji"></i>
+						<span class="text">拍照</span>
+					</div>
+				</label>
+				<label for="album">
+					<input type="file" accept="image/*" id="album"/>
+					<div class="text-con">
+						<i class="iconfont icon-zhaopian"></i>
+						<span class="text">从相册中选择</span>
+					</div>
+				</label>
+			</div>
+		</div>
+	</body>
+</html>
