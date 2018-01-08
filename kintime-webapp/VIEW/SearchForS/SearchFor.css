@@ -1,0 +1,18 @@
+body{
+	background: #fff;
+}
+#search-btn{
+	height: 100%;
+	padding-left: .2rem;
+	border: none;
+	outline: none;
+	background: #FFF;
+}
+#main{
+	margin-top: .95rem;
+	width: 100%;
+}
+#search-result{
+	width: 100%;
+	padding: .2rem 0;
+}

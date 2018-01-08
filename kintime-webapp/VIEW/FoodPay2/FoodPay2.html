@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="FoodPay2.css" />
+		<link rel="stylesheet" href="../Public/pay-password.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="FoodPay2.js"></script>
+		<script type="text/javascript" src="../Public/pay-password.js"></script>
+	</head>
+
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="title-text">提交订单</span>
+		</header>
+		<div id="pay-page">
+			<div class="select-pay">
+				<div class="pay-time">
+					<span class="time-title">支付剩余时间</span>
+					<span class="time">
+							<span class="time-m">15</span>:<span class="time-s">00</span>
+					</span>
+				</div>
+				<div class="order-info">
+					<img src="img/userimg.jpg" class="shop-img" />
+					<div class="order-other">
+						<span class="order-money">
+								<i class="money">K</i>
+								<span class="money-num">5000</span>
+						</span>
+						<span class="ordernum-con">
+								订单号：<span class="order-num">2017024500015468923</span>
+						</span>
+					</div>
+				</div>
+				<ul class="payment-list">
+					<li class="payment-item selected" id="yue">
+						<span class="payment-con">
+								<i class="iconfont icon-qia"></i>
+								<span class="payment-info">
+									<span class="payment-name">
+										<span class="name-text">余额</span>
+						<span class="payment-tip">(余额不足)</span>
+						</span>
+						<span class="payment-num">
+										支付<i class="money">K</i><span class="money-num">50000</span>
+						</span>
+						</span>
+						</span>
+						<span class="payment-select"></span>
+					</li>
+					<li class="payment-item" id="facebook">
+						<span class="payment-con">
+								<i class="iconfont icon-facebook"></i>
+								<span class="payment-info">
+									<span class="payment-name">
+										<span class="name-text">facebook</span>
+						</span>
+						<span class="payment-num">
+										支付<i class="money">$</i><span class="money-num">8.23</span>(当前汇率<span class="exchange-rate">1230</span>)
+						</span>
+						</span>
+						</span>
+						<span class="payment-select"></span>
+					</li>
+					<li class="payment-item" id="ali">
+						<span class="payment-con">
+								<i class="iconfont icon-zhifubao"></i>
+								<span class="payment-info">
+									<span class="payment-name">
+										<span class="name-text">支付宝</span>
+						</span>
+						<span class="payment-num">
+										支付<i class="money">￥</i><span class="money-num">40.00</span>(当前汇率<span class="exchange-rate">1230</span>)
+						</span>
+						</span>
+						</span>
+						<span class="payment-select"></span>
+					</li>
+					<li class="payment-item" id="wexin">
+						<span class="payment-con">
+								<i class="iconfont icon-qia"></i>
+								<span class="payment-info">
+									<span class="payment-name">
+										<span class="name-text">微信</span>
+						</span>
+						<span class="payment-num">
+										支付<i class="money">￥</i><span class="money-num">40.00</span>(当前汇率<span class="exchange-rate">1230</span>)
+						</span>
+						</span>
+						</span>
+						<span class="payment-select"></span>
+					</li>
+					<li class="payment-item" id="china">
+						<span class="payment-con">
+								<i class="iconfont icon-qia"></i>
+								<span class="payment-info">
+									<span class="payment-name">
+										<span class="name-text">中国银行卡</span>
+						</span>
+						<span class="payment-num">
+										支付<i class="money">￥</i><span class="money-num">40.00</span>(当前汇率<span class="exchange-rate">1230</span>)
+						</span>
+						<span class="card-num">
+										<span class="num-text">6228*********4510</span>
+						<i class="iconfont icon-jiaobiao"></i>
+						</span>
+						</span>
+						</span>
+						<span class="payment-select"></span>
+					</li>
+				</ul>
+				<div class="order-tip">
+					若支付后发生退款的情况，则统一退回老币到余额~
+				</div>
+			</div>
+			<footer>
+				<button class="pay-btn">确认支付</button>
+			</footer>
+		</div>
+		<div id="discount-con">
+			<div class="discount-item" id="cardlist-con">
+				<div class="list-con">
+					<ul id="card-list">
+						<li class="card-item">
+							<span class="bank-info">
+								<span class="bank-title">我的中国银行支付卡</span>
+							</span>
+						</li>
+						<li class="card-item  selected">
+							<span class="bank-info">
+								<span class="bank-name">万象工商银行（ICBC）</span>
+							<span class="bank-num">3302*********4520</span>
+							</span>
+							<span class="bank-select">
+								<i class="iconfont icon-ok"></i>
+							</span>
+						</li>
+						<li class="card-item">
+							<span class="bank-info">
+								<span class="bank-name">万象工商银行（ICBC）</span>
+							<span class="bank-num">3302*********4520</span>
+							</span>
+							<span class="bank-select">
+								<i class="iconfont icon-ok"></i>
+							</span>
+						</li>
+						<li class="card-item">
+							<span class="bank-info">
+								<span class="bank-name">万象工商银行（ICBC）</span>
+							<span class="bank-num">3302*********4520</span>
+							</span>
+							<span class="bank-select">
+								<i class="iconfont icon-ok"></i>
+							</span>
+						</li>
+						<li class="card-item">
+							<span class="bank-info">
+								<span class="bank-name">万象工商银行（ICBC）</span>
+							<span class="bank-num">3302*********4520</span>
+							</span>
+							<span class="bank-select">
+								<i class="iconfont icon-ok"></i>
+							</span>
+						</li>
+						<li class="card-item">
+							<span class="bank-info">
+								<span class="bank-name">万象工商银行（ICBC）</span>
+							<span class="bank-num">3302*********4520</span>
+							</span>
+							<span class="bank-select">
+								<i class="iconfont icon-ok"></i>
+							</span>
+						</li>
+					</ul>
+					<button id="add-card">绑定新的中国银行支付卡</button>
+				</div>
+				<button class="determine-btn">确定</button>
+			</div>
+			<div class="discount-item" id="pay-con">
+				<div class="pay-title">
+					<i class="iconfont icon-guanbi"></i>
+					<span class="title-text">请输入支付密码</span>
+				</div>
+				<div class="pay-info">
+					<span class="info-text">提现</span>
+					<span class="pay-money"><i class="money">K</i><span class="number">5000</span></span>
+					<span class="pay-tips">密码错误</span>
+				</div>
+				<div class="pay-password">
+					<label class="password-con" for="pay-pass">
+						<span class="lattice"></span>
+						<span class="lattice"></span>
+						<span class="lattice"></span>
+						<span class="lattice"></span>
+						<span class="lattice"></span>
+						<span class="lattice"></span>
+					</label>
+					<input type="tel" id="pay-pass" maxlength="6" />
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
