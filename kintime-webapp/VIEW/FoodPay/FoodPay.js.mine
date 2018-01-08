@@ -29,21 +29,10 @@ $(function() {
 	});
 	//	提交订单
 	$('#order-page .pay-btn-con').on('tap', function() {
-<<<<<<< .mine
 		var data = [];
 		data[0]={};
 		data[0].sid = packId;
 		data[0].num= '1';
-||||||| .r480
-		var data = [];
-		data[0]={};
-		data[0].sid = packId;
-		data[0].num= 1;
-=======
-		var data ={};
-		data.id = packId;
-		data.num= 1;
->>>>>>> .r485
 		var jsonStr = JSON.stringify(data);
 		$.ajax({
 			type: "post",
@@ -53,16 +42,9 @@ $(function() {
 			data: jsonStr,
 			dataType: "json",
 			success: function(data) {
-<<<<<<< .mine
 				if(data===1){
 					pageSwiper.slideTo(1, 100, false);
 				}else{
-||||||| .r480
-				console.log(data);
-				if(data===2){
-=======
-				if(data===2){
->>>>>>> .r485
 					alert('订单提交失败');
 				}
 			},

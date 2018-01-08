@@ -1,4 +1,13 @@
-
+#cancel{
+	padding: .1rem;
+	font-size: .3rem;
+	color: #fff;
+	background: #6abdd5;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	display: none;
+}
 /*底部*/
 footer{
 	width: 100%;
@@ -10,7 +19,7 @@ footer{
 	position: fixed;
 	bottom: 0;
 }
-footer .add-address{
+footer .add-address,#delete-address{
 	width: 100%;
 	height: 100%;
 	border: none;
@@ -23,7 +32,12 @@ footer .add-address{
 .add-address .iconfont{
 	font-size: .4rem;
 }
-
+#delete-address{
+	display: none;
+}
+#delete-address .iconfont{
+	font-size: .4rem;
+}
 /*内容*/
 .main{
 	position: fixed;
@@ -84,14 +98,9 @@ footer .add-address{
 	line-height: .5rem;
 	margin: .15rem auto;
 	color: #fff;
-	display: none;
-}
-.back-con .iconfont{
+	background: #F3F4F5;
 	display: none;
 }
 .address-item.select .back-con{
 	background: #00BED7;
-}
-.address-item.select .back-con .iconfont{
-	display: block;
 }

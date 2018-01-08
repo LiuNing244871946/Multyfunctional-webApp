@@ -27,4 +27,7 @@ $(function(){
 	$('#kin').on('tap',function(){
 		window.location.href='../Kin/Kin.html';
 	});
+	$('#address').on('tap',function(){
+		window.location.href='../AddressManage/AddressManage.html';
+	});
 })

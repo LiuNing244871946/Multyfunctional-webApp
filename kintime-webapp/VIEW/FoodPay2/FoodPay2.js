@@ -1,27 +1,29 @@
 $(function() {
-//	var packId = window.location.href.substr(window.location.href.indexOf("?id=") + 4);
-//	var data = {};
-//	data.id = packId;
-//	var jsonStr = JSON.stringify(data);
-//	$.ajax({
-//		type: "post",
-//		url: "../../PHP/home/foods/kandd",
-//		async: true,
-//		contentType: 'application/x-www-form-urlencoded',
-//		data: jsonStr,
-//		dataType: "json",
-//		success: function(data) {
-//			$('.shop-name').text(data.name);
-//			$('tbody .food-name').text(data.tcname);
-//			$('#tcPrice .money-num').text(data.tcprice);
-//			$('#store-price .money-num').text(data.oldprice);
-//			$('.total-price .money-num').text(data.tcprice);
-//			$('.must-pay-con .money-num').text(data.tcprice);
-//		},
-//		error: function(e) {
-//			console.log(e);
-//		}
-//	});
+	var packId = window.location.href.substr(window.location.href.indexOf("?") + 1);
+	var data={};
+	data.id=packId;
+	var jsonStr=JSON.stringify(data);
+	$.ajax({
+		type: "post",
+		url: "../../PHP/home/foods/fuq",
+		async: true,
+		contentType: 'application/x-www-form-urlencoded',
+		dataType: "json",
+		data:jsonStr,
+		success: function(data) {
+			if(data === '2') {
+				alert('订单信息错误，请返回重新购买');
+				window.location.href = '../FoodShop/FoodShop.html';
+			} else {
+				$('#pay-page .shop-img').attr('src','.'+data.headpic);
+				$('#pay-page .order-money .money-num').text(data.tcprice);
+				$('#pay-page .ordernum-con .order-num').text(data.id);
+			};
+		},
+		error: function(e) {
+			console.log(e);
+		}
+	});
 	//	支付方式
 	$('#pay-page .payment-select').on('tap', function() {
 		$('#pay-page .payment-item').removeClass('selected');

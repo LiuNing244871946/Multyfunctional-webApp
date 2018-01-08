@@ -5,7 +5,7 @@ use Aliyun\Core\Config;
 use Aliyun\Core\Profile\DefaultProfile; 
 use Aliyun\Core\DefaultAcsClient; 
 use Aliyun\Api\Sms\Request\V20170525\SendSmsRequest;
-class FoodsController extends Controller {
+class FoodsController extends CommonController {
 	// 店铺首页
     public function index(){
         $id = $_COOKIE['4373433CA7C70528'];
@@ -305,11 +305,14 @@ class FoodsController extends Controller {
 
       // 收货地址
      public function address(){
-        // $_POST['address_user'] = 2;
         $q_shdz = D('shdz');
-        $id = usersId();
-        $shdz_row = $q_shdz->where("uid=".$id)->select();
-        // dump($shdz_row);
+        $users = D('users');
+        $name = $_COOKIE['id'];
+
+        $row = $users->field('id,dzid')->where("name = {$name}")->find();
+        $shdz_row = $q_shdz->where("uid=".$row['id'])->select();
+        $shdz_row['dzid'] = $row['dzid'];
+        
         echo json_encode($shdz_row);
      }
 
@@ -318,7 +321,18 @@ class FoodsController extends Controller {
         //???
 
      }
+
+     // 查看一个地址详细
+     public function add_kan(){
+        $arr=json_decode(file_get_contents('php://input'));
+        $id = $arr->id;
+        $q_address = D('shdz');
+        $row = $q_address->where("id={$id}")->dinf();
+        echo json_encode($row);
+     }
+
         //修改地址
+     
      public function add_change(){
         
         $arr=json_decode(file_get_contents('php://input'));
@@ -347,6 +361,9 @@ class FoodsController extends Controller {
 
      // 验证原密码密码
      public function change_password(){
+        // $_POST['user_id'];
+        // $_POST['password'];
+
         $name = $_COOKIE['id'];
         $arr=json_decode(file_get_contents('php://input'));
         $password = $arr->pass;
@@ -357,9 +374,9 @@ class FoodsController extends Controller {
         if($pass == $row['pass']) echo 1;
         else echo 2;
      }
-
      //修改密码
      public function change_password2(){
+
         $name = $_COOKIE['id'];
         $arr=json_decode(file_get_contents('php://input'));
         $password = $arr->pass;
@@ -368,13 +385,16 @@ class FoodsController extends Controller {
         $q_user->where("name={$name}")->save($data);
         if($q_user){
             cookie('id',null);
+
             echo 1;
         }else{
             echo 2;
         }
+        
      }
      //会员中心
      public function me(){
+       
         $user_id = $_COOKIE['id'];
         $q_user = D('users');
         $row = $q_user->where('name='.$user_id)->find();
@@ -411,32 +431,9 @@ class FoodsController extends Controller {
                 $rrow['hao'][]=$v;
             }
         }
+
+
     }
-    /* //付款使用红包
-     public function takeaway(){
-
-        $id = usersId();
-        $arr=json_decode(file_get_contents('php://input'));
-        $dian = $arr->dian;
-        $id = 2;
-        $dian = 1;
-        $time= time();
-        $q_cc = D('cc');
-        $row = $q_cc->where("uid = {$id} AND stop>{$time} AND yong= 1")->select();
-
-        foreach ($row as $k => $v) {
-            $v['time'] = date("Y-m-d H:i:s",$v['stop']);
-            if($dian!=$v['sid']){
-                //不是当前店家  不能用的
-                $rrow['mei'][]=$v;
-            }else{
-                // 能用的
-                $rrow['hao'][]=$v;
-            }
-        }
-        // dump($rrow);
-        echo json_encode($row);
-     }*/
 
      //发送短信
      public function fasong(){
@@ -622,47 +619,39 @@ class FoodsController extends Controller {
         // $user_id = 10;
         $user_id = usersId();  //用户id
         $shop_id = $_COOKIE['4373433CA7C70528']; // 堂食店的id
-        $json = file_get_contents('php://input');
-        $cai=json_decode($json,true);
+        $arr=json_decode(file_get_contents('php://input'));
+        $id = $arr->id;
+        $num = $arr->num;
 
         $q_ddan = D("ddan");
         $q_ddshop = D("ddshop");
         $q_tc = D("tc");
-
+        $show_tc = $q_tc->where("id={$id}")->find();
+        $yu = $show_tc['stock']-$num;
+        if($yu<0) die('3');  //库存不足
+        // ddan订单表添加数据
         $data['uid'] = $user_id;
         $data['sid'] = $shop_id;
         $data['time'] = time();
-        $data['yuan'] = 0;
-        $data['you'] = 0;
+        $data['yuan'] = $show_tc['oldprice'];
+        $data['you'] = $show_tc['tcprice'];
         $data['mai'] = 2;
         $row = $q_ddan->add($data);
-        $error = true;
-        $yuan =0;
-        $you = 0;
-        if($row){
-            foreach ($cai as $k => $v) {
-                $v['ddid'] = $row;
-                $sid = $v['sid'];
-                $arow = $q_tc->where("id = $sid")->find();
-                $money = $arow['tcprice'];
-                $money = $money*$v['num'];
-                $v['money'] = $money;
-                $roww = $q_ddshop->add($v);
-                if(!$roww) $error = false;
-
-                $ayuan += $arow['oldprice'];
-                $ayou += $arow['tcprice'];
-            } 
-            if($error){//修改 id位$row的 原价 优惠价
-                $dataa['id'] = $row;
-                $dataa['yuan'] = $ayuan;
-                $dataa['you'] = $ayou;
-                $rrow = $q_ddan->save($dataa);
-                if(!$rrow) $error = false;
-            }
-        }else $error = false;
-        if($error) echo 1;
-        else echo 2;
+        // ddshop表添加数据
+        if(!$row) die('2');
+        $ddta['sid'] = $id;
+        $ddta['ddid'] = $row;
+        $ddta['num'] = $num;
+        $ddta['money'] = $show_tc['tcprice']*$num;
+        $ddta['name'] = $show_tc['tcname'];
+        $rrow = $q_ddshop->add($ddta);
+        if(!$rrow) die('2');
+        //减库存
+        $datt['stock'] = $yu;
+        $datt['id'] = $id;
+        $ok = $q_tc->save($datt);
+        if(!$ok) die('2');
+        echo $row;
     }
 
 
@@ -717,9 +706,13 @@ class FoodsController extends Controller {
         else echo 2;
     }
 
+    // 堂食付款前
+    public function fuq(){
+      $arr=json_decode(file_get_contents('php://input'));
+      $id = $arr->id;  //待付款的订单id
+      $user_id = usersId();  //用户id
+      $shop_id = $_COOKIE['4373433CA7C70528']; // 堂食店的id
 
-<<<<<<< .mine
-||||||| .r479
       $ddan = D('ddan');
       $model = D();
       $row = $ddan->where("id={$id}")->find();
@@ -731,19 +724,6 @@ class FoodsController extends Controller {
       // dump($rrow);
       echo json_encode($rrow);
     }
-=======
-      $ddan = D('ddan');
-      $model = D();
-      $row = $ddan->where("id={$id}")->find();
-      if($row['uid']!=$user_id || $row['sid']!=$shop_id) die('2');  //不匹配
-      $rrow = $model->query("select s.headpic,d.time,t.tcprice from ddan d,ddshop dd,tc t,shop s where d.id={$id} AND d.sid=s.id AND dd.ddid=d.id AND dd.sid=t.id")[0];
-      
-      $rrow['id']=$row['time'].$row['id'];
-      $rrow['time'] = date("Y-m-d H:i:s",$rrow['time']);
-      echo json_encode($rrow);
-    }
->>>>>>> .r480
-
 
 
     // 堂食付款成功  生成二维码
@@ -1003,7 +983,6 @@ class FoodsController extends Controller {
       $row[$key]['ji'] = $value['num']*$value['zhekou'];
       $all += $row[$key]['ji'];
       unset($row[$key]['zhekou']);
-      unset($row[$key]['gge']);
     }
     $row['all'] =$all;
     // dump($row);
@@ -1023,14 +1002,19 @@ class FoodsController extends Controller {
     $q_cc = D('cc');
     $q_shdz = D('shdz');
     $q_hd = D('hd');
-    
-     $row['food'] = $q_model->query("select g.num,f.cainame,f.zhekou,g.gge from shopcar c,sgoods g,food f where c.uid={$user_id} AND c.sid={$shop_id} AND c.id=g.carid AND g.fid=f.id");
+    $m_shop = D('m_shop');
+    // $m_shop = D('m_shop');
+    $rarow = $m_shop->field('name,song,gogo,headpic')->where("id={$shop_id}")->find();
+    $row['name'] = $rarow['name'];
+    $row['song'] = $rarow['song'];
+    $gogo = $rarow['gogo'];
+
+    $row['food'] = $q_model->query("select g.num,f.cainame,f.zhekou,g.gge from shopcar c,sgoods g,food f where c.uid={$user_id} AND c.sid={$shop_id} AND c.id=g.carid AND g.fid=f.id");
     
     $all = 0;
     foreach ($row['food'] as $key => $value) {
       if($value['gge']!=0){ // 有规格的价格不一样
         $gge = rtrim($value['gge'],',');
-        
         $gge_row = explode(',', $gge);
         foreach ($gge_row as $k => $v) {
           $type_row = $ggetype->where("id={$v}")->find();
@@ -1043,9 +1027,11 @@ class FoodsController extends Controller {
       $row['food'][$key]['ji'] = $value['num']*$value['zhekou'];
       $all += $row['food'][$key]['ji'];
       unset($row['food'][$key]['zhekou']);
-      unset($row['food'][$key]['gge']);
     }
-    
+    // 判断够不够起送价
+    $all+=$row['song'];
+    if($all<$gogo) die('1');
+
     $roow = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
     // dump($roow);
     if($roow['ccid']==0){
@@ -1057,6 +1043,7 @@ class FoodsController extends Controller {
       $row['yh'] = $q_cc->where("id={$cc_id}")->find()['djin'];
       $all-=$row['yh'];
     }
+
     //满减
     $hd_row = $q_hd->order("tj desc")->where("sid={$shop_id} AND $all>=tj")->find();
     if($hd_row) $row['djin'] = $hd_row['djin'];
@@ -1065,16 +1052,36 @@ class FoodsController extends Controller {
     //收货地址
     $dz_id = $roow['dzid'];
     $dz_row = $q_shdz->where("id={$dz_id}")->find();
-    $row['linkman'] = $dz_row['linkman'];
+    $linkman = $dz_row['linkman'];
     $row['phone'] = $dz_row['phone'];
     $row['address'] = $dz_row['address'];
+    $sex = $dz_row['sex'];
+    if($sex==1) $row['linkman'] = $linkman."(先生)";
+    else $row['linkman'] = $linkman."(女士)";
     $row['jing'] = $dz_row['jing'];
     $row['wei'] = $dz_row['wei'];
     // 实际付款
+    
     $row['all'] =$all;
+    $ddata['zong'] = $all;
+    $ddata['id'] = $roow['id'];
+    $shopcar->save($ddata);
     // dump($row);
+
+    $newid = time().$roow['id'];
+    $newtime = (date("Y-m-d H:i:s",time()));
+    // $headpic = $food->field('headpic')->where("id={$shop_id}")->find()['headpic'];
+    $row['ok'] = [
+      'newid' => $newid,
+      'money' => $all,
+      'time' => $newtime,
+      'headpic' => $rarow['headpic'],
+    ];
+    // echo json_encode($ok);
     echo json_encode($row);
   }
+
+
   //修改外卖购物车
   public function ggwc(){
     $user_id = usersId();  //用户id
@@ -1085,11 +1092,6 @@ class FoodsController extends Controller {
     $cai = $arr->cai;
     $gge = $arr->gge;
 
-/*$user_id = 27;
-$shop_id = 1;
-$type = 2;
-$cai = 8;
-$gge = 0;*/
     $q_shopcar = D('shopcar');
     $q_sgoods = D('sgoods');
     $q_users = D('users');
@@ -1100,7 +1102,7 @@ $gge = 0;*/
       $raow = $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->find();  //有没有这道菜
       if($raow){  //有这道菜
         if($type==2 && $raow['num']==1){//数量为0 删掉这个菜
-          $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge={$gge}")->delete(); 
+          $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
           if(!$q_sgoods) $error = false;
         }else{
           // 菜有有规格
@@ -1160,17 +1162,11 @@ $gge = 0;*/
     $id = $arr->id;
     $type = $arr->type; //1地址  2优惠券
     $shopcar = D('shopcar');
-    $rrow = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
-    if($type==1){
-      if($rrow['dzid']==$id) die('1');
-      $data['dzid'] = $id;
-    }else{
-      $data['ccid'] = $id;
-      if($rrow['ccid']==$id) die('1');
-    }
+    if($type==1) $data['dzid'] = $id;
+    else $data['ccid'] = $id;
     $row = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->save($data);
-    if($row) echo '1';
-    else echo '2';
+    if($row) echo 1;
+    else echo 2;
   }
 
   //清空购物车
@@ -1182,6 +1178,7 @@ $gge = 0;*/
     $sgoods = D('sgoods');
     $id = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->find()['id'];
     $a = $shopcar->where("id={$id}")->delete();
+
     $b = $sgoods->where("carid={$id}")->delete();
     if($a && $b) echo 1;
     else  echo 2;
@@ -1191,67 +1188,88 @@ $gge = 0;*/
   public function dan(){
     $user_id = usersId();  //用户id
     $shop_id = $_COOKIE['C057DF743DCFDA2C']; // 外卖店的id
-$user_id = 27;
-$shop_id = 1;
 
+    $q_shopcar = D('shopcar');
+    $q_sgoods = D('sgoods');
+    $ggetype = D('ggetype');
+    $shdz = D('shdz');
+    $dddz = D('dddz');
+    $ddan = D('ddan');
+    $ddshop = D('ddshop');
     $q_model = D();
-    $cai = $q_model->query("select g.num,f.price,f.id,f.zhekou,c.id cid from shopcar c,sgoods g,food f where c.uid={$user_id} AND c.sid={$shop_id} AND c.id=g.carid AND g.fid=f.id");
-    dump($cai);
-    /*if($cai){
-        $q_ddan = D("ddan");
-        $q_ddshop = D("ddshop");
 
-        $data['uid'] = $user_id;
-        $data['sid'] = $shop_id;
-        $data['time'] = time();
-        $data['yuan'] = 0;
-        $data['you'] = 0;
-        $data['mai'] = 1;
-        $row = $q_ddan->add($data);
-        $error = true;
-        $yuan =0;
-        $you = 0;
-        if($row){
-            foreach ($cai as $k => $v) {
-                $datab['sid'] = $v['id'];
-                $datab['money'] = $v['zhekou']*$v['num'];
-                $datab['ddid'] = $row;
-                $datab['num'] = $v['num'];
-                $roww = $q_ddshop->add($datab);
-                if(!$roww) $error = false;
+    $row= $q_shopcar->field('id,uid,sid,dzid,zong')->where("uid={$user_id} AND sid={$shop_id}")->find();
+    $carid = $row['id'];
+    $g_row = $q_model->query("select s.*,f.cainame,f.zhekou from sgoods s,food f where f.id=s.fid AND s.carid={$carid}");
 
-                $ayuan += $v['price']*$v['num'];
-                $ayou += $datab['money'];
-            } 
-            if($error){//修改 id位$row的 原价 优惠价
-                $dataa['id'] = $row;
-                $dataa['yuan'] = $ayuan;
-                $dataa['you'] = $ayou;
-                $rrow = $q_ddan->save($dataa);
-                if(!$rrow) $error = false;
-            }
-        }else $error = false;
-
-        if($error){
-          //删除购物车 
-          $id = $cai['cid'];
-          $q_ddan = D("shopcar");
-          $q_ddshop = D("sgoods");
-          $q_ddan->where("id={$id}")->delete();
-          $q_ddshop->where("carid={$id}")->delete();
+    foreach ($g_row as $key => $value) {
+      if($value['gge']!=0){
+        $gge = rtrim($value['gge'],',');
+        $gge_row = explode(',', $gge);
+        foreach ($gge_row as $k => $v) {
+          $type_row = $ggetype->where("id={$v}")->find();
+          $lei = $type_row['name'];
+          $g_row[$key]['cainame'] .= "[".$lei."]";
+          $jia = $type_row['price'];
+          $g_row[$key]['zhekou'] += $jia;
         }
+      }
+    }
 
-        if($error) echo 1;
-        else echo 2;
-    }else echo 3;*/
+    $dz_row = $shdz->field('linkman,sex,phone,address,jing,wei')->where("id={$row['dzid']}")->find();
+    
+    $dz_add = $dddz->add($dz_row);
+    if(!$dz_add) die('2');
 
+    $dd_data = [
+      'uid' => $user_id,
+      'sid' => $shop_id,
+      'time' => time(),
+      'you' => $row['zong'],
+      'ztai' => 2,
+      'see' => 1,
+      'mai' => 1,
+      'zhu' => $zhu,
+      'dzid' => $dz_add,
+    ];
+
+    $dd_add = $ddan->add($dd_data);
+    if(!$dd_add) die('2');
+
+    foreach ($g_row as $k => $v) {
+      $dds_data = [
+        'sid' => $shop_id,
+        'money' => $v['zhekou'],
+        'ddid' => $dd_add,
+        'num' => $v['num'],
+        'name' => $v['cainame'],
+      ];
+      $dds_add = $ddshop->add($dds_data);
+      if(!$dds_add) die('2');
+    }
+
+    $a = $q_shopcar->where("id={$row['id']}")->delete();
+    $b = $q_sgoods->where("carid={$row['id']}")->delete();
+    if(!$a || !$b) die('2');
+
+  /*  $newid = time().$dd_add;
+    $newtime = (date("Y-m-d H:i:s",time()));
+    $headpic = $food->field('headpic')->where("id={$shop_id}")->find()['headpic'];
+    $ok = [
+      'newid' => $newid,
+      'money' => $row['zong'],
+      'time' => $newtime,
+      'headpic' => $headpic,
+    ];
+    echo json_encode($ok);*/
+    echo 1;
   }
 
 
 
   //用户退出
   public function utui(){
-    cookie('id',null);
+    cookie('id',null); 
   }
 
   //验证银行卡
@@ -1328,9 +1346,9 @@ $shop_id = 1;
       if($row) echo 1;
       else echo 2;*/
 
-    $gge =  '4,9,11,';
-    $gge = rtrim($gge,',');
-    echo $gge;
+    // $gge =  '4,9,11,';
+    // $gge = rtrim($gge,',');
+    // echo $gge;
   }
 
 

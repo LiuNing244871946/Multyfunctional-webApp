@@ -347,6 +347,9 @@ class FoodsController extends Controller {
 
      // 验证原密码密码
      public function change_password(){
+        // $_POST['user_id'];
+        // $_POST['password'];
+
         $name = $_COOKIE['id'];
         $arr=json_decode(file_get_contents('php://input'));
         $password = $arr->pass;
@@ -357,9 +360,9 @@ class FoodsController extends Controller {
         if($pass == $row['pass']) echo 1;
         else echo 2;
      }
-
      //修改密码
      public function change_password2(){
+
         $name = $_COOKIE['id'];
         $arr=json_decode(file_get_contents('php://input'));
         $password = $arr->pass;
@@ -368,13 +371,16 @@ class FoodsController extends Controller {
         $q_user->where("name={$name}")->save($data);
         if($q_user){
             cookie('id',null);
+
             echo 1;
         }else{
             echo 2;
         }
+        
      }
      //会员中心
      public function me(){
+       
         $user_id = $_COOKIE['id'];
         $q_user = D('users');
         $row = $q_user->where('name='.$user_id)->find();
@@ -411,6 +417,8 @@ class FoodsController extends Controller {
                 $rrow['hao'][]=$v;
             }
         }
+
+
     }
     /* //付款使用红包
      public function takeaway(){
@@ -718,31 +726,6 @@ class FoodsController extends Controller {
     }
 
 
-<<<<<<< .mine
-||||||| .r479
-      $ddan = D('ddan');
-      $model = D();
-      $row = $ddan->where("id={$id}")->find();
-      if($row['uid']!=$user_id || $row['sid']!=$shop_id) die('2');  //不匹配
-      $rrow = $model->query("select s.headpic,d.time,t.tcprice from ddan d,ddshop dd,tc t,shop s where d.id={$id} AND d.sid=s.id AND dd.ddid=d.id AND dd.sid=t.id")[0];
-      
-      $rrow['id']=$row['time'].$row['id'];
-      $rrow['time'] = date("Y-m-d H:i:s",$rrow['time']);
-      // dump($rrow);
-      echo json_encode($rrow);
-    }
-=======
-      $ddan = D('ddan');
-      $model = D();
-      $row = $ddan->where("id={$id}")->find();
-      if($row['uid']!=$user_id || $row['sid']!=$shop_id) die('2');  //不匹配
-      $rrow = $model->query("select s.headpic,d.time,t.tcprice from ddan d,ddshop dd,tc t,shop s where d.id={$id} AND d.sid=s.id AND dd.ddid=d.id AND dd.sid=t.id")[0];
-      
-      $rrow['id']=$row['time'].$row['id'];
-      $rrow['time'] = date("Y-m-d H:i:s",$rrow['time']);
-      echo json_encode($rrow);
-    }
->>>>>>> .r480
 
 
 
@@ -1160,17 +1143,11 @@ $gge = 0;*/
     $id = $arr->id;
     $type = $arr->type; //1地址  2优惠券
     $shopcar = D('shopcar');
-    $rrow = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
-    if($type==1){
-      if($rrow['dzid']==$id) die('1');
-      $data['dzid'] = $id;
-    }else{
-      $data['ccid'] = $id;
-      if($rrow['ccid']==$id) die('1');
-    }
+    if($type==1) $data['dzid'] = $id;
+    else $data['ccid'] = $id;
     $row = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->save($data);
-    if($row) echo '1';
-    else echo '2';
+    if($row) echo 1;
+    else echo 2;
   }
 
   //清空购物车
