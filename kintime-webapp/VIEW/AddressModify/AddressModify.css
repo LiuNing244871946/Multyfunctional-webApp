@@ -38,26 +38,21 @@ footer .add-address{
 	display: -webkit-flex;
 }
 .main .title{
-	width: 25%;
+	width: 20%;
 	height: .8rem;
 	font-weight: 700;
 	line-height: .8rem;
 }
-.user-info-con .name{
-	flex-direction: column;
-}
 .user-info-con .name,.address-con .address{
-	width: 75%;
+	width: 80%;
 	line-height: .8rem;
-	display: flex;
-	display: -webkit-flex;
 }
 .name .name-con{
 	width: 100%;
 	height: .8rem;
 	border-bottom: 1px solid #B8B3B7;
 }
-#name,#phone{
+#name,#address{
 	border: none;
 	outline: none;
 	color: #B8B3B7;
@@ -88,20 +83,55 @@ footer .add-address{
 	display: flex;
 	display: -webkit-flex;
 }
+#area-code{
+	border: none;
+	outline: none;
+	background: #fff;
+}
+#area-code option{
+	border: none;
+	outline: none;
+	background: #fff;
+}
 .phone .phone-con{
 	width: 75%;
 	height: .8rem;
 	line-height: .8rem;
-	float: right;
+	display: flex;
+	display: -webkit-flex;
 }
-
-.address .address-text{
-	width: 90%;
-	height: .8rem;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-.address .iconfont{
+#phone{
+	border: none;
+	outline: none;
 	color: #B8B3B7;
+	flex-grow: 1;
+}
+.address .address-text,.address .address-select{
+	width: 100%;
+	height: .8rem;
+}
+.address .address-select{
+	border-bottom: 1px solid #B8B3B7;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+#address0{
+	border: none;
+	outline: none;
+	color: #B8B3B7;
+	height: 100%;
+	flex-grow: 1;
+	background: #fff;
+}
+#tip{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	color: #F24842;
+	text-align: center;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
 }

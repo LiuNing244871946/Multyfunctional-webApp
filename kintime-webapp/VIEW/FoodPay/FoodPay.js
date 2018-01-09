@@ -1,9 +1,4 @@
 $(function() {
-	var pageSwiper = new Swiper('#page-swiper', {
-		direction: 'horizontal',
-		noSwiping: true,
-		onlyExternal: true
-	});
 	var packId = window.location.href.substr(window.location.href.indexOf("?id=") + 4);
 	var data = {};
 	data.id = packId;
@@ -29,21 +24,9 @@ $(function() {
 	});
 	//	提交订单
 	$('#order-page .pay-btn-con').on('tap', function() {
-<<<<<<< .mine
-		var data = [];
-		data[0]={};
-		data[0].sid = packId;
-		data[0].num= '1';
-||||||| .r480
-		var data = [];
-		data[0]={};
-		data[0].sid = packId;
-		data[0].num= 1;
-=======
 		var data ={};
 		data.id = packId;
 		data.num= 1;
->>>>>>> .r485
 		var jsonStr = JSON.stringify(data);
 		$.ajax({
 			type: "post",
@@ -53,17 +36,12 @@ $(function() {
 			data: jsonStr,
 			dataType: "json",
 			success: function(data) {
-<<<<<<< .mine
-				if(data===1){
-					pageSwiper.slideTo(1, 100, false);
-				}else{
-||||||| .r480
-				console.log(data);
 				if(data===2){
-=======
-				if(data===2){
->>>>>>> .r485
 					alert('订单提交失败');
+				}else if(data===3){
+					alert('库存不足');
+				}else{
+					window.location.href='../FoodPay2/FoodPay2.html?'+data;
 				}
 			},
 			error: function(e) {
@@ -71,31 +49,4 @@ $(function() {
 			}
 		});
 	});
-	//	支付方式
-	$('#pay-page .payment-select').on('tap', function() {
-		$('#pay-page .payment-item').removeClass('selected');
-		$(this).parent().addClass('selected');
-	});
-	//	确认支付
-	$('#pay-page .pay-btn').on('tap', function() {
-		$('#discount-con,#pay-con').show();
-	});
-	//	银行卡列表
-	$('#china .card-num').on('tap', function() {
-		$('#discount-con,#cardlist-con').show();
-	});
-	$('#card-list .bank-select').on('tap', function() {
-		$('#card-list .card-item').removeClass('selected');
-		$(this).parent().addClass('selected');
-	});
-	$('#add-card').on('tap', function() {
-		location.href = 'add-card.html';
-	});
-	$('#cardlist-con .determine-btn').on('tap', function() {
-		var bankName = $('#card-list .selected .bank-name').text();
-		var bankNum = $('#card-list .selected .bank-num').text();
-		$('#discount-con,.discount-item').hide();
-		$('#china .num-text').text(bankNum);
-	})
-
 })

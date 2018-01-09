@@ -10,7 +10,7 @@ $(function(){
 				var str='';
 				$.each(data, function(index,item) {
 					if(item.id){
-						str+='<li class="address-item" data-ad="'+item.id+'"><div class="address-info"><div class="address-text-con">'+item.address+'</div><div class="address-text-con"><span class="name-con">'+item.linkman+'';
+						str+='<li class="address-item" data-ad="'+item.id+'"><div class="address-info"><div class="address-text-con">'+item.address+item.xiaddress+'</div><div class="address-text-con"><span class="name-con">'+item.linkman+'';
 						if(item.sex==='1'){
 							str+='先生</span><span class="phone-con">18957556486</span></div></div><span class="select-con"><span class="edit-con"><i class="iconfont icon-edit"></i></span><span class="back-con"><i class="iconfont icon-ok"></i></span></span></li>';
 						}else{

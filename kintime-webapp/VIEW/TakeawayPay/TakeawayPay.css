@@ -1,4 +1,3 @@
-
 /*用户信息*/
 .userinfo-con{
 	position: fixed;
@@ -103,21 +102,20 @@ footer .pay-money-con{
 	padding-left: .1rem;
 	font-weight: 100;
 }
-footer .pay-btn-con{
+footer  .pay-btn-con{
 	width: 30%;
 	font-size: .3rem;
 	float: right;
 	background: #00BED7;
 	text-align: center;
 }
-
-
 /*订单信息*/
 .order-info{
 	width: 100%;
 	padding: 0 .2rem;
-	position: relative;
-	top: 2.8rem;
+	position: absolute;
+	top: 1.85rem;
+	bottom: 1rem;
 	box-sizing: border-box;
 	overflow-y: scroll;
 }
@@ -163,12 +161,18 @@ footer .pay-btn-con{
 	width: 100%;
 	line-height: .8rem;
 	border-bottom: 1px solid #B8B3B7;
-	
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
 }
-.del-money .money-con,.full-reduc .money-con,.red-enve .money-con{
-	float: right;
+.del-money .money-con,.full-reduc .money-con,.red-enve .red-con{
 	width: 50%;
 	text-align: right;
+}
+.red-enve .red-con{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
 }
 .red-enve .title,.red-enve .money-con{
 	color: #F24842;
@@ -177,12 +181,10 @@ footer .pay-btn-con{
 	display: none;
 }
 .red-enve .iconfont{
-	float: right;
 	color: #B8B3B7;
 	font-size: .28rem;
 }
 .red-enve .red-tip{
-	float: right;
 	color: #B8B3B7;
 	display: block;
 	width: 50%;
@@ -203,47 +205,4 @@ footer .pay-btn-con{
 	float: right;
 	text-align: right;
 	color: #00BED7;
-}
-
-
-/*蒙板*/
-.discon{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0,0,0,.7);
-	z-index: 999;
-	display: none;
-}
-.discon .time-select{
-	width: 80%;
-	height: 50%;
-	margin: 25% 10% 0;
-	background: #fff;
-	border-radius: .2rem;
-	padding: .2rem;
-	position: relative;
-}
-.time-select .title{
-	width: 100%;
-	text-align: center;
-	font-size: .3rem;
-	font-weight: 700;
-	
-}
-.time-select .sub-title{
-	width: 100%;
-	text-align: center;
-	font-size: .2rem;
-	color: #B8B3B7;
-	line-height: .4rem;
-}
-.time-select .warn-time{
-	width: 100%;
-	text-align: center;
-	font-size: .2rem;
-	color: #F24842;
-	line-height: .4rem;
 }

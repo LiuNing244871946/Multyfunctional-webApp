@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>外卖支付</title>
@@ -20,11 +21,12 @@
 		<meta name="msapplication-tap-highlight" content="no" />
 		<link rel="stylesheet" href="../Public/public.css" />
 		<link rel="stylesheet" href="../Public/iconfont.css" />
-		<link rel="stylesheet" href="TakeawayPay.css"/>
+		<link rel="stylesheet" href="TakeawayPay.css" />
 		<script type="text/javascript" src="../Public/zepto.min.js"></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="TakeawayPay.js"></script>
 	</head>
+
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
@@ -36,10 +38,10 @@
 				<div class="address-info-con">
 					<span class="bare-con">请点击前往填写地址~</span>
 					<div class="full-con">
-						<div class="address-text-con">江干区三堡产业大厦A座1601室江干区三堡产业大厦A座1601室</div>
+						<div class="address-text-con" id="address"></div>
 						<div class="address-text-con">
-							<span class="name-con">张先生</span>
-							<span class="phone-con">18957556486</span>
+							<span class="name-con"></span>
+							<span class="phone-con"></span>
 						</div>
 					</div>
 				</div>
@@ -48,14 +50,13 @@
 			<div class="time-con">
 				<i class="iconfont icon-time"></i>
 				<div class="time-text">
-					立即送出<span class="time-text-con">(约12:00送达)</span>
+					立即送出<span class="time-text-con"></span>
 				</div>
 			</div>
 		</div>
-		
 		<div class="order-info">
 			<div class="info-con">
-				<div class="shop-name">商家名称</div>
+				<div class="shop-name"></div>
 				<table class="shop-table">
 					<thead>
 						<tr>
@@ -64,86 +65,44 @@
 							<th class="price">价格</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td class="name">菜品</td>
-							<td class="num">x2</td>
-							<td class="price">
-								<i class="money">￥</i><span class="money-num">5000</span>
-							</td>
-						</tr>
-						<tr>
-							<td class="name">菜品</td>
-							<td class="num">x2</td>
-							<td class="price">
-								<i class="money">￥</i><span class="money-num">5000</span>
-							</td>
-						</tr>
-						<tr>
-							<td class="name">菜品</td>
-							<td class="num">x2</td>
-							<td class="price">
-								<i class="money">￥</i><span class="money-num">5000</span>
-							</td>
-						</tr>
-						<tr>
-							<td class="name">餐盒</td>
-							<td class="num">x2</td>
-							<td class="price">
-								<i class="money">￥</i><span class="money-num">5000</span>
-							</td>
-						</tr>
-					</tbody>
+					<tbody></tbody>
 				</table>
 				<div class="del-money">
 					<span class="title">配送费</span>
 					<span class="money-con">
-						<i class="money">￥</i><span class="money-num">1500</span>
+						<i class="money">￥</i><span class="money-num"></span>
 					</span>
 				</div>
 				<div class="full-reduc">
 					<span class="title">满减</span>
 					<span class="money-con">
-						-<i class="money">￥</i><span class="money-num">1500</span>
+						-<i class="money">￥</i><span class="money-num"></span>
 					</span>
 				</div>
 				<div class="red-enve">
 					<span class="title">红包</span>
-					<i class="iconfont icon-jiantouyou"></i>
-					<span class="red-tip">2个红包可用</span>
+					<span class="red-con">
+						<span class="red-tip"><span class="num-con"></span>个红包可用</span>
 					<span class="money-con">
-						-<i class="money">￥</i><span class="money-num">500</span>
+							-<i class="money">￥</i><span class="money-num"></span>
+					</span>
+					<i class="iconfont icon-jiantouyou"></i>
 					</span>
 				</div>
 				<div class="total-con">
-					<span class="tip">优惠说明</span>
 					<span class="total-price">
-						总计<i class="money">￥</i><span class="money-num">2000</span>
+						总计<i class="money">￥</i><span class="money-num"></span>
 					</span>
 				</div>
 			</div>
-			
 		</div>
-		
-		<div class="discon">
-			<div class="time-select">
-				<div class="title">配送时间</div>
-				<div class="sub-title">
-					该店铺可配送时为<span class="start-time">8:00</span>~<span class="stop-time">22:00</span>
-				</div>
-				<div class="warn-time">
-					所选时间无法配送，请注意店铺配送时间
-				</div>
-			</div>
-		</div>
-		
 		<footer>
 			<div class="pay-money-con">
 				<span class="must-pay-con">
-					<i class="money">￥</i><span class="money-num">99999</span>
+					<i class="money">￥</i><span class="money-num"></span>
 				</span>
-				<span class="discount-con">
-					已优惠<i class="money">￥</i><span class="money-num">90000</span>
+				<span class="discount-money">
+					已优惠<i class="money">￥</i><span class="money-num"></span>
 				</span>
 			</div>
 			<div class="pay-btn-con">
@@ -151,4 +110,5 @@
 			</div>
 		</footer>
 	</body>
+
 </html>

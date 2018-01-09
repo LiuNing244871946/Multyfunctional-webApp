@@ -78,7 +78,8 @@ $(function(){
 				data.sex=0;
 			};
 			data.phone=$('#area-code').val()+$('#phone').val();
-			data.address=$('#address0').val()+$('#address').val();
+			data.address=$('#address0').val();
+			data.xiaddress=$('#address').val();
 			data.jing=30.2684079898;
 			data.wei=120.2283668518;
 			var jsonStr = JSON.stringify(data);

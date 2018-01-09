@@ -19,7 +19,7 @@ class  SkeywordsController extends Controller { //店内搜索商品
                   $row=$s->query("select id,tcname,headpic,oldprice,tcprice,ping from tc where tcname like '%{$keyword}%' and sid={$mid}") ; //tc
                  break;
                case 11: //外卖类
-                  $row=$s->query("select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%{$keyword}%' and sid={$wid}") ; //food
+                  $row=$s->query("select id,cainame,price,pliao,headpic,m_ping,m_xl from food where cainame like '%{$keyword}%' and sid={$wid}") ; //food
                  break;
               case 13: //购物类
                   $row=$s->query("") ; //购物店铺(开发中...)

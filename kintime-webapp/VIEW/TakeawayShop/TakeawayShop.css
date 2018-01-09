@@ -92,7 +92,7 @@
 	align-items: center;
 }
 .menu-footer .order-btn{
-	width: 2.1rem;
+	padding: 0 .2rem;
 	height: 100%;
 	background: #B8B3B7;
 	font-size: .35rem;
@@ -393,7 +393,7 @@
 .dish-item-s .numbtn-con .num-con{
 	position: absolute;
 	top: -.1rem;
-	right: -.1rem;
+	right: 0rem;
 	width: .3rem;
 	height: .3rem;
 	background: #CA5543;
@@ -554,7 +554,6 @@
 }
 .dish-num .num-con{
 	padding: 0 .1rem;
-	width: .35rem;
 	height: .35rem;
 }
 .dish-num .add-num{

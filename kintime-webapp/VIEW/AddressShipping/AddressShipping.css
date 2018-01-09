@@ -53,6 +53,9 @@ footer .add-address{
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.name-con{
+	margin-right: .1rem;
+}
 .address-item .select-con{
 	width: 15%;
 	height: .8rem;

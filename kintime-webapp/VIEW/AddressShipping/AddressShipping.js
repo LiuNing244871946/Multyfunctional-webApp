@@ -1,49 +1,4 @@
 $(function(){
-<<<<<<< .mine
-	$('.address-item').on('tap',function(e){
-		if(!$(this).hasClass('select')){
-			$('.address-item').removeClass('select');
-			$(this).addClass('select');
-		}else{
-			$('.address-item').removeClass('select');
-		};
-||||||| .r480
-	$.ajax({
-		type: "post",
-		url: "../../PHP/home/foods/address",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		dataType: "json",
-		success:function(data){
-			console.log(data);
-			if(data.dzid!==0){
-				var aId = data.dzid;
-				var str='';
-				$.each(data, function(index,item) {
-					if(item.id){
-						str+='<li class="address-item" data-ad="'+item.id+'"><div class="address-info"><div class="address-text-con">'+item.address+'</div><div class="address-text-con"><span class="name-con">'+item.linkman+'';
-						if(item.sex==='1'){
-							str+='先生</span><span class="phone-con">'+item.phone+'</span></div></div><span class="select-con"><span class="back-con"><i class="iconfont icon-ok"></i></span></span></li>';
-						}else{
-							str+='女士</span><span class="phone-con">'+item.phone+'</span></div></div><span class="select-con"><span class="back-con"><i class="iconfont icon-ok"></i></span></span></li>';
-						};
-					};
-				});
-				$('.address-list').append(str);
-				$('.address-item').each(function(index){
-					console.log($(this).data('ad'),aId);
-					if($(this).data('ad')===parseInt(aId)){
-						$(this).addClass('select');
-					};
-				});
-			}else{
-				alert('你还没有地址，请先添加地址');
-			};
-		},
-		error:function(e){
-			console.log(e);
-		}
-=======
 	var adId;
 	$.ajax({
 		type: "post",
@@ -57,7 +12,7 @@ $(function(){
 				var str='';
 				$.each(data, function(index,item) {
 					if(item.id){
-						str+='<li class="address-item" data-ad="'+item.id+'"><div class="address-info"><div class="address-text-con">'+item.address+'</div><div class="address-text-con"><span class="name-con">'+item.linkman+'';
+						str+='<li class="address-item" data-ad="'+item.id+'"><div class="address-info"><div class="address-text-con">'+item.address+item.xiaddress+'</div><div class="address-text-con"><span class="name-con">'+item.linkman+'';
 						if(item.sex==='1'){
 							str+='先生</span><span class="phone-con">'+item.phone+'</span></div></div><span class="select-con"><span class="back-con"><i class="iconfont icon-ok"></i></span></span></li>';
 						}else{
@@ -78,21 +33,12 @@ $(function(){
 		error:function(e){
 			console.log(e);
 		}
->>>>>>> .r485
 	});
-<<<<<<< .mine
-||||||| .r480
-	$('.address-list').on('tap','.address-item',function(e){
-		$('.address-item').removeClass('select');
-		$(this).addClass('select');
-	});
-=======
 	$('.address-list').on('tap','.address-item',function(e){
 		$('.address-item').removeClass('select');
 		$(this).addClass('select');
 		adId=$(this).data('ad');
 	});
->>>>>>> .r485
 //	确定按钮
 	$('.determine').on('tap',function(){
 		if(adId===undefined){

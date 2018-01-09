@@ -136,4 +136,24 @@ $(function() {
 		$.fn.cookie('4373433CA7C70528',$(this).data('id'),{path:'/'});
 		window.location.href='../FoodShop/FoodShop.html';
 	})
+	// 订单页面请求数据
+	$("#order-btn").on('tap',function(){
+		$.ajax({
+            type:"POST",
+            url:"",
+            async:true,
+            contentType:"application/x-www-form-urlencoded",//内容编码类型
+            dataType:"json",//服务器返回的数据类型
+            success:function(res){
+                console.log(res);
+				$(".order-main").empty();
+				var orderUrl = "../OrderMain/order-main.html";
+				$(".order-main").append(orderUrl);
+            },
+            error:function(e){
+                console.log(e);
+                console.log("页面加载失败");
+            }
+        })
+	})
 })

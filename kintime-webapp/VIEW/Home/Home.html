@@ -23,15 +23,16 @@
 		<link rel="stylesheet" href="../Public/iconfont.css" />
 		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
 		<link rel="stylesheet" href="Home.css" />
+		<link rel="stylesheet" href="order-main.css" />
 		<link rel="stylesheet" href="Me.css" />
 		<link rel="stylesheet" href="../Public/food-shop.css" />
 		<script type="text/javascript" src="../Public/zepto.min.js"></script>
-		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js"></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
 		<script type="text/javascript" src="../Public/echo.min.js"></script>
 		<script type="text/javascript" src="Home.js"></script>
-		<script type="text/javascript" src="Me.js" ></script>
+		<script type="text/javascript" src="Me.js"></script>
 		<script type="text/javascript" src="../Public/data.js"></script>
 	</head>
 
@@ -46,7 +47,7 @@
 						</a>
 						<a class="input-con" href="../SearchFor/SearchFor.html">
 							<i class="iconfont icon-sousuo"></i>
-							<span class="search-text">4564565456564</span>
+							<span class="search-text">搜索商家/商品</span>
 						</a>
 					</header>
 					<div class="home-con">
@@ -62,55 +63,55 @@
 						<!--分类-->
 						<div id="home-sort">
 							<div class="sort-con">
-								<a class="sort-item" href="../FoodHome/FoodHome.html">
+								<a class="sort-item" href="../FoodHome/FoodHome.html" id="food-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-meishi"></i>
 									</span>
 									<span class="sort-text">美食</span>
 								</a>
-								<a class="sort-item">
+								<a class="sort-item" id="shop-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-iconfontgouwu"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">购物</span>
 								</a>
-								<a class="sort-item">
+								<a class="sort-item" id="traffic-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-qiche"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">交通</span>
 								</a>
-								<a class="sort-item">
+								<a class="sort-item" id="tourism-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-lvyou"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">旅游</span>
 								</a>
 							</div>
 							<div class="sort-con">
-								<a class="sort-item">
+								<a class="sort-item" id="play-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-yule"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">娱乐</span>
 								</a>
-								<a class="sort-item">
+								<a class="sort-item" id="life-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-fangzi"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">生活</span>
 								</a>
-								<a class="sort-item">
+								<a class="sort-item" id="playmate-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-liaotian"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">玩伴</span>
 								</a>
-								<a class="sort-item">
+								<a class="sort-item" id="moneymana-link">
 									<span class="sort-img">
-										<img src="../../STATIC/img/home9.png" />
+										<i class="iconfont icon-licai"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text">理财</span>
 								</a>
 							</div>
 						</div>
@@ -165,10 +166,66 @@
 					</div>
 				</div>
 				<div class="swiper-slide">
-					2
+					附近
 				</div>
 				<div class="swiper-slide">
-					3
+					招商
+				</div>
+				<div class="swiper-slide" id="order-page">
+					<!-- 头部 -->
+					<div class="order-main-header">订单</div>
+					<!-- 中间 -->
+					<div class="order-main-top">
+						<div class="order-main-list1">
+							<p class="list-img-box1"></p>
+							<ul class="list-word-box">
+								<li>美食订单</li>
+								<li>外卖订单</li>
+								<li>购物订单</li>
+								<li>酒店订单</li>
+							</ul>
+						</div>
+						<div class="order-main-list2">
+							<p class="list-img-box2"></p>
+							<ul class="list-word-box">
+								<li>娱乐订单</li>
+								<li>机票订单</li>
+								<li>培训订单</li>
+								<li>理财订单</li>
+							</ul>
+						</div>
+					</div>
+					<div class="current-order">当前订单</div>
+					<!-- 订单列表 -->
+					<div class="will-consume-box">
+						<p class="will-consume-title">
+							<span class="shop-name">四季粥铺</span>
+							<span class="will-consume-word">骑手配送中</span>
+						</p>
+						<div class="will-consume-content">
+							<div class="content-left">
+								<i class="content-left-img"></i>
+							</div>
+							<div class="content-right">
+								<div class="content-right-top">
+									<p class="content-right-left">
+										<span class="content-right-top1">虾仁玉米粥等2件商品</span>
+										<span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
+									</p>
+									<p class="icon-box">
+										<i class="iconfont icon-next"></i>
+									</p>
+								</div>
+								<div class="content-right-bottom">
+									<p class="content-right-bottom1">
+										<span class="all-count">总计：</span>
+										<span class="money-num">₭9.5万</span>
+									</p>
+									<button class="view-code">再来一单</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-slide">
 					<!--用户信息-->
@@ -234,6 +291,12 @@
 					<i class="iconfont icon-fujin"></i>
 				</span>
 				<span class="btn-text">附近</span>
+			</div>
+			<div id="merchans-btn" class="page-btn">
+				<span class="img-con">
+					<i class="iconfont icon-zhaoshang"></i>
+				</span>
+				<span class="btn-text">招商</span>
 			</div>
 			<div id="order-btn" class="page-btn">
 				<span class="img-con">

@@ -21,10 +21,10 @@
 		<meta name="msapplication-tap-highlight" content="no" />
 		<link rel="stylesheet" href="../Public/public.css" />
 		<link rel="stylesheet" href="../Public/iconfont.css" />
-		<link rel="stylesheet" href="TakeawayShop.css" />
-		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
-		<link rel="stylesheet" href="../Public/eva.css" />
 		<link rel="stylesheet" href="../Public/img-show.css" />
+		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="TakeawayShop.css" />
+		<link rel="stylesheet" href="../Public/eva.css" />
 		<script type="text/javascript" src="../Public/zepto.min.js"></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="../Public/echo.min.js" ></script>
@@ -133,6 +133,27 @@
 								<i class="iconfont icon-time"></i>
 								<span class="text-con">配送时间：10:00-21:00</span>
 							</li>
+							<li class="list-item" id="delivery-money">
+								<i class="iconfont icon-shape"></i>
+								<span>
+									<span class="text-con">配送费:</span>
+									<span class="money-con">
+										<i class="money">k</i>
+										<span class="money-num"></span>
+									</span>
+								</span>
+								
+							</li>
+							<li class="list-item" id="start-price">
+								<i class="iconfont icon-qisongjia"></i>
+								<span>
+									<span class="text-con">起送价：</span>
+									<span class="money-con">
+										<i class="money">k</i>
+										<span class="money-num"></span>
+									</span>
+								</span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -159,41 +180,16 @@
 			</div>
 			<div class="discount-item" id="norm-con">
 				<div class="norm-title">菜品名称</div>
-				<div class="norm-list">
-					<div class="norm-item">
-						<div class="normitem-title">温度</div>
-						<div class="item-option">
-							<span class="option-item selected">超级烫</span>
-							<span class="option-item">多冰</span>
-							<span class="option-item">少冰</span>
-						</div>
-					</div>
-					<div class="norm-item">
-						<div class="normitem-title">温度</div>
-						<div class="item-option">
-							<span class="option-item selected">超级烫</span>
-							<span class="option-item">多冰</span>
-							<span class="option-item">少冰</span>
-						</div>
-					</div>
-					<div class="norm-item">
-						<div class="normitem-title">温度</div>
-						<div class="item-option">
-							<span class="option-item selected">超级烫</span>
-							<span class="option-item">多冰</span>
-							<span class="option-item">少冰</span>
-						</div>
-					</div>
-				</div>
+				<div class="norm-list"></div>
 				<div class="normprice-con">
 					<span class="norm-price">
 						<i class="money">K</i>
-						<span class="money-text">5000</span>
+						<span class="money-text"></span>
 					</span>
 					<button class="joincart">加入购物车</button>
 				</div>
 			</div>
-			<div class="discount-item" id="order-list	">
+			<div class="discount-item" id="order-list">
 				<div class="orderlist-title">
 					<span class="left-title">已点</span>
 					<span id="clear-btn">
@@ -201,21 +197,7 @@
 						<span class="btn-text">清空所有</span>
 					</span>
 				</div>
-				<ul>
-					<li class="orderlist-item">
-						<span class="dish-name">菜品名称</span>
-						<span class="price-num">
-							<span class="dish-price">
-								<i class="money">K</i><span class="money-num">5000</span>
-						</span>
-						<span class="dish-num">
-								<span class="less-num">-</span>
-						<span class="num-con">1</span>
-						<span class="add-num">+</span>
-						</span>
-						</span>
-					</li>
-				</ul>
+				<ul></ul>
 			</div>
 		</div>
 	</body>

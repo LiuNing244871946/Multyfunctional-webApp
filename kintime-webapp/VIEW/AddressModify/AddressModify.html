@@ -36,10 +36,10 @@
 				<div class="title">联系人</div>
 				<div class="name">
 					<div class="name-con">
-						<input type="text" value="姓名" id="name"/>
+						<input type="text" placeholder="姓名" id="name"/>
 					</div>
 					<div class="sex">
-						<span class="sex-con select">先生</span>
+						<span class="sex-con">先生</span>
 						<span class="sex-con">女士</span>
 					</div>
 				</div>
@@ -47,18 +47,26 @@
 			<div class="phone">
 				<div class="title">电话</div>
 				<div class="phone-con">
-					<input type="text" value="手机号码/电话号码" id="phone"/>
+					<select id="area-code">
+						<option>中国+86</option>
+						<option>老挝+856</option>
+					</select>
+					<input type="number" placeholder="手机号码/电话号码" id="phone"/>
 				</div>
 			</div>
 			<div class="address-con">
 				<div class="title">地址</div>
 				<div class="address">
-					<div class="address-text">
-						万象市东巴兰街43号
+					<div class="address-select">
+						<input type="text" placeholder="当前仅限万象市" id="address0" disabled="disabled"/>
+						<i class="iconfont icon-jiantouyou"></i>
 					</div>
-					<i class="iconfont icon-jiantouyou"></i>
+					<div class="address-text">
+						<input type="text" placeholder="请输入详细位置" id="address"/>
+					</div>
 				</div>
 			</div>
+			<div id="tip"></div>
 			
 		</div>
 		
