@@ -1,0 +1,187 @@
+#main-con{
+	padding: 0 .2rem;
+}
+#main-con::-webkit-scrollbar{
+	display: none;
+}
+#eva-title{
+	width: 100%;
+	height: 1.95rem;
+	padding: .56rem .32rem;
+	border-bottom: 1px solid #F3F4F5;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#shop-eva{
+	font-size: .6rem;
+	color: #6abdd5;
+	margin-right: .16rem;
+}
+#eva-compare{
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+#compare-left{
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#compare-right{
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.eva-star1{
+	width: 85px;
+	height: 16px;
+	background-image:url(../../STATIC/评价.png);
+	background-size: 17px 16px;
+	background-repeat: repeat-x;
+}
+.eva-star2{
+	height: 16px;
+	background-image:url(../../STATIC/评价1.png);
+	background-size: 17px 16px;
+	background-repeat: repeat-x;
+	display: block;
+}
+/*分类评价*/
+#shop-strats{
+	width: 100%;
+	padding: .4rem .22rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-bottom: 1px solid #F3F4F5;
+}
+#shop-strats .starts-item{
+	width: 100%;
+	margin-bottom: .4rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+#shop-strats .starts-item:last-child{
+	margin-bottom: 0;
+}
+.starts-item .item-score{
+	margin-right: .26rem;
+}
+/*评价列表头部*/
+#evalist-title{
+	width: 100%;
+	height: .83rem;
+	font-size: .3rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 .22rem;
+	border-bottom: 1px solid #F3F4F5;
+}
+#evasort-con{
+	width: 100%;
+	padding: .26rem .22rem;
+	padding-bottom: 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #F3F4F5;
+}
+#evasort-con .sort-item{
+	padding: .12rem .16rem;
+	border: 1px solid #6abdd5;
+	margin-right: .22rem;
+	margin-bottom: .26rem;
+	border-radius: 6px;
+}
+#evasort-con .sort-item.selected{
+	background: #6abdd5;
+	color: #fff;
+}
+/*评价列表*/
+#eva-list{
+	width: 100%;
+}
+#eva-list .eva-item{
+	width: 100%;
+	padding: .36rem .22rem;
+	border-bottom: 1px solid #F3F4F5;
+	font-size: .3rem;
+}
+#eva-list .item-head{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: .26rem;
+}
+#eva-list .head-img{
+	width: 1rem;
+	height: 1rem;
+	background: #F3F4F5;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-right: .26rem;
+}
+#eva-list .head-img img{
+	width: 100%;
+	height: 100%;
+}
+#eva-list .head-info{
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+#eva-list .user-name{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#eva-list .eva-info{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+#eva-list .item-main,#eva-list .eva-text{
+	width: 100%;
+}
+#eva-list .eva-img{
+	max-height: 2.2rem;
+	overflow: hidden;
+}
+#eva-list .eva-img .img-con{
+	height: 100%;
+	overflow-x: scroll;
+	display: flex;
+	display: -webkit-flex;
+}
+.eva-img .img-con::-webkit-scrollbar{
+	display: none;
+}
+#eva-list .eva-img img{
+	width: 2rem;
+	height: 2rem;
+	margin-top: .2rem;
+	margin-right: .18rem;
+}
+#eva-list .eva-img img:last-child{
+	margin-right: 0;
+}

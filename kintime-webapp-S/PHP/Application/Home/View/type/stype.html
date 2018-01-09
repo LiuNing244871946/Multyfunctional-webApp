@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外卖分类</title>
+</head>
+<body>
+<table width="700" border="1">
+ <foreach name='row' item='v'>
+	<tr>
+		<td><a href="{:U('wmfood/wmshow?id='.$v['id'])}">{$v.name}</a></td>
+	</tr>
+	<!-- <tr>
+		<td><a href="{:U('type/stype?id='.$v['id'])}">{$v.name}</a></td>
+	</tr> -->
+	</foreach>
+</table>
+</body>
+</html>
+
+
+

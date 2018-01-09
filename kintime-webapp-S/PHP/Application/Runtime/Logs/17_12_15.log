@@ -1,0 +1,9 @@
+[ 2017-12-15T16:45:41+08:00 ] ::1 /kintime-webapp-S/PHP/HOME/
+ERR: 无法加载控制器:Index
+
+[ 2017-12-15T16:45:53+08:00 ] ::1 /kintime-webapp-S/PHP/HOME/mede/
+ERR: 无法加载控制器:Mede
+
+[ 2017-12-15T16:45:56+08:00 ] ::1 /kintime-webapp-S/PHP/HOME/mede/sji
+ERR: 无法加载控制器:Mede
+

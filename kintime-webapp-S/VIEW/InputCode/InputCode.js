@@ -1,0 +1,12 @@
+$(function(){
+	$('#input-code').focus(function(){
+		if($(this).val()=="点击输入券码"){
+			$(this).val("");
+		};
+	});
+	$('#input-code').blur(function(){
+		if($(this).val()==""){
+			$(this).val("点击输入券码");
+		};
+	});
+})

@@ -1,0 +1,124 @@
+#shop-header{
+	width: 100%;
+	padding: 0 .2rem;
+	background: #fff;
+	margin-bottom: .1rem;
+}
+#shop-title{
+	width: 100%;
+	height: 1.64rem;
+	border-bottom: 1px solid #F3F4F5;
+	font-size: .32rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+#shop-img{
+	width: 1.08rem;
+	height: 1.08rem;
+	background: #F3F4F5;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#shop-img img{
+	width: 100%;
+	height: 100%;
+}
+#shop-info{
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: .26rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#shop-name{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#shop-address{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #777;
+	font-size: .22rem;
+	margin-top: .16rem;
+}
+#shop-type{
+	border-right: 1px solid #777;
+	padding-right:.1rem;
+}
+#shop-data{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	padding-bottom: .32rem;
+	font-size: .24rem;
+}
+.data-item{
+	width: 50%;
+	margin-top: .32rem;
+}
+.item-num{
+	color: #6abdd5;
+}
+#shop-manage{
+	width: 100%;
+	height: 1.72rem;
+	padding: .16rem 0;
+	font-size: .2rem;
+	display: flex;
+	display: -webkit-flex;
+	background: #fff;
+}
+.manage-item{
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #f3f4f5;
+	flex-grow: 1;
+}
+.manage-item:first-child{
+	border-left: 0;
+}
+.manage-item .item-img{
+	width: .5rem;
+	height: .5rem;
+	border-radius: 5px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+.manage-item .item-img .iconfont{
+	font-size: .46rem;
+	color: #fff;
+}
+.manage-item .item-text{
+	margin-top: .2rem;
+}
+#virification .item-img{
+	background: #fd7d4c;
+}
+#operating-data .item-img{
+	background: #7dd82a;
+}
+#eva-manage .item-img{
+	background: #febb34;
+}
+#elec-menu .item-img{
+	background: #E55E5E;
+}
+#com-manage .item-img{
+	background: #61BCE6;
+}

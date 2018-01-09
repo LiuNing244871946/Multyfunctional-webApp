@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>评价管理</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="EvaManage.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="EvaManage.js"></script>
+	</head>
+	<body>
+		<header class="return-header">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="h-title">评价管理</span>
+		</header>
+		<div id="main-con">
+			<div id="eva-title">
+				<span id="shop-eva">
+					<span class="eva-fraction">5.0</span><span class="eva-text">分</span>
+				</span>
+				<span id="eva-compare">
+					<span id="compare-left">
+						<span>综合评分</span>
+						<span class="eva-star1">
+							<span class="eva-star2" style="width: 80%;"></span>
+						</span>
+					</span>
+					<span id="compare-right">
+						<span id="peer-compare">
+							高于<span id="peer-num">99%</span>同行
+						</span>
+						<span id="praise">
+							<span id="praise-text">好评率</span>
+							<span id="praise-num">90%</span>
+						</span>
+					</span>
+				</span>
+			</div>
+			<div id="shop-strats">
+				<span class="starts-item">
+					<span class="item-title">服务</span><span class="item-score">5.0</span>
+					<span class="eva-star1">
+						<span class="eva-star2" style="width: 100%;"></span>
+					</span>
+				</span>
+				<span class="starts-item">
+					<span class="item-title">口味</span><span class="item-score">5.0</span>
+					<span class="eva-star1">
+						<span class="eva-star2" style="width: 100%;"></span>
+					</span>
+				</span>
+				<span class="starts-item">
+					<span class="item-title">环境</span><span class="item-score">4.0</span>
+					<span class="eva-star1">
+						<span class="eva-star2" style="width: 80%;"></span>
+					</span>
+				</span>
+			</div>
+			<div id="evalist-title">
+				<span>综合评分</span>
+				<span id="evanum-con">
+					<span id="eva-num">1000</span><span class="text">人评价</span>
+				</span>
+			</div>
+			<div id="evasort-con">
+				<span class="sort-item selected" id="alleva">
+					<span class="sort-text">全部</span>
+					<span class="sort-num">1000</span>
+				</span>
+				<span class="sort-item" id="praise-sort">
+					<span class="sort-text">好评</span>
+					<span class="sort-num">500</span>
+				</span>
+				<span class="sort-item" id="badreview">
+					<span class="sort-text">差评</span>
+					<span class="sort-num">500</span>
+				</span>
+			</div>
+			<ul id="eva-list">
+				<li class="eva-item">
+					<div class="item-head">
+						<span class="head-img">
+							<img src="../../STATIC/头像.jpg"/>
+						</span>
+						<span class="head-info">
+							<span class="user-name">用户007</span>
+							<span class="eva-info">
+								<span class="user-score">
+									<span class="text-con">打分：</span>
+									<span class="score-con">5分</span>
+								</span>
+								<span class="date-con">
+									2017-11-22
+								</span>
+							</span>
+						</span>
+					</div>
+					<div class="item-main">
+						<div class="eva-text">菜品新鲜，环境不错。</div>
+						<div class="eva-img">
+							<div class="img-con"></div>
+						</div>
+					</div>
+				</li>
+				<li class="eva-item">
+					<div class="item-head">
+						<span class="head-img">
+							<img src="../../STATIC/头像.jpg"/>
+						</span>
+						<span class="head-info">
+							<span class="user-name">用户007</span>
+							<span class="eva-info">
+								<span class="user-score">
+									<span class="text-con">打分：</span>
+									<span class="score-con">5分</span>
+								</span>
+								<span class="date-con">
+									2017-11-22
+								</span>
+							</span>
+						</span>
+					</div>
+					<div class="item-main">
+						<div class="eva-text">菜品新鲜，环境不错。</div>
+						<div class="eva-img">
+							<div class="img-con">
+								<img src="../../STATIC/建筑.jpg" />
+								<img src="../../STATIC/建筑.jpg" />
+								<img src="../../STATIC/头像.jpg" />
+								<img src="../../STATIC/头像.jpg" />
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

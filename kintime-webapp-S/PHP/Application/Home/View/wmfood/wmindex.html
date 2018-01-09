@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外卖下各个分类的商品</title>
+</head>
+<body>
+<table width="700" border="1">
+ <foreach name='row' item='v'>
+	<tr>
+		
+		<td><a href="{:U('wmfood/wmindex?id='.$v['id'])}">{$v.name}</a></td>
+		
+	
+	</tr>
+	
+	</foreach>
+
+</table>
+</body>
+</html>
+
+
+

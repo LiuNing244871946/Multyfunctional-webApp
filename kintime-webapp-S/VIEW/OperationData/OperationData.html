@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>经营数据</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="OperationData.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="OperationData.js"></script>
+	</head>
+	<body>
+		<header class="return-header">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="h-title">经营数据</span>
+		</header>
+		<div id="main-con">
+			<div id="operation-title">
+				<span id="title-text">经营数据</span>
+				<span id="data-date">
+					<span class="date-item selected" id="today">今天</span>
+					<span class="date-item" id="sevday">近7天</span>
+					<span class="date-item" id="allday">全部</span>
+				</span>
+			</div>
+			<div id="data-con">
+				<div class="con-item">
+					<span class="data-item" id="turnover">
+						<span class="item-title">营业额</span>
+						<span class="item-num">
+							<i class="money">K</i><span class="money-num">50000</span>
+						</span>
+					</span>
+					<span class="data-item" id="views">
+						<span class="item-title">访问量</span>
+						<span class="item-num">
+							5000
+						</span>
+					</span>
+				</div>
+				<div class="con-item">
+					<span class="data-item" id="valid">
+						<span class="item-title">有效订单</span>
+						<span class="item-num">
+							1000
+						</span>
+					</span>
+					<span class="data-item" id="invalid">
+						<span class="item-title">无效订单</span>
+						<span class="item-num">
+							500
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+footer{
+	width: 100%;
+	height: .96rem;
+	background: #fff;
+	box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.06);
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	font-size: .22rem;
+	color: #666666;
+	display: flex;
+	display: -webkit-flex;
+}
+#order-btn,#shop-btn,#me-btn{
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+footer .img-con{
+	width: .44rem;
+	height: .44rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	background: #666;
+	border-radius: 100%;
+}
+footer .iconfont{
+	color: #fff;
+}
+.icon-dingdan{
+	font-size: .24rem;
+}
+.icon-dianpu{
+	font-size: .24rem;
+}
+#order-btn.selected,#shop-btn.selected,#me-btn.selected{
+	color: #6ABDD5;
+}
+#order-btn.selected .img-con,#shop-btn.selected .img-con,#me-btn.selected .img-con{
+	background: #6abdd5;
+}
+/*内容*/
+.main-con{
+	position: fixed;
+	width: 100%;
+	top: .96rem;
+	bottom: .96rem;
+	background: #f3f4f5;
+	overflow: hidden;
+}
+#order-page{
+	left: 0px;
+}
+#shop-page{
+	left: 100%;
+}
+#me-page{
+	left: 200%;
+}
+/*订单页面*/
+#order-title{
+	width: 100%;
+	height: 1.44rem;
+	background: #fff;
+	font-size: .2rem;
+	display: flex;
+	display: -webkit-flex;
+}
+#code,#input-code,#order{
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#order-title .img-con{
+	width: .72rem;
+	height: .72rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 100%;
+	margin-bottom: .09rem;
+}
+#code .img-con{
+	background: #fe8a54;
+}
+#input-code .img-con{
+	background: #7dd82a;
+}
+#order .img-con{
+	background: #febb34;
+}
+#order-title .iconfont{
+	font-size: .4rem;
+}
+/*订单列表*/
+#orderlist-con{
+	width: 100%;
+}
+#orderlist-con .empty-tip{
+	width: 100%;
+	height: .38rem;
+	text-align: center;
+	margin-top: .94rem;
+	font-size: .4rem;
+	color: #777;
+	display: none;
+}
+#orderlist-con .have-con{
+	width: 100%;
+	font-size: .26rem;
+	padding: 0 .2rem;
+}
+.have-con .have-title{
+	width: 100%;
+	height: .67rem;
+	line-height: .67rem;
+	font-size: .3rem;
+	color: #ff0101;
+	padding-left: .27rem;
+}

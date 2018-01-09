@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="Home.css" />
+		<link rel="stylesheet" href="shop-manage.css" />
+		<link rel="stylesheet" href="me.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="../Public/page-switch.js"></script>
+		<script type="text/javascript" src="../Public/order-expand.js"></script>
+		<script type="text/javascript" src="Home.js"></script>
+	</head>
+
+	<body>
+		<header class="c-header">
+			<span class="h-title">商店名称</span>
+		</header>
+		<div class="main-con">
+			<div class="page-con">
+				<div id="order-page" class="page-item">
+					<div id="order-title">
+						<div id="code">
+							<span class="img-con">
+								<i class="iconfont icon-saoma"></i>
+							</span>
+							<span class="btn-text">扫码验证</span>
+						</div>
+						<div id="input-code">
+							<span class="img-con">
+								<i class="iconfont icon-bianji"></i>
+							</span>
+							<span class="btn-text">输码验证</span>
+						</div>
+						<div id="order">
+							<span class="img-con">
+								<i class="iconfont icon-dingdan"></i>
+							</span>
+							<span class="btn-text">订单管理</span>
+						</div>
+					</div>
+					<div id="orderlist-con">
+						<div class="empty-tip">
+							今日暂无订单
+						</div>
+						<div class="have-con">
+							<div class="have-title">今日订单</div>
+							<ul id="order-list">
+								<li class="order-item food-order">
+									<div class="item-title">
+										<span class="item-type">堂食</span>
+										<span class="item-time">
+											<span class="date-con">11/17</span>
+										<span class="time-con">15:32</span>
+										<span class="text-con">下单</span>
+										</span>
+									</div>
+									<div class="item-user">
+										<span class="user-info">
+											<span class="user-name">路先生</span>
+										<span class="user-phone">13354668521</span>
+										</span>
+										<span class="phone-con">
+											<i class="iconfont icon-bohaoxianxing"></i>
+										</span>
+									</div>
+									<div class="item-info">
+										<div class="info-title">
+											<span class="order-name">乐享2~3人套餐</span>
+											<i class="iconfont icon-arrow-down"></i>
+										</div>
+										<div class="info-main">
+											<table class="info-table">
+												<tbody>
+													<tr>
+														<td class="com-name">鹅肝手握</td>
+														<td class="com-num">x1</td>
+														<td class="com-price">
+															<i class="money">K</i><span class="money-num">5000</span>
+														</td>
+													</tr>
+													<tr>
+														<td class="com-name">鹅肝手握</td>
+														<td class="com-num">x1</td>
+														<td class="com-price">
+															<i class="money">K</i><span class="money-num">5000</span>
+														</td>
+													</tr>
+													<tr>
+														<td class="com-name">鹅肝手握</td>
+														<td class="com-num">x1</td>
+														<td class="com-price">
+															<i class="money">K</i><span class="money-num">5000</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="info-num">
+												<span class="order-text">订单号：</span>
+												<span class="order-num">4545454545</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-total">
+										<span class="total-text">总计</span>
+										<span class="total-money">
+											<span class="old-price">
+												<i class="money">K</i><span class="money-num">4000</span>
+										</span>
+										<span class="current-price">
+												<i class="money">K</i><span class="money-num">4000</span>
+										</span>
+										</span>
+									</div>
+								</li>
+								<li class="order-item takeaway-order">
+									<div class="item-title">
+										<span class="item-type">
+											<span class="type-text">外卖</span>
+											<span class="item-number">#43</span>
+										</span>
+										<span class="item-time">
+											<span class="date-con">11/17</span>
+										<span class="time-con">15:32</span>
+										<span class="text-con">下单</span>
+										</span>
+									</div>
+									<div class="item-user">
+										<span class="user-info">
+											<span class="basic-info">
+												<span class="user-name">路先生</span>
+										<span class="user-phone">13354668521</span>
+										</span>
+										<span class="address-info">
+												<span class="address-text">三堡产业大厦A座1601</span>
+										<span class="address-dis">[2.6km]</span>
+										</span>
+										</span>
+										<span class="phone-con">
+											<i class="iconfont icon-bohaoxianxing"></i>
+										</span>
+									</div>
+									<div class="item-info">
+										<div class="info-title">
+											<span class="order-name">
+												<span class="name-text">商品</span>
+											<span class="num-con">(6)</span>
+											</span>
+											<i class="iconfont icon-arrow-down"></i>
+										</div>
+										<div class="info-main">
+											<table class="info-table">
+												<tbody>
+													<tr>
+														<td class="com-name">鹅肝手握</td>
+														<td class="com-num">x1</td>
+														<td class="com-price">
+															<i class="money">K</i><span class="money-num">5000</span>
+														</td>
+													</tr>
+													<tr>
+														<td class="com-name">鹅肝手握</td>
+														<td class="com-num">x1</td>
+														<td class="com-price">
+															<i class="money">K</i><span class="money-num">5000</span>
+														</td>
+													</tr>
+													<tr>
+														<td class="com-name">鹅肝手握</td>
+														<td class="com-num">x1</td>
+														<td class="com-price">
+															<i class="money">K</i><span class="money-num">5000</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="info-remarks">
+												<span class="remarks-con">
+													<span class="remarks-title">备注：</span>
+													<span class="remarks-text">123456</span>
+												</span>
+												<span class="invoice-con">
+													<span class="invoice-title">发票：</span>
+													<span class="invoice-text">路先生</span>
+												</span>
+											</div>
+											<div class="info-num">
+												<span class="order-text">订单号：</span>
+												<span class="order-num">4545454545</span>
+											</div>
+										</div>
+									</div>
+									<div class="item-total">
+										<span class="total-text">总计</span>
+										<span class="total-money">
+											<span class="current-price">
+												<i class="money">K</i><span class="money-num">4000</span>
+										</span>
+										</span>
+									</div>
+									<div class="item-btn">
+										<button class="order-btn">接单</button>
+										<button class="cancel-btn">取消订单</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="shop-page" class="page-item">
+					<div id="shop-header">
+						<div id="shop-title">
+							<span id="shop-img">
+								<img src="../../STATIC/哆啦A梦.jpg" />
+							</span>
+							<span id="shop-info">
+								<span id="shop-name">新石器烤肉（湖滨银泰店）</span>
+								<span id="shop-address">
+									<span id="shop-type">烧烤</span>
+									<span id="address-text">上城区解放路256号</span>
+								</span>
+							</span>
+						</div>
+						<div id="shop-data">
+							<span class="data-item" id="turnover">
+								<span class="item-text">今日营业额：</span>
+								<span class="item-num">7061.25</span>
+							</span>
+							<span class="data-item" id="client-num">
+								<span class="item-text">今日顾客数：</span>
+								<span class="item-num">304</span>
+							</span>
+							<span class="data-item" id="order-num">
+								<span class="item-text">今日订单数：</span>
+								<span class="item-num">120</span>
+							</span>
+							<span class="data-item" id="eva-num">
+								<span class="item-text">新增评价：</span>
+								<span class="item-num">60</span>
+							</span>
+						</div>
+					</div>
+					<div id="shop-manage">
+						<span class="manage-item" id="virification">
+							<span class="item-img">
+								<i class="iconfont icon-lishi"></i>
+							</span>
+							<span class="item-text">验证历史</span>
+						</span>
+						<span class="manage-item" id="operating-data">
+							<span class="item-img">
+								<i class="iconfont icon-icon-test"></i>
+							</span>
+							<span class="item-text">经营数据</span>
+						</span>
+						<span class="manage-item" id="eva-manage">
+							<span class="item-img">
+								<i class="iconfont icon-pingjia"></i>
+							</span>
+							<span class="item-text">评价管理</span>
+						</span>
+						<span class="manage-item" id="elec-menu">
+							<span class="item-img">
+								<i class="iconfont icon-caidan"></i>
+							</span>
+							<span class="item-text">电子菜单</span>
+						</span>
+						<span class="manage-item" id="com-manage">
+							<span class="item-img">
+								<i class="iconfont icon-shangpin"></i>
+							</span>
+							<span class="item-text">商品管理</span>
+						</span>
+					</div>
+				</div>
+				<div id="me-page" class="page-item">
+					<div id="me-info">
+						<span id="me-avatar">
+							<img src="../../STATIC/哆啦A梦.jpg" />
+						</span>
+						<span id="me-status">营业中</span>
+						<span id="me-name">新石器烤肉</span>
+					</div>
+					<div id="me-menu">
+						<span class="menu-item" id="news">
+							<span class="item-img">
+								<i class="iconfont icon-information"></i>
+							</span>
+							<span class="item-text">消息</span>
+						</span><span class="menu-item" id="wallet">
+							<span class="item-img">
+								<i class="iconfont icon-qianbao-copy"></i>
+							</span>
+							<span class="item-text">钱包</span>
+						</span>
+					</div>
+					<div id="other-menu">
+						<span class="other-item" id="setting">
+							<span class="item-img">
+								<i class="iconfont icon-shezhi"></i>
+							</span>
+							<span class="item-text">设置</span>
+						</span>
+						<span class="other-item" id="customer">
+							<span class="item-img">
+								<i class="iconfont icon-kefu"></i>
+							</span>
+							<span class="item-text">在线客服</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="order-btn" class="page-btn selected">
+				<span class="img-con">
+					<i class="iconfont icon-dingdan"></i>
+				</span>
+				<span class="btn-text">订单</span>
+			</div>
+			<div id="shop-btn" class="page-btn">
+				<span class="img-con">
+					<i class="iconfont icon-dianpu"></i>
+				</span>
+				<span class="btn-text">店铺管理</span>
+			</div>
+			<div id="me-btn" class="page-btn">
+				<span class="img-con">
+					<i class="iconfont icon-wode"></i>
+				</span>
+				<span class="btn-text">我的</span>
+			</div>
+		</footer>
+	</body>
+
+</html>
