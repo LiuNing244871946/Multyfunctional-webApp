@@ -1,0 +1,65 @@
+body{
+	background: #F3F4F5;
+}
+#main-con{
+	padding: .2rem 0;
+}
+#account-setting,#com-setting,#setting-btn{
+	width: 100%;
+	margin-bottom: .2rem;
+	background: #fff;
+}
+.acount-item,.com-item,.btn-item{
+	width: 100%;
+	height: .88rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: .28rem;
+	border-bottom: 1px solid #F3F4F5;
+	padding: 0 .36rem;
+}
+li .iconfont{
+	color: #6abdd5;
+}
+/*退出登录*/
+#signout-dis{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: .16rem .2rem;
+}
+#signout-con{
+	width: 100%;
+	background: #fff;
+	border-radius: 26px;
+	overflow: hidden;
+}
+#signout-title{
+	width: 100%;
+	height: .88rem;
+	line-height: .88rem;
+	text-align: center;
+	color: #a0a0a0;
+	border-bottom: 4px solid #f3f4f5;
+}
+#confirm-exit{
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: .36rem;
+	color: #fb3d31;
+}
+.discount-item .cancel-btn{
+	width: 100%;
+	height: 1.14rem;
+	line-height: 1.14rem;
+	text-align: center;
+	margin-top: .16rem;
+	background: #fff;
+	border-radius: 26px;
+	font-size: .36rem;
+	color: #027dff;
+}

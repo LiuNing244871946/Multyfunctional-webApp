@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="OrderDetail.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="OrderDetail.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3vlfHynmwKWf2R4lMgFf27eAlFpguczf"></script>
+	</head>
+	<body>
+		<header class="return-header">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="h-title">详情</span>
+		</header>
+		<div id="main-con">
+			<div id="order-require">
+				<span class="require-item">
+					<span id="time-con">12:00</span>
+					<span class="text-con">预计送达</span>
+				</span>
+				<span class="require-item">
+					<span id="money-con">
+						<i class="money">K</i><span class="money-num">10</span>
+					</span>
+					<span class="text-con">预计收入</span>
+				</span>
+			</div>
+			<div id="map-con">
+				
+			</div>
+			<div id="order-address">
+				<div id="address-con">
+					<span class="address-item" id="start-point">
+						<span class="item-address">
+							<span class="address-icon">取</span>
+							<span class="address-detail">
+								<span class="address-name">三堡东方大厦大厦A座</span>
+								<span class="address-street">航海路601号</span>
+							</span>
+						</span>
+						<span class="address-phone">
+							<i class="iconfont icon-bohaoxianxing"></i>
+						</span>
+					</span>
+					<span id="distance">
+						<span id="distance-con">
+							<span id="distance-num">2</span><span id="distance-unit">km</span>
+						</span>
+					</span>
+					<span class="address-item" id="end-point">
+						<span class="item-address">
+							<span class="address-icon">取</span>
+							<span class="address-detail">
+								<span class="address-name">三堡东方大厦大厦A座</span>
+								<span class="address-street">航海路601号</span>
+							</span>
+						</span>
+						<span class="address-phone">
+							<i class="iconfont icon-bohaoxianxing"></i>
+						</span>
+					</span>
+				</div>
+				<div id="btns-con">
+					<button id="determine-btn">确定</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

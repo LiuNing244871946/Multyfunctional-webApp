@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: 'Microsoft YaHei',"Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; 
+	-ms-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%;
+
+}
+body{
+	font-family: "微软雅黑";
+	color: #333;
+	background-color: #fff;
+	font-size: .3rem;
+}
+html,body{
+	-webkit-user-select: none;
+	user-select:none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:link{
+	text-decoration: none;
+	color: #333;
+}
+a:visited{
+	text-decoration: none;
+	color: #333;
+}
+a,img{
+	 -webkit-touch-callout: none;
+}
+ul,ol{
+	list-style: none;
+	margin: 0;
+}
+.money{
+	font-style: normal;
+}
+#discount-con{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0,0,0,.25);
+	z-index: 10;
+	display: none;
+}
+.discount-item{
+	display: none;
+}
+/*文字头部*/
+.c-header{
+	width: 100%;
+	height: .96rem;
+	line-height: .96rem;
+	background: #363d46;
+	text-align: center;
+	font-size: .36rem;
+	color: #fff;
+	position: fixed;
+	z-index: 10;
+}
+/*返回头部*/
+.return-header{
+	width: 100%;
+	height: .96rem;
+	background: #363d46;
+	font-size: .36rem;
+	color: #fff;
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.return-header .iconfont{
+	position: absolute;
+	left: .36rem;
+	font-size: .4rem;
+}
+.return-header .h-title{
+	width: 100%;
+	text-align: center;
+}
+.return-header .h-save{
+	position: absolute;
+	right: .36rem;
+	font-size: .26rem;
+}
+/*页面主内容*/
+#main-con{
+	width: 100%;
+	padding: .66rem .2rem;
+	font-size: .26rem;
+	color: #333;
+	position: fixed;
+	top: .96rem;
+	overflow-y: scroll;
+	bottom: 0;
+}
+/*页面切换*/
+.page-con{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+.page-item{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	overflow-y: scroll;
+}
+.page-item::-webkit-scrollbar{
+	display: none;
+}

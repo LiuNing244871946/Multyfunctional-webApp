@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="UserInfo.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="UserInfo.js"></script>
+	</head>
+	<body>
+		<header class="return-header">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="h-title">个人信息</span>
+			<span class="h-save">保存</span>
+		</header>
+		<div id="main-con">
+			<ul class="shop-info">
+				<li class="info-item" id="info-ava">
+					<span class="item-title">头像</span>
+					<span id="shop-img">
+						<img src="../../STATIC/头像.jpg" />
+					</span>
+				</li>
+				<li class="info-item" id="info-name">
+					<span class="item-title">姓名</span>
+					<input type="text" id="shop-name" value="陆霏霏"/>
+				</li>
+				<li class="info-item" id="info-phone">
+					<span class="item-title">手机号</span>
+					<input type="number" id="shop-name" value="15633336666"/>
+				</li>
+			</ul>
+		</div>
+		<div id="discount-con">
+			<div id="save-dis" class="discount-item">
+				<div id="save-con">
+					<div id="save-title">保存成功</div>
+					<div id="save-submit">确定</div>
+				</div>
+			</div>
+			<div id="img-dis" class="discount-item">
+				<div id="img-con"></div>
+			</div>
+			<div id="selectava-dis" class="discount-item">
+				<div id="select-avatar">
+					<label for="camera">
+						<input type="file" accept="image/*" capture="camera" id="camera"/>
+						<div class="text-con">
+							<i class="iconfont icon-xiangji"></i>
+							<span class="text">拍照</span>
+						</div>
+					</label>
+					<label for="album">
+						<input type="file" accept="image/*" id="album"/>
+						<div class="text-con">
+							<i class="iconfont icon-zhaopian"></i>
+							<span class="text">从相册中选择</span>
+						</div>
+					</label>
+				</div>
+			</div>
+			<div id="status-dis" class="discount-item">
+				<div id="select-status">
+					<div class="status-item">营业中</div>
+					<div class="status-item">休息中</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

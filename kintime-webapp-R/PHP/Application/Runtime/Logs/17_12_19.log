@@ -1,0 +1,18 @@
+[ 2017-12-19T13:16:36+08:00 ] ::1 /kintime-webapp-R/PHP/home
+ERR: 无法加载控制器:Index
+
+[ 2017-12-19T13:16:50+08:00 ] ::1 /kintime-webapp-R/PHP/home/jie
+ERR: 无法加载控制器:Jie
+
+[ 2017-12-19T13:16:57+08:00 ] ::1 /kintime-webapp-R/PHP/home
+ERR: 无法加载控制器:Index
+
+[ 2017-12-19T13:17:06+08:00 ] ::1 /kintime-webapp-R/PHP/home
+ERR: 无法加载控制器:Index
+
+[ 2017-12-19T13:17:06+08:00 ] ::1 /kintime-webapp-R/PHP/home/jie
+ERR: 无法加载控制器:Jie
+
+[ 2017-12-19T15:36:49+08:00 ] ::1 /kintime-webapp-R/PHP/home/mede/ren
+ERR: 非法数据对象！:[state=>2]
+

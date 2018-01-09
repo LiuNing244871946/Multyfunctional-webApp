@@ -1,0 +1,106 @@
+.order-list{
+	width: 100%;
+}
+.order-item{
+	width: 100%;
+	background: #fff;
+	margin-top: .2rem;
+}
+.order-title{
+	width: 100%;
+	height: .95rem;
+	border-bottom: 1px solid #F3F4F5;
+	padding: 0 .36rem;
+	font-size: .34rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.order-title .order-number{
+	color: #6abdd5;
+}
+.delivery-fee{
+	color: #6abdd5;
+}
+.order-address{
+	width: 100%;
+	height: 2.44rem;
+	border-bottom: 1px solid #F3F4F5;
+	padding: 0 .36rem;
+	font-size: .34rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.address-con{
+	height: 100%;
+	flex-grow: 1;
+	padding: .3rem 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.starting-point,.end-point{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+.address-icon{
+	width: .4rem;
+	height: .4rem;
+	border-radius: 100%;
+	color: #fff;
+	font-size: .26rem;
+	margin-right: .27rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+.starting-point .address-icon{
+	background: #6abdd5;
+}
+.end-point .address-icon{
+	background: #6ad597;
+}
+.address-detail{
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.address-street{
+	font-size: .26rem;
+	color: #999;
+}
+.order-status{
+	width: 100%;
+	height: .95rem;
+	padding: 0 .2rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.determine-btn,.determine-pick,.determine-delivery{
+	width: 100%;
+	height: .74rem;
+	background: #6abdd5;
+	font-size: .36rem;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: .06rem;
+}
+.order-num{
+	width: 100%;
+	height: 100%;
+	line-height: .95rem;
+	color: #999;
+	font-size: .26rem;
+}

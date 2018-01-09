@@ -1,0 +1,14 @@
+[ 2017-12-09T13:47:21+08:00 ] ::1 /kintime-webapp/kintime/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `gluser` [ RunTime:0.001656s ]
+SQL: SELECT * FROM `gluser` WHERE ( name= 'admin' and pass = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-12-09T17:05:12+08:00 ] ::1 /kintime-webapp/kintime/home/mai_ping
+ERR: 无法加载控制器:Mai_ping
+

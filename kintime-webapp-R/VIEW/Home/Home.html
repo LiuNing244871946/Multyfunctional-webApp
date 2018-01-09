@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="Home.css" />
+		<link rel="stylesheet" href="../Public/order.css" />
+		<link rel="stylesheet" href="SidePage.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="../Public/page-switch.js" ></script>
+		<script type="text/javascript" src="Home.js"></script>
+	</head>
+	<body>
+		<header class="return-header">
+			<i class="iconfont icon-zhongqingdianxinicon07"></i>
+			<span class="h-title">开工中</span>
+		</header>
+		<div id="home-title">
+			<span id="newtask" class="page-btn title-item selected">
+				<span class="item-text">新任务</span>
+			</span>
+			<span id="pickup" class="page-btn title-item">
+				<span class="item-text">待取货</span>
+			</span>
+			<span id="delivery" class="page-btn title-item">
+				<span class="item-text">配送中</span>
+			</span>
+			<span id="consum" class="page-btn title-item">
+				<span class="item-text">已完成</span>
+			</span>
+		</div>
+		<div class="main-con">
+			<div class="page-con">
+				<div id="newtask-page" class="page-item">
+					<ul class="order-list">
+						<li class="order-item">
+							<div class="order-title">
+								<span class="order-time">
+									<span class="time-con">12:00</span>
+									<span class="text-con">前送达</span>
+									<span class="order-number">#43</span>
+								</span>
+								<span class="delivery-fee">
+									<span class="money">K</span>
+									<span class="money-num">10</span>
+								</span>
+							</div>
+							<div class="order-address">
+								<span class="address-con">
+									<span class="starting-point">
+										<span class="address-icon">取</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+									<span class="end-point">
+										<span class="address-icon">送</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+								</span>
+								<i class="iconfont icon-xiangqing"></i>
+							</div>
+							<div class="order-status">
+								<button class="determine-btn">确定</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="pickup-page" class="page-item">
+					<ul class="order-list">
+						<li class="order-item">
+							<div class="order-title">
+								<span class="order-time">
+									<span class="time-con">12:00</span>
+									<span class="text-con">前送达</span>
+									<span class="order-number">#43</span>
+								</span>
+								<span class="delivery-fee">
+									<span class="money">K</span>
+									<span class="money-num">10</span>
+								</span>
+							</div>
+							<div class="order-address">
+								<span class="address-con">
+									<span class="starting-point">
+										<span class="address-icon">取</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+									<span class="end-point">
+										<span class="address-icon">送</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+								</span>
+								<i class="iconfont icon-xiangqing"></i>
+							</div>
+							<div class="order-status">
+								<button class="determine-pick">确定取餐</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="delivery-page" class="page-item">
+					<ul class="order-list">
+						<li class="order-item">
+							<div class="order-title">
+								<span class="order-time">
+									<span class="time-con">12:00</span>
+									<span class="text-con">前送达</span>
+									<span class="order-number">#43</span>
+								</span>
+								<span class="delivery-fee">
+									<span class="money">K</span>
+									<span class="money-num">10</span>
+								</span>
+							</div>
+							<div class="order-address">
+								<span class="address-con">
+									<span class="starting-point">
+										<span class="address-icon">取</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+									<span class="end-point">
+										<span class="address-icon">送</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+								</span>
+								<i class="iconfont icon-xiangqing"></i>
+							</div>
+							<div class="order-status">
+								<button class="determine-delivery">确定送达</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="consum-page" class="page-item">
+					<ul class="order-list">
+						<li class="order-item">
+							<div class="order-title">
+								<span class="order-time">
+									<span class="time-con">12:00</span>
+									<span class="text-con">前送达</span>
+									<span class="order-number">#43</span>
+								</span>
+								<span class="delivery-fee">
+									<span class="money">K</span>
+									<span class="money-num">10</span>
+								</span>
+							</div>
+							<div class="order-address">
+								<span class="address-con">
+									<span class="starting-point">
+										<span class="address-icon">取</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+									<span class="end-point">
+										<span class="address-icon">送</span>
+										<span class="address-detail">
+											<span class="address-name">三堡东方大厦大厦A座</span>
+											<span class="address-street">航海路601号</span>
+										</span>
+									</span>
+								</span>
+								<i class="iconfont icon-xiangqing"></i>
+							</div>
+							<div class="order-status">
+								<span class="order-num">
+									<span class="text-con">订单号：</span>
+									<span class="num-con">6666666666</span>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="discount-con">
+			<div id="me-con">
+				<div id="user-info">
+					<span id="user-ava">
+						<img src="../../STATIC/头像.jpg" />
+					</span>
+					<span id="user-name">陆师傅</span>
+					<span id="user-star">
+						<span id="starnum-con">
+							<i class="iconfont icon-pingjia1"></i>
+							<span id="star-num">5.0</span>
+						</span>
+						<span id="order-num">
+							<span class="num-con">500</span><span class="text-con">单</span>
+						</span>
+					</span>
+				</div>
+				<div id="me-menu">
+					<div id="me-status">
+						<span class="status-item selected">开工</span>
+						<span class="status-item">忙碌</span>
+						<span class="status-item">收工</span>
+					</div>
+					<ul id="menu-list">
+						<li class="menu-item" id="custome">
+							<span class="item-img">
+								<i class="iconfont icon-kefu"></i>
+							</span>
+							<span class="item-text">联系客服</span>
+						</li>
+						<li class="menu-item" id="setting">
+							<span class="item-img">
+								<i class="iconfont icon-shezhi"></i>
+							</span>
+							<span class="item-text">设置</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

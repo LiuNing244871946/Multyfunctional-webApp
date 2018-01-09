@@ -1,0 +1,27 @@
+.avatar-con{
+	width: 100%;
+	top: .95rem;
+	bottom: 0;
+	position: absolute;
+	background: #fff;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.img-con{
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+}
+#discount-con{
+	display: block;
+}
+#cover-box{
+	position: absolute;
+	z-index: 20;
+	border: 1px dashed #00BDD6;
+}

@@ -1,0 +1,94 @@
+#me-con{
+	position: absolute;
+	width: 5.4rem;
+	top: 0;
+	bottom: 0;
+	background: #fff;
+	left: -5.4rem;
+}
+#user-info{
+	width: 100%;
+	height: 3.34rem;
+	background-image: url(../../STATIC/背景图.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: .56rem 0 .46rem .36rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+#user-ava{
+	width: 1.2rem;
+	height: 1.2rem;
+	background: #F3F4F5;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#user-ava img{
+	width: 100%;
+	height: 100%;
+}
+#user-name{
+	font-size: .36rem;
+	color: #fff;
+}
+#user-star{
+	font-size: .32rem;
+	color: #fff;
+}
+#starnum-con{
+	margin-right: .36rem;
+}
+#starnum-con .iconfont{
+	color: #ffcc01;
+}
+#me-menu{
+	padding: 0 .2rem;
+}
+#me-status{
+	width: 100%;
+	height: 1.37rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: .32rem;
+}
+.status-item.selected{
+	color: #6abdd5;
+}
+#menu-list{
+	width: 100%;
+	font-size: .32rem;
+}
+.menu-item{
+	width: 100%;
+	height: 1.08rem;
+	border-top: 1px solid #F3F4F5;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#menu-list .item-img{
+	width: .4rem;
+	height: .4rem;
+	border-radius: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: .22rem;
+	color: #fff;
+}
+#custome .item-img{
+	background: #00a3ff;
+}
+#setting .item-img{
+	background: #00886a;
+}
+#menu-list .item-text{
+	flex-grow: 1;
+}

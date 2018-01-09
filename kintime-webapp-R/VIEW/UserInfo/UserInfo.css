@@ -1,0 +1,153 @@
+body{
+	background: #F3F4F5;
+	font-size: .28rem;
+}
+#main-con{
+	padding: .2rem 0;
+}
+.shop-info{
+	width: 100%;
+	background: #fff;
+	margin-bottom: .2rem;
+}
+.info-item{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #F3F4F5;
+	padding: 0 .37rem;
+}
+#info-ava{
+	height: 1.03rem;
+}
+#info-name{
+	height: .88rem;
+}
+#info-status,#info-phone{
+	height: .91rem;
+}
+#info-ava .item-title{
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+#shop-img{
+	width: .72rem;
+	height: .72rem;
+	background: #F3F4F5;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#shop-img img{
+	width: 100%;
+	height: 100%;
+}
+#shop-name{
+	border: none;
+	outline: none;
+	text-align: right;
+	width: 50%;
+}
+#shop-phone{
+	border: none;
+	outline: none;
+	text-align: right;
+	width: 50%;
+}
+/*保存*/
+#save-dis{
+	width: 100%;
+	position: absolute;
+	padding: 0 .2rem;
+	top: 4.4rem;
+}
+#save-con{
+	width: 100%;
+	background: #fff;
+	border-radius: 26px;
+	overflow: hidden;
+}
+#save-title{
+	width: 100%;
+	height: .86rem;
+	line-height: .86rem;
+	text-align: center;
+	font-size: .26rem;
+	color: #a0a0a0;
+	border-bottom: 4px solid #F3F4F5;
+}
+#save-submit{
+	width: 100%;
+	height: 1.14rem;
+	line-height: 1.14rem;
+	text-align: center;
+	font-size: .36rem;
+	color: #027dff;
+}
+/*头像放大*/
+#img-dis{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+#img-con{
+	width: 100%;
+	height: 100%;
+	background-image: url(../../STATIC/头像.jpg);
+	background-size: 100% auto;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+/*头像设置*/
+#selectava-dis,#status-dis{
+	width: 100%;
+	padding: 50% .2rem 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+}
+#select-avatar{
+	width: 100%;
+	background: #fff;
+	border-radius: 8px;
+	padding: .4rem;
+}
+#select-avatar label{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	display: flex;
+	display: -webkit-flex;
+}
+#select-avatar label:first-child{
+	border-bottom: 1px solid #B8B3B6;
+}
+#select-avatar label .iconfont{
+	font-size: .5rem;
+}
+#select-avatar input{
+	display: none;
+}
+/*状态设置*/
+#select-status{
+	width: 100%;
+	background: #fff;
+	border-radius: 26px;
+}
+#select-status .status-item{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #F3F4F5;
+	padding-left: .77rem;
+	font-size: .3rem;
+	color: #999;
+}
+#select-status .status-item:last-child{
+	border-bottom: none;
+}

@@ -1,0 +1,26 @@
+[ 2017-12-08T09:19:26+08:00 ] ::1 /kintime-webapp/kintime/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\kintime\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `gluser` [ RunTime:0.002246s ]
+SQL: SELECT * FROM `gluser` WHERE ( name= 'admin' and pass = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.001274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-12-08T10:41:01+08:00 ] ::1 /kintime-webapp/kintime/Htai/User/q_mingxi/id/1.html
+ERR: 模板不存在:./Application/Htai/View/User/q_mingxi.html
+
+[ 2017-12-08T14:55:44+08:00 ] ::1 /kintime-webapp/kintime/home/foods/fasong
+ERR: 非法操作:fasong
+
+[ 2017-12-08T15:04:02+08:00 ] ::1 /kintime-webapp/kintime/home/foods/kintime-webappkintimePublicaliyun-dysms-php-sdkapi_demo
+ERR: 非法操作:kintime-webappkintimePublicaliyun-dysms-php-sdkapi_demo
+
+[ 2017-12-08T15:04:11+08:00 ] ::1 /kintime-webapp/kintime/home/foods/kintime-webappkintimePublicaliyun-dysms-php-sdkapi_demo
+ERR: 非法操作:kintime-webappkintimePublicaliyun-dysms-php-sdkapi_demo
+
+[ 2017-12-08T15:50:25+08:00 ] ::1 /kintime-webapp/kintime/home/foods/fasong
+ERR: 非法数据对象！:[phone=>17624086614]
+
