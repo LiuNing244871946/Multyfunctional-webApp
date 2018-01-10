@@ -178,6 +178,6 @@ $(function() {
 		});
 	});
 	$('.icon-fanhui').on('tap', function() {
-		history.back(-1);
+		window.location.href='../Home/Home.html';
 	});
 })

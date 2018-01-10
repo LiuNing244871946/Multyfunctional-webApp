@@ -40,7 +40,9 @@ $(function() {
 	});
 	//	银行卡列表
 	$('#china .card-num').on('tap', function() {
-		$('#discount-con,#cardlist-con').show();
+		$('#discount-con').css('display','flex');
+		$('#discount-con').css('display','-webkit-flex');
+		$('#cardlist-con').show();
 	});
 	$('#card-list .bank-select').on('tap', function() {
 		$('#card-list .card-item').removeClass('selected');

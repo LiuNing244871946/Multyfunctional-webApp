@@ -148,12 +148,13 @@ body{
 }
 
 /*银行卡列表*/
+#discount-con{
+	justify-content: center;
+	align-items: center;
+}
 #cardlist-con{
-	position: relative;
 	width: 90%;
 	height: 7.5rem;
-	margin: 0 auto;
-	top: 3rem;
 	font-size: .3rem;
 	display: none;
 }
@@ -198,8 +199,8 @@ body{
 	color: #8A8285;
 }
 .card-item .bank-select{
-	width: .3rem;
-	height: .3rem;
+	width: .5rem;
+	height: .5rem;
 	border: 1px solid #E7E7E8;
 	border-radius: 100%;
 	background: #fff;
@@ -207,10 +208,11 @@ body{
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
+	margin-right: .1rem;
 }
 .bank-select .icon-ok{
-	font-size: .2rem;
+	font-size: .3rem;
 }
 .card-item.selected .bank-select{
 	border: none;

@@ -59,7 +59,7 @@ class DdallController extends Controller { //当前用户今天所有的订单
   
                   }
                   $qs_row=$m->query("select qs_user.phone from s_ddan,tang,qs_user where s_ddan.id=tang.did and tang.did=qs_user.id and s_ddan.id={$v['id']}")[0]; 
-                  // dump($qs_row);
+                   //dump($qs_row);
                   $row[$k]['phone'] = $qs_row['phone'];
             
        }

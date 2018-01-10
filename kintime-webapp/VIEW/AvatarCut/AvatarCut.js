@@ -125,6 +125,7 @@ $(function() {
 				dataType: "json",
 				data: imgJsonStr,
 				success: function(data) {
+					console.log(data);
 					switch (data){
 						case 1:
 							$('#tip').text('保存成功,页面即将跳转');

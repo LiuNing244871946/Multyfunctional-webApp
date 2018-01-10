@@ -7,7 +7,7 @@ $(function(){
 			contentType: 'application/x-www-form-urlencoded',
 			dataType: "json",
 			success:function(data){
-				$('.user-info .img-con img').attr('src','.'+data.headpic);
+				$('.user-info .img-con img').attr('src',data.headpic);
 				$('.user-name').text(data.username);
 				$('.number-con').text(data.phone);
 			},
