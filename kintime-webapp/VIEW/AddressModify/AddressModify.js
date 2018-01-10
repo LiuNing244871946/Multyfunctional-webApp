@@ -1,35 +1,40 @@
 $(function() {
-	var data = {};
-	data.id = window.location.href.substr(window.location.href.indexOf("?") + 1);
-	var jsonStr = JSON.stringify(data);
-	$.ajax({
-		type: "post",
-		url: "../../PHP/home/foods/add_kan",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		data: jsonStr,
-		dataType: "json",
-		success: function(data) {
-			$('#name').val(data.linkman);
-			if(data.sex === '1') {
-				$('.sex-con').eq(0).addClass('select');
-			} else {
-				$('.sex-con').eq(1).addClass('select');
-			};
-			if(data.phone.substring(0, 2) === '86') {
-				$('#area-code').val('中国+86');
-				$('#phone').val(data.phone.substring(2, data.phone.length));
-			} else {
-				$('#area-code').val('老挝+856');
-				$('#phone').val(data.phone.substring(3, data.phone.length));
-			};
-			$('#address0').val(data.address);
-			$('#address').val(data.xiaddress);
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+	if($.fn.cookie('id')) {
+		var data = {};
+		data.id = window.location.href.substr(window.location.href.indexOf("?") + 1);
+		var jsonStr = JSON.stringify(data);
+		$.ajax({
+			type: "post",
+			url: "../../PHP/home/foods/add_kan",
+			async: true,
+			contentType: 'application/x-www-form-urlencoded',
+			data: jsonStr,
+			dataType: "json",
+			success: function(data) {
+				$('#name').val(data.linkman);
+				if(data.sex === '1') {
+					$('.sex-con').eq(0).addClass('select');
+				} else {
+					$('.sex-con').eq(1).addClass('select');
+				};
+				if(data.phone.substring(0, 2) === '86') {
+					$('#area-code').val('中国+86');
+					$('#phone').val(data.phone.substring(2, data.phone.length));
+				} else {
+					$('#area-code').val('老挝+856');
+					$('#phone').val(data.phone.substring(3, data.phone.length));
+				};
+				$('#address0').val(data.address);
+				$('#address').val(data.xiaddress);
+			},
+			error: function(e) {
+				console.log(e);
+			}
+		});
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
+
 	$('#name').on('input', function() {
 		$('#tip5').remove();
 		if(!$(this).val()) {
@@ -89,7 +94,7 @@ $(function() {
 		};
 		data.phone = $('#area-code').val() + $('#phone').val();
 		data.address = $('#address0').val();
-		data.xiaddress=$('#address').val();
+		data.xiaddress = $('#address').val();
 		data.jing = 30.2684079898;
 		data.wei = 120.2283668518;
 		var jsonStr = JSON.stringify(data);

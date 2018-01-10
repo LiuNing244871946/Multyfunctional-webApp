@@ -1,28 +1,33 @@
 $(function() {
-	$.ajax({
-		type: "post",
-		url: "../../PHP/home/foods/me",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		dataType: "json",
-		success: function(data) {
-			if(data !== 1) {
-				$('#user-account .text-con').text(data.name);
-				if(data.sex === '1') {
-					$('#user-sex .text-con').text('男');
-				} else if(data.sex === '0') {
-					$('#user-sex .text-con').text('女');
+	if($.fn.cookie('id')) {
+		$.ajax({
+			type: "post",
+			url: "../../PHP/home/foods/me",
+			async: true,
+			contentType: 'application/x-www-form-urlencoded',
+			dataType: "json",
+			success: function(data) {
+				if(data !== 1) {
+					$('#user-account .text-con').text(data.name);
+					if(data.sex === '1') {
+						$('#user-sex .text-con').text('男');
+					} else if(data.sex === '0') {
+						$('#user-sex .text-con').text('女');
+					}
+					$('#user-name .text-con').text(data.username);
+					$('#user-phone .text-con').text(data.phone);
+				} else {
+					alert('您已退出登录，请重新登录');
 				}
-				$('#user-name .text-con').text(data.username);
-				$('#user-phone .text-con').text(data.phone);
-			} else {
-				alert('您已退出登录，请重新登录');
+			},
+			error: function(e) {
+				console.log(e);
 			}
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+		});
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
+
 	////	昵称修改
 	$('#user-name').on('tap', function(e) {
 		$('#discount-con,#user-namecon').show();
@@ -171,5 +176,8 @@ $(function() {
 				console.log(e);
 			}
 		});
+	});
+	$('.icon-fanhui').on('tap', function() {
+		history.back(-1);
 	});
 })

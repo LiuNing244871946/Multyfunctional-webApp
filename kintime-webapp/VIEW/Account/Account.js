@@ -1,41 +1,45 @@
-$(function(){
-	$.ajax({
-		type:"post",
-		url: "../../PHP/home/money/qian_yu",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		dataType: "json",
-		success:function(data){
-			if(data.jguo===1){
-				$('#balance-num .number').text(data.qian);
-			}else if(data.jguo===2){
-				alert('查询余额失败')
-			};
-		},
-		error:function(e){
-			console.log(e);
-		}
-	});
-	$('#widthdraw').on('tap',function(){
+$(function() {
+	if($.fn.cookie('id')) {
 		$.ajax({
-			type:"post",
+			type: "post",
+			url: "../../PHP/home/money/qian_yu",
+			async: true,
+			contentType: 'application/x-www-form-urlencoded',
+			dataType: "json",
+			success: function(data) {
+				if(data.jguo === 1) {
+					$('#balance-num .number').text(data.qian);
+				} else if(data.jguo === 2) {
+					alert('查询余额失败')
+				};
+			},
+			error: function(e) {
+				console.log(e);
+			}
+		});
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
+	$('#widthdraw').on('tap', function() {
+		$.ajax({
+			type: "post",
 			url: "../../PHP/home/money/qian_ti",
 			async: true,
 			contentType: 'application/x-www-form-urlencoded',
 			dataType: "json",
-			success:function(data){
-				if(data===2){
-					window.location.href='../WidthDraw/WidthDraw.html';
-				}else if(data===1){
+			success: function(data) {
+				if(data === 2) {
+					window.location.href = '../WidthDraw/WidthDraw.html';
+				} else if(data === 1) {
 					$('#discount-con,#tip-con').show();
 				};
 			},
-			error:function(e){
+			error: function(e) {
 				console.log(e);
 			}
 		});
 	});
-	$('.determine-btn').on('tap',function(){
+	$('.determine-btn').on('tap', function() {
 		$('#discount-con,.discount-item').hide();
-	})
+	});
 })

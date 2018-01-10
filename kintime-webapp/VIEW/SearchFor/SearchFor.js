@@ -1,21 +1,26 @@
 $(function() {
-	$.ajax({
-		type: "post",
-		url: "../../PHP/home/history",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		dataType: "json",
-		success: function(data) {
-			var str = "";
-			$.each(data, function(index, item) {
-				str += '<span class="history-item">'+item.nr+'</span>';
-			});
-			$("#history-con").append(str);
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+	if($.fn.cookie('id')) {
+		$.ajax({
+			type: "post",
+			url: "../../PHP/home/history",
+			async: true,
+			contentType: 'application/x-www-form-urlencoded',
+			dataType: "json",
+			success: function(data) {
+				var str = "";
+				$.each(data, function(index, item) {
+					str += '<span class="history-item">' + item.nr + '</span>';
+				});
+				$("#history-con").append(str);
+			},
+			error: function(e) {
+				console.log(e);
+			}
+		});
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
+
 	$('#search-btn').on('tap', function() {
 		if($('.city-text').val()) {
 			var data = {};
@@ -60,7 +65,7 @@ $(function() {
 			dataType: "json",
 			success: function(data) {
 				console.log(data);
-				if(data===1){
+				if(data === 1) {
 					$('#history-con').remove('.history-item');
 				};
 			},
@@ -68,5 +73,8 @@ $(function() {
 				console.log(e);
 			}
 		});
-	})
+	});
+	$('.icon-fanhui').on('tap', function() {
+		history.back(-1);
+	});
 })

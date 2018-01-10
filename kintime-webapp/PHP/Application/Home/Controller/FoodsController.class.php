@@ -263,8 +263,6 @@ class FoodsController extends CommonController {
             unset($pl[$k]['id']);
             unset($pl[$k]['pics']);
         }
-
-
         // dump($pl);
         echo json_encode($pl);
     }
@@ -295,29 +293,68 @@ class FoodsController extends CommonController {
     }
 
     // 外卖菜详情
-     public function details(){
-        $id;// = 1;
+    public function details(){
+        $arr=json_decode(file_get_contents('php://input'));
+        $id = $arr->cai;
+        $uid = usersId();
+        $sid = $_COOKIE['C057DF743DCFDA2C'];
+
+        /*$id = 1;
+        $uid = 27;
+        $sid = 1;*/
         $q_food = D('food');
-        $row = $q_food->where("id={$id}")->find();
+        $model = D('');
+        $row = $q_food->field('cainame,headpic,m_xl,zhekou,guige,pliao,m_ping')->where("id={$id}")->find();
+
+        $roww = $model->query("select s.num,s.fid from shopcar c,sgoods s where c.uid={$uid} AND c.sid={$sid} AND c.id=s.carid");
+        $row['num'] = 0;
+        $row['count'] = 0;
+        foreach ($roww as $key => $value) {
+          $row['count']+=$value['num'];
+          if($value['fid'] == $id) $row['num'] += $value['num'];
+        }
         // dump($row);
         echo json_encode($row);
-     }
+    }
 
+    // 电子菜单菜详情
+    public function dz_details(){
+        $arr=json_decode(file_get_contents('php://input'));
+        $id = $arr->cai;
+        $uid = usersId();
+        $sid = $_COOKIE['C057DF743DCFDA2C'];
+
+        /*$id = 1;
+        $uid = 27;
+        $sid = 1;*/
+        $q_food = D('dzcd');
+        $model = D('');
+        $row = $q_food->field('cainame,headpic,m_xl,zhekou,guige,pliao,m_ping')->where("id={$id}")->find();
+
+        $roww = $model->query("select s.num,s.fid from dz_shopcar c,dz_sgoods s where c.uid={$uid} AND c.sid={$sid} AND c.id=s.carid");
+        $row['num'] = 0;
+        $row['count'] = 0;
+        foreach ($roww as $key => $value) {
+          $row['count']+=$value['num'];
+          if($value['fid'] == $id) $row['num'] += $value['num'];
+        }
+        // dump($row);
+        echo json_encode($row);
+    }
       // 个人中心收货地址
-     public function address(){
+    public function address(){
         $q_shdz = D('shdz');
         $users = D('users');
         $name = $_COOKIE['id'];
-
         $row = $users->field('id,dzid')->where("name = {$name}")->find();
         $shdz_row = $q_shdz->where("uid=".$row['id'])->select();
         $shdz_row['dzid'] = $row['dzid'];
-        
+
         echo json_encode($shdz_row);
-     }
+    }
 
       // 外卖购物车收货地址
-     public function m_address(){
+    public function m_address(){
         $q_shdz = D('shdz');
         $shopcar = D('shopcar');
         $id=usersId(); 
@@ -326,27 +363,27 @@ class FoodsController extends CommonController {
         $row = $shopcar->field('id,dzid')->where("uid={$id} AND sid={$uid}")->find();
         $shdz_row = $q_shdz->where("uid=".$id)->select();
         $shdz_row['dzid'] = $row['dzid'];
+        // dump($shdz_row);
         echo json_encode($shdz_row);
-     }
+    }
 
      // 添加银行卡
-     public function add_card(){
+    public function add_card(){
         //???
 
-     }
+    }
 
      // 查看一个地址详细
-     public function add_kan(){
+    public function add_kan(){
         $arr=json_decode(file_get_contents('php://input'));
         $id = $arr->id;
         $q_address = D('shdz');
         $row = $q_address->where("id={$id}")->find();
         echo json_encode($row);
-     }
+    }
 
-        //修改地址
-     
-     public function add_change(){
+    //修改地址
+    public function add_change(){
         
         $arr=json_decode(file_get_contents('php://input'));
         $id = $arr->id;
@@ -380,10 +417,10 @@ class FoodsController extends CommonController {
         }
         if($row) echo '1';
         else echo '2';
-     }
+    }
 
-     // 验证原密码密码
-     public function change_password(){
+    // 验证原密码密码
+    public function change_password(){
         $name = $_COOKIE['id'];
         $arr=json_decode(file_get_contents('php://input'));
         $password = $arr->pass;
@@ -393,10 +430,10 @@ class FoodsController extends CommonController {
         //dump($row);
         if($pass == $row['pass']) echo 1;
         else echo 2;
-     }
+    }
 
-     //修改密码
-     public function change_password2(){
+    //修改密码
+    public function change_password2(){
         $name = $_COOKIE['id'];
         $arr=json_decode(file_get_contents('php://input'));
         $password = $arr->pass;
@@ -409,9 +446,9 @@ class FoodsController extends CommonController {
         }else{
             echo 2;
         }
-     }
-     //会员中心
-     public function me(){
+    }
+    //会员中心
+    public function me(){
         $user_id = $_COOKIE['id'];
         $q_user = D('users');
         $row = $q_user->where('name='.$user_id)->find();
@@ -430,28 +467,78 @@ class FoodsController extends CommonController {
         // dump($row);
         echo json_encode($row);
         
-     }
+    }
 
 
-    //查看红包
+    //个人中心 查看红包
     public function takeaway_pay(){
         $id = usersId();
         $q_cc = D('cc');
-        $row = $q_cc->where("uid = {$id} AND yong= 1")->select();
+        // $id = 27;
+        $row = $q_cc->field('id,stop,tj,djin,name')->where("uid = {$id} AND yong= 1")->select();
         foreach ($row as $k => $v) {
-            $v['time'] = date("Y-m-d H:i:s",$v['stop']);
+          switch ($v['name']) {
+            case 1:
+              $v['name'] = '外卖商家优惠券';
+              break;
+            case 2:
+              $v['name'] = '外卖通用优惠券';
+              break;
+            
+          }
+            $v['time'] = date("Y-m-d",$v['stop']);
             if($v['stop']<time()){
                 //超过使用期限
-                $rrow['mei'][]=$v;
+              unset($v['stop']);
+              $rrow['mei'][]=$v;
             }else{
                 // 能用的
-                $rrow['hao'][]=$v;
+              unset($v['stop']);
+              $rrow['hao'][]=$v;
             }
         }
+        // dump($rrow);
+        echo json_encode($rrow);
     }
 
-     //发送短信
-     public function fasong(){
+    //外卖下单放 查看红包
+    public function takeaway(){
+      $uid = usersId();
+      $sid = $_COOKIE['C057DF743DCFDA2C'];
+
+      $q_cc = D('cc');
+      $time = time();
+      $row = $q_cc->field('id,tj,stop,djin,sid,name')->where("uid={$uid} AND stop>{$time} AND yong= 1")->select();
+      foreach ($row as $k => $v) {
+          switch ($v['name']) {
+            case 1:
+              $v['name'] = '外卖商家优惠券';
+              break;
+            case 2:
+              $v['name'] = '外卖通用优惠券';
+              break;
+            
+          }
+            $v['time'] = date("Y-m-d",$v['stop']);
+            if($v['sid']!=$sid){
+                //超过使用期限
+              unset($v['sid']);
+              unset($v['stop']);
+              $rrow['mei'][]=$v;
+            }else{
+                // 能用的
+              unset($v['sid']);
+              unset($v['stop']);
+              $rrow['hao'][]=$v;
+            }
+
+        }
+      echo json_encode($rrow);
+      // dump($rrow);
+
+    }
+    //发送短信
+    public function fasong(){
 
       $arr=json_decode(file_get_contents('php://input'));
       $phone = $arr->phone;
@@ -583,18 +670,10 @@ class FoodsController extends CommonController {
         $q_model = D();
         $q_pjpic = D('pjpic');
 
-        if($type==1){
-          $xin = "ORDER BY p.dj desc";
-        }
-        if($type==2){
-          $xin = "ORDER BY p.ptime desc";
-        }
-        if($type==3){
-          $tu = "AND p.pics = 2";
-        }
-        if($type==4){
-          $xin = "ORDER BY p.dj asc";
-        }                             
+        if($type==1) $xin = "ORDER BY p.dj desc";
+        if($type==2) $xin = "ORDER BY p.ptime desc";
+        if($type==3) $tu = "AND p.pics = 2";
+        if($type==4) $xin = "ORDER BY p.dj asc";                         
         $pl = $q_model->query("select p.id,p.dj,p.pics,p.ptime,p.nrong,u.headpic,u.username from ddshop dd,ddan d,pj p,users u where dd.ddid = d.id and d.id = p.did and p.uid = u.id and dd.sid = {$id} and d.mai = {$mai} {$tu} {$xin} limit {$num},6");
         
         foreach ($pl as $k => $v) {
@@ -1050,7 +1129,7 @@ class FoodsController extends CommonController {
     if($roow['ccid']==0){
       //优惠券
       $time= time();
-      $row['cc'] = $q_cc->where("uid={$user_id} AND stop>{$time} AND yong=1 AND sid={$shop_id}")->count();
+      $row['cc'] = $q_cc->where("((uid={$user_id} AND name=1) or name=2) AND yong=1 AND stop>{$time} AND sid={$shop_id}")->count();
     }else{
       $cc_id = $roow['ccid'];
       $row['yh'] = $q_cc->where("id={$cc_id}")->find()['djin'];
@@ -1216,9 +1295,10 @@ class FoodsController extends CommonController {
     $dddz = D('dddz');
     $ddan = D('ddan');
     $ddshop = D('ddshop');
+    $cc = D('cc');
     $q_model = D();
 
-    $row= $q_shopcar->field('id,uid,sid,dzid,zong')->where("uid={$user_id} AND sid={$shop_id}")->find();
+    $row= $q_shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
     $carid = $row['id'];
     $g_row = $q_model->query("select s.*,f.cainame,f.zhekou from sgoods s,food f where f.id=s.fid AND s.carid={$carid}");
 
@@ -1235,12 +1315,11 @@ class FoodsController extends CommonController {
         }
       }
     }
-
     $dz_row = $shdz->field('linkman,sex,phone,address,jing,wei')->where("id={$row['dzid']}")->find();
     
     $dz_add = $dddz->add($dz_row);
     if(!$dz_add) die('2');
-
+    //添加ddan
     $dd_data = [
       'uid' => $user_id,
       'sid' => $shop_id,
@@ -1255,7 +1334,7 @@ class FoodsController extends CommonController {
 
     $dd_add = $ddan->add($dd_data);
     if(!$dd_add) die('2');
-
+    //添加ddshop
     foreach ($g_row as $k => $v) {
       $dds_data = [
         'sid' => $shop_id,
@@ -1267,11 +1346,17 @@ class FoodsController extends CommonController {
       $dds_add = $ddshop->add($dds_data);
       if(!$dds_add) die('2');
     }
-
+    echo 1;
+   /* //修改优惠券为使用  **********************支付成功再改***************************************************
+    $adata['id'] = $row['ccid'];  
+    $adata['yong'] = 2;
+    $c = $cc->save($adata);
+    if(!$c) die('2');
+    //清空购物车
     $a = $q_shopcar->where("id={$row['id']}")->delete();
     $b = $q_sgoods->where("carid={$row['id']}")->delete();
-    if(!$a || !$b) die('2');
-    echo 1;
+    if(!$a || !$b) die('2');*/
+    
   }
 
   //用户退出
@@ -1642,6 +1727,13 @@ class FoodsController extends CommonController {
     // $gge =  '4,9,11,';
     // $gge = rtrim($gge,',');
     // echo $gge;
+
+      $user_id = 26;
+      $shop_id = 1;
+      $time = time();
+      $q_cc = D('cc');
+      $count = $q_cc->where("((uid={$user_id} AND name=1) or name=2) AND yong=1 AND stop>{$time} AND sid={$shop_id}")->count();
+      echo $count;
   }
 
 

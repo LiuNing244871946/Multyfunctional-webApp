@@ -1,3 +1,10 @@
 ﻿美食店铺IDcookie：4373433CA7C70528
 外卖店铺IDcookie：C057DF743DCFDA2C
 电子菜单桌号IDcookie：98D61E02E7D7EC35
+
+
+SVN服务器：
+静态文件：https://DESKTOP-02KDGNA/svn/static/
+商家：https://DESKTOP-02KDGNA/svn/kintime-webapp-S/
+骑手：https://DESKTOP-02KDGNA/svn/kintime-webapp-R/
+客户端：https://DESKTOP-02KDGNA/svn/kintime-webapp/

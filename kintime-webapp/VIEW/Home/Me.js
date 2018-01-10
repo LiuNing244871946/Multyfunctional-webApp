@@ -30,4 +30,7 @@ $(function(){
 	$('#address').on('tap',function(){
 		window.location.href='../AddressManage/AddressManage.html';
 	});
+	$('#coupon').on('tap',function(){
+		window.location.href='../Coupon/coupon.html';
+	})
 })

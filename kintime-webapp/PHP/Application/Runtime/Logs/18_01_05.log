@@ -1,0 +1,303 @@
+[ 2018-01-05T18:38:00+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/Foods/dgwc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001519s ]
+SQL: SELECT * FROM `users` WHERE ( name = 22915649 ) LIMIT 1   [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `shdz` [ RunTime:0.001338s ]
+SQL: SHOW COLUMNS FROM `ggetype` [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `shopcar` [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `cc` [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `hd` [ RunTime:0.001500s ]
+SQL: select g.num,f.cainame,f.zhekou,g.gge from shopcar c,sgoods g,food f where c.uid=27 AND c.sid=1 AND c.id=g.carid AND g.fid=f.id [ RunTime:0.001083s ]
+SQL: SELECT * FROM `ggetype` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.001093s ]
+SQL: SELECT * FROM `ggetype` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.001143s ]
+SQL: SELECT * FROM `ggetype` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.001190s ]
+SQL: SELECT * FROM `shopcar` WHERE ( uid=27 AND sid=1 ) LIMIT 1   [ RunTime:0.001193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cc` WHERE ( uid=27 AND stop>1515148680 AND yong=1 AND sid=1 ) LIMIT 1   [ RunTime:0.001151s ]
+SQL: SELECT * FROM `hd` WHERE ( sid=1 AND 100>=tj ) ORDER BY tj desc LIMIT 1   [ RunTime:0.001693s ]
+SQL: SELECT * FROM `shdz` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001187s ]
+SQL: UPDATE `shopcar` SET `zong`=80 WHERE ( `id` = 12 ) [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2018-01-05T18:39:32+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/history
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.002753s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001696s ]
+SQL: SELECT * FROM `users` WHERE ( name = 22915649 ) LIMIT 1   [ RunTime:0.001191s ]
+SQL: select nr from history where cook_id=27 [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-01-05T18:40:15+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/history
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `history` [ RunTime:0.002475s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.001619s ]
+SQL: SELECT * FROM `users` WHERE ( name = 22915649 ) LIMIT 1   [ RunTime:0.001513s ]
+SQL: select nr from history where cook_id=27 [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001969s ]
+
+[ 2018-01-05T18:43:27+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002222s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.002561s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-01-05T18:44:43+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001680s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001180s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-01-05T18:44:44+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001588s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-01-05T18:44:46+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002458s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.003897s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-01-05T18:44:47+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002486s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001678s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-01-05T18:44:47+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002030s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001634s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.002964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-01-05T18:44:47+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002364s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.002028s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-01-05T18:45:01+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001198s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-01-05T18:45:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002848s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.007883s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.007775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-01-05T18:45:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.001853s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001117s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-01-05T18:45:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002202s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001757s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2018-01-05T18:45:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002184s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001866s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-01-05T18:45:25+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002987s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.002541s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-01-05T18:46:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.004378s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001978s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2018-01-05T18:49:02+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002444s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001583s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-01-05T18:49:36+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002328s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001798s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-01-05T18:50:36+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001500s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping from food where cainame like '%小%' and sid=1 [ RunTime:0.001618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2018-01-05T18:52:40+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002343s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001758s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping,m_xl from food where cainame like '%小%' and sid=1 [ RunTime:0.001824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2018-01-05T18:53:05+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002758s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001476s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping,m_xl from food where cainame like '%小%' and sid=1 [ RunTime:0.001711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-01-05T18:53:58+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.002788s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.002188s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping,m_xl from food where cainame like '%小%' and sid=1 [ RunTime:0.001378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2018-01-05T18:54:36+08:00 ] 127.0.0.1 /kintime-webapp/PHP/home/skeywords
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-webapp\PHP\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.003027s ]
+SQL: SHOW COLUMNS FROM `stype` [ RunTime:0.001416s ]
+SQL: select id,cainame,price,pliao,headpic,m_ping,m_xl from food where cainame like '%小%' and sid=1 [ RunTime:0.001454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+

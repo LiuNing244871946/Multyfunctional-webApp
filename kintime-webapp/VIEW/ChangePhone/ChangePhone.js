@@ -83,4 +83,7 @@ $(function() {
 	} else {
 		window.location.href = '../Login/Login.html';
 	};
+	$('.icon-fanhui').on('tap',function(){
+		history.back(-1);
+	});
 })

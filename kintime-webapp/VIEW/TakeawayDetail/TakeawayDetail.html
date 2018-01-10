@@ -19,44 +19,32 @@
 		<meta name="x5-page-mode" content="app" />
 		<meta name="msapplication-tap-highlight" content="no" />
 		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
 		<link rel="stylesheet" href="../Public/iconfont.css" />
 		<link rel="stylesheet" href="TakeawayDetail.css"/>
 		<link rel="stylesheet" href="../Public/eva.css" />
+		<link rel="stylesheet" href="../Public/img-show.css" />
 		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
+		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="TakeawayDetail.js"></script>
+		<script type="text/javascript" src="../Public/echo.min.js" ></script>
 	</head>
 	<body>
-		<!--商品图片展示-->
-		<div class="img-discon">
-			<div id="carousel-con">
-				<div class="img-item" id="img-item1"></div>
-				<div class="img-item" id="img-item2"></div>
-				<div class="img-item" id="img-item3"></div>
-			</div>
-			<div class="img-direccon">
-				<div class="img-name">乌拉乌拉乌拉乌拉乌拉乌拉乌拉</div>
-				<div class="img-numcon">
-					<span class="img-num"></span>/
-					<span class="img-nums"></span>
-				</div>
-			</div>
-		</div>
-		
-		
 		<div class="food-details">
 			<!--商店图片-->
 			<div class="shop-imgcon">
-				<img src="../../STATIC/img/网站-04.jpg" class="shop-img" />
+				<img class="shop-img" />
 				<span class="close-btn">
 					<i class="iconfont icon-guanbi"></i>
 				</span>
 			</div>
 			<!--套餐名字-->
 			<div class="detailsname-con">
-				<div class="name">菜品名称</div>
+				<div class="name"></div>
 				<div class="sale-num-con">
-					已售<span class="sale-num">4564654</span>
+					已售<span class="sale-num"></span>
 				</div>
 				<div class="price-con">
 					<span class="limite-pricecon">
@@ -65,14 +53,15 @@
 					</span>
 
 					<span class="buy-btn">
-						<a href="">加入购物车</a>
+						<a></a>
+						<span id="shop-num"></span>
 					</span>
 				</div>
 			</div>
 			<!--菜品信息-->
 			<div class="otherdetails-con">
 				<div class="title-con">商品详情</div>
-				<div class="text-con">一闪一闪亮晶晶，满天都是小星星。我嫉妒你的爱气势如虹，像个人气高居不下的天后</div>
+				<div class="text-con"></div>
 			</div>
 
 			<!--用户评价-->
@@ -82,106 +71,28 @@
 						外卖评价<span class="eva-con">(好评度<span class="eva-num">100%</span>)</span>
 					</div>
 				</div>
-				<ul id="eva-list">
-					<li class="eva-item">
-						<div class="eva-itemtitle">
-							<a href="" class="eva-user">
-								<span class="user-con">
-								<img src="../../STATIC/img/头像.jpg" class="user-img"/>
-								<span class="user-info">
-									<span class="user-name-con">
-										<span class="user-name">肥皂易滑</span>
-								<i class="icon-level"></i>
-								</span>
-								<span class="rate-b">
-										<span class="rate-s" style="width: 80%;"></span>
-								</span>
-								</span>
-								</span>
-								<span class="eva-time">
-								2017-7-10
-							</span>
-							</a>
-						</div>
-						<div class="evaitem-main">
-							<div class="eva-text">菜品新鲜，环境不错。</div>
-							<div class="eva-img">
-								<div class="img-con">
-									<img src="../../STATIC/img/头像.jpg" />
-									<img src="../../STATIC/img/网站-06.jpg" />
-									<img src="../../STATIC/img/头像.jpg" />
-									<img src="../../STATIC/img/头像.jpg" />
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="eva-item">
-						<div class="eva-itemtitle">
-							<a href="" class="eva-user">
-								<span class="user-con">
-								<img src="../../STATIC/img/头像.jpg" class="user-img"/>
-								<span class="user-info">
-									<span class="user-name-con">
-										<span class="user-name">肥皂易滑</span>
-								<i class="icon-level"></i>
-								</span>
-								<span class="rate-b">
-										<span class="rate-s" style="width: 80%;"></span>
-								</span>
-								</span>
-								</span>
-								<span class="eva-time">
-								2017-7-10
-							</span>
-							</a>
-						</div>
-						<div class="evaitem-main">
-							<div class="eva-text">菜品新鲜，环境不错。</div>
-							<div class="eva-img">
-								<div class="img-con">
-									<img src="../../STATIC/img/头像.jpg" />
-									<img src="../../STATIC/img/网站-06.jpg" />
-									<img src="../../STATIC/img/头像.jpg" />
-									<img src="../../STATIC/img/头像.jpg" />
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="eva-item">
-						<div class="eva-itemtitle">
-							<a href="" class="eva-user">
-								<span class="user-con">
-								<img src="../../STATIC/img/头像.jpg" class="user-img"/>
-								<span class="user-info">
-									<span class="user-name-con">
-										<span class="user-name">肥皂易滑</span>
-								<i class="icon-level"></i>
-								</span>
-								<span class="rate-b">
-										<span class="rate-s" style="width: 80%;"></span>
-								</span>
-								</span>
-								</span>
-								<span class="eva-time">
-								2017-7-10
-							</span>
-							</a>
-						</div>
-						<div class="evaitem-main">
-							<div class="eva-text">菜品新鲜，环境不错。</div>
-							<div class="eva-img">
-								<div class="img-con">
-									<img src="../../STATIC/img/头像.jpg" />
-									<img src="../../STATIC/img/网站-06.jpg" />
-									<img src="../../STATIC/img/头像.jpg" />
-									<img src="../../STATIC/img/头像.jpg" />
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
+				<ul id="eva-list"></ul>
 			</div>
 
+		</div>
+		<div id="discount-con">
+			<div id="img-show" class="discount-item">
+				<div class="swiper-container" id="img-swiper">
+					<div class="swiper-wrapper"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="discount-item" id="norm-con">
+				<div class="norm-title">菜品名称</div>
+				<div class="norm-list"></div>
+				<div class="normprice-con">
+					<span class="norm-price">
+						<i class="money">K</i>
+						<span class="money-text"></span>
+					</span>
+					<button class="joincart">加入购物车</button>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

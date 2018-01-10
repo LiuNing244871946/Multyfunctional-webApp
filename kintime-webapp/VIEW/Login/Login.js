@@ -75,5 +75,8 @@ $(function() {
 			console.log(0)
 			return false;
 		}
-	})
+	});
+	$('.icon-fanhui').on('tap',function(){
+		history.back(-1);
+	});
 })

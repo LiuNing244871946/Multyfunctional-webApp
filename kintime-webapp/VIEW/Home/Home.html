@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="format-detection" content="telphone=yes,email=no" />
 		<meta name="renderer" content="webkit" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="HandheldFriendly" content="true" />
@@ -34,6 +34,7 @@
 		<script type="text/javascript" src="Home.js"></script>
 		<script type="text/javascript" src="Me.js"></script>
 		<script type="text/javascript" src="../Public/data.js"></script>
+		<script src="order-main.js"></script>
 	</head>
 
 	<body>
@@ -53,11 +54,7 @@
 					<div class="home-con">
 						<!--轮播-->
 						<div class="swiper-container" id="home-swiper">
-							<div class="swiper-wrapper">
-								<a class="swiper-slide"></a>
-								<a class="swiper-slide"></a>
-								<a class="swiper-slide"></a>
-							</div>
+							<div class="swiper-wrapper"></div>
 							<div class="swiper-pagination" id="home-pagination"></div>
 						</div>
 						<!--分类-->
@@ -197,34 +194,8 @@
 					</div>
 					<div class="current-order">当前订单</div>
 					<!-- 订单列表 -->
-					<div class="will-consume-box">
-						<p class="will-consume-title">
-							<span class="shop-name">四季粥铺</span>
-							<span class="will-consume-word">骑手配送中</span>
-						</p>
-						<div class="will-consume-content">
-							<div class="content-left">
-								<i class="content-left-img"></i>
-							</div>
-							<div class="content-right">
-								<div class="content-right-top">
-									<p class="content-right-left">
-										<span class="content-right-top1">虾仁玉米粥等2件商品</span>
-										<span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-									</p>
-									<p class="icon-box">
-										<i class="iconfont icon-next"></i>
-									</p>
-								</div>
-								<div class="content-right-bottom">
-									<p class="content-right-bottom1">
-										<span class="all-count">总计：</span>
-										<span class="money-num">₭9.5万</span>
-									</p>
-									<button class="view-code">再来一单</button>
-								</div>
-							</div>
-						</div>
+					<div class="current-order-list">
+						<!-- 从后端数据获取当前订单信息创建列表 -->
 					</div>
 				</div>
 				<div class="swiper-slide">

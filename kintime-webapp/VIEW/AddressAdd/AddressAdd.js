@@ -1,4 +1,7 @@
 $(function(){
+	if(!$.fn.cookie('id')) {
+		window.location.href = '../Login/Login.html';
+	};
 	$('#name').on('input',function(){
 		$('#tip5').remove();
 		if(!$(this).val()){
@@ -103,5 +106,8 @@ $(function(){
 				}
 			});
 		};
+	});
+	$('.icon-fanhui').on('tap',function(){
+		history.back(-1);
 	});
 })

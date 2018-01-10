@@ -1,4 +1,7 @@
 $(function() {
+	if(!$.fn.cookie('id')) {
+		window.location.href = '../Login/Login.html';
+	};
 	const img = new Image();
 	img.src = localStorage.avatar;
 	img.onload = function() {
@@ -148,4 +151,7 @@ $(function() {
 			});
 		});
 	};
+	$('.icon-fanhui').on('tap',function(){
+		window.location.href='../UserSetting/UserSetting.html';
+	});
 })

@@ -1,4 +1,7 @@
 $(function() {
+	if(!$.fn.cookie('id')) {
+		window.location.href = '../Login/Login.html';
+	};
 	echo.init({
 		offset: 0,
 		throttle: 0
@@ -104,7 +107,11 @@ $(function() {
 		$('#right-menu').scrollTop(rightScroll);
 	});
 	//	菜品数量
-	$('#right-menu').on('tap', '.add-btn', function() {
+	$('#right-menu').on('tap', '.add-btn', function(e) {
+		e.stopPropagation();
+		window.event.cancelBubble=true;
+		e.preventDefault();
+		window.event.returnValue=false;
 		if($('.order-num').text() < 99) {
 			var listItem = $(this).parents('.dish-item');
 			var data = {};
@@ -134,7 +141,11 @@ $(function() {
 			alert('商品已达最大数量');
 		};
 	});
-	$('#right-menu').on('tap', '.less-btn', function() {
+	$('#right-menu').on('tap', '.less-btn', function(e) {
+		e.stopPropagation();
+		window.event.cancelBubble=true;
+		e.preventDefault();
+		window.event.returnValue=false;
 		var listItem = $(this).parents('.dish-item');
 		var foodNum = listItem.find('.num-con').text();
 		var data = {};
@@ -166,6 +177,14 @@ $(function() {
 				console.log(e);
 			}
 		});
+	});
+//	菜详情
+	$('#right-menu').on('tap','.dishimg-con',function(e){
+		e.stopPropagation();
+		window.event.cancelBubble=true;
+		e.preventDefault();
+		window.event.returnValue=false;
+		window.location.href='../TakeawayDetail/TakeawayDetail.html?52E0DDC35C3C1109'+$(this).parents('.dish-item').data('cid');
 	});
 	//	订单展示
 	$('.menu-footer .order-img').on('tap', function() {

@@ -17,3 +17,4 @@ return array(
     'COOKIE_EXPIRE'         =>  0,    // Cookie有效期
     'COOKIE_HTTPONLY'       =>  'true',
 );
+

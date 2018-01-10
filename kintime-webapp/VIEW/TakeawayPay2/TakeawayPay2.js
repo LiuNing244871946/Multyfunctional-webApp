@@ -1,24 +1,29 @@
 $(function() {
-	$.ajax({
-		type: "post",
-		url: "../../PHP/home/Foods/dgwc",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		dataType: "json",
-		success: function(data) {
-			if(data === 1) {
-				alert('商品未达起送价，请重新购买商品');
-				window.location.href = '../TakeawayShop/TakeawayShop.html';
-			} else {
-				$('#pay-page .shop-img').attr('src','.'+data.ok.headpic);
-				$('#pay-page .order-money .money-num').text(data.ok.money);
-				$('#pay-page .ordernum-con .order-num').text(data.ok.newid);
-			};
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+	if($.fn.cookie('id')) {
+		$.ajax({
+			type: "post",
+			url: "../../PHP/home/Foods/dgwc",
+			async: true,
+			contentType: 'application/x-www-form-urlencoded',
+			dataType: "json",
+			success: function(data) {
+				if(data === 1) {
+					alert('商品未达起送价，请重新购买商品');
+					window.location.href = '../TakeawayShop/TakeawayShop.html';
+				} else {
+					$('#pay-page .shop-img').attr('src', '.' + data.ok.headpic);
+					$('#pay-page .order-money .money-num').text(data.ok.money);
+					$('#pay-page .ordernum-con .order-num').text(data.ok.newid);
+				};
+			},
+			error: function(e) {
+				console.log(e);
+			}
+		});
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
+
 	//	支付方式
 	$('#pay-page .payment-select').on('tap', function() {
 		$('#pay-page .payment-item').removeClass('selected');
@@ -44,5 +49,8 @@ $(function() {
 		var bankNum = $('#card-list .selected .bank-num').text();
 		$('#discount-con,.discount-item').hide();
 		$('#china .num-text').text(bankNum);
+	});
+	$('.icon-fanhui').on('tap', function() {
+		history.back(-1);
 	});
 })

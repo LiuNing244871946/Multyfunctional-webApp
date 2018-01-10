@@ -2,15 +2,36 @@ $(function() {
 	echo.init({
 		offset: 0,
 		throttle: 0
-	})
-	var homeSwiper = new Swiper('#home-swiper', {
-		direction: 'horizontal',
-		loop: true,
-		pagination: '#home-pagination',
-		paginationClickable: true,
-		autoplay: 3000,
-		oberver: true,
-		oberverParents: true
+	});
+	var sImgData = {};
+	sImgData.type = 1;
+	var sImgJson = JSON.stringify(sImgData);
+	$.ajax({
+		type: "post",
+		url: "../../PHP/home/lunbo",
+		async: true,
+		contentType: 'application/x-www-form-urlencoded',
+		dataType: "json",
+		data: sImgJson,
+		success: function(data) {
+			var str = '';
+			$.each(data, function(index, item) {
+				str += '<a class="swiper-slide" href="' + item.url + '" data-img="' + item.id + '"><img src=".' + item.pic + '" /></a>';
+			});
+			$('#home-swiper .swiper-wrapper').append(str);
+			var homeSwiper = new Swiper('#home-swiper', {
+				direction: 'horizontal',
+				loop: true,
+				pagination: '#home-pagination',
+				paginationClickable: true,
+				autoplay: 3000,
+				oberver: true,
+				oberverParents: true
+			});
+		},
+		error: function(e) {
+			console.log(e);
+		}
 	});
 	var sSwiper = new Swiper('#page-swiper', {
 		noSwiping: true,
@@ -96,9 +117,9 @@ $(function() {
 					var hours = Math.floor((totalT - day * 3600 * 24) / 3600);
 					var mins = Math.floor((totalT - day * 3600 * 24 - hours * 3600) / 60);
 					var secs = Math.floor(totalT - day * 3600 * 24 - hours * 3600 - mins * 60);
-					str += '<a class="swiper-slide" id="special' + item.id + '" href="../FoodShop/FoodShop.html?id='+item.sid+'"><img src="../../STATIC/img/网站-05.jpg" /><div class="time">仅剩<span class="time-d">' + day + '</span>天<span class="time-h">' + hours + '</span>小时<span class="time-m">' + mins + '</span>分<span class="time-s">' + secs + '</span>秒</div></a>';
+					str += '<a class="swiper-slide" id="special' + item.id + '" href="../FoodShop/FoodShop.html?id=' + item.sid + '"><img src="../../STATIC/img/网站-05.jpg" /><div class="time">仅剩<span class="time-d">' + day + '</span>天<span class="time-h">' + hours + '</span>小时<span class="time-m">' + mins + '</span>分<span class="time-s">' + secs + '</span>秒</div></a>';
 				} else {
-					str += '<a class="swiper-slide" id="special' + item.id + '" href="../FoodShop/FoodShop.html?id='+item.sid+'"><img src="../../STATIC/img/网站-05.jpg" /><div class="time">活动已结束</div></a>';
+					str += '<a class="swiper-slide" id="special' + item.id + '" href="../FoodShop/FoodShop.html?id=' + item.sid + '"><img src="../../STATIC/img/网站-05.jpg" /><div class="time">活动已结束</div></a>';
 				};
 			});
 			$('#special-swiper .swiper-wrapper').append(str);
@@ -132,28 +153,13 @@ $(function() {
 			console.log(e);
 		}
 	});
-	$('.fav-com-con').on('tap','.fav-com-item',function(){
-		$.fn.cookie('4373433CA7C70528',$(this).data('id'),{path:'/'});
-		window.location.href='../FoodShop/FoodShop.html';
-	})
-	// 订单页面请求数据
-	$("#order-btn").on('tap',function(){
-		$.ajax({
-            type:"POST",
-            url:"",
-            async:true,
-            contentType:"application/x-www-form-urlencoded",//内容编码类型
-            dataType:"json",//服务器返回的数据类型
-            success:function(res){
-                console.log(res);
-				$(".order-main").empty();
-				var orderUrl = "../OrderMain/order-main.html";
-				$(".order-main").append(orderUrl);
-            },
-            error:function(e){
-                console.log(e);
-                console.log("页面加载失败");
-            }
-        })
-	})
+	$('.fav-com-con').on('tap', '.fav-com-item', function() {
+		$.fn.cookie('4373433CA7C70528', $(this).data('id'), {
+			path: '/'
+		});
+		window.location.href = '../FoodShop/FoodShop.html';
+	});
+	$('.city-con').on('tap',function(){
+		window.location.href='../CitySelect/CitySelect.html';
+	});
 })

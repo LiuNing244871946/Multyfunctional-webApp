@@ -1,4 +1,9 @@
 $(function(){
+	if($.fn.cookie('id')) {
+		
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
 	var menuTop = $('.shop-menu').offset().top;
 	var scrollDis = menuTop - $('.top-navbar').height();
 	var menuHeight = window.screen.availHeight-$('footer').offset().height-$('header').offset().height;

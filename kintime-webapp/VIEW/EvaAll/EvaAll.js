@@ -1,4 +1,9 @@
 $(function(){
+	if($.fn.cookie('id')) {
+		
+	} else {
+		window.location.href = '../Login/Login.html';
+	};
 	var sSwiper = new Swiper('#evasort-swiper',{
 		noSwiping:true,
 		onSlideChangeEnd:function(swiper){

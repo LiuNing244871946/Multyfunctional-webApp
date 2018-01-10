@@ -149,5 +149,7 @@ $(function(){
 			return false;
 		};
 	});
-	
+	$('.icon-fanhui').on('tap',function(){
+		history.back(-1);
+	});
 })

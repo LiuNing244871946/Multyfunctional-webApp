@@ -1,4 +1,7 @@
 $(function(){
+	if(!$.fn.cookie('id')) {
+		window.location.href = '../Login/Login.html';
+	};
 	$('.bank-select').on('tap',function(){
 		$('#discount-con,#select-con').show();
 	});

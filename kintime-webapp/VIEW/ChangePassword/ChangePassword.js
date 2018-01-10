@@ -1,4 +1,7 @@
 $(function() {
+	if(!$.fn.cookie('id')) {
+		window.location.href = '../Login/Login.html';
+	};
 	var passSwiper = new Swiper('#passSwiper', {
 		direction: 'horizontal',
 		noSwiping: true,
@@ -135,5 +138,8 @@ $(function() {
 		}else{
 			return false;
 		};
-	})
+	});
+	$('.icon-fanhui').on('tap',function(){
+		history.back(-1);
+	});
 })
