@@ -46,41 +46,21 @@
     <!--导航菜单切换-->
     <div class="swiper-container swiper1">
         <div class="swiper-wrapper tab-bar-box">
-            <div class="swiper-slide selected">待消费</div>
-            <div class="swiper-slide">已消费</div>
-            <div class="swiper-slide">待付款</div>
-            <div class="swiper-slide">退款售后</div>
+            <div class="swiper-slide selected" id="1">待消费</div>
+            <div class="swiper-slide" id="2">已消费</div>
+            <div class="swiper-slide" id="3">待付款</div>
+            <div class="swiper-slide" id="4">退款售后</div>
         </div>
     </div>
     <!-- swiper2 -->
     <div class="swiper-container swiper2">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
-                        <span class="will-consume-word">待消费</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <p class="content-right-top">
-                                <span class="content-right-top1">乐享2~3人餐</span>
-                                <span class="content-right-top2">有效期至: 2018-6-6</span>
-                            </p>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">查看券码</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="delicacy-order-list">
+                    <!-- 后端传入数据创建列表 -->
                 </div>
-                <div class="will-consume-box">
+                <!--注释列表 -->
+                <!-- <div class="will-consume-box">
                     <p class="will-consume-title">
                         <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
                         <span class="will-consume-word">已过期</span>
@@ -103,132 +83,21 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+            </div>
+            <div class="swiper-slide swiper-no-swiping">
+                <div class="delicacy-order-list">
+                    <!-- 后端传入数据创建列表 -->
                 </div>
             </div>
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
-                        <span class="will-consume-word">待评价</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <p class="content-right-top">
-                                <span class="content-right-top1">乐享2~3人餐</span>
-                                <span class="content-right-top2">使用日期: 2017-6-6</span>
-                            </p>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">评价</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
-                        <span class="will-consume-word">已评价</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <p class="content-right-top">
-                                <span class="content-right-top1">乐享2~3人餐</span>
-                                <span class="content-right-top2">使用日期: 2017-6-6</span>
-                            </p>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">再来一单</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="delicacy-order-list">
+                    <!-- 后端传入数据创建列表 -->
                 </div>
             </div>
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
-                        <span class="will-consume-word">待付款</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <p class="content-right-top">
-                                <span class="content-right-top1">乐享2~3人餐</span>
-                                <span class="content-right-top2">数量: 1</span>
-                            </p>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">付款</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
-                        <span class="will-consume-word">已退款</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <p class="content-right-top">
-                                <span class="content-right-top1">乐享2~3人餐</span>
-                                <span class="content-right-top2">下单时间: 2017-6-6</span>
-                            </p>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">再来一单</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">新石器烤肉&nbsp;&nbsp;(湖滨银泰店)</span>
-                        <span class="will-consume-word">退款中</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <p class="content-right-top">
-                                <span class="content-right-top1">乐享2~3人餐</span>
-                                <span class="content-right-top2">下单时间: 2017-6-6</span>
-                            </p>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">查看进度</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="delicacy-order-list">
+                    <!-- 后端传入数据创建列表 -->
                 </div>
             </div>
         </div>
@@ -236,6 +105,8 @@
     <script src="../Public/adaptation.js"></script>
     <script src="../Public/zepto.min.js"></script>
     <script src="../Public/swiper-3.4.2.jquery.min.js"></script>
+    <script src="../Public/zepto.cookie.min.js"></script>
+    <script src="delicacy-order.js"></script>
     <script>
         $(function(){
             function setCurrentSlide(ele, index) {

@@ -52,11 +52,11 @@
 	</body>
 	<script>
 		function initMap(){
-			var map = new google.maps.Map(document.getElementById('map-con'),{
-				zoom:18,
-				center:{lat:-25.363,lng:131.044}
-			});
-			var infoWindow = new google.maps.InfoWindow({'map':map});
+//			var map = new google.maps.Map(document.getElementById('map-con'),{
+//				zoom:18,
+//				center:{lat:-25.363,lng:131.044}
+//			});
+//			var infoWindow = new google.maps.InfoWindow({'map':map});
 			var geocoder = new google.maps.Geocoder;
 			var result = '';
 			if(navigator.geolocation){
@@ -68,24 +68,25 @@
 					geocoder.geocode({'location':pos},function(results,status){
 						if(status === 'OK'){
 							if(results.length>0){
-								for(var i = 0;i<results.length;i++){
-									if(results[i].address_components.length>0){
-										for(var j=0;j<results[i].address_components.length;j++){
-											if(results[i].address_components[j].types.length>0){
-												for(var m=0;m<results[i].address_components[j].types.length;m++){
-													if(results[i].address_components[j].types[m]=='administrative_area_level_1'){
-														result = result + '第'+i+'种结果为：'+results[i].address_components[j].long_name;
-													}
-												}
-											}
-										}
-									}
-									
-									
-								};
-								infoWindow.setContent(result);
-								infoWindow.setPosition(pos);
-								map.setCenter(pos);
+//								for(var i = 0;i<results.length;i++){
+//									if(results[i].address_components.length>0){
+//										for(var j=0;j<results[i].address_components.length;j++){
+//											if(results[i].address_components[j].types.length>0){
+//												for(var m=0;m<results[i].address_components[j].types.length;m++){
+//													if(results[i].address_components[j].types[m]=='administrative_area_level_1'){
+//														result = result + '第'+i+'种结果为：'+results[i].address_components[j].long_name;
+//													}
+//												}
+//											}
+//										}
+//									}
+//									
+//									
+//								};
+//								infoWindow.setContent(result);
+//								infoWindow.setPosition(pos);
+//								map.setCenter(pos);
+								console.log(results[1].types);
 							}else{
 								window.alert('无结果');
 							}
@@ -94,10 +95,10 @@
 						}
 					});
 				},function(){
-					handleLocationError(true,infoWindow,map.getCenter());
+//					handleLocationError(true,infoWindow,map.getCenter());
 				});
 			}else{
-				handleLocationError(false,infoWindow,map.getCenter());
+//				handleLocationError(false,infoWindow,map.getCenter());
 			}
 		}
 		function handleLocationError(browserHasGeolocation,infoWindow,pos){
@@ -108,5 +109,5 @@
 			);
 		}
 	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj1gNUTDZJLvPeePsU5ltjfX-hJU1N_8c&callback=initMap"></script>
+	<script async defer src="http://maps.google.cn/maps/api/js?v=3.20&region=cn&language=zh-CN&key=AIzaSyAj1gNUTDZJLvPeePsU5ltjfX-hJU1N_8c&callback=initMap"></script>
 </html>

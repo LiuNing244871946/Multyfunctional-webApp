@@ -1,7 +1,4 @@
 $(function() {
-	if(!$.fn.cookie('id')) {
-		window.location.href = '../Login/Login.html';
-	};
 	$('#search-btn').on('tap', function() {
 		if($('.city-text').val()) {
 			//			搜索店内商品

@@ -3,7 +3,6 @@ $(function() {
 		offset: 0,
 		throttle: 0
 	});
-	if($.fn.cookie('id')) {
 		var packId = window.location.href.substr(window.location.href.indexOf("?id=") + 4);
 		var data = {};
 		data.tcan = packId;
@@ -95,9 +94,6 @@ $(function() {
 				console.log(e);
 			}
 		});
-	} else {
-		window.location.href = '../Login/Login.html';
-	};
 
 	//	套餐点击事件
 	$('#otherdetails-con').on('tap', '.otherdetails-item', function() {

@@ -1,4 +1,3 @@
-
 #phoneSwiper{
 	width: 100%;
 	margin-top: .95rem;
@@ -38,10 +37,7 @@
 	background: #Fff;
 	font-size: .3rem;
 }
-#newphone{
-	color: #333;
-}
-#sms,#newsms{
+#sms{
 	height: 100%;
 	width: 60%;
 	font-size: .3rem;
@@ -50,7 +46,7 @@
 	outline: medium;
 	color: #333;
 }
-#send-sms,#newsend-sms{
+#send-sms{
 	height: 100%;
 	width: 40%;
 	font-size: .3rem;
@@ -61,10 +57,10 @@
 	background: #00BED7;
 	outline: none;
 }
-#send-sms .time-text,#newsend-sms .time-text{
+#send-sms .time-text{
 	display: none;
 }
-#send-sms.disable,#newsend-sms.disable{
+#send-sms.disable{
 	background: #E8E6E7;
 	color: #B8B3B7;
 }
@@ -94,13 +90,35 @@
 .next-btn.disabled{
 	background: #B8B3B7;
 }
-#area-code{
-	border: none;
-	outline: none;
+#newpage{
+	padding: .4rem .2rem;
+}
+.password-con{
+	width: 100%;
+	height: .8rem;
+	line-height: .8rem;
+	border: 1px solid #B8B3B6;
+	padding-left: .1rem;
+	color: #B8B3B6;
+	border-radius: 8px;
+	margin-top: .2rem;
+	display: flex;
+	display: -webkit-flex;
+	overflow: hidden;
 	background: #fff;
 }
-#area-code option{
+.icon-con{
+	width: 10%;
+	height: 100%;
+	text-align: center;
+}
+.icon-con .iconfont{
+	font-size: .5rem;
+}
+.password-con input{
+	width: 90%;
+	height: 100%;
 	border: none;
-	outline: none;
-	background: #fff;
+	outline: medium;
+	color: #B8B3B6;
 }

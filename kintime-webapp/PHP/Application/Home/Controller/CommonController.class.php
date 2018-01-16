@@ -14,9 +14,25 @@ class CommonController extends Controller { //美食下分类的所有商品
           $in_ddan->where("id={$vin['id']}")->delete(); 
           $in_ddshop->where("ddid={$vin['id']}")->delete(); 
       }*/
-      //3天自动签收
-      
+
+      //3天改套餐状态 未使用变成 已过期
+      $t_ddan=D('t_ddan');
+      $san = time()-(3600*24*3);
+      $san_row = $t_ddan->where("ztai=1 and time<{$san}")->select();
+      foreach ($san_row as $kk => $value) {
+        $data['id']=$value['id'];
+        $data['ztai']=6;
+        $t_ddan->save($data);
+      }
+
+
+
+
+
+
     }
+
+
 
 
 }

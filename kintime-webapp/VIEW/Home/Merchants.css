@@ -1,0 +1,129 @@
+#merchants-page{
+	background: #F3F4F5;
+	margin-bottom: .95rem;
+}
+#merchants-title{
+	width: 100%;
+	height: .95rem;
+	background: #2EB6CC;
+	text-align: center;
+	line-height: .95rem;
+	color: #fff;
+	font-size: .4rem;
+}
+#merchants-menu{
+	width: 100%;
+	padding:  .3rem 0;
+	background: #fff;
+	display: flex;
+	display: -webkit-flex;
+}
+#merchants-menu .menu-item{
+	height: 1.75rem;
+	flex-grow: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-right: 1px solid #E7E6E8;
+}
+.menu-item .item-icon{
+	width: .8rem;
+	height: .8rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.menu-item:last-child{
+	border-right: none;
+}
+#landmark .item-icon{
+	background: #EB9B8C;
+}
+#landmark .iconfont{
+	font-size: .5rem;
+}
+#schedule .item-icon{
+	background: #6FC0C3;
+}
+#schedule .iconfont{
+	font-size: .5rem;
+}
+#customer .item-icon{
+	background: #95BDE3;
+}
+#customer .iconfont{
+	font-size: .5rem;
+}
+.menu-item .menu-sub{
+	color: #999;
+}
+#merchants-item{
+	width: 100%;
+	padding: .2rem;
+}
+#merchants-sub{
+	width: 100%;
+	height: 1.9rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	background: #2EB6CC;
+	margin-bottom: .2rem;
+	color: #fff;
+}
+#merchants-sub .text-con{
+	padding: .2rem;
+	font-size: .5rem;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+#merchants-con{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#merchants-con .sub-item{
+	width: 49%;
+	height: 1.9rem;
+	margin-bottom: .1rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.sub-item .iconfont{
+	font-size: .5rem;
+}
+#food-m{
+	background: #C68C45;
+}
+#shop-m{
+	background: #B55063;
+}
+#traffic-m{
+	background: #C69D45;
+}
+#tourism-m{
+	background: #3990C2;
+}
+#play-m{
+	background: #795CA6;
+}
+#life-m{
+	background: #4BBC80;
+}
+#playmate-m{
+	background: #C46943;
+}
+#moneymana-m{
+	background: #BC4D43;
+}

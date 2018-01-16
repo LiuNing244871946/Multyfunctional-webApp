@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class TypejzController extends Controller {  //首页底部加载页
+class TypejzController extends CommonController {  //首页底部加载页
     public function index(){ 
         $m = D('m_shop');
         $s = D('shop');

@@ -1,38 +1,39 @@
 $(function() {
 	if($.fn.cookie('id')) {
-		var sImgData = {};
-		sImgData.type = 2;
-		var sImgJson = JSON.stringify(sImgData);
-		$.ajax({
-			type: "post",
-			url: "../../PHP/home/lunbo",
-			async: true,
-			contentType: 'application/x-www-form-urlencoded',
-			dataType: "json",
-			data: sImgJson,
-			success: function(data) {
-				var str = '';
-				$.each(data, function(index, item) {
-					str += '<a class="swiper-slide" href="' + item.url + '" data-img="' + item.id + '"><img src=".' + item.pic + '" /></a>';
-				});
-				$('#home-swiper .swiper-wrapper').append(str);
-				var homeSwiper = new Swiper('#home-swiper', {
-					direction: 'horizontal',
-					loop: true,
-					pagination: '#home-pagination',
-					paginationClickable: true,
-					autoplay: 3000,
-					oberver: true,
-					oberverParents: true
-				});
-			},
-			error: function(e) {
-				console.log(e);
-			}
-		});
+
 	} else {
-		window.location.href = '../Login/Login.html';
+		//		window.location.href = '../Login/Login.html';
 	};
+	var sImgData = {};
+	sImgData.type = 2;
+	var sImgJson = JSON.stringify(sImgData);
+	$.ajax({
+		type: "post",
+		url: "../../PHP/home/lunbo",
+		async: true,
+		contentType: 'application/x-www-form-urlencoded',
+		dataType: "json",
+		data: sImgJson,
+		success: function(data) {
+			var str = '';
+			$.each(data, function(index, item) {
+				str += '<a class="swiper-slide" href="' + item.url + '" data-img="' + item.id + '"><img src=".' + item.pic + '" /></a>';
+			});
+			$('#home-swiper .swiper-wrapper').append(str);
+			var homeSwiper = new Swiper('#home-swiper', {
+				direction: 'horizontal',
+				loop: true,
+				pagination: '#home-pagination',
+				paginationClickable: true,
+				autoplay: 3000,
+				oberver: true,
+				oberverParents: true
+			});
+		},
+		error: function(e) {
+			console.log(e);
+		}
+	});
 
 	function homeShop(data) {
 		var str = "";

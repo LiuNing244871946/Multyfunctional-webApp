@@ -1,7 +1,4 @@
 $(function() {
-	if(!$.fn.cookie('id')) {
-		window.location.href = '../Login/Login.html';
-	};
 	echo.init({
 		offset: 0,
 		throttle: 0

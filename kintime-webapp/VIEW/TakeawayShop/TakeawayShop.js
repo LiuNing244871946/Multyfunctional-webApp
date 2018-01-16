@@ -1,9 +1,6 @@
 $(function() {
-	if(!$.fn.cookie('id')) {
-		window.location.href = '../Login/Login.html';
-	};
 	echo.init({
-		offset: 0,
+		offset: -100,
 		throttle: 0
 	})
 	eva(1, 0);
@@ -70,7 +67,7 @@ $(function() {
 			$('#shop-time .text-con').text('配送时间：' + data.hi_b + '-' + data.hi_o);
 			$('#delivery-money .money-num').text(data.song);
 			$('#start-price .money-num').text(data.gogo);
-			$('.order-btn').text(data.gogo+'基普起送');
+			$('.order-btn').text(data.gogo + '基普起送');
 			shopCart();
 		},
 		error: function(e) {
@@ -107,15 +104,50 @@ $(function() {
 		$('#right-menu').scrollTop(rightScroll);
 	});
 	//	菜品数量
-	$('#right-menu').on('tap', '.add-btn', function(e) {
-		e.stopPropagation();
-		window.event.cancelBubble=true;
-		e.preventDefault();
-		window.event.returnValue=false;
-		if($('.order-num').text() < 99) {
+	if($.fn.cookie('id')) {
+		$('#right-menu').on('tap', '.add-btn', function(e) {
+			e.stopPropagation();
+			window.event.cancelBubble = true;
+			e.preventDefault();
+			window.event.returnValue = false;
+			if($('.order-num').text() < 99) {
+				var listItem = $(this).parents('.dish-item');
+				var data = {};
+				data.num = 1;
+				data.cai = listItem.data('cid');
+				data.gge = '0';
+				var jsonStr = JSON.stringify(data);
+				$.ajax({
+					type: "post",
+					url: "../../PHP/home/Foods/ggwc",
+					async: true,
+					contentType: 'application/x-www-form-urlencoded',
+					dataType: "json",
+					data: jsonStr,
+					success: function(data) {
+						if(data === 1) {
+							shopCart();
+						} else {
+							alert('添加失败');
+						}
+					},
+					error: function(e) {
+						console.log(e);
+					}
+				});
+			} else {
+				alert('商品已达最大数量');
+			};
+		});
+		$('#right-menu').on('tap', '.less-btn', function(e) {
+			e.stopPropagation();
+			window.event.cancelBubble = true;
+			e.preventDefault();
+			window.event.returnValue = false;
 			var listItem = $(this).parents('.dish-item');
+			var foodNum = listItem.find('.num-con').text();
 			var data = {};
-			data.num = 1;
+			data.num = 2;
 			data.cai = listItem.data('cid');
 			data.gge = '0';
 			var jsonStr = JSON.stringify(data);
@@ -128,63 +160,76 @@ $(function() {
 				data: jsonStr,
 				success: function(data) {
 					if(data === 1) {
-						shopCart();
+						if(foodNum === '1') {
+							shopCart();
+							listItem.find('.num-con').text(0);
+							listItem.removeClass('selected');
+						} else {
+							shopCart();
+						};
 					} else {
-						alert('添加失败');
+						alert('减少商品失败');
 					}
 				},
 				error: function(e) {
 					console.log(e);
 				}
 			});
-		} else {
-			alert('商品已达最大数量');
-		};
-	});
-	$('#right-menu').on('tap', '.less-btn', function(e) {
-		e.stopPropagation();
-		window.event.cancelBubble=true;
-		e.preventDefault();
-		window.event.returnValue=false;
-		var listItem = $(this).parents('.dish-item');
-		var foodNum = listItem.find('.num-con').text();
-		var data = {};
-		data.num = 2;
-		data.cai = listItem.data('cid');
-		data.gge = '0';
-		var jsonStr = JSON.stringify(data);
-		$.ajax({
-			type: "post",
-			url: "../../PHP/home/Foods/ggwc",
-			async: true,
-			contentType: 'application/x-www-form-urlencoded',
-			dataType: "json",
-			data: jsonStr,
-			success: function(data) {
-				if(data === 1) {
-					if(foodNum === '1') {
-						shopCart();
-						listItem.find('.num-con').text(0);
-						listItem.removeClass('selected');
-					} else {
-						shopCart();
-					};
-				} else {
-					alert('减少商品失败');
-				}
-			},
-			error: function(e) {
-				console.log(e);
-			}
 		});
-	});
-//	菜详情
-	$('#right-menu').on('tap','.dishimg-con',function(e){
+		$('.joincart').on('tap', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			var dishItemSIndex = $('#norm-con').data('cid');
+			var data = {};
+			data.cai = dishItemSIndex;
+			data.num = '1';
+			data.gge = '';
+			$('.option-item.selected').each(function(index) {
+				data.gge += $(this).data('lid') + ',';
+			});
+			var jsonStr = JSON.stringify(data);
+			$.ajax({
+				type: "post",
+				url: "../../PHP/home/Foods/ggwc",
+				async: true,
+				contentType: 'application/x-www-form-urlencoded',
+				dataType: "json",
+				data: jsonStr,
+				success: function(data) {
+					if(data === 1) {
+						if($('.order-num').text() < 99) {
+							shopCart();
+						} else {
+							return false;
+						};
+						$('#discount-con,.discount-item').hide();
+					} else {
+						alert('添加失败');
+					};
+				},
+				error: function(e) {
+					console.log(e);
+				}
+			});
+		});
+	} else {
+		$('#right-menu').on('tap', '.add-btn', function(e){
+			window.location.href='../Login/Login.html';
+		});
+		$('#right-menu').on('tap', '.less-btn', function(e){
+			window.location.href='../Login/Login.html';
+		});
+		$('.joincart').on('tap',function(e){
+			window.location.href='../Login/Login.html';
+		});
+	};
+	//	菜详情
+	$('#right-menu').on('tap', '.dishimg-con', function(e) {
 		e.stopPropagation();
-		window.event.cancelBubble=true;
+		window.event.cancelBubble = true;
 		e.preventDefault();
-		window.event.returnValue=false;
-		window.location.href='../TakeawayDetail/TakeawayDetail.html?52E0DDC35C3C1109'+$(this).parents('.dish-item').data('cid');
+		window.event.returnValue = false;
+		window.location.href = '../TakeawayDetail/TakeawayDetail.html?52E0DDC35C3C1109' + $(this).parents('.dish-item').data('cid');
 	});
 	//	订单展示
 	$('.menu-footer .order-img').on('tap', function() {
@@ -263,39 +308,39 @@ $(function() {
 			}
 		});
 	});
-	$('#order-list').on('tap','#clear-btn',function(){
+	$('#order-list').on('tap', '#clear-btn', function() {
 		$.ajax({
 			type: "post",
 			url: "../../PHP/home/Foods/che_mei",
 			async: true,
 			contentType: 'application/x-www-form-urlencoded',
 			dataType: "json",
-			success:function(data){
+			success: function(data) {
 				shopCart();
 			},
-			error:function(e){
+			error: function(e) {
 				console.log(e);
 			}
 		});
 	});
-	$('.order-btn').on('tap',function(){
+	$('.order-btn').on('tap', function() {
 		$.ajax({
-		type: "post",
-		url: "../../PHP/home/foods/kgwc",
-		async: true,
-		contentType: 'application/x-www-form-urlencoded',
-		dataType: "json",
-		success: function(data) {
-			if(data.all<$('#start-price .money-num').text()){
-				return false;
-			}else{
-				window.location.href='../TakeawayPay/TakeawayPay.html';
-			};
-		},
-		error: function(e) {
-			console.log(e);
-		}
-	});
+			type: "post",
+			url: "../../PHP/home/foods/kgwc",
+			async: true,
+			contentType: 'application/x-www-form-urlencoded',
+			dataType: "json",
+			success: function(data) {
+				if(data.all < $('#start-price .money-num').text()) {
+					return false;
+				} else {
+					window.location.href = '../TakeawayPay/TakeawayPay.html';
+				};
+			},
+			error: function(e) {
+				console.log(e);
+			}
+		});
 	});
 	//	规格展示
 	$('#right-menu').on('tap', '.dish-item-s .numbtn-con', function(e) {
@@ -335,42 +380,6 @@ $(function() {
 			}
 		});
 		$('#discount-con,#norm-con').show();
-	});
-	$('.joincart').on('tap', function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-		var dishItemSIndex = $('#norm-con').data('cid');
-		var data = {};
-		data.cai = dishItemSIndex;
-		data.num = '1';
-		data.gge = '';
-		$('.option-item.selected').each(function(index) {
-			data.gge += $(this).data('lid') + ',';
-		});
-		var jsonStr = JSON.stringify(data);
-		$.ajax({
-			type: "post",
-			url: "../../PHP/home/Foods/ggwc",
-			async: true,
-			contentType: 'application/x-www-form-urlencoded',
-			dataType: "json",
-			data: jsonStr,
-			success: function(data) {
-				if(data === 1) {
-					if($('.order-num').text() < 99) {
-						shopCart();
-					} else {
-						return false;
-					};
-					$('#discount-con,.discount-item').hide();
-				} else {
-					alert('添加失败');
-				};
-			},
-			error: function(e) {
-				console.log(e);
-			}
-		});
 	});
 	$('.norm-list').on('tap', '.norm-item .option-item', function() {
 		$(this).parent().children('.option-item').removeClass('selected');
@@ -448,6 +457,7 @@ function eva(type, num) {
 		dataType: "json",
 		data: evaJsonStr,
 		success: function(data) {
+			console.log(data);
 			var str = '';
 			$.each(data, function(index, item) {
 				str += '<li class="eva-item"><div class="eva-itemtitle"><a class="eva-user"><span class="user-con"><img data-echo=".' + item.headpic + '" class="user-img"/><span class="user-info"><span class="user-name-con"><span class="user-name">' + item.username + '</span><i class="icon-level"></i></span><span class="rate-b"><span class="rate-s" style="width: 80%;"></span></span></span></span><span class="eva-time">' + item.ptime + '</span></a></div><div class="evaitem-main"><div class="eva-text">' + item.nrong + '</div><div class="eva-img"><div class="img-con">';
@@ -490,10 +500,10 @@ function shopCart() {
 		contentType: 'application/x-www-form-urlencoded',
 		dataType: "json",
 		success: function(data) {
-			if(data.all>$('#start-price .money-num').text()){
+			if(data.all > $('#start-price .money-num').text()) {
 				$('.order-btn').text('提交订单');
-			}else{
-				$('.order-btn').text($('#start-price .money-num').text()+'基普起送');
+			} else {
+				$('.order-btn').text($('#start-price .money-num').text() + '基普起送');
 			};
 			if(data[0]) {
 				$('.orderlist-item').remove();

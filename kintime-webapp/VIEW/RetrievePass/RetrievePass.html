@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>找回密码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telphone=no,email=no" />
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<meta name="full-screen" content="yes" />
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="browsermode" content="application" />
+		<meta name="x5-page-mode" content="app" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" href="../Public/public.css" />
+		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="../Public/iconfont.css" />
+		<link rel="stylesheet" href="RetrivevPass.css" />
+		<script type="text/javascript" src="../Public/zepto.min.js"></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js"></script>
+		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript" src="../Public/adaptation.js"></script>
+		<script type="text/javascript" src="RetrievePass.js"></script>
+		<script type="text/javascript" src="code-btn.js"></script>
+	</head>
+	<body>
+		<header class="html-title">
+			<i class="iconfont icon-fanhui"></i>
+			<span class="title-text">找回原密码</span>
+		</header>
+		<div class="swiper-container" id="phoneSwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="oldpage">
+					<div class="phone-con">
+						<span class="icon-con">
+							<i class="iconfont icon-shouji"></i>
+						</span>
+						<input type="text" placeholder="请输入手机号" id="oldphone"/>
+					</div>
+					<div class="phone-con">
+						<input type="number" placeholder="请输入短信验证码" id="sms" />
+						<button id="send-sms">
+							<span class="time-text">
+								<span class="num">60</span>s后可再次发送
+							</span>
+							<span class="allow-text">
+								发送验证码
+							</span>
+						</button>
+					</div>
+					<div id="tips1-con"></div>
+					<button class="next-btn disabled" id="next-phone">下一步</button>
+				</div>
+				<div class="swiper-slide" id="newpage">
+					<div class="password-con">
+						<span class="icon-con">
+							<i class="iconfont icon-suo"></i>
+						</span>
+						<input type="password" placeholder="请设置新密码（8-16位，包含字母与数字）" id="newpassword0"/>
+					</div>
+					<div class="password-con">
+						<span class="icon-con">
+							<i class="iconfont icon-suo"></i>
+						</span>
+						<input type="password" placeholder="请再次输入新密码" id="newpassword1"/>
+					</div>
+					<div class="tips-con" id="tips2-con"></div>
+					<button class="next-btn" id="next2">下一步</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -23,6 +23,8 @@
 		<link rel="stylesheet" href="../Public/iconfont.css" />
 		<link rel="stylesheet" href="../Public/swiper-3.4.2.min.css" />
 		<link rel="stylesheet" href="Home.css" />
+		<link rel="stylesheet" href="Nearby.css" />
+		<link rel="stylesheet" href="Merchants.css" />
 		<link rel="stylesheet" href="order-main.css" />
 		<link rel="stylesheet" href="Me.css" />
 		<link rel="stylesheet" href="../Public/food-shop.css" />
@@ -32,6 +34,7 @@
 		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
 		<script type="text/javascript" src="../Public/echo.min.js"></script>
 		<script type="text/javascript" src="Home.js"></script>
+		<script type="text/javascript" src="Nearby.js" ></script>
 		<script type="text/javascript" src="Me.js"></script>
 		<script type="text/javascript" src="../Public/data.js"></script>
 		<script src="order-main.js"></script>
@@ -48,7 +51,7 @@
 						</a>
 						<a class="input-con" href="../SearchFor/SearchFor.html">
 							<i class="iconfont icon-sousuo"></i>
-							<span class="search-text">搜索商家/商品</span>
+							<span class="search-text">ປອ້ນຂໍ້ມູນຂອງຮ້ານຄ້າ</span>
 						</a>
 					</header>
 					<div class="home-con">
@@ -162,11 +165,115 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					附近
+				<div class="swiper-slide" id="nearby-page">
+					<header class="html-title2">
+						<a class="city-con">
+							<span class="city-text">位置</span>
+							<i class="iconfont icon-jiantouxia"></i>
+						</a>
+						<a class="input-con" href="../SearchFor/SearchFor.html">
+							<i class="iconfont icon-sousuo"></i>
+							<span class="search-text">搜索商家/商品</span>
+						</a>
+					</header>
+					<div id="nearby-con">
+						<div id="nearbyshop-con">
+							<div class="nearby-item">
+								<img src="../../STATIC/img/meal-img.png" />
+								<div class="item-info">
+									<div class="name-con">店铺名称</div>
+									<div class="star-num">
+										<span class="star-con">
+											<span class="rate-b">
+												<span class="rate-s" style="width: 80%;"></span>
+											</span>
+											<span class="score-con">
+												<span class="num-con">4.8</span>
+												<span class="text-con">分</span>
+											</span>
+										</span>
+										<span class="sale-num">
+											<span class="text-con">售出</span>
+											<span class="num-con">828</span>
+										</span>
+									</div>
+									<div class="address-con">
+										<span class="shop-type">美食</span>
+										<span class="address">江干区</span>
+									</div>
+									<div class="tips-con">
+										<span class="tips">自助午餐/免费wifi</span>
+										<span class="distance">26km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="swiper-slide">
-					招商
+				<div class="swiper-slide" id="merchants-page">
+					<header id="merchants-title">招商中心</header>
+					<div id="merchants-menu">
+						<div class="menu-item" id="landmark">
+							<span class="item-icon">
+								<i class="iconfont icon-dizhi"></i>
+							</span>
+							<span class="menu-name">地标招商</span>
+							<span class="menu-sub">平台地图添加地址</span>
+						</div>
+						<div class="menu-item" id="schedule">
+							<span class="item-icon">
+								<i class="iconfont icon-chaxun"></i>
+							</span>
+							<span class="menu-name">进度查询</span>
+							<span class="menu-sub">查询合作进度情况</span>
+						</div>
+						<div class="menu-item" id="customer">
+							<span class="item-icon">
+								<i class="iconfont icon-linedesign-20"></i>
+							</span>
+							<span class="menu-name">客服中心</span>
+							<span class="menu-sub">合作详情咨询</span>
+						</div>
+					</div>
+					<div id="merchants-item">
+						<div id="merchants-sub">
+							<span class="text-con">成为商家</span>
+						</div>
+						<div id="merchants-con">
+							<a class="sub-item" id="food-m">
+								<i class="iconfont icon-meishi"></i>
+								<span class="text-con">美食</span>
+							</a>
+							<a class="sub-item" id="shop-m">
+								<i class="iconfont icon-iconfontgouwu"></i>
+								<span class="text-con">购物</span>
+							</a>
+							<a class="sub-item" id="traffic-m">
+								<i class="iconfont icon-qiche"></i>
+								<span class="text-con">交通</span>
+							</a>
+							<a class="sub-item" id="tourism-m">
+								<i class="iconfont icon-lvyou"></i>
+								<span class="text-con">旅游</span>
+							</a>
+							<a class="sub-item" id="play-m">
+								<i class="iconfont icon-yule"></i>
+								<span class="text-con">娱乐</span>
+							</a>
+							<a class="sub-item" id="life-m">
+								<i class="iconfont icon-fangzi"></i>
+								<span class="text-con">生活</span>
+							</a>
+							<a class="sub-item" id="playmate-m">
+								<i class="iconfont icon-liaotian"></i>
+								<span class="text-con">玩伴</span>
+							</a>
+							<a class="sub-item" id="moneymana-m">
+								<i class="iconfont icon-licai"></i>
+								<span class="text-con">理财</span>
+							</a>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-slide" id="order-page">
 					<!-- 头部 -->

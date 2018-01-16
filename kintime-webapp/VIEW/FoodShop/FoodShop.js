@@ -3,7 +3,6 @@ $(function() {
 		offset: 0,
 		throttle: 0
 	});
-	if($.fn.cookie('id')) {
 		$.ajax({
 			type: "post",
 			url: "../../PHP/home/Foods/index",
@@ -96,9 +95,6 @@ $(function() {
 				console.log(e);
 			}
 		});
-	} else {
-		window.location.href = '../Login/Login.html';
-	};
 
 	$('#shop-pack').on('tap', '#show-btn', function() {
 		$('#pack-list').toggleClass('hide');

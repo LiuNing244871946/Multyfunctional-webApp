@@ -83,7 +83,7 @@ $(function() {
 					$('#tip4 .text-con').text('输入密码不一致');
 				}else{
 					var tip = '<span class="tip-text" id="tip4"><i class="iconfont icon-shurukuangqingkong"></i><span class="text-con">输入密码不一致</span></span>';
-					$('#tip').append(tip);
+					$('#tips2-con').append(tip);
 				};
 			}else{
 				$('#tip4').remove();

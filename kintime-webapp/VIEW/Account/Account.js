@@ -39,6 +39,9 @@ $(function() {
 			}
 		});
 	});
+	$('#recharge').on('tap',function(){
+		window.location.href='../Recharge/Recharge.html';
+	})
 	$('.determine-btn').on('tap', function() {
 		$('#discount-con,.discount-item').hide();
 	});

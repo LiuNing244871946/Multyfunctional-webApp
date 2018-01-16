@@ -18,7 +18,7 @@ $(function() {
 			}
 		});
 	} else {
-		window.location.href = '../Login/Login.html';
+//		window.location.href = '../Login/Login.html';
 	};
 
 	$('#search-btn').on('tap', function() {
@@ -64,7 +64,6 @@ $(function() {
 			contentType: 'application/x-www-form-urlencoded',
 			dataType: "json",
 			success: function(data) {
-				console.log(data);
 				if(data === 1) {
 					$('#history-con').remove('.history-item');
 				};

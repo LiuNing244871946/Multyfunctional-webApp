@@ -71,20 +71,27 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
+.fav-com-evaleft{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
 .fav-com-evaleft .rate-b {
-	height: .2rem;
-	width: .98rem;
-	display: block;
-	background-image: url(../../STATIC/img/评价.png);
+	width: 1.25rem;
+	height: .25rem;
+	background-image: url(../../STATIC/img/star.png);
+	background-size: .25rem .25rem;
 	background-repeat: repeat-x;
-	background-size: .2rem;
+	margin-right: .08rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
 }
 
 .fav-com-evaleft .rate-s {
-	height: .2rem;
-	display: block;
-	background-image: url(../../STATIC/img/评价2.png);
+	width: 1.25rem;
+	height: .25rem;
+	background-image: url(../../STATIC/img/star-active.png);
+	background-size: .25rem .25rem;
 	background-repeat: repeat-x;
-	background-size: .2rem;
 }
