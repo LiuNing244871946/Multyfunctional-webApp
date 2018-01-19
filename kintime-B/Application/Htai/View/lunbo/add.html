@@ -1,0 +1,40 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+ <form class="stdform" action="{:U('add')}" method="post" enctype="multipart/form-data">
+                        
+                         <p>
+                            <label>URL</label>
+                            <span class="field"><input type="text" name="url" placeholder="例如:http://www.baidu.com" class="longinput" /></span>
+                        </p>
+                       
+                        
+                        <p>
+                            <label>上传轮播图</label>
+                            <span class="field">
+                            <input type="file" name="pic" class="longinput" style="width:30%" value="" />
+                            </span>
+                        </p>
+                     
+                       
+                         <p>
+                            <label>轮播图分类&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="type">
+                                
+                                <option  value="1">首页图</option>
+                                <option  value="2">美食图</option>
+                                <option  value="3">外卖图</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+                          
+                        <p class="stdformbutton">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                        
+                        
+                    </form>
+</block>

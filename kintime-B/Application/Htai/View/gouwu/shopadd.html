@@ -1,0 +1,77 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+ <form class="stdform" action="{:U('shopadd')}" method="post" enctype="multipart/form-data">
+                        
+                        <p>
+                            <label>店铺名:</label>
+                            <span class="field"><input type="text" name="name" class="smallinput" /></span>
+                           
+                        </p>
+                        
+                        <p>
+                            <label>店铺电话:</label>
+                            <span class="field"><input type="text" name="phone" class="mediuminput" /></span>
+                        </p>
+                        
+                        <p>
+                            <label>店铺地址:</label>
+                            <span class="field"><input type="text" name="address" class="longinput" /></span>
+                        </p>
+                        
+                       <p>
+                             <label class="layui-form-label">店铺分类:</label>
+                                <div class="layui-input-block" style="width:450px;margin-right:1230px;float:right">
+                                     <!-- 第一级 -->
+                                        <select>
+                                            <option selected >--请选择--</option>
+                                            <foreach name="res" item="v">
+                                                  <option value="{$v.id}">{$v.name}</option>
+                                             </foreach>
+                                        </select>
+                                   
+                                </div>
+                        </p>
+                        
+                         <!--当前用户id-->
+                          <input type="hidden" name="uid"  value="{$id}">
+                        <!--当前店铺类型-->
+                        <input type="hidden" name="type"  value="{$type}"> 
+                        <p class="stdformbutton" style="margin-top:150px">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                        
+                        
+                    </form>
+   
+<script type="text/javascript">
+         
+            $("select").live("change",function(){   //触发select的change事件 live() 方法为被选元素附加一个或多个事件处理程序，并规定当这些事件发生时运行的函数
+                var ob = $(this);// $(this)取出当前对象并转换为jQuery对象
+                // console.log(ob.val());
+                ob.nextAll("select").remove();
+                $.ajax({
+                    url:"{:U('upass/shopadd')}",             //请求地址
+                    type:'post',                     //发送方式
+                    data:{pro:ob.val()},           //请求数据
+                    async:true,                     //是否同步
+                    dataType:'json',                //响应的数据类型
+                    success:function(data){         //成功回调函数
+                        if(data.length>0){
+                            var select = $("<select name = 'stypeid'><option>--请选择--</option></select>");
+                            for (var i = 0; i < data.length; i++) {
+                                //console.log(data);
+                                var info = "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+                                select.append(info);
+                            }
+                            ob.after(select);//after() 方法在被选元素后插入指定的内容
+                        }
+                    },
+                    error:function(){               //失败回调函数
+                                alert('ajax请求失败');
+                            }
+                        });
+                    })
+    </script>
+
+</block>

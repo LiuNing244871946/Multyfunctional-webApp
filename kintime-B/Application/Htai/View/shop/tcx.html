@@ -1,0 +1,84 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+         <h1 class="pagetitle">此套餐详细信息 </h1>
+ 
+       
+
+    </div><!--pageheader-->
+        
+
+    
+    <div id="contentwrapper" class="contentwrapper">
+       
+               
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" style="text-align: center;">序号</th>
+                            <th class="head1" style="text-align: center;">套餐id</th>
+                            <th class="head0" style="text-align: center;">菜品名</th>
+                            <th class="head1" style="text-align: center;">菜品图片</th>
+                            <th class="head1" style="text-align: center;">菜品数量</th>
+                            <th class="head1" style="text-align: center;">菜品价格</th>
+                          
+                           
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center" style="text-align: center;">{$v.id}</td>
+                            <td class="center" style="text-align: center;">{$v.tcid}</td>
+                            <td class="center" style="text-align: center;">{$v.cainame}</td>
+                            <td class="center" style="text-align: center;"><img src="/{$v.caipic}" style="width:80px;height:60px"></td>
+                            <td class="center" style="text-align: center;">{$v.cainum}</td>
+                            <td class="center" style="text-align: center;">{$v.caiprice}</td>
+                           
+                           
+
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+          
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#error').css('display','block');
+	}
+
+
+</script>
+</block>

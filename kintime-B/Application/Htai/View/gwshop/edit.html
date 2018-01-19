@@ -1,0 +1,93 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">商铺信息（只允许修改商铺状态）</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('gwshop/edit')}" enctype="multipart/form-data">
+                    <!--隐藏域-->
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+
+                      <p>
+                          <label>店铺名&nbsp;</label>
+                            <span class="field"><input type="text" id="firstname" style="width:30%" class="longinput" value="{$row.name}" name="name" disabled />&nbsp;<!-- <a href="{:U('pj_shop?id='.$row['id'])}">查看评价</a></span> -->
+                        </p>
+                        <p>
+                          <label>店铺电话&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.phone}" name="phone" disabled /></span>
+                        </p>
+                        
+                        <p>
+                            <label>店铺地址&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.address}" name="address" disabled /></span>
+                        </p>
+                        <!-- <p>
+                            <label>用户id&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$SESSSION['uid_id']}" name="uid" disabled /></span>
+                        </p>
+                        <p>
+                            <label>商铺分类id&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.stypeid}" name="stypeid" disabled /></span>
+                        </p> -->
+                         <p>
+                            <label>营业时间&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.begintime_h}:{$row.begintime_i}" name="begintime" disabled /></span>
+                        </p>
+                         <p>
+                            <label>结束时间&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.overtime_h}:{$row.overtime_i}" name="overtime" disabled /></span>
+                        </p>
+                        <p>
+                            <label>商铺头像预览&nbsp;</label>
+                   <!--  <input type="file" value="{$row.headpic}" name='headpic' > -->
+                      <span class="field">
+                       <!--  <input type="file" name="pic" id="email" class="longinput" style="width:30%" disabled /> -->
+                      </span>
+                      <img src="../../../../../{$row.headpic}" width="120">
+
+                        </p>
+                        <p>
+                            <label>商铺状态&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="state">
+                                
+                                <option  value="1" {$row['state']=='1'?'selected':''}>正常</option>
+                                <option  value="2" {$row['state']=='2'?'selected':''}>禁用</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#abc').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

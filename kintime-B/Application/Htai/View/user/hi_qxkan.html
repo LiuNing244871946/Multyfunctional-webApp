@@ -1,0 +1,61 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">权限组修改</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+        <form action="{:U('hi_qxkan')}" method='post'>
+            <table class="stdtable stdtablecb" cellspacing="0" cellpadding="0" border="0" style="width:40%;">
+              <colgroup>
+                  <col class="con0" style="width: 4%">
+                  <col class="con1">
+                  
+              </colgroup>
+              
+              
+
+         
+          
+            <input type="hidden" name='id' value='{$Think.get.id}'>
+            
+                  <tbody>
+                      <foreach name='grow' item='v'>
+                          <tr class="">
+                            <td align="center">
+                              <input  type="checkbox"  name='name[]' value='{$v.pname}' {$v.ch} >
+                            </td>
+                              <td>{$v.name}</td>
+                          </tr>
+                      </foreach>
+                  </tbody>
+                  
+                    
+                  </table><br>
+                  <ul class="buttonlist">
+                      
+                      <li><button class="stdbtn btn_yellow">修 改</button></li>
+                    </ul>
+
+              </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#formsub').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

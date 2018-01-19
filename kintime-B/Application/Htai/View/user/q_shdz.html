@@ -1,0 +1,87 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+
+
+
+
+
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+</style>
+    <div class="pageheader">
+        <h1 class="pagetitle">&nbsp;{$q_name['name']}&nbsp;&nbsp;的收货地址 </h1>
+ 
+        
+
+    </div><!--pageheader-->
+        
+
+    
+    <div id="contentwrapper" class="contentwrapper">
+       
+           
+        </form>
+               
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0">收货人</th>
+                            <th class="head1">性别</th>
+                            <th class="head0">电话</th>
+                            <th class="head1" style="width: 40%">地址</th>
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='q_row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center">{$v.linkman}</td>
+                            <td class="center">{$v.sex}</td>
+                            <td class="center">{$v.phone}</td>
+                            <td class="center">{$v.xiaddress}
+                              <if condition="$v.id eq $q_name['dzid'] ">
+                                <span style="float:right">[默认收货地址]</span>
+                              </if>
+                            </td>
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+          <script>
+              var next = document.getElementsByClassName('next')[0];
+              next.innerHTML = '下一页';
+              var prev = document.getElementsByClassName('prev')[0];
+              prev.innerHTML = '上一页';
+          </script>
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#formsub').css('display','block');
+	}
+
+
+</script>
+</block>

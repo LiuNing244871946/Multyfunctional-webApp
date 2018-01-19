@@ -1,0 +1,37 @@
+[ 2018-01-17T09:13:43+08:00 ] ::1 /kintime-B/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-B\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `gluser` [ RunTime:0.002866s ]
+SQL: SELECT * FROM `gluser` WHERE ( name= 'admin' and pass = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2018-01-17T09:20:20+08:00 ] ::1 /kintime-B/Htai/Index/ajax_go.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp64\www\kintime-B\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `gluser` [ RunTime:0.000952s ]
+SQL: SELECT * FROM `gluser` WHERE ( name= 'admin' and pass = 'e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2018-01-17T09:57:56+08:00 ] ::1 /kintime-B/Htai/Shop/del/id/37.html
+ERR: 模板不存在:./Application/Htai/View/Shop/del.html
+
+[ 2018-01-17T13:08:05+08:00 ] ::1 /kintime-B/Htai/m_shop/cc/id/1.html
+ERR: 无法加载控制器:M_shop
+
+[ 2018-01-17T13:08:12+08:00 ] ::1 /kintime-B/Htai/m_shop/cc/id/1.html
+ERR: 无法加载控制器:M_shop
+
+[ 2018-01-17T13:32:33+08:00 ] ::1 /kintime-B/Htai/Mshop/del/id/3.html
+ERR: 模板不存在:./Application/Htai/View/Mshop/del.html
+
+[ 2018-01-17T16:14:13+08:00 ] ::1 /kintime-B/Htai/Tehui/del/id/7.html
+ERR: 模板不存在:./Application/Htai/View/Tehui/del.html
+

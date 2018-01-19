@@ -1,0 +1,115 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+   
+    </div>
+    <div id="contentwrapper" class="contentwrapper">
+        <form action="{:U('food/index')}" method='get'>
+         <!-- 搜索框-->
+           <div id="dyntable_length" class="dataTables_length" style="padding:6px">
+          <!--   <a href="{:U('food/add')}" class="btn btn_orange btn_flag"><span>添加菜</span></a>  -->
+            <label>显示 <select size="1" style='min-width:10%' name="pnum">
+	            <option value="10" {:I('get.pnum')==10?"selected":"" }>10</option>
+	            <option value="15" {:I('get.pnum')==15?"selected":"" }>15</option>
+	            <option value="30" {:I('get.pnum')==30?"selected":"" }>30</option>
+	            <option value="50" {:I('get.pnum')==50?"selected":"" }>50</option>
+            </select> 条目</label>
+            <div class="dataTables_filter" style='width:400px;margin-top:-35px' id="dyntable_filter">
+                <label>菜名: <input type="text" name='search' style='width:65%' /></label>
+                <input type="submit" value='提交'>
+            </div>
+           </div>
+        </form>
+               
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" style="text-align: center;">序号</th>
+                            <th class="head1" style="text-align: center;">菜名</th>
+                            <th class="head1" style="text-align: center;">主图</th>
+                            <th class="head0" style="text-align: center;">价格</th>
+                            <th class="head1" style="text-align: center;">折扣</th>
+                            <th class="head1" style="text-align: center;">查看图片</th>
+                            <th class="head1" style="text-align: center;">查看规格</th>
+                            <th class="head1" style="text-align: center;">限时抢购</th>
+                            <th class="head0" style="text-align: center;">对应菜品分类</th>
+                            <th class="head1" style="text-align: center;">热销</th>
+                            <th class="head1" style="text-align: center;">对应商铺</th>
+                            <th class="head1" style="text-align: center;">对应种类</th>
+                            <th class="head1" style="text-align: center;">外卖好评度</th> 
+                            <th class="head1" style="text-align: center;">外卖销量</th> 
+                          
+                            <th class="head1" style="text-align: center;">库存</th>
+                            <th class="head1" style="text-align: center;">好评数</th>
+                            <th class="head1" style="text-align: center;">状态</th>
+                            <th class="head0" style="text-align: center;">编辑</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center" style="text-align: center;">{$v.id}</td>
+                            <td class="center" style="text-align: center;">{$v.cainame}</td>
+                            <td class="center" style="text-align: center;"><img src="../{$v.headpic}" style="width:60px;height:40px"></td>
+                            <td class="center" style="text-align: center;">{$v.price}</td>
+                            <td class="center" style="text-align: center;">{$v.zhekou}</td>
+             <td class="center" style="text-align: center;"><a href="{:U('food/pic?id='.$v['id'])}" class="btn btn4 btn_yellow btn_search radius50"></a></td>
+             <td class="center" style="text-align: center;"><a href="{:U('food/guige?id='.$v['id'])}" class="btn btn4 btn_yellow btn_search radius50"></a></td>
+              <td class="center" style="text-align: center;"><a href="{:U('food/qianggou?id='.$v['id'])}" class="btn btn4 btn_yellow btn_search radius50"></a></td>               
+                            <td class="center" style="text-align: center;">{$v.typeid}</td>
+                            <td class="center" style="text-align: center;">{$v.rx}</td>
+                            <td class="center" style="text-align: center;">{$v.sid}</td>
+                            <td class="center" style="text-align: center;">{$v.stypeid} </td>
+                            <td class="center" style="text-align: center;">{$v.m_ping} </td>
+                            <td class="center" style="text-align: center;">{$v.m_xl} </td>
+                            
+                            <td class="center" style="text-align: center;">{$v.stock} </td>
+                            <td class="center" style="text-align: center;">{$v.hao}</td>
+                            <td class="center" style="text-align: center;"><button class="stdbtn btn_red">{$v.state} </button></td>
+                            <td class="center" style="text-align: center;">
+                            <a href='{:U('edit?id='.$v['id'])}' class="btn btn2 btn_blue btn_flag"><span>修改</span></a></td>
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#error').css('display','block');
+	}
+
+
+</script>
+</block>

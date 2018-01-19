@@ -1,0 +1,112 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+         <h1 class="pagetitle">所有外卖商铺信息 </h1>
+ 
+       <!--  <h5><a href={:U('shop/add')} style='float:right'>添加商铺&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5> --> 
+
+    </div><!--pageheader-->
+   
+    <div id="contentwrapper" class="contentwrapper">
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" style="text-align: center;">序号</th>
+                            <th class="head1" style="text-align: center;">店铺名</th>
+                            <th class="head0" style="text-align: center;">店铺电话</th>
+                            <th class="head1" style="text-align: center;">店铺地址</th>
+                            <th class="head1" style="text-align: center;">用户id</th>
+                            <th class="head1" style="text-align: center;">查看本店图片</th>
+                            <th class="head0" style="text-align: center;">主图</th>
+                            <th class="head1" style="text-align: center;">商铺分类ID</th>
+                            <th class="head1" style="text-align: center;">好评度</th>
+                            <th class="head1" style="text-align: center;">人均</th>
+                            <th class="head1" style="text-align: center;">配送费</th>
+                            <th class="head1" style="text-align: center;">起送价</th>
+                            <th class="head1" style="text-align: center;">说明</th>
+                            <th class="head1" style="text-align: center;">销量</th>
+                            <th class="head1" style="text-align: center;">服务评分</th>
+                            <th class="head1" style="text-align: center;">口味评分</th>
+                            <th class="head1" style="text-align: center;">环境评分</th>
+                            <th class="head1" style="text-align: center;">评论数量</th>
+                            <th class="head1" style="text-align: center;">营业时间</th>
+                            <th class="head1" style="text-align: center;">结束时间</th>
+                          <!--   <th class="head1" style="text-align: center;">是否可以外卖</th> -->
+                            <th class="head1" style="text-align: center;">状态</th>
+                          <th class="head0" style="text-align: center;">编辑</th> 
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center" style="text-align: center;">{$v.id}</td>
+                            <td class="center" style="text-align: center;">{$v.name}</td>
+                            <td class="center" style="text-align: center;">{$v.phone}</td>
+                            <td class="center" style="text-align: center;">{$v.address}</td>
+                            <td class="center" style="text-align: center;">{$v.uid}</td>
+                              <td class="center" style="text-align: center;"><a href="{:U('upass/wmpic?id='.$v['id'])}" class="btn btn4 btn_yellow btn_search radius50"></a></td>
+                            <td class="center" style="text-align: center;"><img src="/kintime-webapp/{$v.headpic}" style="width:80px;height:60px"></td>
+                            <td class="center" style="text-align: center;">{$v.stypeid}</td>
+                            <td class="center" style="text-align: center;">{$v.ping}</td>
+                            <td class="center" style="text-align: center;">{$v.jun}</td>
+                            <td class="center" style="text-align: center;">{$v.song}</td>
+                             <td class="center" style="text-align: center;">{$v.gogo}</td>
+                            <td class="center" style="text-align: center;">{$v.sming} </td>
+                            <td class="center" style="text-align: center;">{$v.xl} </td>
+                            <td class="center" style="text-align: center;">{$v.fwu} </td>
+                            <td class="center" style="text-align: center;">{$v.kwei} </td>
+                            <td class="center" style="text-align: center;">{$v.hjing} </td>
+                            <td class="center" style="text-align: center;">{$v.p_num} </td>
+                            <td class="center" style="text-align: center;">{$v.hi_b} </td>
+                            <td class="center" style="text-align: center;">{$v.hi_o} </td>
+                            <td class="center" style="text-align: center;">{$v.state} </td>
+
+                            <td class="center" style="text-align: center;">
+                   <a href="{:U('wmedit?id='.$v['id'])}" class="btn btn_orange btn_flag"><span>修改</span></a>
+                      <a href="{:U('mshop/show?id='.$v['id'])}" class="btn btn2 btn_archive"><span>查看本店菜单</span></a>
+                            </td>
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+          
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#error').css('display','block');
+	}
+
+
+</script>
+</block>

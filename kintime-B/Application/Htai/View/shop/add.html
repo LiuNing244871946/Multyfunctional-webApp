@@ -1,0 +1,48 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+ <form class="stdform" action="{:U('adddo')}" method="post" enctype="multipart/form-data">
+                        
+                        <p>
+                            <label>店铺名</label>
+                            <span class="field"><input type="text" name="name" class="smallinput" /></span>
+                           
+                        </p>
+                        
+                        <p>
+                            <label>店铺电话</label>
+                            <span class="field"><input type="text" name="phone" class="mediuminput" /></span>
+                        </p>
+                        
+                        <p>
+                            <label>店铺地址</label>
+                            <span class="field"><input type="text" name="address" class="longinput" /></span>
+                        </p>
+                        
+                        <!-- <p>
+                            <label>营业时间</label>
+                            <span class="field" style="width:520px"><input type="text" name="begintime" class="longinput"></textarea></span> 
+                        </p>
+                         <p>
+                            <label>结束时间</label>
+                            <span class="field" style="width:520px"><input type="text" name="overtime" class="longinput"></textarea></span> 
+                        </p> -->
+                        
+                        <p>
+                            <label>头像上传</label>
+                            <span class="field">
+                            <input type="file" name="headpic" class="longinput" style="width:30%" value="" />
+                            </span>
+                        </p>
+                        <!--商铺分类id-->
+                        <input type="hidden" name="stypeid">
+                         <!--当前用户id-->
+                          <input type="hidden" name="uid"  value="{$Think.session.uid_id}">
+                        
+                        <p class="stdformbutton">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                        
+                        
+                    </form>
+</block>

@@ -1,0 +1,72 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+   
+    </div>
+    <div id="contentwrapper" class="contentwrapper">
+       
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" style="text-align: center;">序号</th>
+                            <th class="head1" style="text-align: center;">此菜品规格</th>
+                            <th class="head1" style="text-align: center;">价格</th>
+                           
+                           
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center" style="text-align: center;">{$v.id}</td>
+                            <td class="center" style="text-align: center;">{$v.name}</td>
+                         
+                            <!-- <td class="center" style="text-align: center;">{$v.price}</td> -->
+                            <td class="center" style="text-align: center;">{$v.price}</td>
+           
+                        </tr>
+                         
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#error').css('display','block');
+	}
+
+
+</script>
+</block>
