@@ -17,12 +17,16 @@ class CommonController extends Controller { //美食下分类的所有商品
 
       //3天改套餐状态 未使用变成 已过期
       $t_ddan=D('t_ddan');
+      $t_ddan1=D('eng_t_ddan');
+      $t_ddan2=D('pipi_t_ddan');
       $san = time()-(3600*24*3);
       $san_row = $t_ddan->where("ztai=1 and time<{$san}")->select();
       foreach ($san_row as $kk => $value) {
         $data['id']=$value['id'];
         $data['ztai']=6;
         $t_ddan->save($data);
+        $t_ddan1->save($data);
+        $t_ddan2->save($data);
       }
 
 

@@ -30,6 +30,7 @@
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="TakeawayDetail.js"></script>
 		<script type="text/javascript" src="../Public/echo.min.js" ></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<div class="food-details">
@@ -44,12 +45,13 @@
 			<div class="detailsname-con">
 				<div class="name"></div>
 				<div class="sale-num-con">
-					已售<span class="sale-num"></span>
+					<span set-lan="html:saled">已售</span>
+					<span class="sale-num"></span>
 				</div>
 				<div class="price-con">
 					<span class="limite-pricecon">
 						<i class="money">￥</i>
-						<span class="pricenum">299</span>
+						<span class="pricenum"></span>
 					</span>
 
 					<span class="buy-btn">
@@ -60,7 +62,7 @@
 			</div>
 			<!--菜品信息-->
 			<div class="otherdetails-con">
-				<div class="title-con">商品详情</div>
+				<div class="title-con" set-lan="html:productdeta">商品详情</div>
 				<div class="text-con"></div>
 			</div>
 
@@ -68,7 +70,11 @@
 			<div class="shop-info-eva">
 				<div class="eva-score">
 					<div class="eva-title">
-						外卖评价<span class="eva-con">(好评度<span class="eva-num">100%</span>)</span>
+						<span set-lan="html:takerate">外卖评价</span>
+						<span class="eva-con">
+							<span set-lan="html:favrate1">(好评度</span>
+							<span class="eva-num"></span>)
+						</span>
 					</div>
 				</div>
 				<ul id="eva-list"></ul>
@@ -90,7 +96,7 @@
 						<i class="money">K</i>
 						<span class="money-text"></span>
 					</span>
-					<button class="joincart">加入购物车</button>
+					<button class="joincart" set-lan="html:joincart">加入购物车</button>
 				</div>
 			</div>
 		</div>

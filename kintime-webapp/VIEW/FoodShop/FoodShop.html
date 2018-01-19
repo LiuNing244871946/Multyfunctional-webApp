@@ -32,12 +32,13 @@
 		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js" ></script>
 		<script type="text/javascript" src="FoodShop.js"></script>
 		<script type="text/javascript" src="../Public/echo.min.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">美食</span>
+			<span class="title-text" set-lan="html:food">美食</span>
 		</header>
 		<div class="main-con">
 			<!--店铺信息-->
@@ -48,7 +49,7 @@
 					<div id="more-img">
 						<i class="iconfont icon-zhaopian"></i>
 						<span id="moreimgnum-con">
-						<span id="more-imgnum">7</span><span class="text-con">张</span>
+						<span id="more-imgnum">7</span><span class="text-con" set-lan="html:page">张</span>
 						</span>
 					</div>
 				</div>
@@ -60,7 +61,7 @@
 						<span class="rate-s" style="width: 80%;"></span>
 						</span>
 						<span id="average">
-						<span class="text-con">人均:</span>
+						<span class="text-con" set-lan="html:per">人均:</span>
 						<i class="money">￥</i><span class="money-num"></span>
 						</span>
 					</div>
@@ -74,7 +75,7 @@
 				</div>
 				<div id="car-phone">
 					<div id="car-con">
-						<a href="address-map.html">打车前往</a>
+						<a href="address-map.html" set-lan="html:taxigo">打车前往</a>
 					</div>
 					<div id="phone-con">
 						<a href="">
@@ -86,10 +87,10 @@
 				<div id="shop-takeaway">
 					<span id="takeaway-text">
 					<i class="iconfont icon-waimai"></i>
-					<span class="text-con">外卖</span>
+					<span class="text-con" set-lan="html:takeaway">外卖</span>
 					</span>
 					<span id="takeaway-status">
-					<span class="text-con">休息中</span>
+					<span class="text-con"></span>
 					<i class="iconfont icon-jiantouyou"></i>
 					</span>
 				</div>
@@ -97,14 +98,14 @@
 				<div id="shop-order">
 					<a href="">
 						<i class="iconfont icon-zhangdan"></i>
-						<span class="text-con">店内点餐</span>
+						<span class="text-con" set-lan="html:instore">店内点餐</span>
 					</a>
 				</div>
 				<!--食堂套餐-->
 				<div class="shop-info-item" id="shop-pack">
 					<div class="item-title">
 						<i class="iconfont icon-tangshi-"></i>
-						<span class="text-con">堂食套餐</span>
+						<span class="text-con" set-lan="html:pack">堂食套餐</span>
 					</div>
 					<ul id="pack-list" class="hide"></ul>
 				</div>
@@ -113,29 +114,36 @@
 					<div id="moreeva-link">
 						<span id="eva-titletext">
 						<i class="iconfont icon-taolun"></i>
-						用户评价(<span id="eva-num"></span>)
+						<span set-lan="html:userrating">用户评价(</span>
+						<span id="eva-num"></span>)
 						</span>
 						<i class="iconfont icon-jiantouyou"></i>
 					</div>
 					<div id="eva-title">
 						<ul id="eva-sort">
-							<li class="eva-sortitem selected">全部</li>
-							<li class="eva-sortitem">最新</li>
-							<li class="eva-sortitem">晒图评价</li>
+							<li class="eva-sortitem selected" set-lan="html:all">全部</li>
+							<li class="eva-sortitem" set-lan="html:new">最新</li>
+							<li class="eva-sortitem" set-lan="html:hasimgrate">晒图评价</li>
 						</ul>
 						<span id="eva-score">
 							<span id="eva-overall">
 								<span id="overall-num"></span>
 								<span id="overall-con">
-									<span>综合评分</span>
+									<span set-lan="html:overall">综合评分</span>
 									<span class="rate-b">
 										<span class="rate-s" style="width: 100%;"></span>
 									</span>
 								</span>
 							</span>
 							<span id="scorecom">
-								<span id="scorepeer">高于<span id="peernum"></span>的同行</span>
-								<span id="fav-rate">好评率<span id="fav-ratenum"></span></span>
+								<span id="scorepeer">
+									<span set-lan="html:above">高于</span>
+									<span id="peernum"></span>
+									<span set-lan="html:peer">的同行</span>
+									</span>
+								<span id="fav-rate">
+									<span set-lan="html:favrate">好评率</span>
+									<span id="fav-ratenum"></span></span>
 							</span>
 						</span>
 					</div>
@@ -147,7 +155,7 @@
 			<div id="nearby">
 				<div id="nearby-title">
 					<i class="iconfont icon-tuijian"></i>
-					<span class="text-con">附近推荐</span>
+					<span class="text-con" set-lan="html:recommend">附近推荐</span>
 				</div>
 				<div class="fav-com-con">
 					<div class="fav-com-item">
@@ -276,7 +284,7 @@
 			<div id="moreshop">
 				<div id="moreshop-title">
 					<i class="iconfont icon-shangjia"></i>
-					<span class="text-con">更多商家</span>
+					<span class="text-con" set-lan="html:morestore">更多商家</span>
 				</div>
 				<div class="fav-com-con"></div>
 			</div>

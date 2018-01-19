@@ -30,12 +30,13 @@
 		<script type="text/javascript" src="ChangePhone.js"></script>
 		<script type="text/javascript" src="NewPhone.js" ></script>
 		<script type="text/javascript" src="code-btn.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">手机号修改</span>
+			<span class="title-text" set-lan="html:changephone">手机号修改</span>
 		</header>
 		<div class="swiper-container" id="phoneSwiper">
 			<div class="swiper-wrapper">
@@ -44,21 +45,22 @@
 						<span class="icon-con">
 							<i class="iconfont icon-shouji"></i>
 						</span>
-						<input type="text" placeholder="请输入原手机号" id="oldphone" disabled="disabled" />
+						<input type="text" id="oldphone" disabled="disabled" />
 					</div>
 					<div class="phone-con">
-						<input type="number" placeholder="请输入短信验证码" id="sms" />
+						<input type="number" placeholder="请输入短信验证码" id="sms" set-lan="placeholder:inputsms"/>
 						<button id="send-sms">
 							<span class="time-text">
-								<span class="num">60</span>s后可再次发送
+								<span class="num">60</span>
+								<span set-lan="html:smstime">s后可再次发送</span>
 							</span>
-							<span class="allow-text">
+							<span class="allow-text" set-lan="html:sendsms">
 								发送验证码
 							</span>
 						</button>
 					</div>
 					<div id="tips1-con"></div>
-					<button class="next-btn disabled" id="next-phone">下一步</button>
+					<button class="next-btn disabled" id="next-phone" set-lan="html:next">下一步</button>
 				</div>
 				<div class="swiper-slide" id="newpage">
 					<div class="phone-con">
@@ -66,24 +68,25 @@
 							<i class="iconfont icon-shouji"></i>
 						</span>
 						<select id="area-code">
-							<option>中国+86</option>
-							<option>老挝+856</option>
+							<option set-lan="html:cnphone">中国+86</option>
+							<option set-lan="html:laophone">老挝+856</option>
 						</select>
-						<input type="number" placeholder="请输入手机号" id="newphone" />
+						<input type="number" placeholder="请输入新手机号" id="newphone" set-lan="placeholder:newphone"/>
 					</div>
 					<div class="phone-con">
-						<input type="number" placeholder="请输入短信验证码" id="newsms" />
+						<input type="number" placeholder="请输入短信验证码" id="newsms" set-lan="placeholder:inputsms"/>
 						<button id="newsend-sms" class="disable">
 							<span class="time-text">
-								<span class="num">60</span>s后可再次发送
+								<span class="num">60</span>
+								<span set-lan="html:smstime">s后可再次发送</span>
 							</span>
-							<span class="allow-text">
+							<span class="allow-text" set-lan="html:sendsms">
 								发送验证码
 							</span>
 						</button>
 					</div>
 					<div id="tips2-con"></div>
-					<button class="next-btn disabled" id="next-phone2">下一步</button>
+					<button class="next-btn disabled" id="next-phone2" set-lan="html:next">下一步</button>
 				</div>
 			</div>
 		</div>

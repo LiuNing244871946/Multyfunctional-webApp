@@ -26,12 +26,13 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="FoodPay.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">提交订单</span>
+			<span class="title-text" set-lan="html:submitorder">提交订单</span>
 		</header>
 		<div id="order-page">
 			<div class="order-con">
@@ -39,9 +40,9 @@
 					<caption class="shop-name"></caption>
 					<thead>
 						<tr>
-							<th class="food-name">名称</th>
-							<th class="food-num">数量</th>
-							<th class="food-price">价格</th>
+							<th class="food-name" set-lan="html:name2">名称</th>
+							<th class="food-num" set-lan="html:number">数量</th>
+							<th class="food-price" set-lan="html:price">价格</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -58,13 +59,13 @@
 				</table>
 				<div class="total-con">
 					<span id="store-price">
-								<span class="text-con">门店价：</span>
+								<span class="text-con" set-lan="html:storeprice2">门店价：</span>
 					<span class="money-con">
 									<i class="money">￥</i><span class="money-num"></span>
 					</span>
 					</span>
 					<span class="total-price">
-								<span class="text-con">总计</span>
+								<span class="text-con" set-lan="html:total">总计</span>
 					<span class="money-con">
 									<i class="money">￥</i><span class="money-num"></span>
 					</span>
@@ -77,7 +78,7 @@
 								<i class="money">￥</i><span class="money-num">99999</span>
 					</span>
 				</div>
-				<div class="pay-btn-con">
+				<div class="pay-btn-con" set-lan="html:submitorder">
 					提交订单
 				</div>
 			</footer>

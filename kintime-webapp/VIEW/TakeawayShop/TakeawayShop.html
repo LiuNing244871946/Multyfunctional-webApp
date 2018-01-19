@@ -31,6 +31,7 @@
 		<script type="text/javascript" src="../Public/echo.min.js" ></script>
 		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
 		<script type="text/javascript" src="TakeawayShop.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
@@ -42,7 +43,7 @@
 			<div class="search-box">
 				<a href="" class="nav-a">
 					<i class="iconfont icon-sousuo"></i>
-					<span class="search-tip">搜索店内商品</span>
+					<span class="search-tip" set-lan="html:search2"></span>
 				</a>
 			</div>
 		</header>
@@ -62,13 +63,13 @@
 				</div>
 				<div id="tap-title">
 					<span class="tap-item selected">
-						<span class="text-con">点菜</span>
+						<span class="text-con" set-lan="html:orderfood">点菜</span>
 					</span>
 					<span class="tap-item">
-						<span class="text-con">评价</span>
+						<span class="text-con" set-lan="html:eva">评价</span>
 					</span>
 					<span class="tap-item">
-						<span class="text-con">详情</span>
+						<span class="text-con" set-lan="html:details">详情</span>
 					</span>
 				</div>
 			</div>
@@ -85,23 +86,30 @@
 					<div class="swiper-slide" id="evaPage">
 						<div id="eva-title">
 							<ul id="eva-sort">
-								<li class="eva-sortitem selected">全部</li>
-								<li class="eva-sortitem">最新</li>
-								<li class="eva-sortitem">晒图评价</li>
+								<li class="eva-sortitem selected" set-lan="html:all">全部</li>
+								<li class="eva-sortitem" set-lan="html:new">最新</li>
+								<li class="eva-sortitem" set-lan="html:hasimgrate">晒图评价</li>
 							</ul>
 							<span id="eva-score">
 							<span id="eva-overall">
 								<span id="overall-num"></span>
 							<span id="overall-con">
-									<span>综合评分</span>
+									<span set-lan="html:overall">综合评分</span>
 							<span class="rate-b">
 										<span class="rate-s" style="width: 100%;"></span>
 							</span>
 							</span>
 							</span>
 							<span id="scorecom">
-								<span id="scorepeer">高于<span id="peernum"></span>的同行</span>
-							<span id="fav-rate">好评率<span id="fav-ratenum"></span></span>
+								<span id="scorepeer">
+									<span set-lan="html:above">高于</span>
+									<span id="peernum"></span>
+									<span set-lan="html:peer">的同行</span>
+								</span>
+							<span id="fav-rate">
+								<span set-lan="html:favrate">好评率</span>
+								<span id="fav-ratenum"></span>
+							</span>
 							</span>
 							</span>
 						</div>
@@ -116,28 +124,28 @@
 							</li>
 							<li class="list-item" id="shop-img">
 								<i class="iconfont icon-zhaopian"></i>
-								<span class="text-con">查看店铺图集</span>
+								<span class="text-con" set-lan="html:seestoreimg">查看店铺图集</span>
 								<i class="iconfont icon-jiantouyou"></i>
 							</li>
 							<li class="list-item" id="shop-wen">
 								<i class="iconfont icon-anquan"></i>
-								<span class="text-con">查看食品安全档案</span>
+								<span class="text-con" set-lan="html:seefile">查看食品安全档案</span>
 								<i class="iconfont icon-jiantouyou"></i>
 							</li>
 						</ul>
 						<ul>
 							<li class="list-item" id="shop-service">
 								<i class="iconfont icon-waimai"></i>
-								<span class="text-con">配送服务：由Kintime快送提供配送服务</span>
+								<span class="text-con" set-lan="html:deliveryservice">配送服务：由Kintime快送提供配送服务</span>
 							</li>
 							<li class="list-item" id="shop-time">
 								<i class="iconfont icon-time"></i>
-								<span class="text-con">配送时间：10:00-21:00</span>
+								<span class="text-con"></span>
 							</li>
 							<li class="list-item" id="delivery-money">
 								<i class="iconfont icon-shape"></i>
 								<span>
-									<span class="text-con">配送费:</span>
+									<span class="text-con" set-lan="html:delfee">配送费</span>:
 									<span class="money-con">
 										<i class="money">k</i>
 										<span class="money-num"></span>
@@ -148,7 +156,7 @@
 							<li class="list-item" id="start-price">
 								<i class="iconfont icon-qisongjia"></i>
 								<span>
-									<span class="text-con">起送价：</span>
+									<span class="text-con" set-lan="html:starprice">起送价</span>:
 									<span class="money-con">
 										<i class="money">k</i>
 										<span class="money-num"></span>
@@ -167,10 +175,10 @@
 					<span class="order-num">0</span>
 			</span>
 			<span class="order-money">
-					<i class="money">K</i><span class="money-num">999999</span>
+					<i class="money">K</i><span class="money-num"></span>
 			</span>
 			</span>
-			<button class="order-btn">去下单</button>
+			<button class="order-btn" set-lan="html:goorder">去下单</button>
 		</footer>
 		<div id="discount-con">
 			<div id="img-show" class="discount-item">
@@ -187,15 +195,15 @@
 						<i class="money">K</i>
 						<span class="money-text"></span>
 					</span>
-					<button class="joincart">加入购物车</button>
+					<button class="joincart" set-lan="html:joincart">加入购物车</button>
 				</div>
 			</div>
 			<div class="discount-item" id="order-list">
 				<div class="orderlist-title">
-					<span class="left-title">已点</span>
+					<span class="left-title" set-lan="html:alreadypoint">已点</span>
 					<span id="clear-btn">
 						<i class="iconfont icon-shurukuangqingkong"></i>
-						<span class="btn-text">清空所有</span>
+						<span class="btn-text" set-lan="html:clearall">清空所有</span>
 					</span>
 				</div>
 				<ul></ul>

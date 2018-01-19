@@ -1,4 +1,5 @@
 $(function() {
+	language();
 	echo.init({
 		offset: -100,
 		throttle: 0

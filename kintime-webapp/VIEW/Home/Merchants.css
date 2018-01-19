@@ -19,7 +19,6 @@
 	display: -webkit-flex;
 }
 #merchants-menu .menu-item{
-	height: 1.75rem;
 	flex-grow: 1;
 	display: flex;
 	display: -webkit-flex;

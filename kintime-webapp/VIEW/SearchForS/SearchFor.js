@@ -1,4 +1,5 @@
 $(function() {
+	language();
 	$('#search-btn').on('tap', function() {
 		if($('.city-text').val()) {
 			//			搜索店内商品

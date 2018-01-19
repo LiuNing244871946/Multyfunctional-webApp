@@ -25,18 +25,22 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="RechargeOnline.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<div class="recharge-money">
-			<span class="recharge-title">充值金额</span>
+			<span class="recharge-title" set-lan="html:rechnum">充值金额</span>
 			<div class="input-con">
 				<i class="money">K</i>
 				<input type="number" id="money-number"/>
 			</div>
 			<div class="tips">
-				需支付<i class="money">￥</i><span class="number">0.00</span>(今日汇率<span id="exchange-rate">1260</span>)
+				<span set-lan="html:needpay">需支付</span>
+				<i class="money">￥</i><span class="number">0.00</span>
+				<span set-lan="html:todayrate">(今日汇率</span>
+				<span id="exchange-rate">1260</span>)
 			</div>
-			<button id="recharge-btn">去支付</button>
+			<button id="recharge-btn" set-lan="html:gopay">去支付</button>
 		</div>
 	</body>
 </html>

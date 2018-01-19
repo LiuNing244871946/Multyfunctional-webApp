@@ -13,7 +13,7 @@ $(function(){
                 for(var i=0;len=arr1.length,i<len;i++){
                     htmlNodes += '<div class="coupon-main-list"><div class="coupon-list-left"><span class="list-left1">'+ arr1[i].name +'</span><span class="list-left2">'+"有效期至：" + arr1[i].time+'</span><span class="list-left3">'+"满" + arr1[i].tj +"元可用"+'</span></div><div class="coupon-list-right"><p class="list-right1">'+"₭" + arr1[i].djin +'</p><button class="list-right2">使用</button></div></div>';
                 }
-                $(".coupon-main").append(htmlNodes);
+                $(".coupon-main").html(htmlNodes);
             }
             // else if(res.mei){
             //     var arr2 = res.mei;

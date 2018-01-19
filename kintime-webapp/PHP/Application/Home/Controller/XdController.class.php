@@ -5,6 +5,8 @@ class XdController extends Controller { //下单
     public function index(){   //假设在这已经从购物车提交过来数据
           
         $m = D('ddan');
+        $m1 = D('eng_ddan');
+        $m2 = D('pipi_ddan');
        
 
         $arr=json_decode(file_get_contents('php://input'));
@@ -31,6 +33,8 @@ class XdController extends Controller { //下单
         //$address='重庆'; //测试数据
       if($data['mai']==2)){
             $row = $m->add($data);//
+            $row1 = $m1->add($data);//
+            $row2 = $m2->add($data);//
       }
  
         echo json_encode($row);

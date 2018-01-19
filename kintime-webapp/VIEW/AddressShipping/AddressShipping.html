@@ -25,15 +25,16 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="AddressShipping.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title3">
 			<span class="left-con">
 				<i class="iconfont icon-fanhui"></i>
-				<span>收货地址</span>
+				<span set-lan="html:shipadd">收货地址</span>
 			</span>
 			<span class="btn-con">
-				<button class="determine">确定</button>
+				<button class="determine" set-lan="html:determine">确定</button>
 			</span>
 		</header>
 		
@@ -42,7 +43,7 @@
 		</div>
 		
 		<footer>
-			<button class="add-address">
+			<button class="add-address" set-lan="html:addadd">
 				添加地址
 			</button>
 		</footer>

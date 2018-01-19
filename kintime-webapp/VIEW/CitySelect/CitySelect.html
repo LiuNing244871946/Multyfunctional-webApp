@@ -28,19 +28,20 @@
 		<script type="text/javascript" src="../Public/pinyin_dict_firstletter.js"></script>
 		<script type="text/javascript" src="../Public/pinyinUtil.js"></script>
 		<script type="text/javascript" src="city-sort.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title4">
 			<i class="iconfont icon-fanhui"></i>
 			<span class="input-con">
 				<i class="iconfont icon-sousuo"></i>
-				<input class="city-text" type="text" value="城市"/>
+				<input class="city-text" type="text" value="城市" set-lan="val:city"/>
 			</span>
 		</header>
 		<div class="main-con">
 			<div class="city-history">
 				<div class="history-item">
-					<span class="item-title">当前定位城市</span>
+					<span class="item-title" set-lan="html:currentcity">当前定位城市</span>
 					<ul>
 						<li class="current-city city-item">
 							<i class="iconfont icon-dizhiguanli"></i>
@@ -49,7 +50,7 @@
 					</ul>
 				</div>
 				<div class="history-item">
-					<span class="item-title">最近访问</span>
+					<span class="item-title" set-lan="html:recentcity">最近访问</span>
 					<ul>
 						<li class="city-item">
 							<span class="city-text">杭州</span>

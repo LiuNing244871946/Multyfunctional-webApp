@@ -1,4 +1,5 @@
 $(function() {
+	language();
 	if($.fn.cookie('id')) {
 		$.ajax({
 			type: "post",

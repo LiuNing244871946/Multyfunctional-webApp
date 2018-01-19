@@ -28,6 +28,7 @@
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="SearchFor.js"></script>
 		<script type="text/javascript" src="../Public/echo.min.js" ></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
@@ -35,14 +36,14 @@
 			<i class="iconfont icon-fanhui"></i>
 			<span class="input-con">
 				<i class="iconfont icon-sousuo"></i>
-				<input class="city-text" type="text" placeholder="搜索"/>
+				<input class="city-text" type="text" placeholder="搜索" set-lan="placeholder:search"/>
 			</span>
-			<button id="search-btn">搜索</button>
+			<button id="search-btn" set-lan="html:search">搜索</button>
 		</header>
 		<div id="main">
 			<div id="search-history">
 				<div id="history-title">
-					<span class="text-con">搜索历史</span>
+					<span class="text-con"  set-lan="html:searchhis">搜索历史</span>
 					<i class="iconfont icon-laji"></i>
 				</div>
 				<div id="history-con"></div>

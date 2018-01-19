@@ -1,4 +1,5 @@
 $(function() {
+	language();
 	if($.fn.cookie('id')) {
 		var packId = window.location.href.substr(window.location.href.indexOf("?id=") + 4);
 		var data = {};

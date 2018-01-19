@@ -25,45 +25,46 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="AddressModify.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span>修改地址</span>
+			<span set-lan="html:changeadd">修改地址</span>
 		</header>
 		
 		<div class="main">
 			<div class="user-info-con">
-				<div class="title">联系人</div>
+				<div class="title" set-lan="html:contact">联系人</div>
 				<div class="name">
 					<div class="name-con">
-						<input type="text" placeholder="姓名" id="name"/>
+						<input type="text" placeholder="姓名" id="name" set-lan="placehoder:name"/>
 					</div>
 					<div class="sex">
-						<span class="sex-con">先生</span>
-						<span class="sex-con">女士</span>
+						<span class="sex-con" set-lan="html:mr">先生</span>
+						<span class="sex-con" set-lan="html:ms">女士</span>
 					</div>
 				</div>
 			</div>
 			<div class="phone">
-				<div class="title">电话</div>
+				<div class="title" set-lan="html:phone">电话</div>
 				<div class="phone-con">
 					<select id="area-code">
-						<option>中国+86</option>
-						<option>老挝+856</option>
+						<option set-lan="html:cnphone">中国+86</option>
+						<option set-lan="html:laophone">老挝+856</option>
 					</select>
-					<input type="number" placeholder="手机号码/电话号码" id="phone"/>
+					<input type="number" placeholder="手机号码" id="phone" set-lan="placeholder:phonenumber"/>
 				</div>
 			</div>
 			<div class="address-con">
-				<div class="title">地址</div>
+				<div class="title" set-lan="html:address">地址</div>
 				<div class="address">
 					<div class="address-select">
-						<input type="text" placeholder="当前仅限万象市" id="address0" disabled="disabled"/>
+						<input type="text" placeholder="当前仅限万象市" id="address0" disabled="disabled" set-lan="placeholder:addresstip1"/>
 						<i class="iconfont icon-jiantouyou"></i>
 					</div>
 					<div class="address-text">
-						<input type="text" placeholder="请输入详细位置" id="address"/>
+						<input type="text" placeholder="请输入详细位置" id="address" set-lan="placeholder:addressdel"/>
 					</div>
 				</div>
 			</div>
@@ -72,7 +73,7 @@
 		</div>
 		
 		<footer>
-			<button class="add-address">
+			<button class="add-address" set-lan="html:determine">
 				确定
 			</button>
 		</footer>

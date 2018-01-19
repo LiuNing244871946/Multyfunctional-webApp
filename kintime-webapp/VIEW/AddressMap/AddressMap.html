@@ -25,11 +25,12 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="AddressMap.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span>选择地址</span>
+			<span set-lan="html:selectadd">选择地址</span>
 		</header>
 		
 		<div class="address-input">
@@ -37,7 +38,7 @@
 				<span class="city">万象</span><i class="iconfont icon-jiantouxia"></i>
 			</span>
 			<span class="input-con">
-				<input class="input" value="请输入具体位置"/>
+				<input class="input" value="请输入具体位置" set-lan="val:inpadd"/>
 			</span>
 		</div>
 		<div class="main">
@@ -45,7 +46,7 @@
 		</div>
 		
 		<footer>
-			<button class="add-address">
+			<button class="add-address" set-lan="html:determine">
 				确定
 			</button>
 		</footer>

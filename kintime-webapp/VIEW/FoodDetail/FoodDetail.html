@@ -32,12 +32,13 @@
 		<script type="text/javascript" src="../Public/echo.min.js" ></script>
 		<script type="text/javascript" src="../Public/swiper-3.4.2.jquery.min.js"></script>
 		<script type="text/javascript" src="FoodDetail.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">套餐详情</span>
+			<span class="title-text" set-lan="html:packdetail">套餐详情</span>
 		</header>
 		<div class="main-con">
 			<div id="food-details">
@@ -45,19 +46,19 @@
 				<div id="shop-imgcon"></div>
 				<!--套餐名字-->
 				<div id="detail-info">
-					<div id="detail-name">牛肉拉面套餐</div>
+					<div id="detail-name"></div>
 					<div id="detail-price">
 						<span id="price-con">
 							<span id="limite-pricecon">
 								<i class="money">￥</i>
-								<span class="money-num">299</span>
+								<span class="money-num"></span>
 						</span>
 						<span id="or-pricecon">
-								<span class="text-con">最高门店价：</span>
-						<span id="or-pricenum">318</span>
+								<span class="text-con" set-lan="html:storeprice">最高门店价：</span>
+						<span id="or-pricenum"></span>
 						</span>
 						</span>
-						<button id="buy-btn">立即购买</button>
+						<button id="buy-btn" set-lan="html:buynow">立即购买</button>
 					</div>
 				</div>
 				<!--其他套餐-->
@@ -68,7 +69,7 @@
 				<div id="details-con">
 					<div id="detail-title" class="title-item">
 						<i class="iconfont icon-shangjia"></i>
-						<span class="text-con">套餐详情</span>
+						<span class="text-con" set-lan="html:packdetail">套餐详情</span>
 					</div>
 					<div id="details-tablecon">
 						<table class="details-table">
@@ -84,19 +85,19 @@
 				<div id="buynotes-con">
 					<div class="title-item" id="buynotes-title">
 						<i class="iconfont icon-shangjia"></i>
-						<span class="text-con">购买须知</span>
+						<span class="text-con" set-lan="html:buynote">购买须知</span>
 					</div>
 					<div id="notes-con">
 						<div id="notes-valid">
-							<div class="notes-title">有效期:</div>
+							<div class="notes-title" set-lan="html:validity">有效期:</div>
 							<ul class="notes-text"></ul>
 						</div>
 						<div id="notes-time">
-							<div class="notes-title">使用时间:</div>
+							<div class="notes-title" set-lan="html:usetime">使用时间:</div>
 							<ul class="notes-text"></ul>
 						</div>
 						<div id="notes-rule">
-							<div class="notes-title">使用规则:</div>
+							<div class="notes-title" set-lan="html:userule">使用规则:</div>
 							<ul class="notes-text"></ul>
 						</div>
 					</div>
@@ -110,7 +111,7 @@
 				<div id="related">
 					<div id="related-title">
 						<i class="iconfont icon-shangjia"></i>
-						<span class="text-con">相关推荐</span>
+						<span class="text-con" set-lan="html:sugges">相关推荐</span>
 					</div>
 					<div class="fav-com-con">
 						<div class="fav-com-item">

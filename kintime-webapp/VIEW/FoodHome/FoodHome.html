@@ -32,6 +32,7 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js"></script>
 		<script type="text/javascript" src="../Public/data.js"></script>
 		<script type="text/javascript" src="../Public/Filter.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
@@ -40,7 +41,7 @@
 			<i class="iconfont icon-fanhui"></i>
 			<a class="input-con">
 				<i class="iconfont icon-sousuo"></i>
-				<span class="search-text">4564565456564</span>
+				<span class="search-text" set-lan="html:search1"></span>
 			</a>
 		</header>
 
@@ -57,25 +58,25 @@
 						<span class="sort-img">
 										<i class="iconfont icon-meishi"></i>
 									</span>
-						<span class="sort-text">外卖</span>
+						<span class="sort-text" set-lan="html:takeaway">外卖</span>
 					</a>
 					<a class="sort-item" id="west-link">
 						<span class="sort-img">
 										<i class="iconfont icon-iconfontgouwu"></i>
 									</span>
-						<span class="sort-text">西餐</span>
+						<span class="sort-text" set-lan="html:westernfood">西餐</span>
 					</a>
 					<a class="sort-item" id="chinese-link">
 						<span class="sort-img">
 										<i class="iconfont icon-qiche"></i>
 									</span>
-						<span class="sort-text">中餐</span>
+						<span class="sort-text" set-lan="html:chinesefood">中餐</span>
 					</a>
 					<a class="sort-item" id="laos-link">
 						<span class="sort-img">
 										<i class="iconfont icon-lvyou"></i>
 									</span>
-						<span class="sort-text">老挝菜</span>
+						<span class="sort-text" set-lan="html:laofood">老挝菜</span>
 					</a>
 				</div>
 				<div class="sort-con">
@@ -83,25 +84,25 @@
 						<span class="sort-img">
 										<i class="iconfont icon-yule"></i>
 									</span>
-						<span class="sort-text">烧烤</span>
+						<span class="sort-text" set-lan="html:barbecue">烧烤</span>
 					</a>
 					<a class="sort-item" id="drink-link">
 						<span class="sort-img">
 										<i class="iconfont icon-fangzi"></i>
 									</span>
-						<span class="sort-text">饮料/甜品</span>
+						<span class="sort-text" set-lan="html:drink">饮料/甜品</span>
 					</a>
 					<a class="sort-item" id="bar-link">
 						<span class="sort-img">
 										<i class="iconfont icon-liaotian"></i>
 									</span>
-						<span class="sort-text">酒吧</span>
+						<span class="sort-text" set-lan="html:bar">酒吧</span>
 					</a>
 					<a class="sort-item" id="buffet-link">
 						<span class="sort-img">
 										<i class="iconfont icon-licai"></i>
 									</span>
-						<span class="sort-text">自助餐</span>
+						<span class="sort-text" set-lan="html:buffet">自助餐</span>
 					</a>
 				</div>
 			</div>
@@ -111,25 +112,25 @@
 				<div class="fav-title">
 					<div class="fav-title-item">
 						<div class="item-text">
-							<span>全部</span>
+							<span set-lan="html:all">全部</span>
 							<i class="iconfont icon-jiaobiao"></i>
 						</div>
 					</div>
 					<div class="fav-title-item">
 						<div class="item-text">
-							<span>全城</span>
+							<span set-lan="html:allcity">全城</span>
 							<i class="iconfont icon-jiaobiao"></i>
 						</div>
 					</div>
 					<div class="fav-title-item">
 						<div class="item-text">
-							<span>智能排序</span>
+							<span set-lan="html:intesort">智能排序</span>
 							<i class="iconfont icon-jiaobiao"></i>
 						</div>
 					</div>
 					<div class="fav-title-item">
 						<div class="item-text">
-							<span>筛选</span>
+							<span set-lan="html:filter">筛选</span>
 							<i class="iconfont icon-jiaobiao"></i>
 						</div>
 					</div>
@@ -258,107 +259,107 @@
 						</div>
 						<div class="sort-wrapper">
 							<a href="javascript:;" class="active">
-								<span>智能排序</span>
+								<span set-lan="html:intesort">智能排序</span>
 							</a>
 							<a href="javascript:;" class="">
-								<span>离我最近</span>
+								<span set-lan="html:recentme">离我最近</span>
 							</a>
 							<a href="javascript:;" class="">
-								<span>好评优先</span>
+								<span set-lan="html:toppriority">好评优先</span>
 							</a>
 							<a href="javascript:;" class="">
-								<span>人气最高</span>
+								<span set-lan="html:mostpopular">人气最高</span>
 							</a>
 						</div>
 						<div class="csp-wrapper">
 							<ul class="csp-content">
 								<li>
-									<span>只看免预约</span>
+									<span set-lan="html:freeappo">只看免预约</span>
 									<div class="switch-cont input-checkbox">
 										<i class="switch icon icon-checkbox"></i>
 										<label></label>
 									</div>
 								</li>
 								<li>
-									<span>节假日可用</span>
+									<span set-lan="html:holiday">节假日可用</span>
 									<div class="switch-cont input-checkbox">
 										<i class="switch icon icon-checkbox"></i>
 										<label></label>
 									</div>
 								</li>
 								<li style="display: block;">
-									<div class="meal-number">用餐时段</div>
+									<div class="meal-number" set-lan="html:mealtime">用餐时段</div>
 									<div class="meal-number-option">
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option selected">不限</a>
+											<a href="javascript:;" class="option selected" set-lan="html:nolimited">不限</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">早餐</a>
+											<a href="javascript:;" class="option" set-lan="html:breakfast">早餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">午餐</a>
+											<a href="javascript:;" class="option" set-lan="html:lunch">午餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">下午茶</a>
+											<a href="javascript:;" class="option" set-lan="html:aftertea">下午茶</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">晚餐</a>
+											<a href="javascript:;" class="option" set-lan="html:dinner">晚餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">夜宵</a>
+											<a href="javascript:;" class="option" set-lan="html:supper">夜宵</a>
 										</div>
 									</div>
 								</li>
 								<li style="display: block;">
-									<div class="meal-number">餐厅服务</div>
+									<div class="meal-number" set-lan="html:restservice">餐厅服务</div>
 									<div class="meal-number-option">
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option selected">不限</a>
+											<a href="javascript:;" class="option selected" set-lan="html:nolimited">不限</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">买单</a>
+											<a href="javascript:;" class="option" set-lan="html:payorder">买单</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">在线点菜</a>
+											<a href="javascript:;" class="option" set-lan="html:orderonline">在线点菜</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">外卖送餐</a>
+											<a href="javascript:;" class="option" set-lan="html:takeawaydelivery">外卖送餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">预约</a>
+											<a href="javascript:;" class="option" set-lan="html:reservation">预约</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">在线排队</a>
+											<a href="javascript:;" class="option" set-lan="html:onlinequeuing">在线排队</a>
 										</div>
 									</div>
 								</li>
 								<li style="display: block;">
-									<div class="meal-number">用餐人数</div>
+									<div class="meal-number" set-lan="html:numbermeals">用餐人数</div>
 									<div class="meal-number-option">
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option selected">不限</a>
+											<a href="javascript:;" class="option selected" set-lan="html:nolimited">不限</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">单人餐</a>
+											<a href="javascript:;" class="option" set-lan="html:singlemeal">单人餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">双人餐</a>
+											<a href="javascript:;" class="option" set-lan="html:doublemeal">双人餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">3~4人餐</a>
+											<a href="javascript:;" class="option" set-lan="html:34">3~4人餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">5~10人餐</a>
+											<a href="javascript:;" class="option" set-lan="html:510">5~10人餐</a>
 										</div>
 										<div class="option-wrapper">
-											<a href="javascript:;" class="option">10人以上</a>
+											<a href="javascript:;" class="option" set-lan="html:10up">10人以上</a>
 										</div>
 									</div>
 								</li>
 							</ul>
 							<div class="operate">
-								<a href="javascript:;" class="reset-button">重置</a>
-								<a href="javascript:;" class="save-button">完成</a>
+								<a href="javascript:;" class="reset-button" set-lan="html:reset">重置</a>
+								<a href="javascript:;" class="save-button" set-lan="html:over">完成</a>
 							</div>
 						</div>
 					</div>

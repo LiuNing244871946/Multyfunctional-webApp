@@ -25,16 +25,18 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="RechargeSuccess.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<div class="recharge-info">
 			<i class="iconfont icon-chenggong"></i>
-			<span class="info-text">充值成功</span>
+			<span class="info-text" set-lan="html:rechsucc">充值成功</span>
 		</div>
 		<div class="recharge-tip">
-			账户余额：<i class="money">K</i><span class="number">52000</span>
+			<span set-lan="html:accbal">账户余额：</span>
+			<i class="money">K</i><span class="number">52000</span>
 		</div>
-		<button class="btn again-recharge">继续充值</button>
-		<button class="btn determine-btn">确定</button>
+		<button class="btn again-recharge" set-lan="html:keeprech">继续充值</button>
+		<button class="btn determine-btn" set-lan="html:determine">确定</button>
 	</body>
 </html>

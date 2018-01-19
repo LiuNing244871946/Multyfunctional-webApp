@@ -3,6 +3,7 @@ $(function() {
 		offset: 0,
 		throttle: 0
 	});
+	language();
 	var sImgData = {};
 	sImgData.type = 1;
 	var sImgJson = JSON.stringify(sImgData);

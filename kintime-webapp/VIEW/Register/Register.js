@@ -1,4 +1,5 @@
 $(function(){
+	language();
 	$('#phone').on('input',function(){
 		var phone = $(this).val();
 		var phoneArea = document.getElementById('area-code').selectedIndex;

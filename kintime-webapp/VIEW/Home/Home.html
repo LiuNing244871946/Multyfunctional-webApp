@@ -38,6 +38,7 @@
 		<script type="text/javascript" src="Me.js"></script>
 		<script type="text/javascript" src="../Public/data.js"></script>
 		<script src="order-main.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
@@ -51,7 +52,7 @@
 						</a>
 						<a class="input-con" href="../SearchFor/SearchFor.html">
 							<i class="iconfont icon-sousuo"></i>
-							<span class="search-text">ປອ້ນຂໍ້ມູນຂອງຮ້ານຄ້າ</span>
+							<span class="search-text" set-lan="html:search1">搜索商家/商品</span>
 						</a>
 					</header>
 					<div class="home-con">
@@ -67,25 +68,25 @@
 									<span class="sort-img">
 										<i class="iconfont icon-meishi"></i>
 									</span>
-									<span class="sort-text">美食</span>
+									<span class="sort-text" set-lan="html:food">美食</span>
 								</a>
 								<a class="sort-item" id="shop-link">
 									<span class="sort-img">
 										<i class="iconfont icon-iconfontgouwu"></i>
 									</span>
-									<span class="sort-text">购物</span>
+									<span class="sort-text" set-lan="html:shop">购物</span>
 								</a>
 								<a class="sort-item" id="traffic-link">
 									<span class="sort-img">
 										<i class="iconfont icon-qiche"></i>
 									</span>
-									<span class="sort-text">交通</span>
+									<span class="sort-text" set-lan="html:traffic">交通</span>
 								</a>
 								<a class="sort-item" id="tourism-link">
 									<span class="sort-img">
 										<i class="iconfont icon-lvyou"></i>
 									</span>
-									<span class="sort-text">旅游</span>
+									<span class="sort-text" set-lan="html:tourism">旅游</span>
 								</a>
 							</div>
 							<div class="sort-con">
@@ -93,25 +94,25 @@
 									<span class="sort-img">
 										<i class="iconfont icon-yule"></i>
 									</span>
-									<span class="sort-text">娱乐</span>
+									<span class="sort-text" set-lan="html:play">娱乐</span>
 								</a>
 								<a class="sort-item" id="life-link">
 									<span class="sort-img">
 										<i class="iconfont icon-fangzi"></i>
 									</span>
-									<span class="sort-text">生活</span>
+									<span class="sort-text" set-lan="html:life">生活</span>
 								</a>
 								<a class="sort-item" id="playmate-link">
 									<span class="sort-img">
 										<i class="iconfont icon-liaotian"></i>
 									</span>
-									<span class="sort-text">玩伴</span>
+									<span class="sort-text" set-lan="html:playmate">玩伴</span>
 								</a>
 								<a class="sort-item" id="moneymana-link">
 									<span class="sort-img">
 										<i class="iconfont icon-licai"></i>
 									</span>
-									<span class="sort-text">理财</span>
+									<span class="sort-text" set-lan="html:moneymana">理财</span>
 								</a>
 							</div>
 						</div>
@@ -119,7 +120,7 @@
 						<div class="king-meal"></div>
 						<!--特惠美食-->
 						<div id="special-food">
-							<h1 class="title">特惠美食</h1>
+							<h1 class="title" set-lan="html:tehui">特惠美食</h1>
 							<div id="special-swiper" class="swiper-container">
 								<div class="swiper-wrapper"></div>
 								<div class="swiper-pagination" id="special-pagination"></div>
@@ -128,7 +129,7 @@
 						<!--猜你喜欢-->
 						<div class="fav-con">
 							<div class="fav-title">
-								<span class="title-ctn">猜你喜欢</span>
+								<span class="title-ctn" set-lan="html:fav">猜你喜欢</span>
 							</div>
 							<div class="fav-com-con">
 								<div class="fav-com-item">
@@ -173,7 +174,7 @@
 						</a>
 						<a class="input-con" href="../SearchFor/SearchFor.html">
 							<i class="iconfont icon-sousuo"></i>
-							<span class="search-text">搜索商家/商品</span>
+							<span class="search-text" set-lan="html:search1">搜索商家/商品</span>
 						</a>
 					</header>
 					<div id="nearby-con">
@@ -211,73 +212,73 @@
 					</div>
 				</div>
 				<div class="swiper-slide" id="merchants-page">
-					<header id="merchants-title">招商中心</header>
+					<header id="merchants-title" set-lan="html:header1">招商中心</header>
 					<div id="merchants-menu">
 						<div class="menu-item" id="landmark">
 							<span class="item-icon">
 								<i class="iconfont icon-dizhi"></i>
 							</span>
-							<span class="menu-name">地标招商</span>
-							<span class="menu-sub">平台地图添加地址</span>
+							<span class="menu-name" set-lan="html:landmark">地标招商</span>
+							<span class="menu-sub" set-lan="html:landmarksub">平台地图添加地址</span>
 						</div>
 						<div class="menu-item" id="schedule">
 							<span class="item-icon">
 								<i class="iconfont icon-chaxun"></i>
 							</span>
-							<span class="menu-name">进度查询</span>
-							<span class="menu-sub">查询合作进度情况</span>
+							<span class="menu-name" set-lan="html:schedule">进度查询</span>
+							<span class="menu-sub" set-lan="html:schedulesub">查询合作进度情况</span>
 						</div>
 						<div class="menu-item" id="customer">
 							<span class="item-icon">
 								<i class="iconfont icon-linedesign-20"></i>
 							</span>
-							<span class="menu-name">客服中心</span>
-							<span class="menu-sub">合作详情咨询</span>
+							<span class="menu-name" set-lan="html:customer">客服中心</span>
+							<span class="menu-sub" set-lan="html:customersub">合作详情咨询</span>
 						</div>
 					</div>
 					<div id="merchants-item">
 						<div id="merchants-sub">
-							<span class="text-con">成为商家</span>
+							<span class="text-con" set-lan="html:header2">成为商家</span>
 						</div>
 						<div id="merchants-con">
 							<a class="sub-item" id="food-m">
 								<i class="iconfont icon-meishi"></i>
-								<span class="text-con">美食</span>
+								<span class="text-con" set-lan="html:food">美食</span>
 							</a>
 							<a class="sub-item" id="shop-m">
 								<i class="iconfont icon-iconfontgouwu"></i>
-								<span class="text-con">购物</span>
+								<span class="text-con" set-lan="html:shop">购物</span>
 							</a>
 							<a class="sub-item" id="traffic-m">
 								<i class="iconfont icon-qiche"></i>
-								<span class="text-con">交通</span>
+								<span class="text-con" set-lan="html:traffic">交通</span>
 							</a>
 							<a class="sub-item" id="tourism-m">
 								<i class="iconfont icon-lvyou"></i>
-								<span class="text-con">旅游</span>
+								<span class="text-con" set-lan="html:tourism">旅游</span>
 							</a>
 							<a class="sub-item" id="play-m">
 								<i class="iconfont icon-yule"></i>
-								<span class="text-con">娱乐</span>
+								<span class="text-con" set-lan="html:play">娱乐</span>
 							</a>
 							<a class="sub-item" id="life-m">
 								<i class="iconfont icon-fangzi"></i>
-								<span class="text-con">生活</span>
+								<span class="text-con" set-lan="html:life">生活</span>
 							</a>
 							<a class="sub-item" id="playmate-m">
 								<i class="iconfont icon-liaotian"></i>
-								<span class="text-con">玩伴</span>
+								<span class="text-con" set-lan="html:playmate">玩伴</span>
 							</a>
 							<a class="sub-item" id="moneymana-m">
 								<i class="iconfont icon-licai"></i>
-								<span class="text-con">理财</span>
+								<span class="text-con" set-lan="html:moneymana">理财</span>
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="swiper-slide" id="order-page">
 					<!-- 头部 -->
-					<div class="order-main-header">订单</div>
+					<div class="order-main-header" set-lan="html:header3">订单</div>
 					<!-- 中间 -->
 					<div class="order-main-top">
 						<div class="order-main-list">
@@ -285,25 +286,25 @@
 								<span class="order-img-box" id="delicacy-order">
 									<i class="iconfont icon-meishi"></i>
 								</span>
-								<span class="order-text">美食订单</span>
+								<span class="order-text" set-lan="html:foodorder">美食订单</span>
 							</a>
 							<a href="../TakeoutOrder/takeout-order.html" class="order-items">
 								<span class="order-img-box" id="takeout-order">
 									<i class="iconfont icon-icon-test"></i>
 								</span>
-								<span class="order-text">外卖订单</span>
+								<span class="order-text" set-lan="html:takeawayorder">外卖订单</span>
 							</a>
 							<a href="#" class="order-items">
 								<span class="order-img-box" id="shop-order">
 									<i class="iconfont icon-iconfontgouwu"></i>
 								</span>
-								<span class="order-text">购物订单</span>
+								<span class="order-text" set-lan="html:shoporder">购物订单</span>
 							</a>
 							<a href="#" class="order-items">
 								<span class="order-img-box" id="hotel-order">
 									<i class="iconfont icon-jiudian"></i>
 								</span>
-								<span class="order-text">酒店订单</span>
+								<span class="order-text" set-lan="html:hostelorder">酒店订单</span>
 							</a>
 						</div>
 						<!-- 第二行订单列表 -->
@@ -312,29 +313,29 @@
 								<span class="order-img-box" id="yule-order">
 									<i class="iconfont icon-yule1"></i>
 								</span>
-								<span class="order-text">娱乐订单</span>
+								<span class="order-text" set-lan="html:playorder">娱乐订单</span>
 							</a>
 							<a href="#" class="order-items">
 								<span class="order-img-box" id="tickets-order">
 									<i class="iconfont icon-jipiao"></i>
 								</span>
-								<span class="order-text">机票订单</span>
+								<span class="order-text" set-lan="html:ticketsorder">机票订单</span>
 							</a>
 							<a href="#" class="order-items">
 								<span class="order-img-box" id="train-order">
 									<i class="iconfont icon-peixun"></i>
 								</span>
-								<span class="order-text">培训订单</span>
+								<span class="order-text" set-lan="html:trainorder">培训订单</span>
 							</a>
 							<a href="#" class="order-items">
 								<span class="order-img-box" id="finance-order">
 									<i class="iconfont icon-licai"></i>
 								</span>
-								<span class="order-text">理财订单</span>
+								<span class="order-text" set-lan="html:moneymanaorder">理财订单</span>
 							</a>
 						</div>
 					</div>
-					<div class="current-order">当前订单</div>
+					<div class="current-order" set-lan="html:todayorder">当前订单</div>
 					<!-- 订单列表 -->
 					<div class="current-order-list">
 						<!-- 从后端数据获取当前订单信息创建列表 -->
@@ -348,8 +349,8 @@
 								<img src="../../STATIC/img/default.jpg" />
 							</div>
 							<div class="tips-con">
-								<span class="user-name tip-item">登录</span>
-								<span class="phone tip-item"><i class="iconfont icon-shouji"></i><span class="number-con">请先登录~</span></span>
+								<span class="user-name tip-item"></span>
+								<span class="phone tip-item"><i class="iconfont icon-shouji"></i><span class="number-con"></span></span>
 							</div>
 							<i class="iconfont icon-jiantouyou"></i>
 						</div>
@@ -360,32 +361,40 @@
 							<span class="wallet-img">
 					<i class="iconfont icon-qia"></i>
 				</span>
-							<span class="wallet-name">钱包</span>
+							<span class="wallet-name" set-lan="html:wallet">钱包</span>
 						</div>
 						<div class="wallet-item" id="kin">
 							<span class="wallet-img">
 					<i class="iconfont icon-zhuanzhangchongzhi"></i>
 				</span>
-							<span class="wallet-name">KIN宝</span>
+							<span class="wallet-name" set-lan="html:kin">KIN宝</span>
 						</div>
 					</div>
 					<!--菜单-->
 					<div class="menu-con">
 						<ul>
 							<li id="eva">
-								<i class="iconfont icon-pingjia"></i>评价
+								<i class="iconfont icon-pingjia"></i>
+								<span set-lan="html:eva">评价</span>
 							</li>
 							<li id="bills">
-								<i class="iconfont icon-zhangdan"></i>账单
+								<i class="iconfont icon-zhangdan"></i>
+								<span set-lan="html:bills">账单</span>
 							</li>
 							<li id="address">
-								<i class="iconfont icon-dizhiguanli"></i>地址
+								<i class="iconfont icon-dizhiguanli"></i>
+								<span set-lan="html:address">地址</span>
 							</li>
 							<li id="coupon">
-								<i class="iconfont icon-youhuiquan"></i>优惠券
+								<i class="iconfont icon-youhuiquan"></i>
+								<span set-lan="html:coupon">优惠券</span>
 							</li>
 							<li id="custo">
-								<i class="iconfont icon-kefu"></i>客服中心
+								<i class="iconfont icon-kefu"></i>
+								<span set-lan="html:custo">客服中心</span>
+							</li>
+							<li id="language">
+								<i class="iconfont icon-language"></i>Language
 							</li>
 						</ul>
 					</div>
@@ -397,33 +406,57 @@
 				<span class="img-con">
 					<i class="iconfont icon-icon-f1"></i>
 				</span>
-				<span class="btn-text">主页</span>
+				<span class="btn-text" set-lan="html:home">主页</span>
 			</div>
 			<div id="nearby-btn" class="page-btn">
 				<span class="img-con">
 					<i class="iconfont icon-fujin"></i>
 				</span>
-				<span class="btn-text">附近</span>
+				<span class="btn-text" set-lan="html:nearby">附近</span>
 			</div>
 			<div id="merchans-btn" class="page-btn">
 				<span class="img-con">
 					<i class="iconfont icon-zhaoshang"></i>
 				</span>
-				<span class="btn-text">招商</span>
+				<span class="btn-text" set-lan="html:merchans">招商</span>
 			</div>
 			<div id="order-btn" class="page-btn">
 				<span class="img-con">
 					<i class="iconfont icon-nav-order"></i>
 				</span>
-				<span class="btn-text">订单</span>
+				<span class="btn-text" set-lan="html:order">订单</span>
 			</div>
 			<div id="me-btn" class="page-btn">
 				<span class="img-con">
 					<i class="iconfont icon-wendashoujibanICON-"></i>
 				</span>
-				<span class="btn-text">我的</span>
+				<span class="btn-text" set-lan="html:me">我的</span>
 			</div>
 		</footer>
+		<div id="discount-con">
+			<div class="discount-item" id="language-con">
+				<ul>
+					<li class="language-item" id="zh">
+						<span class="text-con">中文</span>
+						<span class="select-con">
+							<i class="select-ok"></i>
+						</span>
+					</li>
+					<li class="language-item" id="lao">
+						<span class="text-con">ລາວ</span>
+						<span class="select-con">
+							<i class="select-ok"></i>
+						</span>
+					</li>
+					<li class="language-item" id="en">
+						<span class="text-con">English</span>
+						<span class="select-con">
+							<i class="select-ok"></i>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 
 </html>

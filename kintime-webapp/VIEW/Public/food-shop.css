@@ -7,9 +7,11 @@
 }
 
 .fav-com-item {
-	width: 3.3rem;
+	width: 49%;
 	margin-bottom: .2rem;
 	background: #fff;
+	box-shadow: 0px 0.03rem 0.1rem 0px rgba(0, 0, 0, 0.1);
+	border-radius: .06rem;
 }
 
 .fav-com-link {

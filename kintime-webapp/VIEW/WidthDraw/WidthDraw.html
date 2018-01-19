@@ -25,13 +25,14 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="WidthDraw.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header>
 			<span class="img">
 				<i class="iconfont icon-tixian"></i>
 			</span>
-			<span class="title">提现到</span>
+			<span class="title" set-lan="html:widthdrawto">提现到</span>
 		</header>
 		<!--银行卡分类-->
 		<div class="card-con">
@@ -39,13 +40,13 @@
 				<span class="img">
 					<i class="iconfont icon-qia"></i>
 				</span>
-				<span class="title">老挝银行卡</span>
+				<span class="title" set-lan="html:laobankcard">老挝银行卡</span>
 			</div>
 			<div class="card-item cn">
 				<span class="img">
 					<i class="iconfont icon-qia"></i>
 				</span>
-				<span class="title">中国银行卡</span>
+				<span class="title" set-lan="html:cnbankcard">中国银行卡</span>
 			</div>
 			<div class="card-item ali">
 				<span class="img">
@@ -62,8 +63,8 @@
 		</div>
 		<!--提示-->
 		<div class="tips-con">
-			<div class="tip">每天只能提交一次提现申请</div>
-			<div class="tip">提现金额将在三个工作日内到账</div>
+			<div class="tip" set-lan="html:widthdrawtip4">每天只能提交一次提现申请</div>
+			<div class="tip" set-lan="html:widthdrawtip5">提现金额将在三个工作日内到账</div>
 		</div>
 	</body>
 </html>

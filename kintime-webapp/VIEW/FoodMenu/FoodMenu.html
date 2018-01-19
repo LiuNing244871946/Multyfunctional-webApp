@@ -26,6 +26,7 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="FoodMenu.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
@@ -37,7 +38,7 @@
 			<div class="search-box">
 				<a href="" class="nav-a">
 					<i class="iconfont icon-sousuo"></i>
-					<span class="search-tip">搜索店内商品</span>
+					<span class="search-tip" set-lan="html:search2">搜索店内商品</span>
 				</a>
 			</div>
 		</header>
@@ -52,8 +53,8 @@
 						<img src="../../STATIC/img/头像.jpg" id="shop-avatar" />
 					</div>
 					<div class="text-con">
-						<span class="name-con">商家名称</span>
-						<span class="annou-con">商家公告内容</span>
+						<span class="name-con"></span>
+						<span class="annou-con"></span>
 					</div>
 				</div>
 			</div>
@@ -255,10 +256,10 @@
 					<span class="order-num">0</span>
 			</span>
 			<span class="order-money">
-					<i class="money">K</i><span class="money-num">999999</span>
+					<i class="money">K</i><span class="money-num"></span>
 			</span>
 			</span>
-			<button class="order-btn">去下单</button>
+			<button class="order-btn" set-lan="html:goorder">去下单</button>
 		</footer>
 		<div id="discount-con">
 			<div class="discount-item" id="norm-con">
@@ -294,15 +295,15 @@
 						<i class="money">K</i>
 						<span class="money-text">5000</span>
 					</span>
-					<button class="joincart" onclick="addcart()">加入购物车</button>
+					<button class="joincart" onclick="addcart()" set-lan="html:joincart">加入购物车</button>
 				</div>
 			</div>
 			<div class="discount-item" id="order-list	">
 				<div class="orderlist-title">
-					<span class="left-title">已点</span>
+					<span class="left-title" set-lan="html:alreadypoint">已点</span>
 					<span id="clear-btn">
 						<i class="iconfont icon-shurukuangqingkong"></i>
-						<span class="btn-text">清空所有</span>
+						<span class="btn-text" set-lan="html:clearall">清空所有</span>
 					</span>
 				</div>
 				<ul>

@@ -25,16 +25,17 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="AddressManage.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title3">
 			<span class="left-con">
 				<i class="iconfont icon-fanhui"></i>
-				<span>地址</span>
+				<span set-lan="html:address">地址</span>
 			</span>
 			<span class="btn-con">
-				<button class="determine">管理</button>
-				<button id="cancel">取消</button>
+				<button class="determine" set-lan="html:manage">管理</button>
+				<button id="cancel" set-lan="html:cancel">取消</button>
 			</span>
 		</header>
 		
@@ -45,11 +46,11 @@
 		<footer>
 			<button class="add-address">
 				<i class="iconfont icon-icon02"></i>
-				<span class="btn-text">添加地址</span>
+				<span class="btn-text" set-lan="html:addadd">添加地址</span>
 			</button>
 			<button id="delete-address">
 				<i class="iconfont icon-guanbi1"></i>
-				<span class="btn-text">删除地址</span>
+				<span class="btn-text" set-lan="html:deladd">删除地址</span>
 			</button>
 		</footer>
 	</body>

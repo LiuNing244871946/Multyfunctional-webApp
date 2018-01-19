@@ -47,253 +47,33 @@
     <!--导航菜单切换-->
     <div class="swiper-container swiper1">
         <div class="swiper-wrapper tab-bar-box">
-            <div class="swiper-slide selected">进行中</div>
-            <div class="swiper-slide">已完成</div>
-            <div class="swiper-slide">待付款</div>
-            <div class="swiper-slide">退款售后</div>
+            <div class="swiper-slide selected" id="1">进行中</div>
+            <div class="swiper-slide" id="2">已完成</div>
+            <div class="swiper-slide" id="3">退款售后</div>
+            <div class="swiper-slide" id="4">待付款</div>
         </div>
     </div>
     <!-- swiper2 -->
     <div class="swiper-container swiper2">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">骑手配送中</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">联系骑手</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">商家准备商品中</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">联系商家</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">等待商家接单</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">再来一单</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="takeout-order-list">
+                    <!-- 后端数据列表 -->
                 </div>
             </div>
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">待评价</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">评价</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">已评价</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">再来一单</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="takeout-order-list">
+                    <!-- 后端数据列表 -->
                 </div>
             </div>
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">待付款</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">付款</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="takeout-order-list">
+                    <!-- 后端数据列表 -->
                 </div>
             </div>
             <div class="swiper-slide swiper-no-swiping">
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">已退款</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">再来一单</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="will-consume-box">
-                    <p class="will-consume-title">
-                        <span class="shop-name">四季粥铺</span>
-                        <span class="will-consume-word">退款中</span>
-                    </p>
-                    <div class="will-consume-content">
-                        <div class="content-left">
-                            <i class="content-left-img"></i>
-                        </div>
-                        <div class="content-right">
-                            <div class="content-right-top">
-                                <p class="content-right-left">
-                                    <span class="content-right-top1">虾仁玉米粥等2件商品</span>
-                                    <span class="content-right-top2">下单时间: 2017.11.22 11:42</span>
-                                </p>
-                                <p class="icon-box">
-                                    <i class="iconfont icon-next"></i>
-                                </p>
-                            </div>
-                            <div class="content-right-bottom">
-                                <p class="content-right-bottom1">
-                                    <span class="all-count">总计：</span>
-                                    <span class="money-num">₭10</span>
-                                </p>
-                                <button class="view-code">再来一单</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="takeout-order-list">
+                    <!-- 后端数据列表 -->
                 </div>
             </div>
         </div>
@@ -301,6 +81,7 @@
     <script src="../Public/adaptation.js"></script>
     <script src="../Public/zepto.min.js"></script>
     <script src="../Public/swiper-3.4.2.jquery.min.js"></script>
+    <script src="takeout-order.js"></script>
     <script>
         $(function(){
             function setCurrentSlide(ele, index) {

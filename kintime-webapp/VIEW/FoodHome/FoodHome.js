@@ -1,9 +1,5 @@
 $(function() {
-	if($.fn.cookie('id')) {
-
-	} else {
-		//		window.location.href = '../Login/Login.html';
-	};
+	language();
 	var sImgData = {};
 	sImgData.type = 2;
 	var sImgJson = JSON.stringify(sImgData);

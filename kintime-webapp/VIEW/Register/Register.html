@@ -26,12 +26,14 @@
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="Register.js"></script>
 		<script type="text/javascript" src="../Public/code-btn.js"></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">账号注册</span>
+			<span class="title-text" set-lan="html:accregi">账号注册</span>
 		</header>
 		<div class="main">
 			<div class="main-con">
@@ -41,18 +43,19 @@
 							<i class="iconfont icon-ren"></i>
 						</span>
 						<select id="area-code">
-							<option>中国+86</option>
-							<option>老挝+856</option>
+							<option set-lan="html:cnphone">中国+86</option>
+							<option set-lan="html:laophone">老挝+856</option>
 						</select>
-						<input type="number" placeholder="请输入手机号" id="phone" />
+						<input type="number" placeholder="请输入手机号" id="phone" set-lan="html:inpphone"/>
 					</div>
 					<div class="input-con">
-						<input type="number" placeholder="请输入短信验证码" id="sms" />
+						<input type="number" placeholder="请输入短信验证码" id="sms" set-lan="placeholder:inputsms"/>
 						<button id="send-sms" class="disable">
 							<span class="time-text">
-								<span class="num">60</span>s后可再次发送
+								<span class="num">60</span>
+								<span set-lan="html:smstime">s后可再次发送</span>
 							</span>
-							<span class="allow-text">
+							<span class="allow-text" set-lan="html:sendsms">
 								发送验证码
 							</span>
 						</button>
@@ -61,20 +64,20 @@
 						<span class="icon-con">
 							<i class="iconfont icon-suo"></i>
 						</span>
-						<input type="password" placeholder="请输入密码（8~16位，包含字母与数字）" id="password1" class="password" />
+						<input type="password" placeholder="请输入密码（8~16位，包含字母与数字）" id="password1" class="password" set-lan="placeholder:pass1"/>
 						<i class="iconfont icon-shurukuangqingkong error"></i>
 					</div>
 					<div class="input-con">
 						<span class="icon-con">
 							<i class="iconfont icon-suo"></i>
 						</span>
-						<input type="password" placeholder="请再次输入密码" id="password2" class="password" />
+						<input type="password" placeholder="请再次输入密码" id="password2" class="password" set-lan="placeholder:pass2"/>
 						<i class="iconfont icon-shurukuangqingkong error"></i>
 					</div>
 				</div>
-				<button class="register-btn disabled">注册</button>
+				<button class="register-btn disabled" set-lan="html:register">注册</button>
 				<div id="turnLogin">
-					<a href="../Login/Login.html">已有帐号?立即登录</a>
+					<a href="../Login/Login.html" set-lan="html:regitip1">已有帐号?立即登录</a>
 				</div>
 				<div id="tip"></div>
 			</div>

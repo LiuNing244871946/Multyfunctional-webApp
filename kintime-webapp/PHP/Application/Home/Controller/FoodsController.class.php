@@ -388,6 +388,8 @@ $id=3;*/
         $phone = ltrim($phone,"中国+");
         $phone = ltrim($phone,"老挝+");
         $q_address = D('shdz');
+        $q_address1 = D('pipi_shdz');
+        $q_address2 = D('eng_shdz');
         $data['linkman'] = $linkman;
         $data['sex'] = $sex;
         $data['phone'] = $phone;
@@ -399,13 +401,17 @@ $id=3;*/
             $uid = usersId();
             $data['uid'] = $uid;
             $row = $q_address->add($data);
+            $row1 = $q_address1->add($data);
+            $row2 = $q_address2->add($data);
         }else{      //修改
           $rrow = $q_address->where("id={$id}")->find();
           if($rrow['linkman']==$linkman && $rrow['sex']==$sex && $rrow['phone']==$phone && $rrow['address && ']==$address && $rrow['jing']==$jing && $rrow['wei']==$wei && $rrow['xiaddress']==$xiaddress) die('1');
             $data['id'] = $id;
             $row = $q_address->save($data);
+            $row1 = $q_address1->save($data);
+            $row2 = $q_address2->save($data);
         }
-        if($row) echo '1';
+        if($row&&$row1&&$row2) echo '1';
         else echo '2';
     }
 
@@ -429,8 +435,12 @@ $id=3;*/
         $password = $arr->pass;
         $data['pass'] = md5($password);
         $q_user = D('users');
-        $q_user->where("name={$name}")->save($data);
-        if($q_user){
+        $q_user1 = D('pipi_users');
+        $q_user2 = D('eng_users');
+        $row = $q_user->where("name={$name}")->save($data);
+        $row1 = $q_user1->where("name={$name}")->save($data);
+        $row2 = $q_user2->where("name={$name}")->save($data);
+        if($row&&$row1&&$row2){
             cookie('id',null);
             echo 1;
         }else{
@@ -565,15 +575,21 @@ $id=3;*/
             $ma = str_pad($ma,6,"0",STR_PAD_LEFT);
         }
         $q_pma = D('pma');
+        $q_pma1 = D('pipi_pma');
+        $q_pma2 = D('eng_pma');
         $data['ma'] = $ma;
         $data['time'] = time();
         $row = $q_pma->where("phone=".$phone)->find();
         if($row){
           // $data['id'] = $row['id'];
           $cun = $q_pma->where("phone = {$phone}")->save($data);
+          $cun1 = $q_pma1->where("phone = {$phone}")->save($data);
+          $cun2 = $q_pma2->where("phone = {$phone}")->save($data);
         }else{
           $data['phone'] = $phone;
           $cun = $q_pma->add($data);
+          $cun1 = $q_pma1->add($data);
+          $cun2 = $q_pma2->add($data);
         }
         $phone = ltrim($phone,"86");
         $request->setPhoneNumbers($phone);
@@ -608,6 +624,8 @@ $id=3;*/
       $phone = ltrim($phone,"中国+");
       $q_pma = D('pma');
       $q_users = D('users');
+      $q_users1 = D('pipi_users');
+      $q_users2 = D('eng_users');
 
       $row = $q_pma->where("phone = {$phone} AND ma = {$ma}")->find();
         if($row){
@@ -619,7 +637,9 @@ $id=3;*/
                   $name = $_COOKIE['id'];
                   $data['phone'] = $phone;
                   $q_row = $q_users->where('name='.$name)->save($data);
-                  if($q_row) echo 1;  //修改成功
+                  $q_row1 = $q_users1->where('name='.$name)->save($data);
+                  $q_row2 = $q_users2->where('name='.$name)->save($data);
+                  if($q_row && $q_row1 && $q_row2) echo 1;  //修改成功
                   else echo 4;  //修改失败
                 }
             }else echo 5; //验证时间大于5分钟 验证码失效
@@ -712,9 +732,15 @@ $mai=3;*/
         $id = $arr->id;
         $num = $arr->num;
 
-        $q_ddan = D("ddan");
-        $q_ddshop = D("ddshop");
-        $q_tc = D("tc");
+        $q_ddan = D('ddan');
+        $q_ddan1 = D('pipi_ddan');
+        $q_ddan2 = D('eng_ddan');
+        $q_ddshop = D('ddshop');
+        $q_ddshop1 = D('pipi_ddshop');
+        $q_ddshop2 = D('eng_ddshop');
+        $q_tc = D('tc');
+        $q_tc1 = D('pipi_tc');
+        $q_tc2 = D('eng_tc');
         $show_tc = $q_tc->where("id={$id}")->find();
         $yu = $show_tc['stock']-$num;
         if($yu<0) die('3');  //库存不足
@@ -726,20 +752,26 @@ $mai=3;*/
         $data['you'] = $show_tc['tcprice'];
         $data['mai'] = 2;
         $row = $q_ddan->add($data);
+        $row1 = $q_ddan1->add($data);
+        $row2 = $q_ddan2->add($data);
         // ddshop表添加数据
-        if(!$row) die('2');
+        if(!$row || !$row1 || !$row2) die('2');
         $ddta['sid'] = $id;
         $ddta['ddid'] = $row;
         $ddta['num'] = $num;
         $ddta['money'] = $show_tc['tcprice']*$num;
         $ddta['name'] = $show_tc['tcname'];
         $rrow = $q_ddshop->add($ddta);
-        if(!$rrow) die('2');
+        $rrow1 = $q_ddshop1->add($ddta);
+        $rrow2 = $q_ddshop2->add($ddta);
+        if(!$rrow || !$rrow1 || !$rrow2) die('2');
         //减库存
         $datt['stock'] = $yu;
         $datt['id'] = $id;
         $ok = $q_tc->save($datt);
-        if(!$ok) die('2');
+        $ok1 = $q_tc1->save($datt);
+        $ok2 = $q_tc2->save($datt);
+        if(!$ok || !$ok1 || !$ok2) die('2');
         echo $row;
     }
 
@@ -748,7 +780,11 @@ $mai=3;*/
     public function shou(){
         $id = 4;
         $q_ddan = D('ddan');
+        $q_ddan1 = D('pipi_ddan');
+        $q_ddan2 = D('eng_ddan');
         $s_ddan = D('s_ddan');
+        $s_ddan1 = D('pipi_s_ddan');
+        $s_ddan2 = D('eng_s_ddan');
         $row = $q_ddan->where("id={$id}")->find();
         // dump($row);
         $error = true;
@@ -756,11 +792,15 @@ $mai=3;*/
           $data['id'] = $id;
           $data['ztai'] = 3;
           $rowa = $q_ddan->save($data);
-          if(!$rowa) $error = false;
+          $rowa1 = $q_ddan1->save($data);
+          $rowa2 = $q_ddan2->save($data);
+          if(!$rowa || !$rowa1 || !$rowa2) $error = false;
 
           $dataa['ztai'] = 4;
           $rowaa = $s_ddan->where("did={$id}")->save($dataa);
-          if(!$rowaa) $error = false;
+          $rowaa1 = $s_ddan1->where("did={$id}")->save($dataa);
+          $rowaa2 = $s_ddan2->where("did={$id}")->save($dataa);
+          if(!$rowaa || !$rowaa1 || !$rowaa2) $error = false;
         }
         if($error) echo 1;
         else echo 2;
@@ -775,7 +815,11 @@ $mai=3;*/
         $why = $arr->why;
 
         $q_ddan = D('ddan');
+        $q_ddan1 = D('pipi_ddan');
+        $q_ddan2 = D('eng_ddan');
         $s_ddan = D('s_ddan');
+        $s_ddan1 = D('pipi_s_ddan');
+        $s_ddan2 = D('eng_s_ddan');
         $row = $q_ddan->where("id={$id}")->find();
         // dump($row);
         $error = true;
@@ -785,11 +829,15 @@ $mai=3;*/
             $data['type'] = $type;
             $data['why'] = $why;
             $rowa = $q_ddan->save($data);
-            if(!$rowa) $error = false;
+            $rowa1 = $q_ddan1->save($data);
+            $rowa2 = $q_ddan2->save($data);
+            if(!$rowa || !$rowa1 || !$rowa2) $error = false;
 
             $dataa['ztai'] = 6;
             $rowaa = $s_ddan->where("did={$id}")->save($dataa);
-            if(!$rowaa) $error = false;
+            $rowaa1 = $s_ddan1->where("did={$id}")->save($dataa);
+            $rowaa2 = $s_ddan2->where("did={$id}")->save($dataa);
+            if(!$rowaa || !$rowaa1 || !$rowaa2) $error = false;
         }else $error = false;
         if($error) echo 1;
         else echo 2;
@@ -820,8 +868,14 @@ $mai=3;*/
 
 
         $q_mama = D('mama');
+        $q_mama1 = D('pipi_mama');
+        $q_mama2 = D('eng_mama');
         $q_ddan = D('ddan');
+        $q_ddan1 = D('pipi_ddan');
+        $q_ddan2 = D('eng_ddan');
         $t_ddan = D('t_ddan');
+        $t_ddan1 = D('pipi_t_ddan');
+        $t_ddan2 = D('eng_t_ddan');
         $kan = $q_ddan->where("id={$id}")->find();
         if($kan['ztai'] !=1 ){
           echo 3;
@@ -838,6 +892,8 @@ $mai=3;*/
         $aha['ztai'] = 1;
         $aha['sjid'] = $qrow['sid'];
         $rr = $t_ddan->add($aha);
+        $rr1 = $t_ddan1->add($aha);
+        $rr2 = $t_ddan2->add($aha);
 
         // 生成二维码
         $rowq = $q_mama->select();
@@ -854,7 +910,9 @@ $mai=3;*/
         $aa['id'] = $id;
         $aa['ztai'] = 2;
         $ztt = $q_ddan->save($aa);
-        if($ztt && $rr){
+        $ztt1 = $q_ddan1->save($aa);
+        $ztt2 = $q_ddan2->save($aa);
+        if($ztt && $ztt1 && $ztt2 && $rr && $rr1 && $rr2){
             $url = "www.kintime.in/kintime-webapp/PHP/home/foods/sao?ma={$ma}";
             // $url="www.jadfafdaa13.com";
             $level=3;
@@ -879,8 +937,10 @@ $mai=3;*/
 			      $mp['pic'] = $PNG_TEMP_DIR.md5($url);
 				      $mp['ma'] = $ma;
 				      $mp['ddid'] = $id;
-				      $row = $q_mama->add($mp);
-			      if($row) echo 1;
+                      $row = $q_mama->add($mp);
+                      $row1 = $q_mama1->add($mp);
+				      $row2 = $q_mama2->add($mp);
+			      if($row && $row1 && $row2) echo 1;
         		else echo 4; 
         }else echo 2;
        
@@ -903,7 +963,11 @@ $mai=3;*/
         $phone = ltrim($phone,"老挝+");
         $q_pma = D('pma');
         $q_users = D('users');
+        $q_users1 = D('pipi_users');
+        $q_users2 = D('eng_users');
         $q_yer = D('yer');
+        $q_yer1 = D('pipi_yer');
+        $q_yer2 = D('eng_yer');
 
         $rowq = $q_users->where("phone = {$phone}")->find();
         if($rowq){
@@ -933,6 +997,8 @@ $mai=3;*/
               $data['state'] = 1;
               $data['username'] =$username;
               $ab = $q_users->add($data);
+              $ab1 = $q_users1->add($data);
+              $ab2 = $q_users2->add($data);
               // 余额表生成信息
               $yer['uid'] = $ab;
               $yer['yuan'] = 0;
@@ -940,7 +1006,9 @@ $mai=3;*/
               $yer['time'] = time();
               $yer['sming'] = 3;
               $abc = $q_yer->add($yer);
-              if($ab && $abc) echo 1;
+              $abc1 = $q_yer1->add($yer);
+              $abc2 = $q_yer2->add($yer);
+              if($ab && $abc && $ab1 && $abc1 && $ab2 && $abc2) echo 1;
               else echo 5;  // 注册失败
           }else echo 4; //验证码超时
         }else echo 3; //验证码不正确
@@ -953,6 +1021,8 @@ $mai=3;*/
       $img = $arr->img;
 
       $q_users = D('users');
+      $q_users1 = D('pipi_users');
+      $q_users2 = D('users');
       // cookie('id',37219238);
       $name = $_COOKIE['id'];
       $row = $q_users->where("name={$name}")->find();
@@ -980,7 +1050,9 @@ $mai=3;*/
           // 修改数据库
           $data['headpic'] = $path;
           $rrow = $q_users->where("name={$name}")->save($data);
-          if($rrow) echo 1;  //修改成功
+          $rrow1 = $q_users1->where("name={$name}")->save($data);
+          $rrow2 = $q_users2->where("name={$name}")->save($data);
+          if($rrow && $rrow1 && $rrow2) echo 1;  //修改成功
           else echo 2;  //修改失败
       }else echo 3; //登录超超时
       
@@ -994,6 +1066,8 @@ $mai=3;*/
       $zhi = $arr->zhi;
 
       $q_users = D('users');
+      $q_users1 = D('pipi_users');
+      $q_users2 = D('eng_users');
       $name = $_COOKIE['id'];
 
        $rrow = $q_users->where("name={$name}")->find();
@@ -1001,6 +1075,8 @@ $mai=3;*/
         if($rrow['sex']!=$zhi){
           $data['sex'] = $zhi;
           $row = $q_users->where("name={$name}")->save($data);
+          $row1 = $q_users1->where("name={$name}")->save($data);
+          $row2 = $q_users2->where("name={$name}")->save($data);
           if($row) echo 1;
           else echo 2;
         }else echo 1;
@@ -1008,7 +1084,9 @@ $mai=3;*/
          if($rrow['name']!=$zhi){
           $data['username'] = $zhi;
           $row = $q_users->where("name={$name}")->save($data);
-          if($row) echo 1;
+          $row1 = $q_users1->where("name={$name}")->save($data);
+          $row2 = $q_users2->where("name={$name}")->save($data);
+          if($row && $row1 && $row2) echo 1;
           else echo 2;
         }else echo 1;
       }
@@ -1086,6 +1164,8 @@ $mai=3;*/
     $q_users = D('users');
     $ggetype = D('ggetype');
     $shopcar = D('shopcar');
+    $shopcar1 = D('pipi_shopcar');
+    $shopcar2 = D('eng_shopcar');
     $q_cc = D('cc');
     $q_shdz = D('shdz');
     $q_hd = D('hd');
@@ -1154,6 +1234,8 @@ $mai=3;*/
     $ddata['zong'] = $all;
     $ddata['id'] = $roow['id'];
     $shopcar->save($ddata);
+    $shopcar1->save($ddata);
+    $shopcar2->save($ddata);
     // dump($row);
 
     $newid = time().$roow['id'];
@@ -1181,7 +1263,11 @@ $mai=3;*/
     $gge = $arr->gge;
 
     $q_shopcar = D('shopcar');
+    $q_shopcar1 = D('pipi_shopcar');
+    $q_shopcar2 = D('eng_shopcar');
     $q_sgoods = D('sgoods');
+    $q_sgoods1 = D('pipi_sgoods');
+    $q_sgoods2 = D('eng_sgoods');
     $q_users = D('users');
     $row= $q_shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
     $carid= $row['id']; 
@@ -1190,8 +1276,10 @@ $mai=3;*/
       $raow = $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->find();  //有没有这道菜
       if($raow){  //有这道菜
         if($type==2 && $raow['num']==1){//数量为0 删掉这个菜
-          $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
-          if(!$q_sgoods) $error = false;
+          $a1 = $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
+          $a2 = $q_sgoods1->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
+          $a3 = $q_sgoods2->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
+          if(!$a1 || !$a2 ||!$a3) $error = false;
         }else{
           // 菜有有规格
           $gg = $raow['gge'];
@@ -1203,14 +1291,18 @@ $mai=3;*/
             $data['gge'] = $gge;
             $data['id'] = $raow['id'];
             $rbow = $q_sgoods->save($data);
-            if(!$rbow) $error = false;
+            $rbow1 = $q_sgoods1->save($data);
+            $rbow2 = $q_sgoods2->save($data);
+            if(!$rbow || !$rbow1 ||!$rbow2) $error = false;
           }else{    //没有这个规格  添加菜
             $data['num'] = 1;
             $data['fid'] = $cai;
             $data['gge'] = $gge;
             $data['carid'] = $carid;
             $rbow = $q_sgoods->add($data);
-            if(!$rbow) $error = false;
+            $rbow1 = $q_sgoods1->add($data);
+            $rbow2 = $q_sgoods2->add($data);
+            if(!$rbow || !$rbow1 ||!$rbow2) $error = false;
           }
         }
       }else{     //没有这道菜
@@ -1219,20 +1311,26 @@ $mai=3;*/
         $data['gge'] = $gge;
         $data['carid'] = $carid;
         $rbow = $q_sgoods->add($data);
-        if(!$rbow) $error = false;
+        $rbow1 = $q_sgoods1->add($data);
+        $rbow2 = $q_sgoods2->add($data);
+        if(!$rbow || !$rbow1 ||!$rbow2) $error = false;
       }
     }else{     //没有这个店铺 添加购物车店铺
       $data['uid'] = $user_id;
       $data['sid'] = $shop_id;
       $data['dzid'] = $q_users->where("id = {$user_id}")->find()['dzid'];
       $row = $q_shopcar->add($data);
-      if($row){  //添加菜
+      $row1 = $q_shopcar1->add($data);
+      $row2 = $q_shopcar2->add($data);
+      if($row && $row1 && $row2){  //添加菜
         $ddata['num'] = 1;
         $ddata['fid'] = $cai;
         $ddata['gge'] = $gge;
         $ddata['carid'] = $row;
         $rrow = $q_sgoods->add($ddata);
-        if(!$rrow) $error = false;
+        $rrow1 = $q_sgoods1->add($ddata);
+        $rrow2 = $q_sgoods2->add($ddata);
+        if(!$rrow || !$rrow1 ||!$rrow2) $error = false;
       }else $error = false;
     }
     //判断返回
@@ -1250,6 +1348,8 @@ $mai=3;*/
     $id = $arr->id;
     $type = $arr->type; //1地址  2优惠券
     $shopcar = D('shopcar');
+    $shopcar1 = D('pipi_shopcar');
+    $shopcar2 = D('eng_shopcar');
     $rrow = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
     if($type==1){
       if($rrow['dzid']==$id) die('1');
@@ -1259,7 +1359,9 @@ $mai=3;*/
       if($rrow['ccid']==$id) die('1');
     }
     $row = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->save($data);
-    if($row) echo '1';
+    $row1 = $shopcar1->where("uid={$user_id} AND sid={$shop_id}")->save($data);
+    $row2 = $shopcar2->where("uid={$user_id} AND sid={$shop_id}")->save($data);
+    if($row && $row1 && $row2) echo '1';
     else echo '2';
   }
 
@@ -1269,30 +1371,50 @@ $mai=3;*/
     $shop_id = $_COOKIE['C057DF743DCFDA2C']; // 外卖店的id
 
     $shopcar = D('shopcar');
+    $shopcar1 = D('pipi_shopcar');
+    $shopcar2 = D('eng_shopcar');
     $sgoods = D('sgoods');
+    $sgoods1 = D('pipi_sgoods');
+    $sgoods2 = D('eng_sgoods');
     $id = $shopcar->where("uid={$user_id} AND sid={$shop_id}")->find()['id'];
     $a = $shopcar->where("id={$id}")->delete();
+    $a1 = $shopcar1->where("id={$id}")->delete();
+    $a2 = $shopcar2->where("id={$id}")->delete();
 
     $b = $sgoods->where("carid={$id}")->delete();
-    if($a && $b) echo 1;
+    $b1 = $sgoods1->where("carid={$id}")->delete();
+    $b2 = $sgoods2->where("carid={$id}")->delete();
+    if($a && $b && $a1 && $b1 && $a2 && $b2) echo 1;
     else  echo 2;
   }
 
   //外卖生成订单
-  public function dan(){
+public function dan(){
     $user_id = usersId();  //用户id
     $shop_id = $_COOKIE['C057DF743DCFDA2C']; // 外卖店的id
 
-$user_id=27;
-$shop_id=1;
+/*$user_id=27;
+$shop_id=1;*/
     $q_shopcar = D('shopcar');
+    $q_shopcar1 = D('pipi_shopcar');
+    $q_shopcar2 = D('eng_shopcar');
     $q_sgoods = D('sgoods');
+    $q_sgoods1 = D('pipi_sgoods');
+    $q_sgoods2 = D('eng_sgoods');
     $ggetype = D('ggetype');
     $shdz = D('shdz');
     $dddz = D('dddz');
+    $dddz1 = D('pipi_dddz');
+    $dddz2 = D('eng_dddz');
     $ddan = D('ddan');
+    $ddan1 = D('pipi_ddan');
+    $ddan2 = D('eng_ddan');
     $ddshop = D('ddshop');
+    $ddshop1 = D('pipi_ddshop');
+    $ddshop2 = D('eng_ddshop');
     $cc = D('cc');
+    $cc1 = D('pipi_cc');
+    $cc2 = D('eng_cc');
     $q_model = D();
 
     $row= $q_shopcar->where("uid={$user_id} AND sid={$shop_id}")->find();
@@ -1315,7 +1437,9 @@ $shop_id=1;
     $dz_row = $shdz->field('linkman,sex,phone,address,jing,wei')->where("id={$row['dzid']}")->find();
     //添加外卖收货地址表
     $dz_add = $dddz->add($dz_row);
-    if(!$dz_add) die('2');
+    $dz_add1 = $dddz1->add($dz_row);
+    $dz_add2 = $dddz2->add($dz_row);
+    if(!$dz_add || !$dz_add1 || !$dz_add2) die('2');
 
     $rowqq = $ddan->field('hao')->select();
     foreach ($rowqq as $k => $v) {
@@ -1341,10 +1465,10 @@ $shop_id=1;
       'dzid' => $dz_add,
       'hao' => $hao,
     ];
-dump($row);
-dump($dd_data);
-    $dd_add =false;//= $ddan->add($dd_data);
-    if(!$dd_add) die('2');
+    $dd_add = $ddan->add($dd_data);
+    $dd_add1 = $ddan1->add($dd_data);
+    $dd_add2 = $ddan2->add($dd_data);
+    if(!$dd_add || !$dd_add1 || !$dd_add2) die('2');
     //添加ddshop
     foreach ($g_row as $k => $v) {
       $dds_data = [
@@ -1355,19 +1479,27 @@ dump($dd_data);
         'name' => $v['cainame'],
       ];
       $dds_add = $ddshop->add($dds_data);
-      if(!$dds_add) die('2');
+      $dds_add1 = $ddshop1->add($dds_data);
+      $dds_add2 = $ddshop2->add($dds_data);
+      if(!$dds_add || !$dds_add1 || !$dds_add2) die('2');
     }
-    echo 1;
-   /* //修改优惠券为使用  **********************支付成功再改***************************************************
+    // 修改优惠券
     $adata['id'] = $row['ccid'];  
     $adata['yong'] = 2;
     $c = $cc->save($adata);
-    if(!$c) die('2');
+    $c1 = $cc1->save($adata);
+    $c2 = $cc2->save($adata);
+    if(!$c || !$c1 || !$c2) die('2');
     //清空购物车
     $a = $q_shopcar->where("id={$row['id']}")->delete();
+    $a1 = $q_shopcar1->where("id={$row['id']}")->delete();
+    $a2 = $q_shopcar2->where("id={$row['id']}")->delete();
     $b = $q_sgoods->where("carid={$row['id']}")->delete();
-    if(!$a || !$b) die('2');*/
-    
+    $b1 = $q_sgoods1->where("carid={$row['id']}")->delete();
+    $b2 = $q_sgoods2->where("carid={$row['id']}")->delete();
+    if(!$a || !$a1 || !$a2 || !$b || !$b1 || !$b2) die('2');
+
+    echo 1;
   }
 
   //用户退出
@@ -1455,7 +1587,11 @@ dump($dd_data);
     $gge = $arr->gge;
 
     $q_shopcar = D('dz_shopcar');
+    $q_shopcar1 = D('pipi_dz_shopcar');
+    $q_shopcar2 = D('eng_dz_shopcar');
     $q_sgoods = D('dz_sgoods');
+    $q_sgoods1 = D('pipi_dz_sgoods');
+    $q_sgoods2 = D('eng_dz_sgoods');
     $q_users = D('users');
     $row= $q_shopcar->where("uid={$user_id} AND sid={$shop_id} AND zhuo={$zhuo_id}")->find();
     $carid= $row['id']; 
@@ -1464,8 +1600,10 @@ dump($dd_data);
       $raow = $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->find();  //有没有这道菜
       if($raow){  //有这道菜
         if($type==2 && $raow['num']==1){//数量为0 删掉这个菜
-          $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
-          if(!$q_sgoods) $error = false;
+          $a = $q_sgoods->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
+          $a1 = $q_sgoods1->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
+          $a2 = $q_sgoods2->where("fid={$cai} AND carid={$carid} AND gge='{$gge}'")->delete(); 
+          if(!$a1 || !$a2 || !$a) $error = false;
         }else{
           // 菜有有规格
           $gg = $raow['gge'];
@@ -1477,14 +1615,18 @@ dump($dd_data);
             $data['gge'] = $gge;
             $data['id'] = $raow['id'];
             $rbow = $q_sgoods->save($data);
-            if(!$rbow) $error = false;
+            $rbow1 = $q_sgoods1->save($data);
+            $rbow2 = $q_sgoods2->save($data);
+            if(!$rbow || !$rbow1 || !$rbow2) $error = false;
           }else{    //没有这个规格  添加菜
             $data['num'] = 1;
             $data['fid'] = $cai;
             $data['gge'] = $gge;
             $data['carid'] = $carid;
             $rbow = $q_sgoods->add($data);
-            if(!$rbow) $error = false;
+            $rbow1 = $q_sgoods1->add($data);
+            $rbow2 = $q_sgoods2->add($data);
+            if(!$rbow || !$rbow1 || !$rbow2) $error = false;
           }
         }
       }else{     //没有这道菜
@@ -1493,7 +1635,9 @@ dump($dd_data);
         $data['gge'] = $gge;
         $data['carid'] = $carid;
         $rbow = $q_sgoods->add($data);
-        if(!$rbow) $error = false;
+        $rbow1 = $q_sgoods1->add($data);
+        $rbow2 = $q_sgoods2->add($data);
+        if(!$rbow || !$rbow1 || !$rbow2) $error = false;
       }
     }else{     //没有这个店铺 添加购物车店铺
       $data['uid'] = $user_id;
@@ -1501,13 +1645,17 @@ dump($dd_data);
       $data['zhuo'] = $zhuo_id;
       $data['dzid'] = $q_users->where("id = {$user_id}")->find()['dzid'];
       $row = $q_shopcar->add($data);
-      if($row){  //添加菜
+      $row1 = $q_shopcar1->add($data);
+      $row2 = $q_shopcar2->add($data);
+      if($row && $row1 && $row2){  //添加菜
         $ddata['num'] = 1;
         $ddata['fid'] = $cai;
         $ddata['gge'] = $gge;
         $ddata['carid'] = $row;
         $rrow = $q_sgoods->add($ddata);
-        if(!$rrow) $error = false;
+        $rrow1 = $q_sgoods1->add($ddata);
+        $rrow2 = $q_sgoods2->add($ddata);
+        if(!$rrow || !$rrow1 || !$rrow2) $error = false;
       }else $error = false;
     }
     //判断返回
@@ -1564,6 +1712,8 @@ dump($dd_data);
     $q_shdz = D('shdz');
     $ggetype = D('dz_gge');
     $shopcar = D('dz_shopcar');
+    $shopcar1 = D('pipi_dz_shopcar');
+    $shopcar2 = D('eng_dz_shopcar');
     /*$q_cc = D('cc');
     $q_hd = D('hd');*/
     $m_shop = D('shop');
@@ -1599,6 +1749,8 @@ dump($dd_data);
     $ddata['zong'] = $all;
     $ddata['id'] = $roow['id'];
     $shopcar->save($ddata);
+    $shopcar1->save($ddata);
+    $shopcar2->save($ddata);
     // dump($row);
 
     $newtime = (date("Y-m-d H:i:s",time()));
@@ -1629,10 +1781,14 @@ dump($dd_data);
     $id = rtrim($id,',');
 
     $shdz = D('shdz');
+    $shdz1 = D('pipi_shdz');
+    $shdz2 = D('eng_shdz');
     $id_row = explode(',', $id);
     foreach ($id_row as $key => $value) {
       $error = $shdz->where("id={$value}")->delete();
-      if(!$error) die('2');
+      $error1 = $shdz1->where("id={$value}")->delete();
+      $error2 = $shdz2->where("id={$value}")->delete();
+      if(!$error || !$error1 || !$error2) die('2');
     }
     echo '1';
   }
@@ -1726,9 +1882,12 @@ dump($dd_data);
 
   public function ooa(){
 
-    echo time(); 
-    echo "<br/>";
-    echo $san = time()-(3600*24*3);
+    $a = 1;
+    if($a=4){
+        $a++;
+
+    }
+    echo $a;
 
   }
 

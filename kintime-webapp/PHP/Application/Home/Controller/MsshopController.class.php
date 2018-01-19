@@ -17,9 +17,9 @@ class MsshopController extends Controller { //美食页面下店铺的一个店�
      
            
        
-        dump($row);
+        //dump($row);
          
-       // echo json_encode($row);
+        echo json_encode($row);
        
     }
 

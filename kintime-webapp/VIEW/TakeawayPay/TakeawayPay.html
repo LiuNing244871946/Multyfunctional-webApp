@@ -26,18 +26,19 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="TakeawayPay.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">提交订单</span>
+			<span class="title-text" set-lan="html:submitorder">提交订单</span>
 		</header>
 		<div class="userinfo-con">
 			<div class="address-con">
 				<i class="iconfont icon-dizhiguanli"></i>
 				<div class="address-info-con">
-					<span class="bare-con">请点击前往填写地址~</span>
+					<span class="bare-con" set-lan="html:clickinpadd">请点击前往填写地址~</span>
 					<div class="full-con">
 						<div class="address-text-con" id="address"></div>
 						<div class="address-text-con">
@@ -51,7 +52,8 @@
 			<div class="time-con">
 				<i class="iconfont icon-time"></i>
 				<div class="time-text">
-					立即送出<span class="time-text-con"></span>
+					<span set-lan="html:sendimme">立即送出</span>
+					<span class="time-text-con"></span>
 				</div>
 			</div>
 		</div>
@@ -61,29 +63,29 @@
 				<table class="shop-table">
 					<thead>
 						<tr>
-							<th class="name">名称</th>
-							<th class="num">数量</th>
-							<th class="price">价格</th>
+							<th class="name" set-lan="html:name2">名称</th>
+							<th class="num" set-lan="html:number">数量</th>
+							<th class="price" set-lan="html:price">价格</th>
 						</tr>
 					</thead>
 					<tbody></tbody>
 				</table>
 				<div class="del-money">
-					<span class="title">配送费</span>
+					<span class="title" set-lan="html:delfee">配送费</span>
 					<span class="money-con">
 						<i class="money">￥</i><span class="money-num"></span>
 					</span>
 				</div>
 				<div class="full-reduc">
-					<span class="title">满减</span>
+					<span class="title" set-lan="html:fullredu">满减</span>
 					<span class="money-con">
 						-<i class="money">￥</i><span class="money-num"></span>
 					</span>
 				</div>
 				<div class="red-enve">
-					<span class="title">红包</span>
+					<span class="title" set-lan="html:coupon">优惠券</span>
 					<span class="red-con">
-						<span class="red-tip"><span class="num-con"></span>个红包可用</span>
+						<span class="red-tip"><span class="num-con"></span><span set-lan="html:couponnum">个优惠券可用</span></span>
 					<span class="money-con">
 							-<i class="money">￥</i><span class="money-num"></span>
 					</span>
@@ -92,7 +94,8 @@
 				</div>
 				<div class="total-con">
 					<span class="total-price">
-						总计<i class="money">￥</i><span class="money-num"></span>
+						<span set-lan="html:total">总计</span>
+						<i class="money">￥</i><span class="money-num"></span>
 					</span>
 				</div>
 			</div>
@@ -103,10 +106,11 @@
 					<i class="money">￥</i><span class="money-num"></span>
 				</span>
 				<span class="discount-money">
-					已优惠<i class="money">￥</i><span class="money-num"></span>
+					<span set-lan="html:discounted">已优惠</span>
+					<i class="money">￥</i><span class="money-num"></span>
 				</span>
 			</div>
-			<div class="pay-btn-con">
+			<div class="pay-btn-con" set-lan="html:submitorder">
 				提交订单
 			</div>
 		</footer>

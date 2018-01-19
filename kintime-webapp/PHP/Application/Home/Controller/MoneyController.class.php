@@ -8,7 +8,9 @@ class MoneyController extends Controller {
         $money_user = $arr->money_user;
 
         $name = $_cookie['id'];
-    	$q_money = D('yer');
+        $q_money = D('yer');
+        $q_money1 = D('eng_yer');
+    	$q_money2 = D('pipi_yer');
         $q_users = D('users');
         $rrow = $q_users->where("name = {$name}")->find();
 		$row = $q_money->order('time desc')->where('uid='.$rrow['id'])->find();
@@ -17,8 +19,10 @@ class MoneyController extends Controller {
 		$data['new'] = $row['new']+$money_user;
 		$data['time'] = time();
 		$data['sming'] = 1;
-		$chong = $q_money->add($data);
-		if($chong){
+        $chong = $q_money->add($data);
+        $chong1 = $q_money->add($data);
+		$chong2 = $q_money->add($data);
+		if($chong && $chong1 && $chong2){
 			echo 1;
 		}else{
 			echo 2;
@@ -68,7 +72,7 @@ class MoneyController extends Controller {
                 unset($row[$key]['id']);
                 unset($row[$key]['uid']);
             }
-            dump($row);
+            // dump($row);
             echo json_encode($row);
         }else echo 2;
     }

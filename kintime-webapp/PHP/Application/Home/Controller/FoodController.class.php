@@ -39,7 +39,7 @@ class FoodController extends Controller { //美食下分类的所有商品
              $row[$k]['stypeid'] = $rowww['name'];
              $id=$v['id'];
         }
-        dump($row);
+        //dump($row);
         $this->assign('row',$row);
         $this->display();
     }

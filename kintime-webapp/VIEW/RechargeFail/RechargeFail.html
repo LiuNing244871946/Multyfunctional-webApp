@@ -25,18 +25,19 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="RechargeFail.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<div class="recharge-info">
 			<span class="info-img">
 				<i class="iconfont icon-guanbi"></i>
 			</span>
-			<span class="info-text">充值失败</span>
+			<span class="info-text" set-lan="html:rechfail">充值失败</span>
 		</div>
-		<div class="recharge-tip">
+		<div class="recharge-tip" set-lan="html:rechfailtip">
 			该充值卡已被使用
 		</div>
-		<button class="btn again-recharge">重新充值</button>
-		<button class="btn determine-btn">确定</button>
+		<button class="btn again-recharge" set-lan="html:rerech">重新充值</button>
+		<button class="btn determine-btn" set-lan="html:determine">确定</button>
 	</body>
 </html>

@@ -24,11 +24,13 @@
 		<script type="text/javascript" src="../Public/zepto.min.js"></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="Login.js"></script>
+		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">登录到kintime</span>
+			<span class="title-text" set-lan="html:header4">登录到kintime</span>
 		</header>
 		<div class="main">
 			<div class="main-con">
@@ -36,23 +38,23 @@
 					<span class="icon-con">
 						<i class="iconfont icon-ren"></i>
 					</span>
-					<input type="number" placeholder="请输入手机号/帐号" id="account"/>
+					<input type="number" placeholder="请输入手机号/帐号" id="account" set-lan="placeholder:account1"/>
 				</div>
 				<div class="input-con">
 					<span class="icon-con">
 						<i class="iconfont icon-suo"></i>
 					</span>
-					<input type="password" placeholder="请输入密码" id="password"/>
+					<input type="password" placeholder="请输入密码" id="password" set-lan="placeholder:password1"/>
 				</div>
 				<div id="tip"></div>
 				<div id="other-tip">
-					<a class="forget-pass" href="../RetrievePass/RetrievePass.html">忘记密码？</a>
+					<a class="forget-pass" href="../RetrievePass/RetrievePass.html" set-lan="html:forgetpass">忘记密码？</a>
 					<a class="regist-con" href="../Register/Register.html">
-						<span class="regist-text">还没有帐号？</span>
-						<span>立即注册</span>
+						<span class="regist-text" set-lan="html:register1">还没有帐号？</span>
+						<span set-lan="html:register2">立即注册</span>
 					</a>
 				</div>
-				<button class="login-btn disabled">登录</button>
+				<button class="login-btn disabled" set-lan="html:login">登录</button>
 			</div>
 		</div>
 	</body>

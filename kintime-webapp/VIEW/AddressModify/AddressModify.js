@@ -1,4 +1,5 @@
 $(function() {
+	language();
 	if($.fn.cookie('id')) {
 		var data = {};
 		data.id = window.location.href.substr(window.location.href.indexOf("?") + 1);

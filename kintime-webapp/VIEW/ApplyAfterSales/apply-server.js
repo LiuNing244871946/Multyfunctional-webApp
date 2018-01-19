@@ -1,5 +1,6 @@
 $(function(){
     // 按钮选项样式的切换
+    var type;
     $(".apply-btn-choose input").on('tap',function(e){
         $(this).siblings("input").removeClass('active');
         $(this).addClass('active');

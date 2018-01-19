@@ -166,7 +166,7 @@ footer  .pay-btn-con{
 	justify-content: space-between;
 }
 .del-money .money-con,.full-reduc .money-con,.red-enve .red-con{
-	width: 50%;
+	width: 60%;
 	text-align: right;
 }
 .red-enve .red-con{

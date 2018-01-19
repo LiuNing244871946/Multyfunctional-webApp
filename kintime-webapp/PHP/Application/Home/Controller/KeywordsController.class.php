@@ -7,6 +7,8 @@ class KeywordsController extends Controller {  //搜索-关键字
         $s = D('shop');
         $g = D('g_shop');
         $h = D('history');
+        $h1 = D('history');
+        $h2 = D('history');
         
         $arr=json_decode(file_get_contents('php://input'));
         $address=$arr->address; //地址
@@ -35,6 +37,8 @@ class KeywordsController extends Controller {  //搜索-关键字
                          if(isset($data['cook_id'])){ //如果存在cookid就把关键字插入到历史记录中
                                   if(!in_array($keyword,$nr)){
                                   $h->add($data);
+                                  $h1->add($data);
+                                  $h2->add($data);
                                     // echo 666;
                                 }
                          }

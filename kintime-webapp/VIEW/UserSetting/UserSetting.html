@@ -25,84 +25,85 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="UserSetting.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<header class="html-title">
 			<i class="iconfont icon-fanhui"></i>
-			<span class="title-text">设置</span>
+			<span class="title-text" set-lan="html:setting">设置</span>
 		</header>
 		<div class="main-con">
 			<ul class="setting-con">
 				<li class="setting-item" id="user-account">
-					<span class="item-title">kintime帐号</span>
+					<span class="item-title" set-lan="html:kinaccount">kintime帐号</span>
 					<span class="item-datail">
 						<span class="text-con"></span>
 					</span>
 				</li>
 				<li class="setting-item" id="user-img">
-					<span class="item-title">头像</span>
+					<span class="item-title" set-lan="html:userava">头像</span>
 					<span class="item-datail"><i class="iconfont icon-jiantouyou"></i></span>
 				</li>
 				<li class="setting-item" id="user-sex">
-					<span class="item-title">性别</span>
+					<span class="item-title" set-lan="html:sex">性别</span>
 					<span class="item-datail">
 					<span class="text-con"></span>
 					<i class="iconfont icon-jiantouyou"></i>
 					</span>
 				</li>
 				<li class="setting-item" id="user-name">
-					<span class="item-title">昵称</span>
+					<span class="item-title" set-lan="html:username">昵称</span>
 					<span class="item-datail">
 					<span class="text-con"></span>
 					<i class="iconfont icon-jiantouyou"></i>
 					</span>
 				</li>
 				<li class="setting-item" id="user-phone">
-					<span class="item-title">手机号</span>
+					<span class="item-title" set-lan="html:phonenumber">手机号码</span>
 					<span class="item-datail">
 					<span class="text-con"></span>
 					<i class="iconfont icon-jiantouyou"></i>
 					</span>
 				</li>
 				<li class="setting-item" id="user-password">
-					<span class="item-title">修改登陆密码</span>
+					<span class="item-title" set-lan="html:changeloginpass">修改登陆密码</span>
 					<span class="item-datail">
 					<i class="iconfont icon-jiantouyou"></i>
 				</span>
 				</li>
 			</ul>
-			<button id="exit-btn">退出账户</button>
+			<button id="exit-btn" set-lan="html:exitacc">退出账户</button>
 		</div>
 
 		<div id="discount-con">
 			<div class="discount-item" id="user-namecon">
 				<input type="text" id="user-newname" />
-				<div class="tip">好名字可以让朋友更容易记住你</div>
+				<div class="tip" set-lan="html:changenametip">好名字可以让朋友更容易记住你</div>
 				<div class="btn-con">
-					<button id="cancel-btn">取消</button>
-					<button id="save-btn">保存</button>
+					<button id="cancel-btn" set-lan="html:cancel">取消</button>
+					<button id="save-btn" set-lan="html:save">保存</button>
 				</div>
 			</div>
 			<div class="discount-item" id="user-sexcon">
-				<div class="title">性别</div>
+				<div class="title" set-lan="html:sex">性别</div>
 				<ul class="sex-li">
 					<li class="sex-item">
-						<span class="item-title">男</span>
+						<span class="item-title" set-lan="html:man">男</span>
 						<label for="man">
 							<input type="radio" name="sex" class="sex-radio" value="1" id="man"/>
 							<i></i>
 						</label>
 					</li>
 					<li class="sex-item">
-						<span class="item-title">女</span>
+						<span class="item-title" set-lan="html:woman">女</span>
 						<label for="woman">
 							<input type="radio" name="sex" class="sex-radio" value="0" id="woman"/>
 							<i></i>
 						</label>
 				</ul>
 				<div class="btn-con">
-					<button id="sex-cancel-btn">取消</button>
-					<button id="sex-save-btn">保存</button>
+					<button id="sex-cancel-btn" set-lan="html:cancel">取消</button>
+					<button id="sex-save-btn" set-lan="html:save">保存</button>
 				</div>
 			</div>
 			<div class="discount-item" id="user-avatar">
@@ -110,14 +111,14 @@
 					<input type="file" accept="image/*" capture="camera" id="camera"/>
 					<div class="text-con">
 						<i class="iconfont icon-xiangji"></i>
-						<span class="text">拍照</span>
+						<span class="text" set-lan="html:takephoto">拍照</span>
 					</div>
 				</label>
 				<label for="album">
 					<input type="file" accept="image/*" id="album"/>
 					<div class="text-con">
 						<i class="iconfont icon-zhaopian"></i>
-						<span class="text">从相册中选择</span>
+						<span class="text" set-lan="html:album">从相册中选择</span>
 					</div>
 				</label>
 			</div>

@@ -1,4 +1,5 @@
 $(function(){
+	language();
 	$('.city-text').focus(function(){
 		if($(this).val()=="城市"){
 			$(this).val("");

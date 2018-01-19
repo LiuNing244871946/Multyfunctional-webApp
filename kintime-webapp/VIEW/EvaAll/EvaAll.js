@@ -1,4 +1,5 @@
 $(function(){
+	language();
 	var sSwiper = new Swiper('#evasort-swiper',{
 		noSwiping:true,
 		onSlideChangeEnd:function(swiper){

@@ -25,11 +25,12 @@
 		<script type="text/javascript" src="../Public/zepto.cookie.min.js" ></script>
 		<script type="text/javascript" src="../Public/adaptation.js"></script>
 		<script type="text/javascript" src="Account.js"></script>
+		<script type="text/javascript" src="../Public/language.js" ></script>
 	</head>
 	<body>
 		<!--账户余额-->
 		<div class="account">
-			<span class="text">账户余额（基普）</span>
+			<span class="text" set-lan="html:balance">账户余额（基普）</span>
 			<span class="number-con" id="balance-num">
 				<i class="money">₭</i>
 				<span class="number"></span>
@@ -41,41 +42,43 @@
 				<span class="wallet-img">
 					<i class="iconfont icon-tixian"></i>
 				</span>
-				<span class="wallet-name">提现</span>
+				<span class="wallet-name" set-lan="html:widthdraw1">提现</span>
 			</div>
 			<div class="wallet-item" id="recharge">
 				<span class="wallet-img">
 					<i class="iconfont icon-icon_download"></i>
 				</span>
-				<span class="wallet-name">充值</span>
+				<span class="wallet-name" set-lan="html:recharge1">充值</span>
 			</div>
 			<div class="wallet-item" id="backcard">
 				<span class="wallet-img">
 					<i class="iconfont icon-qia"></i>
 				</span>
-				<span class="wallet-name">我的银行卡</span>
+				<span class="wallet-name" set-lan="html:bankcard1">我的银行卡</span>
 			</div>
 		</div>
 		<!--菜单-->
 		<div class="menu-con">
 			<ul>
 				<li>
-					<i class="iconfont icon-2"></i>交易明细
+					<i class="iconfont icon-2"></i>
+					<span set-lan="html:trande">交易明细</span>
 				</li>
 				<li>
-					<i class="iconfont icon-shezhi"></i>支付设置
+					<i class="iconfont icon-shezhi"></i>
+					<span set-lan="html:payset">支付设置</span>
 				</li>
 			</ul>
 		</div>
 		<!--弹出提示-->
 		<div id="discount-con">
 			<div class="discount-item" id="tip-con">
-				<div class="tip-title">您今日已经成功提交提现申请</div>
+				<div class="tip-title" set-lan="html:widthdrawtip1">您今日已经成功提交提现申请</div>
 				<div class="tip-main">
-					<span class="tip">账户提现申请每天只能提交一次</span>
-					<span class="tip">请留意提现进度通知</span>
+					<span class="tip" set-lan="html:widthdrawtip2">账户提现申请每天只能提交一次</span>
+					<span class="tip" set-lan="html:widthdrawtip3">请留意提现进度通知</span>
 				</div>
-				<button class="determine-btn">确定</button>
+				<button class="determine-btn" set-lan="html:determine">确定</button>
 			</div>
 		</div>
 	</body>

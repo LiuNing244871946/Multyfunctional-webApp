@@ -1,4 +1,5 @@
 $(function() {
+	language();
 	$('input').on('input', function() {
 		$('#tip1').remove();
 		if($('#account').val() !== ''&&$('#password').val() !== '') {

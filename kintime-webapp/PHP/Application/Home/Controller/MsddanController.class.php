@@ -37,7 +37,7 @@ class MsddanController extends Controller { //当前用户美食订单
             $row=$m->query("select * from t_ddan where uid={$id} and ztai=2");
             foreach($row as $k=>$v){
                 //$row[$k]['yxtime']=date("Y-m-d H:i:s",$v['time']+(3600*24*3));//有效期至(3天)3600*24*3
-               // $row[$k]['time']=date("Y-m-d H:i:s",$row[$k]['time']);//时间转换
+               $row[$k]['y_time']=date("Y-m-d",$row[$k]['y_time']);//时间转换
                $roww=$m->query("select name,headpic from shop where id={$v['sid']} ")[0];//查店名和头像
                $rowww=$m->query("select tcname from tc where id={$v['fid']} ")[0]; //查套餐名
                $rowwww=$m->query("select did from pj where did={$v['id']} "); //查评价
