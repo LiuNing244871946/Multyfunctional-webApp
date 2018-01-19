@@ -1,0 +1,47 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">菜品图片</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                  <!-- <form id="form1" class="stdform" method="post" action="{:U('food/edit')}" > -->
+                    <!--隐藏域-->
+                   <!--  <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" /> -->
+                   
+
+                  
+                        <p>
+                            
+                            <foreach name='row' item='v'>
+                            
+                      <img src="../../../{$v.picname}" width="200" height="230">
+
+                      </foreach>
+                        </p> 
+
+                        
+                        
+                       
+                   <!--  </form> -->
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#error').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

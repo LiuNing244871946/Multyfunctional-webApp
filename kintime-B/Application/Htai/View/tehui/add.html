@@ -1,0 +1,54 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+ <form class="stdform" action="{:U('adddo')}" method="post" enctype="multipart/form-data">
+                        
+                       
+                        
+                        
+                        
+                        
+                         <p>
+                            <label>结束时间</label>
+                            <span class="field" style="width:520px"><input type="text" name="overtime" placeholder="例如:2017-12-28-12:00" class="longinput"></textarea></span> 
+                        </p>
+                        
+                        <p>
+                            <label>头像上传</label>
+                            <span class="field">
+                            <input type="file" name="headpic" class="longinput" style="width:30%" value="" />
+                            </span>
+                        </p>
+                     
+                         <p>
+                            <label>分类&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:7%' name="type">
+                                
+                                <option  value="1">首页活动</option>
+                                <option  value="2">其他页活动</option><!-- 在这里还得继续写其他页面 -->
+
+                                
+                             </select>
+                             </span>
+                        </p> 
+                          
+                        
+                         <p>
+                             <label class="layui-form-label">选择店铺:</label>
+                                <!-- <div class="layui-input-block" style="width:202px;margin-right:1230px;"> -->
+                                     <!-- 第一级 -->
+                                        <select size="1" style='min-width:20%; min-width:10%;' name="sid">
+                                            <option selected >--请选择--</option>
+                                            <foreach name="res" item="v">
+                                                  <option value="{$v.id}">{$v.name}</option>
+                                             </foreach>
+                                        </select>
+                                   
+                                <!-- </div> -->
+                        </p>
+                        <p class="stdformbutton">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                    </form>
+</block>

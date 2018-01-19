@@ -1,0 +1,25 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+                    <form class="stdform" action="{:U('adddo')}" method="post" >
+                        
+                        <p>
+                            <label>属于的分类：</label>
+                            <span class="field"><input type="text" value="{$name}" class="smallinput" placeholder="请输入商品的类别" disabled /></span>
+                           
+                        </p>
+                         <p>
+                            <label>分类名：</label>
+                            <span class="field"><input type="text" name="name" class="smallinput" placeholder="请输入分类名" /></span>
+                           
+                        </p>
+                        <!--隐藏域-->
+                        <input type="hidden" name="pid" value="{$pid}">
+                        <input type="hidden" name="path" value="{$path}{$pid}">
+                        <p class="stdformbutton">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                        
+                        
+                    </form>
+</block>

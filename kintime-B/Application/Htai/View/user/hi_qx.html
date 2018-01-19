@@ -1,0 +1,97 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+        <h1 class="pagetitle">权限组信息 </h1>
+ 
+        <h5><a href={:U('hiadd_qx')} style='float:right'>添加权限组&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5>
+
+    </div><!--pageheader-->
+        
+
+    
+    <div id="contentwrapper" class="contentwrapper">
+        <form action="{:U('user/hi_qx')}" method='get'>
+         <!-- 搜索框-->
+           <div id="dyntable_length" class="dataTables_length">
+            <label>显示 <select size="1" style='min-width:10%' name="pnum">
+	            <option value="10" {:I('get.pnum')==10?"selected":"" }>10</option>
+	            <option value="15" {:I('get.pnum')==15?"selected":"" }>15</option>
+	            <option value="30" {:I('get.pnum')==30?"selected":"" }>30</option>
+	            <option value="50" {:I('get.pnum')==50?"selected":"" }>50</option>
+            </select> 条目</label>
+            <div class="dataTables_filter" style='width:400px' id="dyntable_filter">
+                <label>组名: <input type="text" name='search' style='width:65%' /></label>
+                <input type="submit" value='提交'>
+            </div>
+           </div>
+        </form>
+               
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0">组名</th>
+                            <th class="head1">组人数</th>
+                            <th class="head0" style='width:25%'>操作</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='g_row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center">{$v.gname}</td>
+                            <td class="center">{$v.count}</td>
+                            <td class="center"><a href='{:U('hi_qxkan?id='.$v['id'])}'>查看</a>
+                             &nbsp;&nbsp;|&nbsp;&nbsp; <a href='{:U('hi_qxdel?id='.$v['id'])}'>删除</a></td>
+
+
+
+
+
+
+
+
+
+
+
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#formsub').css('display','block');
+	}
+
+
+</script>
+</block>

@@ -1,0 +1,136 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+        <h1 class="pagetitle">购物商家账号信息 </h1>
+    </div><!--pageheader-->
+    <div id="contentwrapper" class="contentwrapper">
+        <form action="{:U('gouwu/gouwushow')}" method='get'>
+         <!-- 搜索框-->
+           <div id="dyntable_length" class="dataTables_length">
+            <a href="{:U('gouwu/add')}" class="btn btn2 btn_blue btn_flag"><span>添加商家账号</span></a>
+            <label>显示 <select size="1" style='min-width:10%' name="pnum">
+	            <option value="10" {:I('get.pnum')==10?"selected":"" }>10</option>
+	            <option value="15" {:I('get.pnum')==15?"selected":"" }>15</option>
+	            <option value="30" {:I('get.pnum')==30?"selected":"" }>30</option>
+	            <option value="50" {:I('get.pnum')==50?"selected":"" }>50</option>
+            </select> 条目</label>
+            <div class="dataTables_filter" style='width:400px' id="dyntable_filter">
+                <label>用户名/电话: <input type="text" name='search' style='width:65%' /></label>
+                <input type="submit" value='提交'>
+            </div>
+           </div>
+        </form>
+               
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" style="text-align: center;">id</th>
+                            <th class="head1" style="text-align: center;">登录账号</th>
+                            <th class="head0" style="text-align: center;">用户名(昵称)</th>
+                            <th class="head1" style="text-align: center;">电话</th>
+                            <th class="head1" style="text-align: center;">账号状态</th>
+                            <th class="head1" style="text-align: center;">点击查看此用户下店铺</th>
+                            <th class="head1" style="text-align: center;">点击为此用户添加商家</th>
+                            
+                             <th class="head0" style="text-align: center;">操作</th> 
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center" style="text-align: center;">{$v.id}</td>
+                            <td class="center" style="text-align: center;">{$v.name}</td>
+                            <td class="center" style="text-align: center;">{$v.username}</td>
+                            <td class="center" style="text-align: center;">{$v.phone}</td>
+                            <td class="center" style="text-align: center;">{$v.state}</td>
+
+                        <if condition="$v['type'] eq 6 ">
+                            <td class="center" style="text-align: center;"><a href="{:U('gouwu/shop?id='.$v['id'])}"  class="btn btn2 btn_blue btn_search radius50"><span>送达</span></a> </td>
+                        <elseif condition="$v['type'] eq 7 "/> 
+                            <td class="center" style="text-align: center;"><a href="{:U('gouwu/m_shop?id='.$v['id'])}"  class="btn btn2 btn_blue btn_search radius50"><span>上门</span></a></td>
+                        <elseif condition="$v['type'] eq 8 "/> 
+                            <td class="center" style="text-align: center;"><a href="{:U('gouwu/m_shop?id='.$v['id'])}"  class="btn btn2 btn_blue btn_search radius50"><span>送达+上门</span></a></td>
+
+                        </if>
+
+                      <if condition="$v['type'] eq 8">
+                          <!-- 送达 -->
+                          <if condition="$v['shopid'] neq 0 ">
+                               <!-- 有店铺 --><td class="center" style="text-align: center;"><a  class="btn btn2 btn_blue btn_home"><span>已有</span></a>
+                          <else /> 
+                              <!-- 没有添加 --><td class="center" style="text-align: center;"><a href="{:U('upass/shopadd?id='.$v['id'].'&type='.$v['type'])}" class="btn btn2 btn_blue btn_home"><span>送达</span></a>
+                          </if>
+
+                          <!-- 上门 -->
+                          <if condition="$v['m_shopid'] neq 0 ">
+                               <!-- 有店铺 --><a  class="btn btn2 btn_blue btn_home"><span>已有</span></a></td>
+                          <else /> 
+                              <!-- 没有添加 --><a href="{:U('upass/m_shopadd?id='.$v['id'].'&type='.$v['type'])}" class="btn btn2 btn_blue btn_home"><span>上门</span></a></td>
+                          </if>
+                      <else />
+
+                          <!-- 判断是啥 -->
+                          <if condition="$v['type'] eq 6 ">
+                                <!-- 送达 -->
+                                <if condition="$v['shopid'] neq 0 ">
+                                      <!-- 有店铺 --><td class="center" style="text-align: center;"><a class="btn btn2 btn_blue btn_home"><span>已有</span></a></td>
+                                <else /> 
+                                       <!-- 没有添加 --><td class="center" style="text-align: center;"><a href="{:U('upass/shopadd?id='.$v['id'].'&type='.$v['type'])}" class="btn btn2 btn_blue btn_home"><span>送达</span></a></td>
+                                </if>
+                          <elseif condition="$v['type'] eq 7 " />
+                                <!-- 上门 -->
+                                <if condition="$v['m_shopid'] neq 0 ">
+                                      <!-- 有店铺 --><td class="center" style="text-align: center;"><a  class="btn btn2 btn_blue btn_home"><span>已有</span></a></td>
+                                <else /> 
+                                         <!-- 没有添加 --><td class="center" style="text-align: center;"><a href="{:U('upass/shopadd?id='.$v['id'].'&type='.$v['type'])}" class="btn btn2 btn_blue btn_home"><span>上门</span></a></td>
+                                </if>
+
+                          </if>
+
+                      </if>
+                           <td class="center" style="text-align: center;"><a href="{:U('upass/edit?id='.$v['id'])}"  class="btn btn2 btn_blue btn_link"><span>修改状态</span></a></td>  
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+                    
+           </div>
+          </div>
+    </div><!--contentwrapper-->
+
+
+<script>
+	aa();
+	function aa() {
+		$('#formsub').css('display','block');
+	}
+
+
+</script>
+</block>

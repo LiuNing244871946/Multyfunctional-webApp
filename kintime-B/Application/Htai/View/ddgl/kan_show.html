@@ -1,0 +1,82 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">订单详情修改</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('kan_show')}" enctype="multipart/form-data">
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+                        <p>
+                          <label>订&nbsp;&nbsp;&nbsp;单&nbsp;&nbsp;&nbsp;号</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.id}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.uid}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>店&nbsp;&nbsp;&nbsp;铺&nbsp;&nbsp;&nbsp;名</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.sid}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>订&nbsp;单&nbsp;时&nbsp;间</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.time}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>订&nbsp;单&nbsp;商&nbsp;品</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.food}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>原价</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.yuan}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>折扣价</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.you}" disabled /></span>
+                        </p>
+                        <p>
+                            <label>订&nbsp;单&nbsp;状&nbsp;态</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="ztai">
+                                
+                                <option  value="1" {$row['ztai']=='1'?'selected':''}>待付款</option>
+                                <option  value="2" {$row['ztai']=='2'?'selected':''}>待使用</option>
+                                <option  value="3" {$row['ztai']=='3'?'selected':''}>待评价</option>
+                                <option  value="4" {$row['ztai']=='4'?'selected':''}>退款/售后</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+                        <p>
+                            <label>是&nbsp;否&nbsp;可&nbsp;见</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="see">
+                                
+                                <option  value="1" {$row['see']=='1'?'selected':''}>可见</option>
+                                <option  value="2" {$row['see']=='2'?'selected':''}>隐藏</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+</block>

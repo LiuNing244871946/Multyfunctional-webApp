@@ -1,0 +1,90 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">用户信息修改</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('q_userkan')}" enctype="multipart/form-data">
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+                      <p>
+                          <label>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</label>
+                            <span class="field"><input type="text" id="firstname" style="width:30%" class="longinput" value="{$row.name}" disabled />
+                            <a href="{:U('q_shdz?id='.$row['id'])}">查看收货地址</a></span>
+                        </p>
+                        <p>
+                          <label>用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.username}" disabled /></span>
+                        </p>
+                        
+                        <!-- <p>
+                            <label>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.email}" disabled /></span>
+                        </p> -->
+                        <p>
+                            <label>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.phone}" disabled /></span>
+                        </p>
+                        <!-- <p>
+                            <label>用&nbsp;户&nbsp;类&nbsp;型</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.atype}" disabled />
+                            <if condition="$row['type'] eq 1 ">
+                                <a href="{:U('q_shdz?id='.$row['id'])}">查看收货地址</a>
+                            </if>
+                            
+                            </span>
+
+                        </p> -->
+                        <p>
+                            <label>用&nbsp;户&nbsp;头&nbsp;像</label>
+                            <img src="/kintime-webapp/{$row.headpic}" width="120">
+                        </p>
+                        <p>
+                            <label>余&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.new}" disabled />
+                            <a href="{:U('q_mingxi?id='.$row['id'])}">查看交易记录</a></span>
+                        </p>
+                        <p>
+                            <label>用&nbsp;户&nbsp;状&nbsp;态</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="state">
+                                
+                                <option  value="1" {$row['state']=='1'?'selected':''}>正常</option>
+                                <option  value="2" {$row['state']=='2'?'selected':''}>禁用</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#formsub').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

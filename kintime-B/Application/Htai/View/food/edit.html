@@ -1,0 +1,97 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">菜品信息（只允许修改菜品状态）</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                  <form id="form1" class="stdform" method="post" action="{:U('food/edit')}" >
+                    <!--隐藏域-->
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+                   
+
+                      <p>
+                          <label>菜名&nbsp;</label>
+                            <span class="field"><input type="text" id="firstname" style="width:30%" class="longinput" value="{$row.cainame}" name="cainame" disabled /></span>
+                        </p>
+                        <p>
+                          <label>价格&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.price}" name="price" disabled /></span>
+                        </p>
+                        
+                        <p>
+                            <label>折扣&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.zhekou}" name="zhekou" disabled /></span>
+                        </p>
+                        <!-- <p>
+                            <label>用户id&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$SESSSION['uid_id']}" name="uid" disabled /></span>
+                        </p>
+                        <p>
+                            <label>商铺分类id&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.stypeid}" name="stypeid" disabled /></span>
+                        </p> -->
+                         <p>
+                            <label>热销&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.rx}" name="rx" disabled /></span>
+                        </p>
+                         <p>
+                            <label>配料&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.pliao}" name="pliao" disabled /></span>
+                        </p>
+                        
+                        
+                        
+                        <!-- <p>
+                            <label>商铺头像&nbsp;</label>
+                    <input type="file" value="{$row.headpic}" name='headpic' > 
+                      <span class="field">
+                        <input type="file" name="pic" id="email" class="longinput" style="width:30%" disabled />
+                      </span>
+                      <img src="__PUBLIC__/../Uploads/{$row.headpic}" width="120">
+
+                        </p> -->
+                        <p>
+                            <label>菜品状态&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="state">
+                                
+                                <option  value="1" {$row['state']=='1'?'selected':''}>上架</option>
+                                <option  value="2" {$row['state']=='2'?'selected':''}>下架</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#error').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

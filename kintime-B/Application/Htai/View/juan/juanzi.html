@@ -1,0 +1,94 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+
+
+
+
+
+<style>
+.dataTables_filter{
+    top:77px;
+    right:23px;
+}
+.pagination{
+  float:right;
+}
+.page{
+  height:33px;
+}
+</style>
+    <div class="pageheader">
+        <h1 class="pagetitle">&nbsp;优惠券详情</h1>
+        <!-- <h5><a href={:U('hadd_user')} style='float:right'>添加优惠券&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></h5> -->
+    </div><!--pageheader-->
+        
+
+    
+    <div id="contentwrapper" class="contentwrapper">
+        <form action="{:U('juanzi')}" method='get'>
+         <!-- 搜索框-->
+           <div id="dyntable_length" class="dataTables_length">
+            <label>显示 <select size="1" style='min-width:10%' name="pnum">
+	            <option value="10" {:I('get.pnum')==10?"selected":"" }>10</option>
+	            <option value="15" {:I('get.pnum')==15?"selected":"" }>15</option>
+	            <option value="30" {:I('get.pnum')==30?"selected":"" }>30</option>
+	            <option value="50" {:I('get.pnum')==50?"selected":"" }>50</option>
+            </select> 条目</label>
+            <div class="dataTables_filter" style='width:400px' id="dyntable_filter">
+                <label>优惠券编码: <input type="text" name='search' style='width:65%' /></label>
+                <input type="submit" value='提交'>
+            </div>
+           </div>
+        </form>
+               
+                <table cellpadding="0" cellspacing="0" border="0" class="stdtable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0" width="8%">优惠券编码</th>
+                            <th class="head1">使用金额</th>
+                            <th class="head0">抵用金额</th>
+                            <th class="head1">可用商家</th>
+                            <th class="head0">所属用户</th>
+                            <th class="head1">优惠券类型</th>
+                            <th class="head0" width="15%">有效期至</th>
+                            <!-- <th class="head1">操作</th> -->
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                     <foreach name='row' item='v'>
+                        <tr class="gradeX">
+                         
+                            <td class="center">{$v.id}</td>
+                            <td class="center">{$v.tj}</td>
+                            <td class="center">{$v.djin}</td>
+                            <td class="center">{$v.sid}</td>
+                            <td class="center">{$v.uid}</td>
+                            <td class="center">{$v.name}</td>
+                            <td class="center">{$v.stop}</td>
+                            
+                            <!-- <td class="center"><a href='{:U('kan_show?id='.$v['id'])}'>删除</a></td> -->
+                        </tr>
+                     </foreach>
+                    </tbody>
+                </table>
+                <div class="dataTables_info" id="dyntable_info">
+           		</div>
+
+           <div class="dataTables_paginate paging_full_numbers page" id="dyntable_paginate">
+            {$show}
+           </div>
+          </div>
+    </div><!--contentwrapper-->
+
+
+
+</block>

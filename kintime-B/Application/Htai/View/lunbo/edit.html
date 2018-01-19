@@ -1,0 +1,71 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">信息修改</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('lunbo/edit')}" enctype="multipart/form-data">
+                    <!--隐藏域-->
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+
+                     
+                        <p>
+                            <label>链接&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.url}" placeholder="例如:http://www.baidu.com" name="url"  /></span>
+                        </p>
+
+                        <p>
+                            <label>修改头像&nbsp;</label>
+                   <!--  <input type="file" value="{$row.headpic}" name='headpic' > -->
+                      <span class="field">
+                        <input type="file" name="pic" id="email" class="longinput" style="width:30%" />
+                      </span>
+                      
+
+                        </p>
+                        <p>
+                            <label>分类&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="type">
+                                
+                                <option  value="1" {$row['type']=='1'?'selected':''}>首页图</option>
+                                <option  value="2" {$row['type']=='2'?'selected':''}>美食图</option>
+                                <option  value="3" {$row['type']=='3'?'selected':''}>外卖图</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#error').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

@@ -1,0 +1,82 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">霸王餐信息修改</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('bawang/edit')}" enctype="multipart/form-data">
+                    <!--隐藏域-->
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+
+                      <p>
+                          <label>套餐名&nbsp;</label>
+                            <span class="field"><input type="text" id="firstname" style="width:30%" class="longinput" value="{$row.tcname}" name="tcname"  />&nbsp;
+                        </p>
+                        <p>
+                          <label>开始时间&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.begintime}" placeholder="例如:2017-12-28-12:00" name="begintime" /></span>
+                        </p>
+                        
+                        <p>
+                            <label>剩余数量&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.num}" name="num"  /></span>
+                        </p>
+                        <p>
+                            <label>链接&nbsp;</label>
+                            <span class="field"><input type="text" id="email" class="longinput" style="width:30%" value="{$row.lianjie}" placeholder="例如:http://www.baidu.com" name="lianjie"  /></span>
+                        </p>
+
+                        <p>
+                            <label>头像预览&nbsp;</label>
+                   <!--  <input type="file" value="{$row.headpic}" name='headpic' > -->
+                      <span class="field">
+                       <!--  <input type="file" name="pic" id="email" class="longinput" style="width:30%" disabled /> -->
+                      </span>
+                      <img src="../../../../../{$row.headpic}" width="120" height="80">
+
+                        </p>
+                        <p>
+                            <label>商铺状态&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="state">
+                                
+                                <option  value="1" {$row['state']=='1'?'selected':''}>正常</option>
+                                <option  value="2" {$row['state']=='2'?'selected':''}>禁用</option>
+
+                                
+                             </select>
+                             </span>
+                        </p>
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#error').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

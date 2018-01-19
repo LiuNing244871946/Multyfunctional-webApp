@@ -1,0 +1,52 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+ <form class="stdform" action="{:U('adddo')}" method="post" enctype="multipart/form-data">
+                        
+                        <p>
+                            <label>套餐名</label>
+                            <span class="field"><input type="text" name="tcname" class="smallinput" /></span>
+                           
+                        </p>
+                        
+                        <p>
+                            <label>剩余数量</label>
+                            <span class="field"><input type="text" name="num" class="longinput" /></span>
+                        </p>
+                         <p>
+                            <label>链接</label>
+                            <span class="field"><input type="text" name="lianjie" placeholder="例如:http://www.baidu.com" class="longinput" /></span>
+                        </p>
+                         <p>
+                            <label>开始时间</label>
+                            <span class="field" style="width:520px"><input type="text" name="begintime" placeholder="例如:2017-12-28-12:00" class="longinput"></textarea></span> 
+                        </p>
+                        
+                        <p>
+                            <label>头像上传</label>
+                            <span class="field">
+                            <input type="file" name="headpic" class="longinput" style="width:30%" value="" />
+                            </span>
+                       <!--  </p>
+                     
+                        <input type="hidden" name="stypeid">
+                         <p>
+                            <label>霸王餐状态&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="state">
+                                
+                                <option  value="1">正常</option>
+                                <option  value="2">禁用</option>
+
+                                
+                             </select>
+                             </span>
+                        </p> -->
+                          
+                        <p class="stdformbutton">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                        
+                        
+                    </form>
+</block>

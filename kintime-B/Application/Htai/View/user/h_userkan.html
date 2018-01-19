@@ -1,0 +1,73 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">管理员信息修改</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('h_userkan')}" enctype="multipart/form-data">
+                    <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" />
+                    <input type='hidden' name="old_pic" id="firstname" style="width:30%" class="longinput" value="{$row.headpic}" />
+                      <p>
+                          <label>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</label>
+                            <span class="field"><input type="text" id="firstname" style="width:30%" class="longinput" value="{$row.name}" disabled /></span>
+                        </p>
+                        <p>
+                          <label>用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名</label>
+                            <span class="field"><input type="text" name="username" id="email" class="longinput" style="width:30%" value="{$row.username}"/></span>
+                        </p>
+                        
+                        <p>
+                            <label>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+                            <span class="field"><input type="text" name="email" id="email" class="longinput" style="width:30%" value="{$row.email}"/></span>
+                        </p>
+                        <p>
+                        <p>
+                            <label>用&nbsp;户&nbsp;头&nbsp;像</label>
+                            <span class="field"><input type="file" name="pic" id="email" class="longinput" style="width:30%" value="" /></span>
+                            <img src="/kintime-webapp/{$row.headpic}" width="120">
+                        </p>
+                        <p>
+                            <label>用&nbsp;户&nbsp;权&nbsp;限</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="glid" {$row['id']==1?'disabled':''} >
+                                <foreach name='ga_row' item='v'>
+
+                                  <option  value="{$v['id']}" {$row['glid']==$v['gname']?'selected':''}>{$v.gname}</option>
+                              
+                                </foreach>
+                             </select>
+                             </span>
+                        </p>
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>修&nbsp;&nbsp;&nbsp;&nbsp;改</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#formsub').css('display','block');
+  }
+
+
+</script>
+
+
+</block>

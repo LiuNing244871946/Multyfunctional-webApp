@@ -1,0 +1,51 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+ <form class="stdform" action="{:U('add')}" method="post">
+                        
+                        <p>
+                            <label>登录账号:</label> <a style="float:right;margin-right:680px" href="" class="btn btn2 btn_bulb"><span>账号自动生成,不能修改!</span></a>
+                            <span class="field"><input type="text" name="username" value="{$name}" class="smallinput" readonly="readonly" /></span>
+                          
+                        </p>
+                         <p>
+                            <label>姓名:</label>
+                            <span class="field"><input type="text" name="name" class="smallinput" /></span>
+                           
+                        </p>
+                        <!--  <p>
+                            <label>密码:</label>
+                            <span class="field"><input type="text" name="pass" class="mediuminput" /></span>
+                        </p> --> 
+                        
+                       <p>
+                            <label>电话</label>
+                            <span class="field"><input type="text" name="phone" class="longinput" /></span>
+                        </p>
+                         <!-- <p>
+                            <label>店铺种类:&nbsp;</label>
+                             <span class="field">
+                             <select size="1" style='min-width:20%' name="type">
+                                
+                                <option  value="1" {$row['type']=='1'?'selected':''}>堂食类</option>
+                                <option  value="2" {$row['type']=='2'?'selected':''}>外卖类</option>
+                                <option  value="3" {$row['type']=='3'?'selected':''}>购物类</option>
+                                
+                             </select>
+                             </span>
+                        </p> -->
+                       
+                        
+                    
+                        <!--骑手id-->
+                        <input type="hidden" name="id">
+                         <!--当前用户id-->
+                         <!--  <input type="hidden" name="uid"  value="{$Think.session.uid_id}"> -->
+                        
+                        <p class="stdformbutton">
+                            <button class="submit radius2">保存</button>
+                            <input type="reset" class="reset radius2" value="重置" />
+                        </p>
+                        
+                        
+                    </form>
+</block>

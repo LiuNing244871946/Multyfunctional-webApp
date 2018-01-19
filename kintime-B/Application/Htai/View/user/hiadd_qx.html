@@ -1,0 +1,77 @@
+<extend name='Layout:layout' />
+
+<block name='sp'>
+<style>
+input[type="password"] {
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+    width: 85%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #fcfcfc;
+    vertical-align: middle;
+    -moz-box-shadow: inset 0 1px 3px #ddd;
+    -webkit-box-shadow: inset 0 1px 3px #ddd;
+    box-shadow: inset 0 1px 3px #ddd;
+    color: #666;
+</style>
+        <div class="pageheader">
+            <h1 class="pagetitle">权限组添加</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                    <form id="form1" class="stdform" method="post" action="{:U('hiadd_qx')}" enctype="multipart/form-data">
+                      
+                        <p>
+                          <label>权&nbsp;&nbsp;&nbsp;限&nbsp;&nbsp;&nbsp;组</label>
+                            <span class="field"><input type="text" name="zuname" id="zuname" class="longinput" style="width:30%" /></span>
+                        </p>
+                        
+
+                        <br />
+                        
+                       <p class="stdformbutton">
+                        <button id="tjia" class="submit radius2" >
+                          &nbsp;&nbsp;&nbsp;<font size='5px'>添&nbsp;&nbsp;&nbsp;&nbsp;加</font>&nbsp;&nbsp;&nbsp;
+                        </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </p> 
+                       
+                    </form>
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#formsub').css('display','block');
+  }
+
+  $('#tjia').click(function() {
+    var zuname = $('#zuname').val();
+    // alert(zuname);
+    $.post('{:U('hiadd_qx')}',{'zuname':zuname},function(data){
+        if(data == "飞流直下三千尺"){
+            alert("已存在该用户组");
+        }else{
+            location.href="./hi_qxkan/id/"+data;
+        }
+    })
+    return false;
+  })
+
+
+
+
+
+</script>
+
+
+</block>

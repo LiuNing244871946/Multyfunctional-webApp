@@ -1,0 +1,51 @@
+<extend name='Layout:layout' />
+<block name='sp'>
+
+        <div class="pageheader">
+            <h1 class="pagetitle">商铺代金券</h1>
+
+        </div><!--pageheader-->
+
+            <div id="validation" class="subcontent" >
+                
+                  <!-- <form id="form1" class="stdform" method="post" action="{:U('food/edit')}" > -->
+                    <!--隐藏域-->
+                   <!--  <input type='hidden' name="id" id="firstname" style="width:30%" class="longinput" value="{$row.id}" /> -->
+                   
+
+
+        <div class="demo" style="float:left" >
+            <foreach name='row' item='v'>
+        <!-- 效果1 begin -->
+              <div class="stamp stamp01" >
+                
+                   <div class="par"><p>类型:{$v.name}</p><sub class="sign">￥</sub><span>{$v.djin}</span><sub>代金券</sub><p>订单满{$v.tj}元</p></div>
+                   <div class="copy">副券<p>有效期至:<br>{$v.stop}</p></div>
+                
+              </div>
+          </foreach>
+        </div>
+                        
+
+                        
+                        
+                       
+                   <!--  </form> -->
+
+            </div><!--subcontent-->
+        
+    
+</div>
+
+
+<script>
+  aa();
+  function aa() {
+    $('#error').css('display','block');
+  }
+
+
+</script>
+
+
+</block>
